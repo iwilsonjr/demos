@@ -1,0 +1,75 @@
+<style>
+#impulseOffer { overflow: hidden; width: 100%; min-width: 320px; max-width: 890px; margin: 0; padding: 20px 30px 0; background: #eee; font: 14px/18px Helvetica, Arial, sans-serif; color: #3e3e3e; box-sizing: border-box; }
+	
+    #impulseOffer h2 { margin: 0 0 15px; padding: 0; font-weight: bold; font-size: 18px; line-height: 1.2; font-family: 'BiomeStd', Helvetica, Arial, sans-serif; color: #006aa3; }
+	#impulseOffer h3 { position: absolute; margin: -60px 0 0 25px; padding: 0; font-weight: bold; font-size: 27px; line-height: 1; font-family: 'BiomeStd', Helvetica, Arial, sans-serif; color: #fff; text-transform: lowercase; text-shadow: 0 0 10px rgba(0,0,0,0.7); }
+    #impulseOffer p { margin: 0 0 10px; }
+    #impulseOffer a { color: #3e3e3e; text-decoration: underline; }    
+    #impulseOffer ul { overflow: hidden; list-style-type: none; margin: 0 0 15px; padding: 0; font-family: Tahoma; }
+    #impulseOffer li { padding: 12px 0; }
+        #impulseOffer ul p { margin-bottom: 0; }
+
+    #impulseOffer .topArea { margin: 0 0 15px; padding: 0 0 20px; border-bottom: 1px solid #cacaca; }
+    #impulseOffer .imgBlock { overflow: hidden; width: auto; max-width: 100%; margin: 0 0 15px; }
+        #impulseOffer .imgBlock img { width: 100%; height: auto; max-width: 100%; margin: 0; }
+        #impulseOffer .imgBlock .img-2 { display: none; }
+
+    /* Radio Button - Default */
+    #impulseOffer input[type="radio"] { overflow: hidden; position: absolute; width: 0; height: 0; clip: rect(0,0,0,0); }
+        #impulseOffer input[type="radio"] + label { float: left; display: inline-block; min-height: 30px; padding: 7px 0 0 37px; background: url(https://policy.poweredbycovermore.com/partners/hke/files/images/bkg-radio-default.png) no-repeat 0 -80px; line-height: 1.2; cursor: pointer; box-sizing: border-box; }
+
+                #impulseOffer input[type="radio"]:checked + label { background-position: -80px 0; }
+
+				#impulseOffer input[type="radio"] + label.yes { text-indent: -9999px; }
+				
+				#impulseOffer li p { float:left; width: calc(100% - 40px); margin-bottom: 5px; }
+				
+    #impulseOffer .footer { overflow: hidden; margin: 0 -30px; padding: 15px 30px; background: #ddd; }
+	   #impulseOffer .footer img { width: 146px; max-width: none; height: 30px; margin-bottom: 20px; }
+
+	#impulseOffer .disclaimer, #impulseOffer .disclaimer a { margin: 0; padding: 0; font-size: 10px; line-height: 15px; color: #000; }	
+
+
+    @media screen and (min-width: 640px) {
+
+            #impulseOffer h3 { margin-top: -110px; font-size: 36px; text-shadow: none; }        
+
+                #impulseOffer .imgBlock .img-1 { display: none; } 
+                #impulseOffer .imgBlock .img-2 { display: block; }       
+                #impulseOffer .imgBlock img { width: 830px; height: auto; max-width: none; }
+                            
+                #impulseOffer .footer img { float: right; }
+
+            #impulseOffer .disclaimer { float: left; width: calc(100% - 200px); }  
+
+    }        
+
+</style>
+
+<div id="impulseOffer">
+
+
+
+    <h2>Travel Protection - @Model.TripNumberOfdays days cover for only HK$@Model.DisplayPrice</h2>         
+    
+    <div class="topArea">
+        
+        
+        <p>Protect your trip with access to 24/7 emergency assistance services, medical coverage, and cancellation cover in case you are unexpectedly unable to travel after booking. For details of the Plan, terms & exclusions, please <a href="http://www.covermorepartners.com/hkexpress/hke_content-en/brochure-en.html" target="_blank">click here</a>. </p>
+    </div> 
+        
+    <ul>
+        <li>
+            <input type="radio" name="protection" id="protection_1" value="1" checked="checked" /><label for="protection_1" class="yes">Yes</label>
+            <p><strong>Yes, I would like to add HK Express Travel Protection Plan to cover our trip for all guests &amp;</strong> I have read and understood the <a href="http://www.hkexpress.com/sites/default/files/declarations.pdf" target="_blank">Declarations</a>, the <a href="http://policy.poweredbycovermore.com/partners/hke/files/documents/HKE-PolicyWording.pdf" target="_blank">terms and conditions</a> of the HK Express Travel Protection Plan and the <a href="http://www.hkexpress.com/sites/default/files/PICS.PDF" target="_blank">Personal Information Collection Statement</a> and agree to be bound by the same.  I also confirm that all guests are departing from and returning to Hong Kong (for one-way trip the departure must also be from Hong Kong), and the subject travel is for leisure or business without any manual work.</p> 
+        </li>
+        <li><input type="radio" name="protection" id="protection_2" value="0" /><label for="protection_2">No thanks, I don't need travel insurance.</label></li>
+    </ul>  
+    
+    <div class="footer">
+        <img src="https://policy.poweredbycovermore.com/partners/hke/files/images/logo-covermore.png" width="146" height="30" alt="Powered by Cover-More" />
+        <p class="disclaimer">* Under the HK Express Travel Protection Plan, the travel Insurance policy is underwritten by Zurich Insurance Company Ltd, and the emergency assistance services are coordinated by Assistance Online HK Limited. Hong Kong Express Airways Limited is an insurance agent appointed by Zurich Insurance Company Ltd.</p> 
+    </div>  
+       
+
+</div>

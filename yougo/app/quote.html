@@ -1,0 +1,790 @@
+<!doctype html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+
+    <head>
+        <title>youGo - Purchase Process/Quote</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css" />               
+        <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />       
+    	<link type="text/css" rel="stylesheet" href="css/mobile.css" />  
+        <link type="text/css" rel="stylesheet" href="css/purchase.css" />          
+    </head>
+
+    <body>
+    
+        <!--Header-->
+        <header role="banner">
+            <div class="siteHeader"> 
+            
+                <a href="home.html" class="siteLogo"><img src="files/images/logos/logo-yougo.png" width="414" height="128" alt="youGo Travel Insurance" /></a> <!--Site Logo-->
+                
+				<a href="#" class="navToggle"></a>
+                                
+                <nav role="navigation"> 
+                    <a href="#content" class="hide">Skip to Content</a>                                
+                    
+                    <!--Process Navigation-->
+                    <ol class="breadcrumbs">
+                        <li>Trip Info</li>     
+                        <li><strong>Quote</strong></li>                                  
+                        <li>EMC</li>
+                        <li>Traveller Info</li>
+                        <li>Purchase</li>                   
+                    </ol>
+                    <!--Process Navigation-->
+                    
+                    <!--Price Recap-->
+                    <div class="priceRecap">
+
+                        <p><em>Trip Info:</em> <span>You +1, Federated States of Micronesia, 07/07/14 - 07/07/15</span> <a href="home.html" class="editLink">Edit</a></p>
+                        
+                        <div class="priceList">
+                            <strong class="price">$0,000.00</strong>
+                            
+                            <div class="priceSummary">
+                            
+                                <strong class="subheader">Your Costs</strong>
+                            
+                                <dl>
+                                    <dt class="base">Base Price</dt>
+                                        <dd>$200.00</dd>
+                                    <dt>Adventure Cover</dt>
+                                        <dd>$30.00</dd>
+                                    <dt>Existing Medical Conditions (EMC)</dt>
+                                        <dd>$20.00</dd>
+                                    <dt class="total">Total</dt>
+                                        <dd class="total"><span>$</span>250<span>.00</span></dd>
+                                </dl>
+                            
+                            </div>
+                        </div>
+           
+                    </div>
+                    <!--Price Recap-->                    
+                     
+                </nav>
+                
+            </div>
+        </header>
+        <!--Header-->
+    
+        <!--Container-->
+        <div class="container" role="main">          
+            
+            <!--Content - Changed/Added 1/31/14-->
+            <div class="content quoteContent" id="content">
+                
+                <h1 class="hide">Quote</h1>
+            
+                <!--User Content-->
+                <div class="col-1">
+           	    	<img src="files/images/content/hugo-quote.png" width="516" height="594" alt="Hugo walking with luggage" /> 
+                </div>
+                
+                <div class="col-2">
+                
+                    <form action="add-ons.html" method="get" id="quoteForm-1">
+						
+                        <!--Quote Block-->
+                        <div class="quoteGroup">
+
+                            <div class="quoteDisplay">
+                                <h2>youGo International Cover for</h2>
+
+                                <!-- Changed 3/4/14 -->
+                                <p class="price"><strong><span class="dollars">$</span>9999<span class="cents">.99</span></strong></p>
+                                <ul>
+                                    <li><a href="#quoteForm-2" class="priceCover">See Annual Cover</a></li>
+                                    <li><a href="#quoteForm-3" class="priceCover">See Domestic Cancellation</a></li>
+                                </ul>
+                                <!-- Changed 3/4/14 -->
+
+                            </div>
+                            
+                            <div class="purchaseForm excessForm">
+                                <ol>
+                                    <li>
+                                        <label for="excess-1">Excess</label>
+                                        <select name="excess" id="excess-1">
+                                            <option value="0">$0</option>
+                                            <option value="100">$100</option>
+                                            <option value="250">$250</option>                                    
+                                        </select>                               
+                                    </li>
+                                    <li>
+
+                                        <!-- Changed 3/12/14 -->
+                                        <label for="duration-1">Duration <a href="#help-1" class="help"><img src="files/images/icons/icon-help.png" width="48" height="24" alt="help?" /></a></label>
+
+                                        <select name="duration" id="duration-1">
+                                            <option value="30">30 Days</option>
+                                            <option value="45">45 Days</option>
+                                            <option value="60">60 Days</option>                                 
+                                        </select> 
+
+                                        <!--Tool Tip--> 
+                                        <div class="helpWindow" id="help-1">                                    
+                                            <div class="scrollableArea"> 
+                                            <h3>Maximum duration per trip </h3>
+                                            <p>You can choose an International annual travel insurance policy which will give you coverage for trip durations of 30, 45 or 60 days or a Domestic annual travel insurance policy which will give you coverage for trip durations of 15 or 30 days. If you're after long stay continuous coverage for over 30 days, Domestic or 60 days, International, you will need to buy a single trip insurance policy where you can purchase cover for up to 12 months.</p>
+                                            </div>
+                                        </div>
+                                        <!--Tool Tip-->
+                                        <!-- Changed 3/12/14 --> 
+                                                                               
+                                    </li>                            
+                                </ol>
+                                <input type="submit" value="Go" />
+                            </div>
+
+                        </div>
+                        <!--Quote Block-->
+
+                        <!--Benefits Display-->
+                        <div class="benefitGroup">
+
+                            <p class="included"><a href="#benefits-0" class="includeLink">See Benefits Included</a></p> 
+
+                            <div class="benefits benefitsHide" id="benefits-0">
+                            
+                                <h2>Benefits include: <a href="#benefitsBlock-0" class="expandBenefits" rel="group">Expand All</a></h2>
+
+                                <div class="benefitPackages">
+
+                                    <!--Icon List-->                                    
+                                    <ul>
+                                        <li><a href="#benefit-0-1"><img src="files/images/icons/benefits/icon-benefit-1.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-2"><img src="files/images/icons/benefits/icon-benefit-2.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-3"><img src="files/images/icons/benefits/icon-benefit-3.png" width="41" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-4"><img src="files/images/icons/benefits/icon-benefit-4.png" width="42" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-5"><img src="files/images/icons/benefits/icon-benefit-5.png" width="49" height="43" alt="icon" /></a></li>                            
+                                        <li><a href="#benefit-0-6"><img src="files/images/icons/benefits/icon-benefit-6.png" width="43" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-7"><img src="files/images/icons/benefits/icon-benefit-7.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-8"><img src="files/images/icons/benefits/icon-benefit-8.png" width="44" height="43" alt="icon" /></a></li>
+                                    </ul>                          
+                                    <!--Icon List-->
+
+                                    <!--Related Benefits-->                                        
+                                    <ul class="helpBenefits"> 
+                                        <li id="benefit-0-1">
+                                            <h3><span>Overseas Medical And Dental</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for overseas hospital, medical, surgical, nursing, ambulance and emergency dental expenses.</p>
+                                        </li>
+                                        <li id="benefit-0-2">
+                                            <h3><span>Additional Expenses</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for additional accommodation and transportation expenses as a result of certain events including sickness, natural disasters, loss of travel documents and strikes.</p>       
+                                        </li>
+                                        <li id="benefit-0-3">
+                                            <h3><span>Hospital Incidentals</span> <strong>$1,000</strong></h3>
+                                            <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                                        </li>
+                                        <li id="benefit-0-4">
+                                            <h3><span>Amendment Or Cancellation Costs</span> <strong>$1,000</strong></h3>
+                                            <p>Cover, if due to unforeseen circumstances outside your control your journey has to be re-arranged or cancelled e.g. illnesses, accidents, extreme weather conditions, exam re-sit or retrenchment.</p>   
+                                        </li>
+                                        <li id="benefit-0-5">
+                                            <h3><span>Luggage and Travel Documents</span> <strong>$1,000</strong></h3>
+                                            <p>Luggage - cover for loss, theft or damage.<br />
+                                            Travel documents - cover for replacement cost if lost or stolen.</p>
+                                        </li>
+                                        <li id="benefit-0-6">
+                                            <h3><span>Delayed Luggage Allowance</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost of essential emergency purchases overseas if all your luggage is delayed by a transport provider.</p>
+                                        </li>
+                                        <li id="benefit-0-7">
+                                            <h3><span>Money</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for cash which is lost or stolen from your person.</p>
+                                        </li>
+                                        <li id="benefit-0-8">
+                                            <h3><span>Rental Car Insurance Excess</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the excess you become liable to pay as a result of damage to, or theft of, a rental car.</p> 
+                                        </li>
+                                    </ul>
+                                    <!--Related Benefits-->  
+
+                                    <!--Icon List-->
+                                    <ul> 
+                                        <li><a href="#benefit-0-9"><img src="files/images/icons/benefits/icon-benefit-9.png" width="40" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-10"><img src="files/images/icons/benefits/icon-benefit-10.png" width="41" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-11"><img src="files/images/icons/benefits/icon-benefit-11.png" width="41" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-12"><img src="files/images/icons/benefits/icon-benefit-12.png" width="42" height="49" alt="icon" /></a></li>      
+                                        <li><a href="#benefit-0-13"><img src="files/images/icons/benefits/icon-benefit-13.png" width="49" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-14"><img src="files/images/icons/benefits/icon-benefit-14.png" width="43" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-15"><img src="files/images/icons/benefits/icon-benefit-15.png" width="40" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-0-16"><img src="files/images/icons/benefits/icon-benefit-16.png" width="44" height="49" alt="icon" /></a></li>
+                                    </ul>
+                                    <!--Icon List-->
+
+                                    <!--Related Benefits-->                                     
+                                    <ul class="helpBenefits"> 
+                                        <li id="benefit-0-9">
+                                            <h3><span>Travel Delay</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for additional accommodation expenses if your scheduled transport is delayed over 6 hours.</p>       
+                                        </li>
+                                        <li id="benefit-0-10">
+                                            <h3><span>Resumptions of Journey</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>  
+                                        </li>
+                                        <li id="benefit-0-11">
+                                            <h3><span>Resumptions of Journey</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>  
+                                        </li>
+                                        <li id="benefit-0-12">
+                                            <h3><span>Special Events</span> <strong>$1,000</strong></h3>
+                                            <p>Covers additional costs to get you to a special event (as defined) if you would miss it due to unforeseen circumstances outside your control.</p>  
+                                        </li>                           
+                                        <li id="benefit-0-13">
+                                            <h3><span>Hospital Incidentals</span> <strong>$1,000</strong></h3>
+                                            <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                                        </li>
+                                        <li id="benefit-0-14">
+                                            <h3><span>Lorem ipsum</span> <strong>$1,000</strong></h3>
+                                            <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>      
+                                        </li>
+                                        <li id="benefit-0-15">
+                                            <h3><span>Lorem ipsum</span> <strong>$1,000</strong></h3>
+                                            <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>
+                                        </li>
+                                        <li id="benefit-0-16">
+                                            <h3><span>Lorem ipsum</span> <strong>$1,000</strong></h3>
+                                            <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>
+                                        </li>
+                                    </ul>
+                                    <!--Related Benefits--> 
+
+                                </div> 
+                                
+                            </div>
+
+                        </div>
+                        <!--Benefits Display-->
+                        
+                    </form> 
+                    
+                    <form action="add-ons.html" method="get" id="quoteForm-2">
+						
+                        <!--Quote Block-->                        
+                        <div class="quoteGroup">
+
+                            <div class="quoteDisplay">
+                                <h2>youGo Annual Cover for</h2>
+
+                                <!-- Changed 3/4/14 -->                                
+                                <p class="price"><strong><span class="dollars">$</span>9999<span class="cents">.99</span></strong></p>
+                                <ul>
+                                    <li><a href="#quoteForm-1" class="priceCover">See International Cover</a></li>
+                                    <li><a href="#quoteForm-3" class="priceCover">See Domestic Cancellation</a></li>
+                                </ul>
+                                <!-- Changed 3/4/14 -->                                                                
+                            </div>
+                            
+                            <div class="purchaseForm excessForm">
+                                <ol>
+                                    <li>
+                                        <label for="excess-2">Excess</label>
+                                        <select name="excess" id="excess-2">
+                                            <option value="0">$0</option>
+                                            <option value="100">$100</option>
+                                            <option value="250">$250</option>                                    
+                                        </select>                               
+                                    </li>
+                                    <li>
+                                        <label for="duration-2">Duration</label>
+                                        <select name="duration" id="duration-2">               
+                                            <option value="30">30 Days</option>
+                                            <option value="45">45 Days</option>
+                                            <option value="60">60 Days</option>
+                                        </select>                               
+                                    </li>                            
+                                </ol>
+                                <input type="submit" value="Go" />
+                            </div>
+
+					    </div>
+                        <!--Quote Block-->                        
+
+                        <!--Benefits Display-->
+                        <div class="benefitGroup">
+
+                            <p class="included"><a href="#benefits-1" class="includeLink">See Benefits Included</a></p> 
+
+                            <div class="benefits benefitsHide" id="benefits-1">
+                            
+                                <h2>Benefits include: <a href="#benefitsBlock-1" class="expandBenefits" rel="group">Expand All</a></h2>
+
+                                <div class="benefitPackages">
+
+                                    <!--Icon List-->                                    
+                                    <ul>
+                                        <li><a href="#benefit-1-1"><img src="files/images/icons/benefits/icon-benefit-1.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-2"><img src="files/images/icons/benefits/icon-benefit-2.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-3"><img src="files/images/icons/benefits/icon-benefit-3.png" width="41" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-4"><img src="files/images/icons/benefits/icon-benefit-4.png" width="42" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-5"><img src="files/images/icons/benefits/icon-benefit-5.png" width="49" height="43" alt="icon" /></a></li>                            
+                                        <li><a href="#benefit-1-6"><img src="files/images/icons/benefits/icon-benefit-6.png" width="43" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-7"><img src="files/images/icons/benefits/icon-benefit-7.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-8"><img src="files/images/icons/benefits/icon-benefit-8.png" width="44" height="43" alt="icon" /></a></li>
+                                    </ul>
+                                    <!--Icon List-->
+                                    
+                                    <!--Related Benefits-->                                     
+                                    <ul class="helpBenefits"> 
+                                        <li id="benefit-1-1">
+                                            <h3><span>Overseas Medical And Dental</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for overseas hospital, medical, surgical, nursing, ambulance and emergency dental expenses.</p>
+                                        </li>
+                                        <li id="benefit-1-2">
+                                            <h3><span>Additional Expenses</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for additional accommodation and transportation expenses as a result of certain events including sickness, natural disasters, loss of travel documents and strikes.</p>       
+                                        </li>
+                                        <li id="benefit-1-3">
+                                            <h3><span>Hospital Incidentals</span> <strong>$1,000</strong></h3>
+                                            <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                                        </li>
+                                        <li id="benefit-1-4">
+                                            <h3><span>Amendment Or Cancellation Costs</span> <strong>$1,000</strong></h3>
+                                            <p>Cover, if due to unforeseen circumstances outside your control your journey has to be re-arranged or cancelled e.g. illnesses, accidents, extreme weather conditions, exam re-sit or retrenchment.</p>   
+                                        </li>
+                                        <li id="benefit-1-5">
+                                            <h3><span>Luggage and Travel Documents</span> <strong>$1,000</strong></h3>
+                                            <p>Luggage - cover for loss, theft or damage.<br />
+                                            Travel documents - cover for replacement cost if lost or stolen.</p>
+                                        </li>
+                                        <li id="benefit-1-6">
+                                            <h3><span>Delayed Luggage Allowance</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost of essential emergency purchases overseas if all your luggage is delayed by a transport provider.</p>
+                                        </li>
+                                        <li id="benefit-1-7">
+                                            <h3><span>Money</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for cash which is lost or stolen from your person.</p>
+                                        </li>
+                                        <li id="benefit-1-8">
+                                            <h3><span>Rental Car Insurance Excess</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the excess you become liable to pay as a result of damage to, or theft of, a rental car.</p> 
+                                        </li>
+                                    </ul>
+                                    <!--Related Benefits--> 
+
+                                    <!--Icon List-->
+                                    <ul> 
+                                        <li><a href="#benefit-1-9"><img src="files/images/icons/benefits/icon-benefit-9.png" width="40" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-10"><img src="files/images/icons/benefits/icon-benefit-10.png" width="41" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-11"><img src="files/images/icons/benefits/icon-benefit-11.png" width="41" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-1-12"><img src="files/images/icons/benefits/icon-benefit-12.png" width="42" height="49" alt="icon" /></a></li>      
+                                        <li><a href="#benefit-1-13"><img src="files/images/icons/benefits/icon-benefit-13.png" width="49" height="49" alt="icon" /></a></li>
+                                    </ul>
+                                    <!--Icon List-->
+
+                                    <!--Related Benefits-->                                     
+                                    <ul class="helpBenefits"> 
+                                        <li id="benefit-1-9">
+                                            <h3><span>Travel Delay</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for additional accommodation expenses if your scheduled transport is delayed over 6 hours.</p>       
+                                        </li>
+                                        <li id="benefit-1-10">
+                                            <h3><span>Resumptions of Journey</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health 
+                        of a relative or business partner in Australia.</p>  
+                                        </li>
+                                        <li id="benefit-1-11">
+                                            <h3><span>Resumptions of Journey</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health 
+                        of a relative or business partner in Australia.</p>  
+                                        </li>
+                                        <li id="benefit-1-12">
+                                            <h3><span>Special Events</span> <strong>$1,000</strong></h3>
+                                            <p>Covers additional costs to get you to a special event (as defined) if you would miss it due to unforeseen circumstances outside your control.</p>  
+                                        </li>                           
+                                        <li id="benefit-1-13">
+                                            <h3><span>Hospital Incidentals</span> <strong>$1,000</strong></h3>
+                                            <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                                        </li>
+                                    </ul>
+                                    <!--Related Benefits--> 
+
+                                </div> 
+                                
+                            </div> 
+
+                        </div>
+                        <!--Benefits Display-->                                              
+                        
+                    </form>  
+
+                    <form action="add-ons.html" method="get" id="quoteForm-3">
+                        
+                        <!--Quote Block-->
+                        <div class="quoteGroup">
+
+                            <div class="quoteDisplay">
+                                <h2>Domestic Cancellation Single Trip for</h2>
+
+                                <!-- Changed 3/4/14 -->                                
+                                <p class="price"><strong><span class="dollars">$</span>9999<span class="cents">.99</span></strong></p>
+                                <ul>
+                                    <li><a href="#quoteForm-1" class="priceCover">See International Cover</a></li>
+                                    <li><a href="#quoteForm-2" class="priceCover">See Annual Cover</a></li>
+                                </ul>  
+                                <!-- Changed 3/4/14 -->
+
+                            </div>
+                            
+                            <div class="purchaseForm excessForm">
+                                <ol>
+                                    <li>
+                                        <label for="excess-3">Excess</label>
+                                        <select name="excess" id="excess-3">
+                                            <option value="0">$0</option>
+                                            <option value="100">$100</option>
+                                            <option value="250">$250</option>                                    
+                                        </select>                               
+                                    </li>
+                                    <li>
+                                        <label for="duration-3">Duration</label>
+                                        <select name="duration" id="duration-3">
+                                            <option value="30">30 Days</option>
+                                            <option value="45">45 Days</option>
+                                            <option value="60">60 Days</option>                                 
+                                        </select>                               
+                                    </li>                            
+                                </ol>
+                                <input type="submit" value="Go" />
+                            </div>
+
+                        </div>
+                        <!--Quote Block-->
+
+                        <!--Benefits Display-->
+                        <div class="benefitGroup">
+
+                            <p class="included"><a href="#benefits-2" class="includeLink">See Benefits Included</a></p> 
+
+                            <div class="benefits benefitsHide" id="benefits-2">
+                            
+                                <h2>Benefits include: <a href="#benefitsBlock-2" class="expandBenefits" rel="group">Expand All</a></h2>
+
+                                <div class="benefitPackages">
+
+                                    <!--Icon List-->                                    
+                                    <ul>
+                                        <li><a href="#benefit-2-1"><img src="files/images/icons/benefits/icon-benefit-1.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-2"><img src="files/images/icons/benefits/icon-benefit-2.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-3"><img src="files/images/icons/benefits/icon-benefit-3.png" width="41" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-4"><img src="files/images/icons/benefits/icon-benefit-4.png" width="42" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-5"><img src="files/images/icons/benefits/icon-benefit-5.png" width="49" height="43" alt="icon" /></a></li>                            
+                                        <li><a href="#benefit-2-6"><img src="files/images/icons/benefits/icon-benefit-6.png" width="43" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-7"><img src="files/images/icons/benefits/icon-benefit-7.png" width="40" height="43" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-8"><img src="files/images/icons/benefits/icon-benefit-8.png" width="44" height="43" alt="icon" /></a></li>
+                                    </ul>                          
+                                    <!--Icon List-->
+
+                                    <!--Related Benefits-->                                        
+                                    <ul class="helpBenefits"> 
+                                        <li id="benefit-2-1">
+                                            <h3><span>Overseas Medical And Dental</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for overseas hospital, medical, surgical, nursing, ambulance and emergency dental expenses.</p>
+                                        </li>
+                                        <li id="benefit-2-2">
+                                            <h3><span>Additional Expenses</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for additional accommodation and transportation expenses as a result of certain events including sickness, natural disasters, loss of travel documents and strikes.</p>       
+                                        </li>
+                                        <li id="benefit-2-3">
+                                            <h3><span>Hospital Incidentals</span> <strong>$1,000</strong></h3>
+                                            <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                                        </li>
+                                        <li id="benefit-2-4">
+                                            <h3><span>Amendment Or Cancellation Costs</span> <strong>$1,000</strong></h3>
+                                            <p>Cover, if due to unforeseen circumstances outside your control your journey has to be re-arranged or cancelled e.g. illnesses, accidents, extreme weather conditions, exam re-sit or retrenchment.</p>   
+                                        </li>
+                                        <li id="benefit-2-5">
+                                            <h3><span>Luggage and Travel Documents</span> <strong>$1,000</strong></h3>
+                                            <p>Luggage - cover for loss, theft or damage.<br />
+                                            Travel documents - cover for replacement cost if lost or stolen.</p>
+                                        </li>
+                                        <li id="benefit-2-6">
+                                            <h3><span>Delayed Luggage Allowance</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost of essential emergency purchases overseas if all your luggage is delayed by a transport provider.</p>
+                                        </li>
+                                        <li id="benefit-2-7">
+                                            <h3><span>Money</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for cash which is lost or stolen from your person.</p>
+                                        </li>
+                                        <li id="benefit-2-8">
+                                            <h3><span>Rental Car Insurance Excess</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the excess you become liable to pay as a result of damage to, or theft of, a rental car.</p> 
+                                        </li>
+                                    </ul>
+                                    <!--Related Benefits-->  
+
+                                    <!--Icon List-->
+                                    <ul> 
+                                        <li><a href="#benefit-2-9"><img src="files/images/icons/benefits/icon-benefit-9.png" width="40" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-10"><img src="files/images/icons/benefits/icon-benefit-10.png" width="41" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-11"><img src="files/images/icons/benefits/icon-benefit-11.png" width="41" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-12"><img src="files/images/icons/benefits/icon-benefit-12.png" width="42" height="49" alt="icon" /></a></li>      
+                                        <li><a href="#benefit-2-13"><img src="files/images/icons/benefits/icon-benefit-13.png" width="49" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-14"><img src="files/images/icons/benefits/icon-benefit-14.png" width="43" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-15"><img src="files/images/icons/benefits/icon-benefit-15.png" width="40" height="49" alt="icon" /></a></li>
+                                        <li><a href="#benefit-2-16"><img src="files/images/icons/benefits/icon-benefit-16.png" width="44" height="49" alt="icon" /></a></li>
+                                    </ul>
+                                    <!--Icon List-->
+
+                                    <!--Related Benefits-->                                     
+                                    <ul class="helpBenefits"> 
+                                        <li id="benefit-2-9">
+                                            <h3><span>Travel Delay</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for additional accommodation expenses if your scheduled transport is delayed over 6 hours.</p>       
+                                        </li>
+                                        <li id="benefit-2-10">
+                                            <h3><span>Resumptions of Journey</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>  
+                                        </li>
+                                        <li id="benefit-2-11">
+                                            <h3><span>Resumptions of Journey</span> <strong>$1,000</strong></h3>
+                                            <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>  
+                                        </li>
+                                        <li id="benefit-2-12">
+                                            <h3><span>Special Events</span> <strong>$1,000</strong></h3>
+                                            <p>Covers additional costs to get you to a special event (as defined) if you would miss it due to unforeseen circumstances outside your control.</p>  
+                                        </li>                           
+                                        <li id="benefit-2-13">
+                                            <h3><span>Hospital Incidentals</span> <strong>$1,000</strong></h3>
+                                            <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                                        </li>
+                                        <li id="benefit-2-14">
+                                            <h3><span>Lorem ipsum</span> <strong>$1,000</strong></h3>
+                                            <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>      
+                                        </li>
+                                        <li id="benefit-2-15">
+                                            <h3><span>Lorem ipsum</span> <strong>$1,000</strong></h3>
+                                            <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>
+                                        </li>
+                                        <li id="benefit-2-16">
+                                            <h3><span>Lorem ipsum</span> <strong>$1,000</strong></h3>
+                                            <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>
+                                        </li>
+                                    </ul>
+                                    <!--Related Benefits--> 
+
+                                </div> 
+                                
+                            </div>
+
+                        </div>
+                        <!--Benefits Display-->
+                        
+                    </form>                
+              
+                
+                </div> 
+                
+                <!--User Content-->                        
+                  
+            </div>
+            <!--Content - Changed/Added 1/31/14-->
+            
+        </div>
+        <!--Container-->
+        
+        <!--Footer-->
+        <footer role="contentinfo">
+            <div class="siteFooter">
+            
+                <!--Process Navigation-->
+                <ol class="breadcrumbs">
+                    <li>Trip Info</li>     
+                    <li><strong>Quote</strong></li>                                  
+                    <li>EMC</li>
+                    <li>Traveller Info</li>
+                    <li>Purchase</li>                   
+                </ol>
+                <!--Process Navigation-->            
+            
+
+                <div class="disclaimer">
+
+                    <h3>Disclaimers:</h3>
+                    <ul>
+                        <li># Medical Cover will not exceed 12 months from the onset of the illness or injury.
+                        <li>+ Reduced limits may apply for customers 70 years or over.
+                        <li>~ Limits apply to subsections point 2 and 5f
+                        <li>* Item limits apply
+                        <li>† Maximum liability collectively for Loss of income, Disability and Accidental Death sections is $20,000 on the International Plan
+                        <li>° Maximum liability collectively for Loss of income, Disability and Accidental Death sections is $10,000 on the Domestic Plan</li>
+                    </ul>
+                    
+                </div>
+
+            	<div class="disclaimer">
+
+                    <p>youGo Travel Insurance policies are underwritten by Cover-More Travel Insurance.</p>
+     
+                    <p>Cover-More NZ is licensed and regulated by the Financial Markets Authority for its financial adviser services as a Qualifying Financial Entity ("QFE"). The Financial Markets Authority may be contacted by visiting www.fma.govt.nz or by calling (04) 472 9830. You can obtain information about financial advisers from the Authority. You may also report information about Cover-More or our advisers to the Authority.</p>  
+                </div>
+                              
+            </div>
+        </footer>
+        <!--Footer--> 
+
+        <!--Benefits Box #1 - Added 1/31/14--> 
+        <div class="modal" id="benefitsBlock-0">
+            <div class="benefits">
+                <h2><em>Annual Cover - </em>Benefits include:</h2> <!--Important-->
+                <ul>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-1.png" width="40" height="43" alt="icon" />
+                        <h3><span>Overseas Medical And Dental</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for overseas hospital, medical, surgical, nursing, ambulance and emergency dental expenses.</p>                    
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-2.png" width="40" height="43" alt="icon" />
+                        <h3><span>Additional Expenses</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for additional accommodation and transportation expenses as a result of certain events including sickness, natural disasters, loss of travel documents and strikes.</p>                                  
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-3.png" width="41" height="43" alt="icon" />
+                        <h3><span>Amendment Or Cancellation Costs</span> <strong>($1,000)</strong></h3>
+                        <p>Cover, if due to unforeseen circumstances outside your control your journey has to be re-arranged or cancelled e.g. illnesses, accidents, extreme weather conditions, exam re-sit or retrenchment.</p>                    
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-4.png" width="42" height="43" alt="icon" />
+                        <h3><span>Luggage and Travel Documents</span> <strong>($1,000)</strong></h3>
+                        <p>Luggage - cover for loss, theft or damage.<br />
+                        Travel documents - cover for replacement cost if lost or stolen.</p>
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-5.png" width="49" height="43" alt="icon" />
+                        <h3><span>Delayed Luggage Allowance</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the cost of essential emergency purchases overseas if all your luggage is delayed by a transport provider.</p>
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-6.png" width="43" height="43" alt="icon" />
+                        <h3><span>Money</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for cash which is lost or stolen from your person.</p>
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-7.png" width="40" height="43" alt="icon" />
+                        <h3><span>Rental Car Insurance Excess</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the excess you become liable to pay as a result of damage to, or theft of, a rental car.</p> 
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-8.png" width="44" height="43" alt="icon" />
+                        <h3><span>Travel Delay</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for additional accommodation expenses if your scheduled transport is delayed over 6 hours.</p>                     
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-9.png" width="40" height="49" alt="icon" />
+                        <h3><span>Resumptions of Journey</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>                      
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-10.png" width="41" height="49" alt="icon" />
+                        <h3><span>Resumptions of Journey</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>                      
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-11.png" width="41" height="49" alt="icon" />
+                        <h3><span>Special Events</span> <strong>($1,000)</strong></h3>
+                        <p>Covers additional costs to get you to a special event (as defined) if you would miss it due to unforeseen circumstances outside your control.</p>  
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-12.png" width="42" height="49" alt="icon" />
+                        <h3><span>Hospital Incidentals</span> <strong>($1,000)</strong></h3>
+                        <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-13.png" width="49" height="49" alt="icon" />
+                        <h3><span>Lorem ipsum</span> <strong>($1,000)</strong></h3>
+                        <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>                    
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-14.png" width="43" height="49" alt="icon" />
+                        <h3><span>Lorem ipsum</span> <strong>($1,000)</strong></h3>
+                        <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>                       
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-15.png" width="40" height="49" alt="icon" />
+                        <h3><span>Lorem ipsum</span> <strong>($1,000)</strong></h3>
+                        <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>                       
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-16.png" width="44" height="49" alt="icon" />
+                        <h3><span>Lorem ipsum</span> <strong>($1,000)</strong></h3>
+                        <p>Proin quis dictum sapien, tincidunt pharetra lacus. Pellentesque imperdiet nibh id facilisis porttitor.</p>                       
+                    </li>
+                </ul>
+            </div>             
+        </div>        
+        <!--Benefits Box #1 - Added 1/31/14--> 
+
+        <!--Benefits Box #2 - Added 1/31/14--> 
+        <div class="modal" id="benefitsBlock-1">
+            <div class="benefits">
+                <h2><em>International Cover - </em>Benefits include:</h2> <!--Important-->
+                <ul>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-1.png" width="40" height="43" alt="icon" />
+                        <h3><span>Overseas Medical And Dental</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for overseas hospital, medical, surgical, nursing, ambulance and emergency dental expenses.</p>                    
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-2.png" width="40" height="43" alt="icon" />
+                        <h3><span>Additional Expenses</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for additional accommodation and transportation expenses as a result of certain events including sickness, natural disasters, loss of travel documents and strikes.</p>                                  
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-3.png" width="41" height="43" alt="icon" />
+                        <h3><span>Amendment Or Cancellation Costs</span> <strong>($1,000)</strong></h3>
+                        <p>Cover, if due to unforeseen circumstances outside your control your journey has to be re-arranged or cancelled e.g. illnesses, accidents, extreme weather conditions, exam re-sit or retrenchment.</p>                    
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-7.png" width="40" height="43" alt="icon" />
+                        <h3><span>Rental Car Insurance Excess</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the excess you become liable to pay as a result of damage to, or theft of, a rental car.</p> 
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-8.png" width="44" height="43" alt="icon" />
+                        <h3><span>Travel Delay</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for additional accommodation expenses if your scheduled transport is delayed over 6 hours.</p>                     
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-9.png" width="40" height="49" alt="icon" />
+                        <h3><span>Resumptions of Journey</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>                      
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-10.png" width="41" height="49" alt="icon" />
+                        <h3><span>Resumptions of Journey</span> <strong>($1,000)</strong></h3>
+                        <p>Cover for the cost to return overseas if you have to return to Australia early as a result of the ill-health of a relative or business partner in Australia.</p>                      
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-11.png" width="41" height="49" alt="icon" />
+                        <h3><span>Special Events</span> <strong>($1,000)</strong></h3>
+                        <p>Covers additional costs to get you to a special event (as defined) if you would miss it due to unforeseen circumstances outside your control.</p>  
+                    </li>
+                    <li>
+                        <img src="files/images/icons/benefits/icon-benefit-12.png" width="42" height="49" alt="icon" />
+                        <h3><span>Hospital Incidentals</span> <strong>($1,000)</strong></h3>
+                        <p>Covers the cost of miscellaneous expenses up to a given limit per night if you are hospitalised overseas for at least 48 hours.</p>
+                    </li>
+                </ul>
+            </div>             
+        </div>        
+        <!--Benefits Box #2 - Added 1/31/14-->                            
+    
+        <!--JavaScript Calls-->  
+        <script src="library/jquery-1.10.2.min.js" type="text/javascript"></script>  
+        <script src="library/jquery.qtip.min.js" type="text/javascript"></script>         
+        <script src="library/jquery.fancybox.pack.js" type="text/javascript"></script>
+		<script src="library/selectivizr-min.js" type="text/javascript"></script>
+        <script src="library/jquery.placeholder.js" type="text/javascript"></script>                    
+        <script src="js/utility.js" type="text/javascript"></script>  
+        <script src="js/quote.js" type="text/javascript"></script>          
+        <!--JavaScript Calls-->
+       
+    </body>
+</html>

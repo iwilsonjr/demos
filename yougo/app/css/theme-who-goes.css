@@ -1,0 +1,122 @@
+html { background: url(../files/images/backgrounds/bkg-body.jpg) repeat center 0; }
+body { overflow: hidden; height: 100%; background: url(../files/images/backgrounds/bkg-who-goes.png) no-repeat center bottom; background-size: 100% 380px; } /* Changed 6/18/14 */
+.siteHeader { position: absolute; top: 0; left: 50%; z-index: 10; margin-left: -500px; }
+.siteFooter { position: absolute; bottom: 0; background: none; }
+.siteFooter .scrollToRollLink { bottom: 140px; }
+  .footerWidget { margin-top: auto; bottom: 100px; }
+.scrollToRollLink { display: none !important; position: absolute; bottom: 0; left: 50%; margin-left: -65px; display: block; width: 130px; text-decoration: none; text-align: center; } /* Changed 6/18/14 */
+
+  .scrollToRollLink span { display: block; color: #fff; text-decoration: none; text-align: center; }
+    .caps { margin: 20px 0 0; text-transform: uppercase; font-size: 14px; font-size: 1.4rem; }
+    .youGoStyle { margin: 0 0 10px; font-family: 'Museo Sans Rounded 700'; font-size: 18px; font-size: 1.8rem; }
+
+.container { position: relative; width: 1000px; height: 100%; left: 50%; margin-left: -500px; }
+.container > h1 { position: absolute; right: 110px; bottom: 380px; font-size: 60px; font-size: 6.0rem; } /* Changed 6/18/14 */
+body, .scroller, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.whoGoesImg { position: absolute; right: 50%; bottom: 200px; }
+
+.page1 .whoGoesImg { width: auto; height: 300px; }
+.page2 .whoGoesImg { width: auto; height: 300px; }
+.page3 .whoGoesImg { width: auto; height: 300px; }
+.page4 .whoGoesImg { width: auto; height: 300px; }
+.page5 .whoGoesImg { width: auto; height: 300px; }
+.page6 .whoGoesImg { width: auto; height: 340px; bottom: 110px; right: 48%; }
+
+
+
+.scrollText { opacity: 0; position: absolute; right: 0px; bottom: 220px; width: 420px; height: 200px; font-size: 14px; } /* Changed 6/18/14 */
+  .showScrollText { opacity: 1; -webkit-transition: opacity 1s linear; transition: opacity 1s linear; }
+.onepage-wrapper {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  left: 50%;
+  margin-left: -500px;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: -15px;
+  bottom: 300px; /* Changed 6/18/14 */
+  z-index: 5;
+  list-style: none;
+  margin: -200px 0 0;
+  padding: 0;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  margin: 10px 0;
+}
+.onepage-pagination li a{
+  width: 15px;
+  height: 15px;
+/*  background: rgba(0,171,244,0.2);*/
+  display: block;
+  
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #c2e8fb;
+  background: rgba(0,171,244,0.2);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 15px;
+  height: 15px;
+  background: #00abf4;
+  /*border: 1px solid black;
+  margin-top: -4px;*/
+  /*left: 8px;*/
+  
+}
+@media only screen and (max-width: 604px) {
+/* Who Goes */
+
+body.whoGoes { overflow: hidden; background-size: 200% 100px; }
+body.whoGoes .container { margin-left: 0; width: 100%; left: 0; }
+body.whoGoes .siteHeader { left: 0; margin-left: auto; }
+body.whoGoes .onepage-wrapper { width: 100%; left: 0; margin-left: auto; }
+.whoGoesImg { right: auto; -webkit-transform: scale(.25,.25); transform: scale(.25,.25);  }
+.scrollText { right: auto; left: 25px; width: 260px; top: 120px; margin: 0 0 31px; font-size: 12px; font-size: 1.2rem; }
+body.whoGoes .container > h1 { left: 25px; top: 80px; font-size: 25px; font-size: 2.5rem; }
+body.whoGoes .container h2 { font-size: 16px; font-size: 1.6rem; }
+body.whoGoes .siteFooter .scrollToRollLink { bottom: -32px; left: 660px; -webkit-transform: scale(.50); transform: scale(.50); }
+.onepage-pagination { right: 20px; top: 110px; margin: 0; /* Changed 3/31/14 */ }
+.whoGoesImg { display: none; }
+.page1 .whoGoesImg { bottom: -120px; left: -70px; width: auto; height: auto; }
+.page2 .whoGoesImg { bottom: -120px; left: -70px; width: auto; height: auto; }
+.page3 .whoGoesImg { bottom: -120px; left: -130px; width: auto; height: auto; }
+.page4 .whoGoesImg { bottom: -100px; left: -160px; width: auto; height: auto; }
+.page5 .whoGoesImg { bottom: -20px; left: -170px; width: auto; height: auto; }
+.page6 .whoGoesImg { bottom: -100px; left: -180px; width: auto; height: auto; }
+body.whoGoes .siteFooter { left: -500px; }
+}
+
+@media only screen and (min-device-height: 568px) and (max-width: 604px) {
+  .whoGoesImg { display: block; }
+  body.whoGoes { overflow: hidden; background-size: 100% 140px; }
+}

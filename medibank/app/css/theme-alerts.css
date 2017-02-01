@@ -1,0 +1,22 @@
+/*
+
+Cover-More/Medibank Theme Style Sheet - Alerts - Innate
+--------------------------------------------*/
+
+@media screen and (max-width: 40em) {
+  h1 { font-size: 1.7rem; line-height: 1.2; margin-bottom:-40px; }
+  
+}
+@media screen and (min-width: 40em) {
+  h1 { top: -120px; }
+  
+}
+@media screen and (min-width: 64em) {
+  h1 { top: -160px; margin-bottom: -40px; }
+  
+}
+article { padding: 40px; }
+ul li { float: left; clear: both; width: 100%; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #ccc; }
+li strong, li em, li > a { display: block; margin-bottom: 2px; }
+li strong { font-size: 1.25rem; }
+.siteFooter li { border-bottom: 0; }

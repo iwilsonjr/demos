@@ -1,0 +1,92 @@
+/* Begin Datepicker Overrides */
+
+.shortQuote .datepickerHolder { position: relative; width: 100%; margin: -15px 0 0; }
+.shortQuote .datepickerHolder label { position: relative; z-index: 2; }
+.shortQuote .ui-datepicker { position: absolute; z-index: 1; width: calc(100% - 10px) !important; min-width: 280px; margin-top: -50px; padding-top: 50px; padding-bottom: 10px; border: 2px solid #807370; border-radius: 2px; }
+.shortQuote .hasDatepicker { display: none; margin-top: 0; z-index: 5; position: relative; }
+.shortQuote .ui-widget { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-size: 12px; }
+.shortQuote .ui-widget-content { background: #fff none; color: #4c4c4c; }
+.shortQuote a.ui-state-default { border-radius: 0; }
+.shortQuote .ui-widget-header { border: 0; border-radius: 0; }
+    .shortQuote .ui-state-default, .shortQuote .ui-widget-content .ui-state-default, .shortQuote .ui-widget-header .ui-state-default { background: transparent none; border: 0; font-weight: normal; color: #382f2d; text-decoration: none; text-align: center; }
+.shortQuote .ui-datepicker-group-first { margin-right: 16px; }
+ .shortQuote  .ui-datepicker-multi-2 .ui-datepicker-group { width: 48%; margin-bottom: 10px; }
+ .shortQuote  .ui-datepicker-multi .ui-datepicker-header { width: 100%; margin-left: 0; padding: 10px 0; background: #fff none; color: #807370; }
+    .shortQuote .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .shortQuote .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header  { border-left-width: 1px !important; }
+ .shortQuote  .ui-datepicker-header .ui-state-hover { background: transparent none; border: 0; }
+ .shortQuote  .ui-datepicker a.ui-state-default.ui-state-active,.shortQuote  .ui-datepicker a.ui-state-default.ui-state-highlight.ui-state-active,.shortQuote  .ui-datepicker a.ui-state-default.ui-state-active.ui-state-hover { background: #75be55; font-weight: normal; }
+  .shortQuote .ui-datepicker a.ui-state-default.ui-state-hover { background: #b3d25f; -webkit-transition: all .15s ease-in; -moz-transition: all .15s ease-in; transition: all .15s ease-in; }
+.shortQuote .ui-datepicker-calendar { background: #f3f1ee; }
+.shortQuote .ui-icon-circle-triangle-e { background: url(../files/images/icons/icon-next.png) no-repeat 9px 8px !important; }
+.shortQuote .ui-icon-circle-triangle-w { background: url(../files/images/icons/icon-prev.png) no-repeat 15px 8px !important; }
+.shortQuote .ui-datepicker .ui-datepicker-prev, .shortQuote .ui-datepicker .ui-datepicker-next { top: 14px; border: 0; padding-bottom: 0; }
+.shortQuote   .ui-datepicker .ui-datepicker-title { font-weight: normal; font-size: 14px; font-size: 14px; }
+   .shortQuote  .ui-datepicker td a { color: #4c4c4c !important; text-align: center; padding: 4px; }
+  .shortQuote .ui-datepicker th, .shortQuote .ui-datepicker td  { padding: 0; font-size: 14px !important; background: #f3f1ee !important; }
+.shortQuote .ui-datepicker th { background: #7f7370 !important; padding: 5px; font-weight: normal; color: #fff; }
+.shortQuote .ui-datepicker-multi .ui-datepicker-group table { width: 100%; margin: 0; }
+/* Selector Dates */    
+.shortQuote .date-range-selected > .ui-state-active,
+.shortQuote .date-range-selected > .ui-state-default { background: none; background-color: #b3d25f; color: #382f2d !important; }  
+.shortQuote .date-range-selected-start > .ui-state-active,.shortQuote  .date-range-selected-start > .ui-state-default { background: #75be55; }
+.shortQuote .date-range-selected-end > .ui-state-active, .shortQuote .date-range-selected-end > .ui-state-default { background: #75be55 !important; }
+/* Input Focuses */
+
+.shortQuote #travelDate { position: relative; z-index: 2; background: #fff url(../files/images/backgrounds/bkg-select-arrow.png) no-repeat 94.5% 50%; background-size: 9px auto; white-space: nowrap; text-overflow: ellipsis; }
+.shortQuote [for="travelDate"] { margin-top: 20px; padding-top: 0; }
+    .shortQuote [for="travelDate"].error { margin-top: 0; }
+ .shortQuote  #travelDate.focusLevel { width: calc(100% - 20px) !important; border: 0; }
+ .shortQuote  .hasDatepicker .closeWindow { position: absolute; z-index: 11; /* top: -66px; */ top: 242px; /* right: 0px; */ right: 275px; margin: 0; text-decoration: none; color: #fff; background: #7f7370; padding: 5px 10px; }
+ .shortQuote  .hasDatepicker .closeWindow:focus { outline: 2px dotted #e9222c; }
+.shortQuote .ui-datepicker .ui-datepicker-prev,.shortQuote  .ui-datepicker .ui-datepicker-next { width: 2.8em; cursor: pointer; }
+.shortQuote .ui-datepicker .ui-datepicker-prev:focus, .shortQuote .ui-datepicker .ui-datepicker-next:focus { outline: 1px solid #ff0 !important; }
+.shortQuote .ui-datepicker .ui-datepicker-prev span, .shortQuote .ui-datepicker .ui-datepicker-next span { width: 25px; height: 25px; margin-left: -18px; margin-top: -18px; }
+/* End Datepicker Overrides */
+
+.shortQuote #departureDate, .shortQuote #returnDate, .shortQuote #departureDate:hover, .shortQuote #returnDate:hover { display: none; width: 100px; border: 0; background: transparent; padding: 0 10px; }
+.shortQuote #departureDate:focus, .shortQuote #returnDate:focus, .shortQuote #departureDate:active, .shortQuote #returnDate:active { /*padding: 0;*/ border: 1px solid #807370; }
+.shortQuote .focusLevel #departureDate, .shortQuote .focusLevel #returnDate { position: relative; display: inline-block; z-index: 12; top: 2px; border: 0; font-size: 13px; }
+.shortQuote .focusLevel #travelDate { display: none; }
+.shortQuote .displayDate label.hide { position: absolute !important; }
+
+
+/* Date Picker Desktop Overwrites */
+/*@media screen and (min-width: 480px) {
+
+  .ui-datepicker-multi-2 .ui-datepicker-group { width: 66.666666667%; margin: 0 16.666666667%; }
+  #travelDate { background-position: 96.8% 50%; }
+
+}
+@media screen and (min-width: 640px) {
+  
+  .ui-datepicker-multi-2 .ui-datepicker-group { width: 50%; margin: 0; max-width: 320px; }
+  #travelDate { background-position: 97.75% 50%; }
+
+}
+
+@media screen and (min-width: 704px) {
+  
+  .ui-datepicker-multi-2 .ui-datepicker-group { width: 40%; margin: 0 5%; }
+
+}
+
+@media screen and (min-width: 800px) {
+
+  #travelDate { background-position: 98.2% 50%; }
+
+}
+
+@media screen and (min-width: 980px) {
+
+  .ui-datepicker { padding-top: 50px; padding-bottom: 37px; margin: -46px 0 0 0; }
+  .ui-datepicker-multi-2 .ui-datepicker-group { width: 48%; margin: 0 1%; }
+
+  #travelDate { background-position: 97% 50%; }  
+}*/
+
+@media screen and (min-width: 761px) {
+	 .shortQuote  .hasDatepicker .closeWindow { top: 230px; right: 200px; }
+	 .shortQuote .ui-datepicker { padding-bottom: 50px; }
+
+	
+}

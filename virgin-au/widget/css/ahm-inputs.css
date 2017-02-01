@@ -1,0 +1,59 @@
+/* --- Input  Elements --- */
+.quoteWidget select { height: 50px; padding-left: 15px; background-image: url(../files/images/backgrounds/bkg-select-arrow.svg); background-size: 15px 10px; background-position: right -10px center; font-size: 1rem; font-family: 'ProximaNova-Regular'; border: 2px solid #000; }
+
+.quoteWidget input[type="text"] { height: 50px; padding: 0 15px; border: 2px solid #000; box-shadow: none; font-size: 1rem; line-height: 1; font-family: 'ProximaNova-Regular'; color: #000; box-sizing: border-box; }
+  .quoteWidget input[type="text"]:focus { outline: auto; border: 2px solid #000; background-color: #fff; box-shadow: none; -webkit-transition: none; transition: none; }
+
+.quoteWidget input[type="submit"] { height: 50px; color: #fff; text-transform: uppercase; font-size: 1.25rem; font-weight: normal; font-family: "ProximaNova-Extrabld"; letter-spacing: 1px; }
+  .quoteWidget input[type="submit"]:hover, .quoteWidget input[type="submit"]:focus, .quoteWidget input[type="submit"]:active { }
+
+.quoteWidget input[type=text]::-ms-clear { display: none; }
+
+.quoteWidget label, .quoteWidget legend { margin: 0 0 5px; }
+.quoteWidget legend { display: block; font-size: 1rem; white-space: nowrap; }
+.quoteWidget label { cursor: pointer; font-family: 'ProximaNova-Light'; font-size: 1rem; }
+
+  .quoteWidget input[type="radio"] + label, .quoteWidget input[type="checkbox"] + label { margin-right: 15px; margin-left: 10px; }
+
+  .touchevents .quoteWidget input[type="radio"] { position: absolute; clip: rect(0px 0px 0px 0px); }
+  .touchevents .quoteWidget input[type="radio"] + label { display: inline-block; width: auto; height: 40px; border: 2px solid #000; margin: 0 20px 0 0; padding: .6rem 0; min-width: 130px;  background: #fff; color: #000; text-align: center; line-height: 1; border-radius: 3px; }
+  .touchevents .quoteWidget input[type="radio"]:checked + label, .touchevents .quoteWidget input[type="radio"] + label:hover, .touchevents .quoteWidget input[type="radio"] + label:focus, .touchevents .quoteWidget input[type="radio"] + label:active { background: #404040; color: #fff; }
+
+ .quoteWidget .radioList { margin-left: 0; }
+  .quoteWidget .radioList li { float: left; }
+
+
+/* Placeholder */
+.quoteWidget ::-webkit-input-placeholder { color: #c0c0c0 !important; }
+.quoteWidget ::-moz-placeholder { color: #c0c0c0 !important; }
+.quoteWidget :-ms-input-placeholder { color: #c0c0c0 !important; }
+.quoteWidget input:-moz-placeholder { color: #c0c0c0 !important; }
+
+/* Error/Validation */   
+.quoteWidget .error { border-color: #ca2534 !important; outline: none; }
+  .quoteWidget .error h2 { color: #949494; } 
+  .quoteWidget label.error, .quoteWidget label.error2 { clear: both; margin: -10px 0 0; padding: 0 0 0 20px; background: url(../files/images/backgrounds/bkg-error.png) no-repeat 0 center; background-size: 15px 14px; border: none !important; color: #ca2534 !important; font-family: 'ProximaNova-Extrabld'; font-size: 0.875rem; }
+
+  .quoteWidget .error::-webkit-input-placeholder { color: #c0c0c0 !important; }
+  .quoteWidget .error::-moz-placeholder { color: #c0c0c0 !important; }
+  .quoteWidget .error:-ms-input-placeholder { color: #c0c0c0 !important; }
+  input.error:-moz-placeholder { color: #c0c0c0 !important; }  
+.quoteWidget #residentContainer.error { color: #949494 !important; padding: 10px; }
+
+/* 
+  Phone - 476px (29.75em)
+-----------------------------*/
+/*@media screen and (max-width: 29.75em) {
+  .quoteWidget { padding: 0 15px; border-left: 0; border-right: 0; }
+}
+
+@media screen and (min-width: 29.75em) {
+  .quoteWidget h2 { padding-left: 15px; }
+}*/
+
+.quoteWidget .buttonWell { margin-top: 20px; }
+  .quoteWidget .buttonWell input { margin-bottom: 12px; padding: 14px 15px 14px 0; height: auto; font-family: 'ProximaNova-Extrabld'; text-transform: none; line-height: 1; -webkit-transition: box-shadow .2s ease; transition: box-shadow .2s ease; }
+    .quoteWidget .buttonWell input:hover, .buttonWell input:focus, .buttonWell input:active { box-shadow: 0 0 0 2px #000; }
+    .quoteWidget .buttonWell input:disabled { background-color: #a0a0a0; }
+    .quoteWidget .buttonWell input:disabled:hover, .buttonWell input:disabled:active, .buttonWell input:disabled:focus { background-color: #a0a0a0;box-shadow: none; }
+

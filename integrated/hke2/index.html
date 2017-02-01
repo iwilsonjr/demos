@@ -1,0 +1,68 @@
+<style>
+#impulseOffer { overflow: hidden; width: 100%; min-width: 320px; max-width: 890px; margin: 0; padding: 20px 30px 0; background: #eee; font: 14px/18px Helvetica, Arial, sans-serif; color: #3e3e3e; box-sizing: border-box; }
+	
+    #impulseOffer h2 { margin: 0 0 15px; padding: 0 0 20px 40px; border-bottom: 1px solid #cacaca; font-weight: bold; font-size: 18px; line-height: 1.2; font-family: 'BiomeStd', Helvetica, Arial, sans-serif; color: #006aa3; background: url(images/bkg-h2.png) no-repeat 0 0; background-size: 30px 30px; }
+    #impulseOffer p { margin: 0 0 10px; }
+    #impulseOffer a { color: #3e3e3e; text-decoration: underline; }    
+    #impulseOffer ul { overflow: hidden; list-style-type: none; margin: 0 0 15px; padding: 0; font-family: Tahoma; }
+    #impulseOffer li { padding: 12px 0; }
+        #impulseOffer ul p { margin-bottom: 0; }
+
+    #impulseOffer .topArea { margin: 0 0 15px; }
+
+    /* Radio Button - Default */
+    #impulseOffer input[type="radio"] { overflow: hidden; position: absolute; width: 0; height: 0; clip: rect(0,0,0,0); }
+        #impulseOffer input[type="radio"] + label { display: inline-block; min-height: 22px; padding: 4px 0 0 37px; background: url(images/bkg-checkbox-default.png) no-repeat 5px 0; background-size: 22px 142px; line-height: 1.2; cursor: pointer; box-sizing: border-box; }
+            #impulseOffer input[type="radio"] + label:hover, #impulseOffer input[type="radio"] + label:active, #impulseOffer input[type="radio"] + label:focus { background-position: 5px -60px; }
+                #impulseOffer input[type="radio"]:checked + label { background-position: 5px -120px; }
+
+        /* Radio Button - Yes */
+        #impulseOffer input[type="radio"] + label.yes { display: block; width: 90px; height: 40px; margin: 0 0 13px; padding: 11px 0 0 40px; background: #006aa3 url(images/bkg-checkbox-yes.png) no-repeat 8px 8px; background-size: 22px 142px; border-radius: 4px; font-weight: bold; font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.7); }
+            #impulseOffer input[type="radio"] + label.yes:hover, #impulseOffer input[type="radio"] + label.yes:active, #impulseOffer input[type="radio"] + label.yes:focus { background-color: #004d75; background-position: 8px -52px; }        
+                #impulseOffer input[type="radio"]:checked + label.yes { background-color: #006aa3; background-position: 8px -112px; }
+
+    #impulseOffer .footer { overflow: hidden; margin: 0 -30px; padding: 15px 30px; background: #ddd; }
+	   #impulseOffer .footer img { width: 146px; max-width: none; height: 30px; margin-bottom: 20px; }
+
+	#impulseOffer .disclaimer, #impulseOffer .disclaimer a { margin: 0; padding: 0; font-size: 10px; line-height: 15px; color: #000; }	
+
+
+    @media screen and (min-width: 640px) {
+
+                #impulseOffer li:first-child { padding-left: 105px; }
+                    #impulseOffer input[type="radio"] + label.yes { float: left; margin-left: -105px; }
+                            
+                #impulseOffer .footer img { float: right; }
+
+            #impulseOffer .disclaimer { float: left; width: calc(100% - 200px); }  
+
+    }        
+
+</style>
+
+<div id="impulseOffer">
+
+
+    <h2>HK Express Travel Protection Plan. Enjoy travel protection at only HK$150</h2>           
+    
+    <div class="topArea">
+                
+        <p>HK Express Travel Protection Plan offers Travel Insurance coverage & Emergency Assistance Services, which give you protection on Overseas Medical Expense, Personal Baggage, Travel Inconveniences and Emergency Assistance Services. For details of the Plan, terms &amp; conditions and exclusions, please <a href="#">click here</a>.</p>
+    </div> 
+        
+    <ul>
+        <li>
+            <input type="radio" name="protection" id="protection_1" value="1" /><label for="protection_1" class="yes">Yes</label>
+            <p><strong>Yes, I would like to add HK Express Travel Protection Plan to cover our trip for all passengers &amp;</strong> I have read and understood the <a href="#">Declarations</a>, and the <a href="#">Policy Wording</a> of this Travel Insurance &amp; <a href="#">Emergency Assistance Services Plan</a> and the <a href="#">Personal Information Collection Statement</a> and agree to be bound by the same.  I also confirm that all passengers are departing from and returning to Hong Kong, and travel is for leisure travel or business travel without any manual work*.</p> 
+        </li>
+        <li><input type="radio" name="protection" id="protection_2" value="0" /><label for="protection_2">No, Thanks I don't need it.</label></li>
+    </ul>  
+    
+    <div class="footer">
+        <img src="images/logo-covermore.png" width="146" height="30" alt="Powered by Cover-More" />
+        <p class="disclaimer">*Hong Kong Express Airways Limited is an insurance agent appointed by Zurich Insurance Company Ltd. Under the HK Express Travel Protection Plan, the travel Insurance policy is underwritten by Zurich Insurance Company Ltd,  and the emergency assistance services  are coordinated by Assistance Online HK Limited.<br />
+All travellers are aged under 70 years. The insurance is issued by Great Lakes Re-insurance (UK) PLC trading as Great Lakes Australia ABN 18 964 580 576 ARBN 127 740 532. This is general advice only. I have considered and accept the conditions and exclusions in the <a href="#">Combined PDS/FSG</a>.</p> 
+    </div>  
+       
+
+</div>

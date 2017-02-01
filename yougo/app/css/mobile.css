@@ -1,0 +1,96 @@
+/* Small Screen Mobile */
+
+@media only screen and (max-width: 604px) {
+
+html { height: auto; padding-bottom: 20px; }
+/* Body */
+body { min-width: 320px; }  
+
+/*Container */
+.container { min-width: 0; }
+
+/* Header */
+.siteHeader { position: relative; z-index:200; overflow: visible; width: 100%; height: 38px; margin: 0 auto 60px auto; background: #00b485; }
+  body.home .siteHeader { margin: 0 auto 110px auto; }
+  .siteHeader .navToggle { position: absolute; top: 15px; right: 85px; z-index: 250; display: block; width: 40px; height: 32px; background: url(../files/images/links/link-nav-toggle.png) no-repeat 0 0; background-size: 80px 32px; }
+  .navToggle.open { background-position: 100% 0; }
+  .siteHeader nav { display: none; overflow: auto; position: absolute; top: 38px; width: 190px; padding-top: 30px; right: 15px; background: #fff; border-radius: 0 0 12px 12px; box-shadow: 0 5px 10px rgba(0,0,0,0.5); }
+    .siteHeader nav.open { display: block; }
+.siteNavigation { width: 100%; height: 300px; margin: 0 0 0; background: #fff; }
+  .siteNavigation li { width: 100%; padding: 0; }
+.utilityNavigation { width: 100%; float: left; margin: -157px 40px 0 0; padding: 0; }
+  .utilityNavigation li { width: 100%; display: block; padding: 0; background: none; }
+  .utilityNavigation a { display: block; width: 100%; padding: 15px 0; border-bottom: 2px solid #eee; text-align: center; }
+.siteNavigation a { padding: 15px 0; background: #fff; border-bottom: 2px solid #eee; box-shadow: none; width: 100%; }
+.socialMedia { position:relative; z-index: 200; float: left; margin: 250px 0 0 -167px; }
+.siteLogo { margin-top: -20px; margin-left: -30px; -webkit-transform: scale(.75,.75); transform: scale(.75,.75); }
+.siteNavigation li.selected a::after { display: none; }
+.footerWidget form, .widgetErrorBox { display: none; }
+.footerWidget { left: auto; width: 100%; margin-left: 0; background: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Why youGo */
+.content { clear: both; width: 290px; background: none; padding: 0 15px; }
+  .whyYouGo h1 { font-size: 36px; font-size: 3.6rem; }
+.whyBox { clear: both; margin-left: -10px; }
+.whyYouGo > p { width: 100%; }
+.siteFooter { min-width: 0; height: 110px; } /* Changed 5/14/14 */
+.adventureBox { width: 260px; height: auto; margin-left: -10px;}
+
+
+/* Tips */
+.tips h1, .tipsInterior h1 { font-size: 30px; font-size: 3.0rem; } /* Changed 5/14/14 */
+.tipsInterior h2 { font-size: 20px; font-size: 2.0rem; }
+/*.tips > div {  margin-left: -10px !important; }*/ /* Removed 5/14/14 */
+.tips .whyBox {  width: 270px; margin-left: 0; margin-bottom: 20px !important; margin-top: 0 !important; padding: 10px 10px 0 10px; }
+.tipsInterior .whyBox { width: 90%; height: auto; }
+.tipsInterior .whyBox > img { width: 100%; height: auto; margin-right: 0; }
+.tipsInterior .backToTips { width: 20px; height: 20px; top: 5px; right: -30px; }
+.tipsInterior ol li { margin-left: 0; }
+.boxes > div:nth-child(4n), .boxes > div:first-child { margin-left: 0; }
+
+/* Contact */
+
+.contactPage h1 { font-size: 36px; font-size: 3.6rem; }
+.contactPage .article { width: 100%; }
+.contactPage .sidebar { float: left; width: 250px; }
+.contactPage h2 { font-size: 14px; font-size: 1.4rem; margin-bottom: 8px; }
+.contactPage .intro { width: 100%; margin: 0; padding: 0; background: none; }
+.contactPage .support p { font-size: 12px; font-size: 1.2rem; }
+
+/* Claims */
+
+.claims h1 { font-size: 36px; font-size: 3.6rem; }
+.claims.content { overflow: hidden; width: 270px; margin: 0 auto; padding: 0 15px; background: none; }
+.claims > p { width: 100%; padding: 0 15px; }
+.claims .adventureBox { width: 220px; }
+.claims .disclaimer { width: 100%; }
+.claims .faqs { width: 100%; }
+
+/* Thank You */
+  body.thankyou h1 { font-size: 40px; font-size: 4.0rem; }
+  
+  body.thankyou .col-1, body.thankyou .col-2 { float: none; width: auto; margin: 0 0 50px; padding: 0 20px; }
+    
+  body.thankyou .container { margin-top: -15px; padding: 0; background-position: -475px bottom; }
+  body.thankyou .content { width: auto; min-height: 0; padding-left: 0; padding-bottom: 250px; }
+  body.thankyou .siteFooter { min-width: 0; }  
+  
+  .disclaimer { width: auto; padding-bottom: 20px; margin: 0 auto !important; } /* Changed 5/14/14/ */
+  
+  .saveCards li { display: block; padding-right: 0; }
+
+
+/* Cards */
+.cardArea { width: auto; min-width: 0; padding: 0 20px;  }
+  .cardArea > ul { width: auto; margin: 0 auto; padding: 0; }
+  .cardArea > ul > li { display: block; margin-top: -30px; }
+  
+  .cardArea .socialMedia { width: 265px; margin: -25px 0 0; }
+  
+  .cards { overflow: visible !important; margin-left: -103px; -webkit-transform: scale(0.63); transform: scale(0.63) }
+
+
+
+/* Fix Select Zoom */
+select { font-size: 16px; font-size: 1.6rem; }
+}

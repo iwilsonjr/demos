@@ -1,0 +1,103 @@
+<body>
+
+    <div id="impulseOffer">
+    
+        <div class="impulseContainer">
+
+            <!--Header - Static - Should be part of the template on the AirNZ side -->
+            <h2>Travel Insurance</h2>
+            <!--End Header -->
+
+            <!--Impulse Offer -->                        
+            <div class="impulseLeftColumn">
+
+            	<!-- Variable:Headline -->                        
+                <p class="impulseIntro">Add <strong>peace of mind</strong> to your journey</p>
+
+                <!--Benefits - Keep impulseSecond/impulseThird/impulseFourth class for proper image display, using single image sprite-->
+               	<!-- Variable:headlineImage **NEW VARIABLE**-->                        
+                <ul class="impulseBenefits">
+                    <li><span><img src="files/images/icons-benefits.png" width="136" height="40" alt="" /></span>24 hour medical assistance</li>
+                    <li class="impulseSecond"><span><img src="files/images/icons-benefits.png" width="136" height="40" alt="" /></span>lost passport &amp; travel documents</li>
+                    <li class="impulseThird"><span><img src="files/images/icons-benefits.png" width="136" height="40" alt="" /></span>cancellation &amp; curtailment</li>
+                    <li class="impulseFourth"><span><img src="files/images/icons-benefits.png" width="136" height="40" alt="" /></span>money back guarantee</li>                                                         
+                </ul>
+                <!--/Benefits-->
+
+                <!--Plan-->
+                <div class="impulsePlan">
+
+                    <!--Variable:bodyImage  **NEW VARIABLE**-->
+                    <span><img src="files/images/family.jpg" width="120" height="120" alt="picture of family" /></span>   
+
+                    <!--Plan Type/# of Travellers-->
+                    <!--Variable:subHeadText  **NEW VARIABLE**  was the headline text in prior offer-->
+                    <p><strong>Domestic Single Trip</strong><br/>6 days, 2 adults, 1 child</p>
+
+                    <!--Variable:priceText **NEW VARIABLE**-->
+                    <p class="impulsePrice"><strong>$20 per person</strong></p>                    
+                </div>              
+                <!--/Plan-->
+
+            </div>    
+            <!--/Top Area--> 
+
+            <!--Bottom Area-->
+            <div class="impulseRightColumn">
+
+                <!--Travel Insurance Selection-->
+                <ul class="impulseRadioList">
+                    <li>
+                        
+                        <input type="radio" name="protection" id="protection_1" value="0" /> <label for="protection_1" class="impulseRadioFirst"><!--Variable:yesText--><strong>Yes</strong></label> I would like travel insurance for this selected period.
+                        <p>This passenger is a NZ resident and agrees to the <!--Variable:PDS_linkText - place the link in the # for the href--><a href="#">insurance conditions</a>.</p>
+
+                        <!--Traveller/Price Selection - Code generated server-side-->
+                        <ul class="impulsePassenger impulseHide">
+                            <li><input type="checkbox" name="passenger" id="passenger_1" value="20" checked /> <label for="passenger_1"><!--AirNZ provided label - Could use traveller name from info-->Adult 1: <!--Variable:GrossIncludingTax - for Adult-->$20.00</label></li>
+                            <li><input type="checkbox" name="passenger" id="passenger_2" value="20" checked /> <label for="passenger_2"><!--AirNZ provided label - Could use traveller name from info-->Adult 2: <!--Variable:GrossIncludingTax - for Adult-->$20.00</label></li>
+                            <li><input type="checkbox" name="passenger" id="passenger_3" value="20" checked /> <label for="passenger_3"><!--AirNZ provided label - Could use traveller name from info-->Child 1: <!--Variable:GrossIncludingTax - for Child-->$20.00</label></li>
+                            <li class="impulseTotal">Total: $60.00</li>
+                        </ul>
+                        <!--/Traveller/Price Selection-->
+
+                    </li>
+                    <li>
+                        <input type="radio" name="protection" id="protection_2" value="1" /> <label for="protection_2"><!--Variable:noText--><strong>No thanks</strong>, I do not need travel insurance.</label>
+                    </li>
+                </ul>
+                <!--/Travel Insurance Selection-->
+
+            </div>
+            <!--/Bottom Area-->             
+
+            <!--Disclaimer - Static - AirNZ to include as part of template-->
+            <p class="impulseDisclaimer">
+                <img src="files/images/logo-covermore.png" width="152" height="32" alt="Powered by Cover-More" /> All travellers are aged under 70 years. The insurance is issued by Great Lakes Re-insurance (UK) PLC trading as Great Lakes Australia ABN 18 964 580 576 ARBN 127 740 532. This is general advice only. I have considered and accept the conditions and exclusions in the <a href="#">Combined PDS/FSG</a>.</p>
+            <!--Disclaimer -->
+
+        </div>
+           
+    </div>
+
+        <!--JavaScript Calls-->  
+        <script src="library/jquery-1.10.2.min.js" type="text/javascript"></script>     
+        <script type="text/javascript">
+        //Start JQuery Code   
+
+            if (($("[name='protection']:checked").val() == "0")){
+                $(".impulsePassenger").removeClass("impulseHide");
+            } else {
+                $(".impulsePassenger").addClass("impulseHide");           
+            }                
+
+            $("[name='protection']").click(function(){
+              if (($(this).val() == "0")){
+                $(".impulsePassenger").removeClass("impulseHide");    
+              } else {
+                $(".impulsePassenger").addClass("impulseHide");   
+              }
+            });          
+        </script> 
+        <!--JavaScript Calls-->   
+</body>

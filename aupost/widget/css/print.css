@@ -1,0 +1,64 @@
+/*
+
+Cover-More/MAS Print Style Sheet - Innate
+--------------------------------------------*/
+
+/*
+
+Initialization/Defaults
+--------------------------------------------*/
+body { min-width: 0; background: transparent none !important; }
+h1 { width: auto; margin-left: 0; padding-left: 0; border: 0; }
+
+input[type="submit"], #btnPrint, .btnBack, .selectPlan { display: none; }
+
+
+/* 
+  Header
+-----------------------------*/
+header { max-width: none; padding: 0; }
+
+.siteHeader { overflow: hidden; position: static; width: auto; height: auto; margin-bottom: 0; padding-bottom: 10px; padding-left: 20px; border-bottom: 1px solid #ccc; }
+
+.siteLogo { float: left; }
+
+.siteNavigation, .btnNavigation { display: none; }
+
+
+
+/* 
+  Container
+-----------------------------*/
+.outerContainer { padding-top: 0; padding-bottom: 20px; background: transparent; }
+.container_12 { width: 100%; }
+
+/* 
+  Article
+-----------------------------*/
+article { margin-bottom: 0; padding: 30px 20px 0; }
+
+/* 
+  Sidebar
+-----------------------------*/
+.tripInfo { float: none; background: transparent none !important; border: 1px solid #ccc; }
+
+
+
+/* 
+  Footer
+-----------------------------*/
+.footer { width: 100%; background: transparent none !important; border-top: 1px solid #ccc; }
+.siteFooter { width: auto; max-width: none; padding-right: 20px; padding-left: 20px; }
+
+
+/* 
+  Select Plan
+-----------------------------*/
+.benefitsTable { margin: 0 0 70px !important; }
+
+.selectPlan { display: none; }
+
+.tabs { margin: 0; }
+  .tabs li.hide { position: static; }  
+
+    .benefitsTable tbody th, .benefitsTable tbody td { background: transparent none !important; border: 1px solid #ccc !important; }

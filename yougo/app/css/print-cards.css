@@ -1,0 +1,35 @@
+html { width: 100%; height: 100%; background: #fff; font-size: 62.5%; color: #666; }
+   a img { border: none; }
+   /* --- Header Text --- */
+   h1, h2, h3, h4, h5, h6 { -webkit-margin-before: 0; -webkit-margin-after: 0; margin: 0 0 10px; font-weight: normal; }
+   /* --- Block Text --- */
+   p, blockquote, caption, div { margin: 0 0 20px; }
+    
+      
+      /* --- List Items --- */
+      ul { list-style: none outside none; margin: 0 0 15px 30px; padding: 0; }
+      ul li { margin: 0; padding: 0 0 5px; }
+      
+      /* --- Inline Items --- */
+      strong { font-weight: bold; }  
+      em { font-style: italic; }
+      
+      /* --- Body --- */
+      body { background: transparent none; font-size: 15px; /*font-size: 1.5rem;*/ line-height: 1.2; font-family: Helvetica, Arial, sans-serif; }
+      
+      
+      /* --- Cards --- */
+      .cardArea { width: 100%; margin: 50px auto; padding: 0; background: transparent none; }
+        .cardArea > ul { position: static; width: auto; margin: 0 auto; padding: 0; }
+        .cardArea > ul > li { display: inline-block; margin: 0 18px 20px 0; vertical-align: top; }
+      
+      .cards { overflow: hidden; width: 288px; height: 196px; margin: 0; padding: 75px 0 0 182px; background: url(../files/images/backgrounds/bkg-cards.png) no-repeat; border-radius: 20px; /*box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);*/ border: 1px solid rgba(0,0,0,0.2); font-size: 12px; /*font-size: 1.2rem;*/ line-height: 1.3333; }
+        .cards ul { margin: 0 0 10px; padding: 0; }
+        .cards li { padding: 0; }
+        .cards p { margin: 0 0 10px; }
+        .cards h3 { margin: 0; font-size: 27px; /*font-size: 2.7rem;*/ line-height: 1.1; }
+        
+      .cards .pickPhoto { width: 141px; height: 141px; margin: -57px 0 0 -165px; }
+        .pickPhoto img { border: 0;  border-radius: 7px; }
+      
+      .cards .policyNumber { margin: 85px 0 -180px -160px; font-size: 12px; letter-spacing: 1px; /*font-size: 1.1rem;*/ color: #00abf4; }

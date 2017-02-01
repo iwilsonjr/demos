@@ -1,0 +1,847 @@
+/*
+
+Cover-More/youGo Purchase Process Style Sheet - CDG Interactive, Inc.
+--------------------------------------------*/
+
+/*
+
+Initialization/Defaults
+--------------------------------------------*/
+
+/* --- Header Text --- */
+h1 { margin-bottom: 25px; text-align: center; }
+  h1 span { font-size: 24px; font-size: 2.4rem; }
+  
+  input[type="radio"] + label:before { content: ''; position: relative; top: -1px; left: -10px; display: inline-block; width: 18px; height: 18px; margin-left: -15px; border: 2px solid #ccc; border-radius: 4px; background: #fff; vertical-align: middle; cursor: pointer; }
+  input[type="radio"]:checked + label:before  { background: #ccc; box-shadow: inset 0 0 0 3px #fff; }  
+  
+  input[type="checkbox"] + label { margin-left: 30px; padding: 0; cursor: pointer; }  
+  input[type="checkbox"] + label:before { content: ''; position: relative; top: -2px; left: -11px; display: inline-block; width: 18px; height: 18px; margin-left: -20px; border: 2px solid #ccc; border-radius: 4px; background: #fff; vertical-align: middle; cursor: pointer; }
+  input[type="checkbox"]:checked + label:before  { background: #fff url(../files/images/backgrounds/bkg-checkbox.png) no-repeat center center; box-shadow: none; }    
+  
+  input[type="submit"] { box-shadow: 0 10px 12px 0 rgba(0,0,0,0.1); }
+  
+  select { overflow: hidden; padding: 6px 5px 6px 5px; background: #fff url(../files/images/backgrounds/bkg-select-arrow.png) no-repeat 98% 2px; line-height: 1; text-overflow: ellipsis; white-space: nowrap; cursor: pointer;
+  
+    moz-appearance: none; text-indent: 0.01px; text-overflow: '';
+    -webkit-appearance:none;  
+   }
+   
+  select::-ms-expand { display: none; }    
+    
+/*
+  Header
+-----------------------------*/
+/* Site Navigation */
+.siteNavigation { display: none; }
+
+/* Breadcrumbs */
+.breadcrumbs { float: none; clear: both; width: 1023px; height: 50px; margin: 0 auto 30px; padding: 0; background: url(../files/images/backgrounds/bkg-breadcrumb.png) no-repeat; font-size: 35px; font-size: 3.5rem; font-family: "Museo Sans Rounded 900"; color: #18b585; text-transform: uppercase;
+    
+  -webkit-transform-origin: 50% 100%;
+  -webkit-transform: perspective(700px) rotateX(25deg);
+
+  -ms-transform-origin: 50% 100%;
+  -ms-transform: perspective(700px) rotateX(25deg);
+
+  transform-origin: 50% 100%;
+  transform: perspective(700px) rotateX(25deg);    
+
+}
+  .breadcrumbs li { overflow: hidden; float: left; display: block;  padding: 7px 5px 0 30px; text-shadow: 1px 1px 7px rgba(0,0,0,0.5); text-align: center; }
+    .breadcrumbs strong { font-weight: normal; color: #22e3aa; }  
+    
+  .siteHeader { height: 120px; }    
+    
+  .siteHeader .breadcrumbs { position: absolute; left: -9999px; font-size: 0; line-height: 0; }      
+
+.priceList { position: absolute; z-index: 10; margin: 0 0 0 700px; padding: 0; }
+  .priceList:hover .priceSummary, .priceList:focus .priceSummary { overflow: visible; width: 110px; height: auto; padding: 5px 10px 10px; }
+
+/* Price Recap */
+.priceRecap { float: right; margin: -115px 0 0; width: 830px; height: 40px; padding: 0; background: #e0f2f8; background: rgba(255,255,255,0.5); border-radius: 3px; line-height: 1; }
+
+  .priceRecap p { float: left; width: 620px; margin: 0; padding: 12px 20px 0 60px; font-size: 16px; font-size: 1.6rem; color: #aaa;  }
+  .priceRecap em { font-style: normal; font-family: "Museo Sans Rounded 900"; color: #00abf4; text-transform: uppercase; vertical-align: top; }  
+  .priceRecap span { overflow: hidden; display: inline-block; width: 480px; height: 20px; white-space: nowrap; text-overflow: ellipsis; vertical-align: top; }
+  .priceRecap a { color: #aaa; }
+  .priceRecap strong { float: right; width: 130px; height: 28px; padding: 12px 0 0; background: #00b485; border-radius: 0 3px 3px 0; font-weight: normal; font-size: 17px; font-size: 1.7rem; font-family: "Museo Sans Rounded 900"; color: #fff; text-align: center; cursor: pointer; }
+  
+.editLink { float: right; }  
+
+/* Price Summary */
+.priceSummary { overflow: hidden; width: 0; height: 0; margin: 55px -10px 0 0; padding: 0; background: #fff; border: 1px solid #f4f5f5; border-radius: 10px; box-shadow: 0 4px 15px 0 rgba(0,0,0,0.1); }
+  .priceSummary:before { content: ''; position: relative; /*top: -10px; left: 58px;*/ display: block; width: 0; height: 0; margin: -15px 0 0 45px; border: 10px solid transparent; border-top: 0; border-bottom: 10px solid #fff; }
+  .priceSummary strong { float: none; display: block; width: auto; margin: 0 0 15px; cursor: default; }
+  .priceSummary dl { margin: 0; padding: 0; font-size: 13px; font-size: 1.3rem; line-height: 1.2; }
+  .priceSummary dt { padding: 0 0 5px; font-family: "Museo Sans Rounded 700"; }
+    .priceSummary dt em { display: inline-block; padding: 5px 0; font-style: normal; font-family: "Museo Sans Rounded 500"; color: #666; text-transform: none; }
+  .priceSummary dd { margin: 0 0 13px; padding: 0 0 10px; border-bottom: 1px solid #cecece; }
+  
+.base, dt.total { font-family: "Museo Sans Rounded 900"; text-transform: uppercase; }  
+  dd.total { margin-bottom: 0; padding-bottom: 0; border: 0; font-size: 26px; font-size: 2.6rem; font-family: "Museo Sans Rounded 700"; color: #00b485; }
+  dd.total span { width: auto; height: auto; border: 0; font-size: 16px; font-size: 1.6rem; vertical-align: top; }
+
+
+/* Social Media */    
+.socialMedia { display: none; }
+
+/*
+  Content
+-----------------------------*/
+
+/* Columns */
+.col-1 { float: left; margin: 0; }
+.col-2 { float: right; margin: 0; }
+
+
+/*
+  Additional Form Handling
+-----------------------------*/
+  .purchaseForm ol { list-style-type: none; margin: 0; padding: 0; }
+.buttonWell { text-align: right; }
+.inline { display: inline-block; padding-right: 10px; }
+
+#errorContainer { color: #e00000 !important; margin: 10px 0 30px; }
+  
+
+/* Quote Page - Changed/Added 1/31/14 */
+.quoteContent { overflow: visible; }
+  .quoteContent .col-1 { width: 516px; height: 594px; margin: -10px 0 0 -75px; }
+  .quoteContent .col-2 { width: 415px; min-height: 244px; margin-top: -45px; padding: 285px 40px 0 40px; background: url(../files/images/backgrounds/bkg-quote.png) no-repeat; } /* Changed 3/7/14 */
+
+.quoteContent .col-2.noPlan {  background-size: 551px 400px; width: 470px; }
+.quoteContent .col-2.noPlan .quoteDisplay { width: 460px; }
+  
+.quoteGroup { margin: 0; padding: 0; }
+
+  .quoteContent form .quoteGroup { position: absolute; top: 115px; opacity: 0; }
+  
+.quoteProgressContainer { padding-top: 40px; line-height: 1.2; } /* Changed 3/12/14 */
+    .quoteDisplay .quoteProgressContainer ul { margin: 0 40px 12px; } /* Added 3/12/14 */
+    .quoteDisplay .quoteProgressContainer li { list-style-type: disc; display: list-item; padding: 0 0 5px; } /* Added 3/12/14 */
+.quoteProgressIcon { padding-left: 30px; float: left; }
+.quoteProgressText { float: left; padding-top: 50px; margin-left: 10px;}
+    .quoteProgressText h2 { color: #00ABF4 !important; }
+  
+    .quoteContent form:first-child .quoteGroup { opacity: 1; z-index: 1; }
+  .quoteContent form .benefitGroup { position: absolute; /*margin-top: 0;*/ opacity: 0; }
+    .quoteContent form:first-child .benefitGroup { opacity: 1; z-index: 1; }    
+
+    .ie8 .quoteContent form .quoteGroup, .ie9 .quoteContent form .quoteGroup, .ie8 .quoteContent form .benefitGroup, .ie9 .quoteContent form .benefitGroup { left: -9999px; }
+
+    /* Changed/Added 4/3/14 */
+    .ie9 .quoteContent form:first-child .quoteGroup, .ie9 .quoteContent form:first-child .benefitGroup { left: auto; z-index: 1; }
+    .ie8 .quoteContent form.firstForm .quoteGroup, .ie8 .quoteContent form.firstForm .benefitGroup { left: auto; z-index: 1; }    
+    /* Changed/Added 4/3/14 */
+
+/* Changed 3/4/14 */
+.quoteDisplay { margin-bottom: 15px; }
+  .quoteDisplay h2 { margin-bottom: 3px; margin-left: 5px; font-size: 17px; font-size: 1.7rem; color: #00b485; }
+  .quoteDisplay .price { overflow: hidden; margin-bottom: 0; padding-bottom: 30px; border-bottom: 1px solid #cecece; font-size: 81px; font-size: 8.1rem; line-height: 1; font-family: "Museo Sans Rounded 700"; color: #00b485; }
+  .quoteDisplay strong { display: block; }
+  .quoteDisplay a { font-size: 12px; font-size: 1.2rem; font-family: "Museo Sans Rounded 500"; color: #666; white-space: nowrap; }
+  .quoteDisplay ul { margin: -30px 0 0; padding: 0; }
+  .quoteDisplay li { display: inline-block; padding: 0 10px; }
+
+  .benefits h2 a { position: relative; z-index: 1; float: left; margin-top: -23px; margin-left: 275px; font-size: 12px; font-size: 1.2rem; font-family: "Museo Sans Rounded 500"; color: #666; white-space: nowrap; }  
+  
+  .quoteDisplay .dollars { position: relative; top: 5px; font-size: 68px; font-size: 6.8rem; vertical-align: top; }
+  .quoteDisplay .cents { font-size: 57px; font-size: 5.7rem; vertical-align: top; }
+
+.excessForm { width: 430px; margin: 30px 0 35px; }  
+/* Changed 3/4/14 */
+
+  .excessForm ol { float: left; }
+  .excessForm li { display: inline-block; padding-right: 20px; }
+  .excessForm select { width: 130px; }
+   
+  .excessForm select::-ms-expand { display: none; }  
+  .excessForm [type="submit"] { float: right; margin-top: -7px; }  
+  .excessForm .help { vertical-align: bottom; }  /* Added 3/12/14 */
+
+.benefitGroup { margin: 20px 0 0; padding: 0; } /* Changed 3/7/14 */
+.benefits { width: 428px; margin: 0; }
+.benefitPackages { margin: 0; padding: 0; }
+
+  .benefitPackages:hover img { opacity: 0.5; }
+  .benefitPackages img:hover { opacity: 1; }
+  
+  .benefits h2 { font-size: 18px; font-size: 1.8rem; }
+
+  /* Changed 3/4/14 */
+  .benefits h2 { overflow: hidden; font-size: 18px; font-size: 1.8rem; }
+    .benefits h2 a { float: right; margin-top: 5px; margin-left: 0; }
+  /* Changed 3/4/14 */
+
+    .benefits h2 em { position: absolute; left: -9999px; }
+  .benefits ul { overflow: hidden; margin: 0; padding: 0; }
+    .benefits ul:hover + .helpBenefits, .benefits ul:hover + .helpBenefits { position: static; border-top: 1px solid #e34300; }
+  .benefits li { float: left; margin: 0 11px 7px 0; padding: 0; }  
+    .benefits li:hover:after { content: ''; position: relative; display: block; width: 0; height: 0; margin: 0 auto -20px; padding: 0; border: 8px solid transparent; border-top: 0; border-bottom: 8px solid #e34300; }
+    
+.benefits .helpBenefits { position: absolute; left: -9999px; width: 420px; margin: 0; padding: 5px 0 0; font-size: 14px; font-size: 1.4rem; color: #555; }  
+  .benefits h3 { overflow: hidden; margin: 0 0 3px; font-size: 13px; font-size: 1.3rem; font-family: "Museo Sans Rounded 900"; text-transform: uppercase; }
+  .helpBenefits li { position: absolute; left: -9999px; width: 100%; }
+    .benefits h3 { background: url(../files/images/backgrounds/bkg-items.png) repeat-x 0 75%; }
+      .benefits h3 span { padding-right: 5px; background: #effafe; }
+      .benefits h3 strong { float: right; padding-left: 5px; background: #effafe; font-weight: normal; }
+    .helpBenefits li:hover:after { display: none; }
+  .benefits p { margin-bottom: 5px; }
+  
+.included { position: absolute; left: -9999px; padding: 0 20px; font-size: 14px; font-size: 1.4rem; }  
+  
+  
+/* Add Ons Page - Changed/Added 2/3/14 */
+.addonContent { overflow: hidden; margin-bottom: -88px; }  
+  .addonContent .col-1 { width: 700px; /*height: 480px;*/ margin: 0; padding: 0; }
+  .addonContent .col-2 { width: 240px; min-height: 244px; padding: 0; }
+    .addonContent .col-2 input { float: right; }
+
+.addonList { float: left; list-style: outside none none; min-height: 286px; margin: 20px 0 0; padding: 0; font-size: 15px; font-size: 1.5rem; }
+  .addonList li { display: block; padding: 0 0 25px; }
+  .addonList legend { float: left; width: 210px; line-height: 1.3; }  
+  .addonList em { font-style: normal; font-size: 21px; font-size: 2.1rem; font-family: "Museo Sans Rounded 900"; color: #00abf4; }
+  .addonList ul { float: left; width: 192px; height: 50px; margin: 0; padding: 0 0 0 5px; background: url(../files/images/backgrounds/bkg-slider.png) no-repeat; }
+  .addonList select { clear: both; display: block; width: 165px; } /* Changed 2/25/14*/
+    .addonList fieldset li { position: relative; left: 0; display: inline-block; width: 90px; vertical-align: top; }
+  .addonList label { overflow: hidden; position: relative; display: inline-block; width: 40px; height: 40px; margin: 5px 0 0; background: url(../files/images/backgrounds/bkg-delete.png) no-repeat; vertical-align: middle; cursor: pointer; text-indent: -100px; }
+  
+      .addonList .addCover li:first-child label, .addonList .addSim li:first-child label, .addonList .addPass li:first-child label, .addonList .addCancel li:first-child label {  z-index: 1; margin-top: -5px; margin-left: -6px; -webkit-transition: opacity 0.5s 0; transition: opacity 0.5s 0; }  
+      .ie8 .addonList .addCover li:first-child label, .ie8 .addonList .addSim li:first-child label, .ie8 .addonList .addPass li:first-child label, .ie8 .addonList .addCancel li:first-child label, .ie9 .addonList .addCover li:first-child label, .ie9 .addonList .addSim li:first-child label, .ie9 .addonList .addPass li:first-child label, .ie9 .addonList .addCancel li:first-child label { left: auto; }        
+  
+    .addonList .addCover li:first-child label { width: 69px; height: 73px; background-image: url(../files/images/backgrounds/bkg-addon-cover.png); }
+    .addonList .addSim li:first-child label { width: 46px; height: 66px; background-image: url(../files/images/backgrounds/bkg-addon-sim.png); }
+    .addonList .addPass li:first-child label { width: 66px; height: 70px; margin-left: -20px; background-image: url(../files/images/backgrounds/bkg-addon-pass.png); }  
+    .addonList .addCancel li:first-child label { width: 63px; height: 69px; margin-left: -11px; background-image: url(../files/images/backgrounds/bkg-addon-cancel.png); }      
+          
+    .addonList ul li:first-child { margin-right: -93px; }
+    .addonList label + [type="radio"] { position: relative; z-index: 10; }
+  
+    .addonList li:first-child.selected { left: 300px; -webkit-transition: left 0.5s; transition: left 0.5s; }  
+    .addonList li:first-child.selected > label { opacity: 0; -webkit-transition: opacity 0.3s 0.2s; transition: opacity 0.3s 0.2s; }  
+      .ie8 .addonList li:first-child.selected, .ie9 .addonList li:first-child.selected { left: auto; }    
+      .ie8 .addonList li:first-child.selected > label, .ie9 .addonList li:first-child.selected > label { left: -9999px; }
+  
+.hugoBlock { position: relative; float: right; width: 363px; height: 426px; margin-top: -310px; margin-right: 20px; }
+  .hugoBlock img { position: absolute; bottom: 0; left: 65px; opacity: 0; -webkit-transition: opacity 0.5s; transition: opacity 0.5s; }
+    .ie8 .hugoBlock img, .ie9 .hugoBlock img { left: -9999px; }
+
+  .hugoBlock .showHugo { opacity: 1; -webkit-transition: opacity 0.5s; transition: opacity 0.5s; }
+    .ie8 .hugoBlock .showHugo, .ie9 .hugoBlock .showHugo { left: auto; }
+
+.addonTable { width: 100%; margin-bottom: 20px; font-family: "Museo Sans Rounded 700"; color: #676767; }
+    .addonTable thead th { padding: 10px 0; font-size: 21px; font-size: 2.1rem; line-height: 1; font-family: "Museo Sans Rounded 900"; color: #00abf4; }
+    .addonTable tbody tr { display: none; }
+      .addonTable tr.base, .addonTable tr.total { display: table-row; }    
+    .addonTable tbody th { width: 50%; padding: 10px 0; font-weight: normal; }
+  .addonTable td { width: 50%; padding: 10px 0; text-align: right; }
+  .base th { text-transform: uppercase; }
+  .total th { border-top: 1px solid #cecece; font-family: "Museo Sans Rounded 900"; text-transform: uppercase; }
+  .total td { border-top: 1px solid #cecece; font-size: 35px; font-size: 3.5rem; font-family: "Museo Sans Rounded 700"; color: #00b485; }
+  .total span { position: relative; top: 3px; font-size: 21px; font-size: 2.1rem; vertical-align: top; }
+  
+  .addonTable .buttonWell { padding-top: 50px; text-align: right; }  
+  
+  .addonTable .showAddOn { display: table-row; }  
+  
+/* Changed/Added 2/10/14 */
+.help, .emchelp { overflow: hidden; display: inline-block; width: 24px; height: 24px; margin: 0 0 0 2px; padding: 0; vertical-align: top; }
+.emchelp { position: relative; top: 5px; vertical-align: middle; }
+  .help img, .emchelp img { position: relative; vertical-align: top; }
+  .emchelp img { top: 0; }
+    .help:hover img, .help:focus img, .help:active img, .emchelp:hover img, .emchelp:focus img, .emchelp:active img { left: -24px; }
+/* Changed/Added 2/10/14 */
+
+.remove { overflow: hidden; position: absolute; display: inline-block; width: 20px; height: 20px; margin: -2px 0 0 -30px; padding: 0; background: transparent url(../files/images/buttons/btn-remove.png) no-repeat; background-size: 20px auto; font-size: 0; line-height: 0; text-indent: -250px; vertical-align: top; }
+  
+/* EMC Page */
+.medicalContainer { background: url(../files/images/backgrounds/bkg-container-emc.png) no-repeat center 100%; }
+
+.medicalContent { overflow: hidden; position: relative; z-index: 5; width: 640px; margin: 0 auto -78px; padding: 0 0 125px 360px; background: url(../files/images/content/hugo-med.png) no-repeat 0 100%; }
+  .medicalContent .col-1 { width: 640px; }
+  .medicalContent h1 { width: 1000px; margin-left: -350px; font-size: 61px; font-size: 6.1rem; } /* Added Changed - 2/10/14 */
+
+.information { width: 640px; }
+  .information ol { margin: 0; padding: 0; }
+    .information ol > li { overflow: hidden; width: 350px; padding: 0 45% 0 0; }  
+
+  .information label { display: block; width: 100%; margin-bottom: 10px; padding-top: 2px; padding-right: 15px; cursor: pointer; }  
+  .information legend { width: 100%; margin-bottom: 10px; color: #525558; }    
+  .information .inputList { float: right; margin-top: -55px; margin-right: -52% }
+  
+    .information .inputList li { display: inline; padding: 0 25px 0 0; background: none; }
+    .information fieldset label, .inputList label { display: inline; font-weight: normal; vertical-align: middle; }
+  .information fieldset { margin-bottom: 20px; }
+  
+  .information .wrap { width: 500px; margin: 0; padding: 12px 0 4px; }  
+  
+  .information .buttonWell { width: 100px; margin-top: -30px; margin-left: 525px; text-align: right; }
+  .emcWell { position: relative; top: -276px; }
+  
+  #healix .wrap { padding-left: 0; }
+  
+.pre-existing2 { margin-top: 30px; font-size: 13px; font-size: 1.3rem; }
+  .pre-existing2 th:first-child { display: none; }
+    .pre-existing2 label, .pre-existing2 .dob label, .pre-existing2 .age label { position: absolute; left: -9999px; }
+  .pre-existing2 td { padding: 5px 5px 5px 0; }
+  
+    .pre-existing2 .title input { width: 50px; }  
+    .pre-existing2 .title select { width: 80px; padding-top: 6px; background-position: 97% 1px; }    
+      .pre-existing2 .firstName input, .pre-existing2 .surName input { width: 175px; }
+    .pre-existing2 .dob input { width: 100px; }
+    .pre-existing2 .age input { width: 40px; }  
+
+  /* Added 3/6/14 */  
+    .pre-existing th { padding-left: 35px; font-weight: normal; }  
+    .pre-existing th:first-child { width: 350px !important; padding-left: 0; }
+    .pre-existing ul { margin: 10px 0 0 15px; padding: 0; }  
+    .pre-existing li { overflow: visible; display: list-item !important; list-style: disc outside none; padding: 0 0 10px; }
+    .pre-existing input { margin-left: 10px; }  
+    .pre-existing label { font-weight: normal; }
+  /* Added 3/6/14 */  
+  
+  input.displayAge { width: 45px; background: #fff; padding: 3px 0; border: 2px solid #fff; cursor: default; color: #58595b; }      
+  
+  .pre-existing2 .condition { padding-top: 20px; padding-left: 2px; }
+  .condition input { float: left; width: 30px; }  
+  .condition label { position: static; float: left; width: 530px; margin: 0; }  
+  
+#travelerID { width: 185px; }  
+
+
+/* Traveller Info Page */
+.travellerContainer { padding-bottom: 1px; background: url(../files/images/backgrounds/bkg-container-traveller.png) no-repeat center 100%; }
+
+.travellerContent { overflow: hidden; min-height: 500px; padding-bottom: 75px; }
+  .travellerContent .col-1 { width: 625px; min-height: 200px; }  
+  .travellerContent .col-2 { width: 300px; min-height: 200px; }
+
+.tableBox { width: 100%; margin: 0 0 20px; }
+  .tableBox label { position: absolute; left: -9999px; }
+  .tableBox input { vertical-align: middle; }
+  .tableBox legend, .fieldBlock legend, legend.subheader, strong.subheader { margin-bottom: 10px; background: transparent none; font-size: 21px; font-size: 2.1rem; font-family: "Museo Sans Rounded 900"; color: #00abf4; }
+    .tableBox legend span { padding-left: 5px; font-size: 15px; font-size: 1.5rem; font-family: "Museo Sans Rounded 500"; color: #666; }
+  
+  .tableBox li { display: inline; padding: 10px 10px 5px 0; font-size: 15px; font-size: 1.5rem; text-align: left; vertical-align: top; }  
+  
+  .tableBox .title, .title select { width: 85px; vertical-align: top; }
+  .title select { background-position: 97% 2px; }
+
+    .name input, .surname input { width: 147px; }
+
+/* Added 2/10/14 */
+    .dob input, .dob span { width: 90px; }  
+    .dob label, .dob strong { position: static; display: inline; padding-right: 3px; }  
+    .tableBox .dob strong {  margin-left: 45px; font-weight: normal; }  
+    .tableBox .dob strong:after { content: ":"; }
+/* Added 2/10/14 */     
+   
+.fieldBlock { margin: 50px 0 0; padding: 0; }
+  .fieldBlock ol { margin: 0; padding: 0; }   
+  .fieldBlock li { display: inline-block; padding: 0 15px 20px 0; } /* Changed 2/10/14 */
+  .fieldBlock label { position: absolute; left: -9999px; }
+  .fieldBlock input { width: 275px; }
+  .fieldBlock select { vertical-align: middle; }
+
+.purchaseForm .checkHolder { overflow: auto; height: 150px; margin: 0 0 25px; padding: 5px 0; font-size: 13px; font-size: 1.3rem; line-height: 1.4; }
+  .checkHolder li { overflow: hidden; padding: 0 35px 10px 0; }
+  .checkHolder p { margin: 0 0 5px 0; }  
+
+  
+/* Purchase */
+.purchaseContainer { padding-bottom: 28px; background: url(../files/images/backgrounds/bkg-container-purchase.png) no-repeat center 100%; }
+
+.purchaseContent { overflow: hidden; margin-bottom: -107px; }
+  .purchaseContent .col-1 { width: 440px; min-height: 200px; padding-left: 60px; }  
+.hugoPurchase { margin-top: -15px; } /* Changed 6/27/14 */
+  .purchaseContent .col-2 { width: 485px; min-height: 200px; }
+  
+.priceTable { margin: 0 0 0 -60px; width: 475px; font-size: 16px; font-size: 1.6rem; line-height: 1.2; font-family: "Museo Sans Rounded 700"; border-collapse: separate; }
+
+  .priceTable th, .priceTable td { font-weight: normal; border-top: 1px solid #cecece; vertical-align: top; }  
+  .priceTable th { padding: 15px 0 10px 60px; }  
+    .priceTable th em { display: inline-block; padding: 5px 0; font-style: normal; font-family: "Museo Sans Rounded 500"; }
+  .priceTable td { padding: 15px 11px 10px 0; text-align: right; }
+    .priceTable tr:first-child th, .priceTable tr:first-child td { padding-top: 5px; border-top: 0; }
+    .priceTable th img { float: left; position: relative; top: -4px; margin: 0 0 0 -60px; vertical-align: top; }
+  .priceTable .base-price th { text-transform: uppercase;  }
+  .priceTable .base-price td { }
+  
+    .priceTable .total th, .priceTable .total td { padding-top: 15px; line-height: 1; font-family: "Museo Sans Rounded 900"; text-transform: uppercase; vertical-align: middle; }
+    .priceTable .total td { font-size: 20px; font-size: 2.0rem; font-family: "Museo Sans Rounded 700"; vertical-align: top; }  
+    .priceTable .total span { font-size: 35px; font-size: 3.5rem; }  
+
+/* Payment */
+.paymentBlock { overflow: hidden; width: 435px; margin: 0; padding: 20px 20px 10px; background: #fff; border: 1px solid #f4f5f5; border-radius: 20px; box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1); }
+  .paymentBlock label { position: absolute; left: -9999px; }
+  .paymentBlock ol { list-style-type: none; margin: 0; padding: 0; }
+  .paymentBlock li { padding-top: 15px; }
+    .paymentBlock li:first-child { padding-top: 0; }
+
+.discountArea { margin-bottom: 25px; padding: 10px 20px 5px; border-radius: 10px; } /* Added 6/27/14 */ 
+    
+.credit { list-style-type: none; margin: 0 10px 0 0; padding: 0; vertical-align: middle; }
+  .credit li { display: inline; margin: 10px 5px 0 0; padding: 0; background: none; }
+select.credit { width: 190px; }
+
+.date { overflow: visible; display: inline; margin-top: -3px; vertical-align: top; }
+  .date legend { margin-bottom: 3px; }
+  .date select { width: 95px; margin-right: 10px; background-position: 96% 2px; }   
+
+#cardType { float: left; width: 170px; margin-right: 10px; }
+#securityCode { width: 100px; }  
+#cardNumber { width: 420px; }
+
+  .purchaseContent .buttonWell { margin-top: -130px; margin-right: 35px; }
+  
+  input.buy { background-image: url(../files/images/buttons/btn-purchase.png); }
+  
+  
+/*
+  Modal Window
+-----------------------------*/
+.fancybox-skin { margin: 0 auto; background: #fff; border-radius: 11px; }
+
+.modal { display: none; }
+
+  .modal .benefits { width: 940px; min-height: 200px; margin: 0; padding: 30px 20px 0 40px; }
+  .modal .benefits:hover img { opacity: 1; }
+    .modal .benefits h2 { margin-bottom: 15px; }
+    .modal .benefits ul { overflow: auto; width: auto; height: 500px; }
+    .modal .benefits li { display: inline-block; width: 350px; padding: 0 0 7px 65px; }
+    .modal .benefits img { float: left; margin-left: -65px; }
+    .modal .benefits li:nth-child(odd) { padding-right: 50px; }  
+      .modal .benefits li:hover:after { display: none; }
+      
+      .modal .benefits h3 span, .modal .benefits h3 strong { background: #fff; } 
+
+
+
+.fancybox-close { overflow: hidden; float: right; display: block; width: 24px; height: 24px; margin: 40px 49px 0 0; padding: 0; background: url(../files/images/buttons/btn-selectphoto.png) no-repeat; text-indent: -100px; }  
+  .fancybox-close:hover, .fancybox-close:focus, .fancybox-close:active { background-position: -24px 0; }
+
+.fancybox-next, .fancybox-prev { display: none; }  
+
+
+/*
+  CSS Transitions
+-----------------------------*/  
+  .quoteContent .fadeOut { opacity: 0 !important; -webkit-transition: opacity 1s; transition: opacity 1s; }
+  .quoteContent .fadeIn { opacity: 1 !important; -webkit-transition: opacity 1s; transition: opacity 1s; }
+    .ie8 .quoteContent .fadeOut, .ie9 .quoteContent .fadeOut { left: -9999px !important; }
+    .ie8 .quoteContent .fadeIn, .ie9 .quoteContent .fadeIn { left: auto !important; }
+
+
+/*
+  IE8 Fixes - Added 4/3/14
+-----------------------------*/
+  .ie8 .medicalContent input[type="radio"] { position: static; }
+  .ie8 input[type="checkbox"] { position: static; margin-bottom: -30px !important; }  
+  .ie8 .medicalContent input[type="radio"] + label:before, .ie8 input[type="checkbox"] + label:before { display: none; }
+  .ie8 .remove { background-image: url(../files/images/buttons/btn-remove-legacy.png); background-position: 0 -1px; }
+  .ie8 .pre-existing label { margin: -18px 0 0 32px; }
+  
+/*
+  Tool Tips
+-----------------------------*/  
+.qtip { margin: -65px 0 0 15px; background: transparent none; border: 0; }
+
+.qtip-content { width: 345px; margin: 0; padding: 20px 39px 20px 20px; background: #fff; border: 1px solid #f4f5f5; border-radius: 10px; box-shadow: -4px 0 15px 0 rgba(0,0,0,0.1); font-size: 15px; font-size: 1.5rem; line-height: 1.4; }
+  .qtip-content .scrollableArea { overflow: auto !important; max-height: 300px; margin: 0; padding-right: 15px; }
+
+  .qtip-content p, .qtip-content ul, .qtip-content ol { margin: 0 0 10px; }
+  .qtip-content ul { list-style-type: disc; padding-left: 20px; }
+  .qtip-content h3 { margin: 0 0 12px; font-family: "Museo Sans Rounded 900";  }
+  .qtip-content h4 { margin: 0 0 7px; }  
+  
+  .qtip:before { content: ''; position: relative; top: 44px; left: -8px; z-index: 2; display: block; width: 0; height: 0; border: 10px solid transparent; border-right: 10px solid #fff; border-left: 0; }
+
+  .qtip-close { overflow: hidden; display: block; width: 24px; height: 24px; margin: 40px -110px 0 0; padding: 0; background: url(../files/images/buttons/btn-selectphoto.png) no-repeat !important; border: 0; border-radius: 12px; text-decoration: none; /*text-indent: -100px !important;*/ }
+  
+.ui-icon-close { font-size: 0 !important; line-height: 0 !important; }  
+  
+.helpWindow { position: absolute; left: -9999px; top: 0; height: 0; }   
+
+/* Added 3/12/14 */
+.excessHelp { margin: 3px 0 0 -160px; }
+  .excessHelp:before { top: 1px; left: 138px; border: 10px solid transparent; border-bottom: 10px solid #fff; border-top: 0; }
+  .excessHelp .qtip-content { width: 220px; }
+  .excessHelp .qtip-close { margin-right: 17px; }
+/* Added 3/12/14 */
+
+
+/*
+  Footer
+-----------------------------*/  
+.siteFooter { position: static !important; padding: 90px 0 0; }
+
+
+
+/* Scrollbars */
+.purchaseForm .checkHolder::-webkit-scrollbar {
+    height: 16px;
+    overflow: visible;
+    width: 16px;
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-button {
+    height: 0;
+    width: 0
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 4px;
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track:horizontal {
+    border-width: 4px 0 0
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track:horizontal:hover {
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track:active {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px 0 0 rgba(0, 0, 0, .07)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track:horizontal:active {
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+
+
+.purchaseForm .checkHolder::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px 1px 1px 6px;
+    min-height: 28px;
+    padding: 100px 0 0;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-thumb:horizontal {
+    border-width: 6px 1px 1px;
+    padding: 0 0 0 100px;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .07)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-corner {
+    background: transparent
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track-piece {
+    background-clip: padding-box;
+    background-color: #f5f5f5;
+    border: solid #fff;
+    border-width: 0 0 0 0px;
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px 0 0 rgba(0, 0, 0, .07)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-track-piece:horizontal {
+    border-width: 3px 0 0;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 1px
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-thumb:horizontal {
+    border-width: 5px 1px 1px
+}
+
+.purchaseForm .checkHolder::-webkit-scrollbar-corner {
+    background-clip: padding-box;
+    background-color: #f5f5f5;
+    border: solid #fff;
+    border-width: 3px 0 0 3px;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .14)
+}
+
+.disclaimer { margin: 0 auto !important; } /* Added 5/14/14 */
+
+/*
+  Mobile View
+--------------------------------------------*/
+@media only screen and (max-width: 604px) {
+
+/*
+   Initialization/Defaults
+--------------------------------------------*/
+
+/* --- Header Text --- */
+h1 { margin-bottom: 25px; text-align: center; font-size: 40px; font-size: 4.0rem; }
+  
+  input[type="submit"] { float: right; }
+    
+/*
+  Header
+-----------------------------*/
+.siteHeader { height: 38px; }
+
+/* Site Navigation */
+  .siteHeader nav { overflow: visible; }
+.siteNavigation { display: none; }
+
+
+/* Breadcrumbs */
+.breadcrumbs { display: none; }    
+
+.priceList { position: static; margin: 0; padding: 0; }
+  .priceList:hover .priceSummary, .priceList:focus .priceSummary { width: auto; height: auto; margin: 0 0 15px; padding: 15px 0 0; }
+
+/* Price Recap */
+.priceRecap { float: none; margin: 0; width: auto; height: auto; padding: 0 20px; background: transparent none; border-radius: 0; }
+
+  .priceRecap p { float: none; width: auto; margin: 0 0 10px; padding: 0; }
+  .priceRecap a { display: inline-block; margin-bottom: 20px; }
+  .priceRecap em { display: block; margin-bottom: 10px; font-size: 21px; font-size: 2.1rem; text-transform: none; }  
+  .priceRecap span { overflow: visible; display: block; width: auto; height: auto; line-height: 1.3; white-space: normal; }
+  .priceRecap strong { display: none; }
+    .priceRecap strong.subheader { display: block; margin-bottom: 3px; text-align: left; }
+  
+.editLink { margin-top: 10px; }
+
+/* Price Summary */
+.priceSummary { float: none; clear: both; overflow: visible; width: auto; height: auto; margin: 0 0 15px; padding: 0; background: transparent none; border: 0; border-radius: 0; box-shadow: none; color: #676767; }
+.priceList:hover .priceSummary, .priceList:focus .priceSummary { padding: 0; }
+  .priceSummary:before { display: none; }  
+  
+  .priceSummary strong { float: none; display: block; width: auto; margin: 0 0 15px; cursor: default; }
+  .priceSummary dl { margin: 0; padding: 0; font-size: 15px; font-size: 1.5rem; line-height: 1.2; }
+  .priceSummary dt { padding: 0 0 5px; font-family: "Museo Sans Rounded 700"; }
+  .priceSummary dd { margin: 0 0 13px; padding: 0 0 10px; border-bottom: 1px solid #cecece; font-family: "Museo Sans Rounded 700"; }
+  
+  dt.total { font-family: "Museo Sans Rounded 900"; }
+  dd.total { display: block; margin-bottom: 0; padding-bottom: 0; border: 0; font-size: 35px; font-size: 3.5rem; font-family: "Museo Sans Rounded 900"; }
+  dd.total span { display: inline-block; width: auto; height: auto; border: 0; font-size: 17px; font-size: 1.7rem; }
+
+/*
+  Content
+-----------------------------*/
+.content { width: auto; padding: 0; min-height: 0; }
+
+/* Columns */
+.col-1, .col-2 { width: auto; float: none; }
+
+
+/*
+  Footer
+-----------------------------*/  
+.siteFooter { width: 100%; min-width: 0; height: auto; min-height: 140px; margin: -170px auto 0; }
+
+.disclaimer { width: auto; margin-bottom: 20px; }
+
+/*
+  Additional Form Handling
+-----------------------------*/
+.purchaseForm ol > li { display: block; }
+
+/* Quote Page - Changed/Added 1/31/14 */
+  .quoteContent .col-1 { display: none; }
+  .quoteContent .col-2 { width: auto !important; min-height: 244px; margin-top: 0; padding: 435px 0 0; background-position: 60% 0; background-size: 640px auto; }
+.quoteContent .col-2.noPlan { background-size: auto 100%; }
+.quoteContent .col-2.noPlan .quoteDisplay { width: 100% !important; }
+
+    .quoteContent form .quoteGroup { top: 180px; width: 100%; }
+
+    .quoteContent form .benefitGroup { position: absolute; left: -9999px; margin-top: 0 !important; opacity: 1; }  
+    .quoteContent form:first-child .benefitGroup { position: static; }    
+
+.quoteDisplay { text-align: center; }
+  
+  .quoteDisplay h2, .quoteDisplay strong { text-align: center; }
+  .quoteDisplay h2 { font-size: 19px; font-size: 1.9rem; }  
+  
+  /* Changed 3/4/14 */
+  .quoteDisplay .price { height: auto; padding-bottom: 45px; font-size: 65px; font-size: 6.5rem; }
+  .quoteDisplay ul { margin-top: -35px; margin-bottom: 30px; }
+  .quoteDisplay li { padding: 0 5px; }
+  .quoteDisplay .dollars { font-size: 50px; font-size: 5.0rem; }
+  .quoteDisplay .cents { font-size: 41px; font-size: 4.1rem; }
+  /* Changed 3/4/14 */
+
+.excessForm { width: auto; margin: 0 20px 10px; text-align: center; }  
+  .excessForm ol { float: none; margin-bottom: 20px; }
+  .excessForm li { display: inline-block !important; width: 45%; text-align: left; }
+    .excessForm li:last-child { padding-right: 0; }
+  .excessForm select { width: 100%; max-width: none; }
+    
+  .excessForm [type="submit"] { float: right; margin-right: 15px; }
+
+.benefits { display: block; width: auto; margin: 0 0 190px; padding: 0 20px;  }
+  .benefits .helpBenefits { position: static; width: auto; }
+
+  .benefitPackages img { display: none; }
+  
+  .benefits h2 { font-size: 18px; font-size: 1.8rem; }
+    .benefits h2 a { display: none; }
+  .helpBenefits li { position: static; }
+    .benefits h3, .benefits h3 span, .benefits h3 strong { background: transparent none; }
+    
+  .included { position: static; }
+  .benefitsHide { overflow: hidden; position: absolute; clip: rect(0,0,0,0); height: 0; /*left: -1200px;*/}  /* Changed 3/31/14 */
+  
+  
+/* Add Ons Page */
+.addonContent { overflow: hidden; margin-bottom: 20px; }  
+  .addonContent .col-1 { overflow: hidden; width: auto; height: auto; margin-bottom: 30px; padding: 0 20px; }
+  .addonContent .col-2 { overflow: hidden; width: auto; min-height: 0; margin: 0 0 170px; padding: 0 20px 15px; } /* Changed 3/31/14 */
+
+  .addonList select { float: left; clear: both; } /* Added 2/3/14 */
+
+  .addonList ul { margin-top: 10px; margin-left: 10px; }
+  
+    .addonList li:first-child.selected { left: 700px; }  
+    .addonList li:first-child.selected > label { opacity: 1; }  
+
+  
+.hugoBlock { display: none; }
+
+.addonTable { width: 100%; margin-bottom: 30px; padding: 20px 30px 10px; background: #fff; border: 4px solid #acacac; border-radius: 13px; border-collapse: separate; font-size: 22px; font-size: 2.2rem; }
+  .addonTable th, .addonTable td { padding: 20px 0 !important; border-bottom: 1px solid #cecece; }
+    
+  .addonTable .total th { padding-top: 20px; border: 0; }
+  .addonTable .total td { padding-top: 15px; border: 0; font-size: 27px; font-size: 2.7rem; }
+  .total span { position: relative; top: 3px; font-size: 20px; font-size: 2.0rem; }
+  
+.remove { width: 25px; height: 25px; margin-top: -2px; margin-left: -43px; background-size: 25px auto; }  
+
+  
+/* EMC Page */
+.medicalContainer { background: none; }
+
+.medicalContent { width: auto; margin-bottom: 170px; padding: 0 20px 20px; background: none; }
+  .medicalContent .col-1 { width: auto; }
+  .medicalContent form { display: none; }
+  .medicalContent h1 { width: auto; margin-left: 0; font-size: 40px; font-size; 4.0rem; }  
+
+
+/* Traveller Info Page */
+.travellerContainer { width: auto; margin-bottom: 170px; padding: 0 20px 85px; background: url(../files/images/backgrounds/bkg-container-traveller.png) no-repeat -190px 100%; }
+
+.travellerContent { min-height: 0; }
+  .travellerContent .col-1, .travellerContent .col-2 { width: auto; min-height: 0; }
+  .travellerContent .col-1 { margin-bottom: 40px; }  
+  .travellerContent .buttonWell { overflow: hidden; padding-bottom: 20px; }
+  
+  .tableBox .title, .title select { width: 75%; }
+  .surname input, .name input  { width: 75%; }
+  .dob input { width: 60%; }
+
+  /* Added/Changed 2/10/14 */
+  .tableBox .dob { display: block; margin: 3px 0 0; }
+  .tableBox .dob strong { margin-left: 0; }
+  /* Added/Changed 2/10/14 */
+
+    .fieldBlock li { display: block; padding: 0 0 15px; }
+  .fieldBlock input { width: 75%; }
+
+.purchaseForm .checkHolder { overflow: auto; height: auto; }
+  .checkHolder li { padding: 0 0 10px 0; }
+
+  
+/* Purchase */
+.purchaseContainer { margin-bottom: 170px; padding-bottom: 175px; background: url(../files/images/backgrounds/bkg-container-purchase.png) no-repeat -80px 100%; }
+  .purchaseContent .col-1, .purchaseContent .col-2 { width: auto; min-height: 0; margin: 0 0 50px; padding: 0 20px; }
+.purchaseContent .buttonWell { overflow: hidden; padding-bottom: 15px; } /* Changed 3/31/14 */    
+.hugoPurchase { display: none; }  
+
+.paymentBlock { width: auto; }
+  
+.priceTable { width: 100%; margin: 0 0; }
+  .priceTable th { padding-left: 60px; }
+  .priceTable th img { float: left; margin-left: -60px; }
+  
+.priceTable .total th { padding-left: 10px; }  
+
+#cardType { float: none; clear: both; margin-bottom: 10px; }
+#cardNumber { margin-top: 10px; width: 95%; }
+
+.securePayment img {  max-width: 100%; }
+
+  .purchaseContent .buttonWell { margin: 30px 0 0; }
+  
+/*
+  Modal Window - Added 1/31/14
+-----------------------------*/    
+.fancybox-overlay { position: static !important; display: none !important; }
+.fancybox-lock { overflow: auto !important; }
+  .fancybox-lock body { overflow: auto !important; margin: 0 !important }
+.fancybox-margin { margin: 0 !important; }
+
+
+/*
+  CSS Transitions - Changed/Added 1/13/14
+-----------------------------*/  
+  .quoteContent .benefitGroup.fadeOut { position: absolute !important; left: -9999px; top: 0; }
+  .quoteContent .benefitGroup.fadeIn { position: static !important; }
+    .ie8 .quoteContent .benefitGroup.fadeOut, .ie9 .quoteContent .benefitGroup.fadeOut { left: -9999px !important; }
+    .ie8 .quoteContent .benefitGroup.fadeIn, .ie9 .quoteContent .benefitGroup.fadeIn { left: auto !important; }
+  
+/*
+  Tool Tips
+-----------------------------*/  
+.qtip { margin: 3px 0 0 -170px; }
+.excessHelp { margin-left: -245px; } /* Added 3/12/14 */
+
+.qtip-content, .excessHelp .qtip-content { width: 225px; } /* Changed 3/12/14 */
+  .qtip-content .scrollableArea { overflow: auto !important; max-height: 300px; margin: 0; }
+  
+  .qtip:before, .excessHelp:before { display: none; } /* Changed 3/12/14 */
+
+  .qtip-close {  margin-top: 20px; margin-right: 12px; }
+
+}
+
+/* Extra Break Points - Added 2/3/14 */
+@media only screen and (max-width: 510px) {
+  .addonList select { margin-top: -45px; }  
+}
+
+@media only screen and (max-width: 471px) {
+  .addonList select { margin-top: 25px; }  
+}
+
+.ajaxmodal { margin-right: 20px; padding: 20px 0 0 20px; }
+
+div.ajaxmodal div.scrollableArea {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 340px;
+    margin: 0;
+    overflow: auto;
+    padding: 10px 10px 0 0;
+    width: 430px;
+}
+
+div.confirmRow {
+    background-color: red;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 7px;
+    width: 426px;
+}
+
+iframe.helixIframe { width: 650px; height: 500px; border: 0; }

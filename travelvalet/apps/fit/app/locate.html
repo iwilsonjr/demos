@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cover More FIT App - Locate</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/main.css" />
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places,geocoder&key=AIzaSyBAKg9FWizD5Rh4njG0eQVUPglg7LyYi-4&sensor=true"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble.js"></script>
+</head>
+
+<body class="locate">
+
+    <!--Container Wrapper-->	
+	<div class="containerWrapper" data-role="page">    
+    
+        <!--Menu Slider-->    
+    	<div class="menuSlider" id="menuSlider">
+        
+            <!--Container-->      
+            <div class="container">
+            
+                <!--Site Header--> 
+                <header>        
+                    <div class="siteHeader">
+                        <p></p>
+						<h1><span class="fitLink"><em>Fit Finder</em> Find a Gym Near You</span></h1> 
+                        <a href="#siteNav" class="menuTab" id="menu">Go To Menu</a>                                                      
+                    </div>
+                </header>
+                <!--Site Header--> 
+                
+                <!--Location Form-->
+                <div class="locationForm">
+                    <form name="locationForm" id="locationForm" method="get">
+                        <label for="location">Search</label>
+                        <input type="text" name="location" id="location" value="" />
+                        <input type="submit" name="locate" id="locate" value="Locate" />
+                    </form>
+                </div>
+                <!--Location Form-->                                            
+                
+                <!--Content-->            
+                <div class="content" id="locationPlaces"></div>
+                <!--Content-->         
+                         
+            </div>
+            <!--Container-->          
+            
+            <!--App Navigation-->      
+            <div class="container navBlock" id="siteNav">
+               
+                <nav>
+                    <h2 class="hide">Menu</h2>           
+                    <ul class="navigation">
+                        <li><a href="workout.html"><em>Begin</em> Find the Perfect Travel Workout</a></li>
+                        <li><a href="locate.html"><em>Fit Finder</em> Find a Gym Near You</a></li>                              
+                    </ul>  
+                </nav>
+                
+               <div class="menuNavigation">
+               		<div class="menuFooter">
+               		<img src="files/images/logos/logo-travel-valet-2x.png" alt="Travel Valet" width="240" height="42" />
+               		</div>
+               	</div>
+
+              <!--
+ <div class="apps">
+                    <h2>More Apps From Cover More:</h2>
+                    <ul>
+                        <li><a href="#"><img src="files/images/logos/logo-checklist.png" width="57" height="57" alt="Traveller Checklist" />Traveller Checklist</a></li>
+                        <li><a href="#"><img src="files/images/logos/logo-global.png" width="57" height="57" alt="Global 000" />Global 000</a></li>
+                        <li><a href="#"><img src="files/images/logos/logo-global.png" width="57" height="57" alt="Calm" />Calm</a></li>
+                    </ul>
+               </div>
+-->
+               
+              <!--
+<footer data-role="footer">
+                  <div class="siteFooter">
+                      <p>Brought to you by <img src="files/images/logos/logo-covermore_footer.png" width="94" height="14" alt="Cover-More" /></p>
+                  </div>
+              </footer> 
+-->    
+                         
+            </div>
+            <!--App Navigation-->                          
+
+        </div>
+        <!--Menu Slider-->
+    
+    		<footer>
+	    	<a href="#" target="_blank">
+	    		<span>Brought to you by</span>
+	    		<img src="files/images/logos/logo-customer-care-2x.png" alt="CustomerCare Medical Assistance" width="144" height="23" />
+	    	</a>
+	    </footer>
+            
+	</div>          
+    <!--Container Wrapper-->	
+        
+    <!--JavaScript Calls-->
+	<script src="library/jquery-1.7.2.min.js"></script>     
+	<script src="library/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/utility.js"></script> 
+	<script src="js/location.js"></script>     
+    <!--JavaScript Calls-->
+    
+</body>
+
+</html>

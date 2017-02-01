@@ -1,0 +1,121 @@
+/******** CFMS Styling ************/
+
+#auspostSurveyModal .overlay, #auspostSurveyWrapper .overlay{
+	background: #000;
+	height: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: 9999;
+    filter: alpha(opacity = 50);
+	opacity: .5;
+}
+#allegianceSurveyWrapper{
+    left: 50%;
+    margin-left: -280px;
+    position: fixed;
+    top: 10%;
+    z-index: 99999;
+    background-color: #fff;
+}
+
+#auspostSurveyModal .off-screen {
+	position: fixed;
+	left: 999em;
+}
+
+#allegianceSurveyWrapper.mobile-device{
+    left: 10px;
+    margin-left: 0;
+    top: 20px;
+}
+#allegianceSurveyWrapper.mobile-device #allegianceSurveyClose{
+	right: 10px;
+	top: 10px;
+}
+#auspostSurveyWrapper #allegianceSurveyClose{
+	width:19px;
+	height:19px;
+	position: absolute;
+	right: 10px;
+	display: block;
+	top: 10px;
+	cursor:pointer;
+}
+#auspostSurveyWrapper #allegianceSurveyClose:Before{
+	content: 'x';
+}
+#auspostSurveyWrapper iframe{
+	border: 0;
+}
+#auspostSurveyWrapper iframe html, #auspostSurveyWrapper iframe body{
+	overflow: auto;
+}
+#auspostSurveyModal .modal{
+	z-index: 99999;
+	background-color: #ffffff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	width: 560px;
+	margin-left: -280px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: none;
+	padding: 0;
+	position: fixed;
+	left: 50%;
+	top: 10%;
+}
+
+#auspostSurveyModal .modal-header{
+	background-color: #fbf8f1;
+	min-height: 61px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #ebeaea;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+#auspostSurveyModal .modal-header h2{
+	margin: 7px 0 0 0;
+	line-height: normal;
+}
+#auspostSurveyModal P{
+	margin: 0;
+	color: #807370;
+	font-size: 16px;
+	padding: 0;
+	font-family: 'letter_one',Arial;
+}
+#auspostSurveyModal button{
+	margin-left: 15px;
+	font-family: "letter_oneBold",Arial,sans-serif;
+	display: inline;
+	padding: 6px 15px;
+	line-height: 20px;
+	border: 0;
+}
+#auspostSurveyModal hr{
+	border-top: 1px solid #e2dfda;	
+}
+#auspostSurveyModal .modal-header .survey-logo{
+	width: 40px;
+	margin-right: 15px;
+	float: left;
+}
+#auspostSurveyModal .modal .modal-body{
+	padding: 15px 20px;
+}
+
+#auspostSurveyModal .modal-body .pull-right {
+	float: right;
+}
+/******** CFMS Styling ************/

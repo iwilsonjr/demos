@@ -1,0 +1,531 @@
+/*
+
+Cover-More/youGo Main Style Sheet - CDG Interactive, Inc.
+--------------------------------------------*/
+
+/*
+
+Custom Fonts Initialization
+--------------------------------------------*/
+@font-face {
+    font-family: 'Museo Sans Rounded 900';
+    src: url('type/museosansrounded-900-webfont.eot');
+    src: url('type/museosansrounded-900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/museosansrounded-900-webfont.woff') format('woff'),
+         url('type/museosansrounded-900-webfont.ttf') format('truetype'),
+         url('type/museosansrounded-900-webfont.svg#museo_sans_rounded_900regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Sans Rounded 700';
+    src: url('type/museosansrounded-700-webfont.eot');
+    src: url('type/museosansrounded-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/museosansrounded-700-webfont.woff') format('woff'),
+         url('type/museosansrounded-700-webfont.ttf') format('truetype'),
+         url('type/museosansrounded-700-webfont.svg#museo_sans_rounded_700regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Sans Rounded 500';
+    src: url('type/museosansrounded-500-webfont.eot');
+    src: url('type/museosansrounded-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/museosansrounded-500-webfont.woff') format('woff'),
+         url('type/museosansrounded-500-webfont.ttf') format('truetype'),
+         url('type/museosansrounded-500-webfont.svg#museo_sans_rounded_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Sans Rounded 300';
+    src: url('type/museosansrounded-300-webfont.eot');
+    src: url('type/museosansrounded-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/museosansrounded-300-webfont.woff') format('woff'),
+         url('type/museosansrounded-300-webfont.ttf') format('truetype'),
+         url('type/museosansrounded-300-webfont.svg#museo_sans_rounded_300regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*
+
+normalize.css v2.1.2 | MIT License | git.io/normalize
+--------------------------------------------*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden] { display: none; }
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+mark { background: #ff0; color: #000; }
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0; padding: 0; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*
+
+Initialization/Defaults
+--------------------------------------------*/
+
+/* --- Block Elements --- */
+html { width: 100%; height: 100%; background: #02b485; font-size: 62.5%; color: #666; } /* 62.5% = 10px = 1.0rem */
+
+  a img { border: none; }
+
+/* --- Header Text --- */
+h1, h2, h3, h4, h5, h6 { -webkit-margin-before: 0; -webkit-margin-after: 0; margin: 0 0 10px; font-weight: normal; }
+
+h1 { margin: 0 0 50px; padding: 0; font-size: 70px; font-size: 7.0rem; line-height: 1.3714 /* 96px */; font-family: "Museo Sans Rounded 700"; color: #00b485 }
+h2 { margin: 0 0 10px; padding: 0; font-size: 21px; font-size: 2.1rem; line-height: 1.2; font-family: "Museo Sans Rounded 900"; color: #00abf4; }
+  h2 em { display: block; font-style: normal; font-family: "Museo Sans Rounded 500"; }
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+/* --- Block Text --- */
+p, blockquote, caption, div { margin: 0 0 20px; }
+
+
+/* --- Text Elements --- */
+a { color: #58595b; text-decoration: underline; }
+  a:hover, a:focus, a:active { text-decoration: none; }
+sup { font-size: 9px; font-size: 0.9rem; }
+small { font-size: 10px; font-size: 1.0rem; }
+strong { font-weight: bold; }
+em { font-style: italic;  }
+
+/* --- List Items --- */
+ul { list-style: none outside none; margin: 0 0 15px 30px; padding: 0; }
+ol { list-style: decimal outside none; margin: 0 0 15px 30px; }
+  ul li, ol li { margin: 0; padding: 0 0 5px; }
+
+/* --- Definition Elements --- */
+dl, dt, dd {}
+dl {}
+dt {}
+dd {}
+
+/* --- Table  Elements --- */
+table {}
+th { text-align: left; vertical-align: top; }
+thead {}
+tbody {}
+tr {}
+td { vertical-align: top; }
+tfoot {}
+
+/* --- Form/Inputs --- */
+form { margin: 0; padding: 0; }
+fieldset { margin: 0; padding: 0; border: 0; }
+legend { }
+label { display: block; margin: 0 0 5px; font-size: 15px; font-size: 1.5rem; }
+
+  input[type="text"], input[type="password"], textarea { font-size: 16px; font-size: 1.6rem; margin-bottom: 0; padding: 5px; border: 2px solid #ccc; color: #666; border-radius: 4px; } /* Changed 2/3/14 */
+  input[type="text"]:focus, input[type="password"]:focus, textarea:focus { }
+  input[type="radio"], input[type="checkbox"] { position: absolute; left: -9999px; vertical-align: middle; border-radius: 4px; }/* Changed 2/3/14 */
+  
+  input[type="checkbox"] + label { margin-left: 30px; padding: 0; cursor: pointer; }  
+  input[type="checkbox"] + label:before { content: ''; position: relative; top: -2px; left: -11px; display: inline-block; width: 18px; height: 18px; margin-left: -20px; border: 2px solid #ccc; background: #fff; vertical-align: middle; cursor: pointer; border-radius: 4px; } /* Changed 2/3/14 */
+  input[type="checkbox"]:checked + label:before  { background: #fff url(../files/images/backgrounds/bkg-checkbox.png) no-repeat center center; box-shadow: none; }    
+  
+    input[type="submit"] { display: inline-block; width: 100px; height: 100px; margin: 0; padding: 0; background: url(../files/images/buttons/btn-submit.gif) no-repeat; border: 0; border-radius: 50px; text-indent: -150px; }
+      input[type="submit"]:hover, .btnLogin:hover, input[type="submit"]:focus, .btnLogin:focus, input[type="submit"]:active, .btnLogin:active {background-position: -100px 0; } /* Changed 12/4/13 */
+
+/* Added/Changed 2/11/14 */
+.quoteSave { background-position: -200px 0 !important; }
+.buy.quoteSave { background-image: url(../files/images/buttons/btn-submit.gif) !important; }
+.disabled { opacity: 0.5 !important; }  
+   /* input[disabled] { background: #fff; border-color: #ddd; color: #ddd; }  */
+  
+select { padding: 3px 5px; border: 2px solid #ccc; color: #58595b; border-radius: 4px; }  /* Changed 2/3/14 */
+
+textarea { border-radius: 4px; }
+ 
+/* Added 6/27/14 */ 
+input[type="button"], .ie8 input[type="button"].saveDiscount { position: relative; top: -2px; display: inline-block; margin: 0 0 0 5px; padding: 6px 15px; background: #00b485; border: 0; border-radius: 4px; box-shadow: 0 4px 0 0 #008361; font-size: 16px; font-size: 1.6rem; line-height: 1; font-family: "Museo Sans Rounded 500"; color: #fff; text-indent: 0; }
+  input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active { background: #00a278; box-shadow: 0 4px 0 0 #007456; color: #eee; } 
+
+input[type="button"].saveDiscount { top: 0; width: 30px; height: 30px; margin-left: 25px; padding: 0; background: transparent url(../files/images/buttons/btn-submit.gif) no-repeat -60px 0; box-shadow: none; border-radius: 15px; background-size: 300% auto; text-indent: -150px;  }
+
+.ie8 input[type="button"].saveDiscount { top: 0; width: auto; color: #eee; text-shadow: none !important; }
+/* Added 6/27/14 */ 
+
+iframe { border: 0; }
+
+.buttonWell {}
+
+::-webkit-input-placeholder { color: #58595b; }
+::-moz-placeholder { color: #58595b; } /* firefox 19+ */
+:-ms-input-placeholder { color: #58595b; } /* ie */
+input:-moz-placeholder { color: #58595b; }
+   
+.error { border: 2px solid #e00000 !important; }
+  label.error { border: none !important; color: #e00000 !important; font-weight: bold; }
+
+
+/*
+     Utility ID's
+     ----------------------- */      
+.clear { display: block; clear: both; overflow: hidden; width: 1px; height: 1px; margin: 0 -1px -1px 0; border: 0; font-size: 0; line-height: 0; }
+  .clearfix:before,.clearfix:after { content: '.'; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0;height: 0; }
+  .clearfix:after { clear: both; }
+.hide { position: absolute; left: -9999px !important; top: 0; }
+.alignLeft { float: left; }
+.alignRight { float: right; }
+
+
+/*
+
+Site Styles
+--------------------------------------------*/
+
+/*
+  Body
+-----------------------------*/
+body { min-width: 1025px; margin: 0; padding: 0; background: url(../files/images/backgrounds/bkg-body.jpg) repeat center 0; font-size: 15px; font-size: 1.5rem; line-height: 1.2; font-family: "Museo Sans Rounded 500", Helvetica, Arial, sans-serif; }
+
+
+/*
+  Header
+-----------------------------*/
+.siteHeader { overflow: hidden; width: 1000px; height: 128px; margin: 0 auto; padding: 0; }
+
+.siteLogo { overflow: hidden; position: relative; z-index: 1; float: left; width: 207px; height: 128px; }
+  .siteLogo img { position: relative; }
+    .siteLogo:hover img, .siteLogo:focus img, .siteLogo:active img { left: -207px; }
+
+/* Site Navigation */
+.siteNavigation { overflow: hidden; float: left; width: 810px; height: 70px; margin: 15px 0 0 -50px; }
+  .siteNavigation li { float: left; margin: 0 10px 0 0; padding: 0; }
+  .siteNavigation a { display: block; width: 205px; margin: 0; padding: 7px 0; background: #e8f4f9; background: rgba(255,255,255,0.2); box-shadow: 0 3px 8px -3px rgba(0,0,0,0.2); font-weight: bold; font-size: 16px; font-size: 1.6rem; line-height: 1; font-family: "Museo Sans Rounded 900"; color: #fcb040; text-align: center; text-decoration: none; text-transform: uppercase; font-weight: normal; /* Changed 2/3/14 */}
+  .siteNavigation a:hover, .siteNavigation a:focus, .siteNavigation a:active { background: #fff; }
+  .siteNavigation li.selected a { background: #fff; }
+    .siteNavigation li.selected a:after { content: ''; position: absolute; top: 45px; display: block; width: 0; height: 0; margin: 0 0 0 95px; padding: 0; border: 8px solid transparent; border-top: 8px solid #fff; border-bottom: 0; }
+  
+/* Last 2 - Utility (12/6/13) */
+.utilityNavigation { float: right; margin: -30px 40px 0 0; padding: 0; }  
+  .utilityNavigation li { display: inline-block; padding: 0 4px 0 9px; background: url(../files/images/lists/list-utility.png) no-repeat 0 8px; }
+    .utilityNavigation li:first-child { padding-left: 0; background: transparent none; }  
+      .utilityNavigation a { display: inline; padding: 0; background: transparent; box-shadow: none; font-weight: normal; font-size: 13px; font-size: 1.3rem; font-family: "Museo Sans Rounded 500"; color: #e34300; text-align: left; text-decoration: none; text-transform: none; }
+        .utilityNavigation a:hover { text-decoration: underline; }
+        
+/* Social Media */    
+.socialMedia { float: left; margin: -70px 0 0 600px; }
+  .socialMedia li { display: inline-block; margin: 0 3px; }
+    .socialMedia li:first-child { margin-left: 0; }
+  .socialMedia img { position: relative; box-shadow: 0 3px 6px 1px rgba(0,0,0,0.1); border-radius: 3px; }
+  .socialMedia a { overflow: hidden; display: inline-block; width: 30px; margin: 0; padding: 0; }
+    .socialMedia a:hover img, .socialMedia a:focus img, .socialMedia a:active img { left: -30px; }
+
+
+/*
+  Container
+-----------------------------*/
+.container { width: 100%; min-width: 1000px; margin: 0; padding: 0; }
+
+
+/*
+  Content
+-----------------------------*/
+.content { overflow:auto;width: 1000px; min-height: 484px; margin: 0 auto; padding: 0; }
+
+.whyYouGo { background: url(../files/images/backgrounds/bkg-whygo.png) no-repeat 93% 0; padding-bottom: 40px; }
+.whyYouGo h1 { margin-bottom: 0; }
+.whyYouGo > p { width: 450px; }
+.whyBox { float: left; margin-top: 20px; margin-left: 15px; width: 270px; height: 300px; padding: 25px 20px 25px 20px; background: #fff; border-radius: 10px; box-shadow: 0 0 5px -1px rgba(0,0,0,0.3); }
+.boxes { float: left; margin-bottom: 70px; } /* Added 5/14/14 */
+.boxes > div:nth-child(3n + 1), .boxes > div:first-child { margin-left: 5px; } /* Changed 5/14/14 */
+.whyBox img { margin-bottom: 10px; }
+  .domestic img { margin-top: -35px; }
+  .international img { margin-top: -20px; }
+  .annual img { margin-top: -40px; }
+.adventureBox { float: left; margin-top: 20px; margin-left: 15px; width: 910px; height: 80px; padding: 25px; background: #fff; border-radius: 10px; box-shadow: 0 0 5px -1px rgba(0,0,0,0.3); }
+.adventureBox img { float: left; margin-right: 15px; }
+/*.tips { margin-bottom:-200px; }*/
+.tips h1 { margin-bottom: 0; }
+.tips h2 { font-size: 15px; font-size: 1.5rem; font-family: 'Museo Sans Rounded 500'; }
+.tips h2 a { color: #00abf4; text-decoration: none; } /* Added 5/19/14 */
+.tips h2 a:hover { text-decoration: underline; } /* Added 5/19/14 */
+.tips .whyBox { float: left; margin-top: 15px; margin-bottom: 0; margin-left: 15px; width: 270px; height: auto; padding: 25px; background: #fff; border-radius: 10px; box-shadow: 0 0 5px -1px rgba(0,0,0,0.3); } /* Changed 5/14/14 */
+.tipsInterior h1 { margin-bottom: 0; }
+.tipsInterior h2 { font-size: 28px; font-size: 2.8rem; font-family: 'Museo Sans Rounded 700'; }
+.tipsInterior .whyBox { position: relative; width: 910px; height: auto; }
+  .tipsInterior .whyBox img { float: left; margin-right: 35px; }
+  .tipsInterior ol li { margin-left: 435px; }
+  .tipsInterior ul li { list-style-type: disc; }
+.backToTips { position: absolute; right: -45px; top: -10px; }
+.faqs { float: left; width: 42%; margin-left: 20px; margin-right: 40px; }
+.faqs a { display: block; padding-left: 30px; background: url(../files/images/icons/icon-faq-arrow.png) no-repeat 0 -27px; font-family: 'Museo Sans Rounded 700'; font-size: 15px; font-size: 1.5rem; text-decoration: none; }
+.faqs a.open { background-position: -27px 3px; }
+.faqs .answer { margin-top: 20px; padding-left: 30px; }
+.faqs li { float: left; margin-bottom: 20px; }
+.faqs li:nth-child(odd) { clear: both; }
+.claims { background: url(../files/images/backgrounds/bkg-claims.png) no-repeat 100% 0; overflow: auto;
+/*margin-bottom:-330px;*/ } /* Changed 2/20/14 */
+.claims > p { width: 520px; }
+.claims .disclaimer { width: 940px; border-top: 1px solid #c9d0d1; padding: 20px 0 0; color: #666666; }
+.claims .adventureBox { height: auto;width: 950px; margin-left:0; }
+.loginLink { display: inline-block; height: 40px; padding-left: 45px; padding-top: 10px; background: url(../files/images/links/link-login.png) no-repeat 0 -36px; font-size: 12px; font-size: 1.2rem; } /* Changed 2/3/14 */
+  .loginLink:hover { background-position: -37px 0px; } /* Changed 2/3/14 */
+.leavingYouGo { padding: 30px 25px 0; text-align: center; }
+.leavingYouGo h2 { margin: 0 0 10px 10px; padding: 0; font-family: 'Museo Sans Rounded 300'; font-size: 21px; font-size: 2.1rem; line-height: 1.4; color: #666666; text-align: left; }
+.leavingYouGo img { margin: 10px 0 0; }
+/*
+  Footer
+-----------------------------*/
+.siteFooter { position: relative; width: 100%; height: 140px; min-width: 1000px; margin: 0; padding: 0 0 0; background: url(../files/images/backgrounds/bkg-footer.png) repeat-x center 0; } /* Changed 5/14/14 */
+
+.disclaimer { width: 960px; margin: 0 0 0 -20px; padding: 0 20px 10px; font-size: 11px; font-size: 1.1rem; color: #002d21; } /* Changed 7/1/14 */
+
+  /* Benefits Disclaimer - Added 3/6/14 */
+  .disclaimer h3 { font-family: "Museo Sans Rounded 700"; }
+  .disclaimer ul { margin: 0 0 20px; padding: 0; }
+  .disclaimer li { margin: 0; padding: 0 0 5px; line-height: 1.3; }
+  /* Benefits Disclaimer - Added 3/6/14 */
+
+
+/*
+ Footer Widget
+-----------------------------*/
+
+.footerWidget { position: absolute; left: 50%; bottom: 0; width: 960px; height: 30px; margin-left: -500px; margin-bottom: 0; /*margin-top: 260px;*/ padding: 8px 20px 8px 20px; background: rgba(255,255,255,0.75); -pie-background: rgba(255,255,255,0.75); border-radius: 6px; behavior: url(PIE.htc); }
+.footerWidget strong { float: left; margin-top: 8px; margin-right: 10px; font-size: 15px; font-size: 1.5rem; font-family: 'Museo Sans Rounded 900'; font-weight: normal; text-transform: uppercase; color: #00b485; }
+.footerWidget .quoteForm { opacity: 1; margin-top: 0; margin-bottom: 0; }
+.footerWidget  .quoteForm h1 { width: 250px; margin: 0 auto; text-align: left; font-family: 'Museo Sans Rounded 900'; font-size: 30px !important; font-size: 3.0rem !important; line-height: 1.2; text-transform: uppercase;}
+.footerWidget  .travellerList { margin: 0 3px 0 0; padding: 0; float: left; }
+.footerWidget  .travellerList li { display: block; float: left; width: 80px; margin: 0; list-style: none none; }
+.footerWidget  .travellerList li:first-child { width: 40px; }
+.footerWidget  .travellerList input { float: left; width: 34px; padding: 5px 0; text-align: center; border-radius: 6px; }
+.addLink, .deleteLink { display: block; float: left; width: 30px; height: 30px; margin: 2px 0 0; border-radius: 50%; text-decoration: none; text-indent: -99999px; }/* Changed 2/3/14 */
+  .addLink { background: url(../files/images/links/link-add.png) no-repeat 0 0; }/* Changed 2/3/14 */
+  .deleteLink { margin: 2px 0 0 5px; background: url(../files/images/links/link-delete.png) no-repeat 0 0; }/* Changed 2/3/14 */
+    .addLink:hover, .deleteLink:hover { background-position: 100% 0; }/* Changed 2/3/14 */
+.footerWidget  .deleteLink { clear: none; }/* Changed 2/3/14 */
+.footerWidget  .ageWrapper { position: absolute; left: 280px; margin: 0; }
+.footerWidget  .passedUp { width: 44px !important; }
+.footerWidget .regionPopup { display: block; position: absolute; top: -110px; left: 575px; z-index: 4; width: 180px; height: 82px; padding: 10px 0 5px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.4); } /* Changed 3/17/14 */
+.footerWidget .regionSet { float: left; margin: 0; padding: 0 0 0 10px; }
+.footerWidget  .regionSet li { list-style: none none; width: 230px; }
+.footerWidget  .regionSet fieldset { float: left; }
+.footerWidget  .regionSet legend { float: left; clear: both; width: 60px; margin-bottom: 20px; font-family: 'Museo Sans Rounded 900'; font-size: 18px; font-size: 1.8rem; text-transform: uppercase; text-align: left; }
+.footerWidget  .regionSet select { float: left; width: 160px; margin: 0 0 10px; padding: 6px 28px 6px 6px; text-overflow: ellipsis; white-space: nowrap;overflow: hidden; background: #fff url(../files/images/backgrounds/bkg-select-arrow.png) no-repeat 95% 2px; moz-appearance: none; text-indent: 0.01px; text-overflow: '';
+-webkit-appearance:none;  }
+.footerWidget  .regionSet select::-ms-expand { display: none; }
+.footerWidget  .regionSet select:disabled { background: #fff url(../files/images/backgrounds/bkg-select-arrow-disabled.png) no-repeat 95% 2px;}
+.ie9 .footerWidget  .regionSet select, .ie8 .footerWidget  .regionSet select { padding: 6px; } /* Added 3/17/14 */
+.footerWidget  .selectWrapper { overflow: hidden; float: right; width: 160px; height: 33px; margin: 0 0 10px; border-right: 2px solid #ccc; border-radius: 6px; }
+.footerWidget  .regionSet select:active, .footerWidget .regionSet select:focus { outline:none; }
+.footerWidget  .regionSet input[type="text"] { float: left; width: 61px; margin-left: 10px; padding: 5px; border-radius: 6px; }
+.footerWidget  .goTo { float: left; margin: 8px 10px 0 310px; color: #00abf4; }
+.footerWidget  .when { position: relative; z-index: 20; color: #e34300; }
+.footerWidget  #calendarDate { position: relative; z-index: 15; }
+.footerWidget  .quoteForm input[type="submit"] { float: right; width: 34px; height: 34px; margin: -53px 0 0 0; background: url(../files/images/buttons/btn-widget-submit.png) no-repeat 0 0; }
+.footerWidget .regionPopup:after { position: absolute; bottom: -6px; left: 100px; display: block; content: '';  border: 6px solid transparent; border-top:6px solid #fff; border-bottom:  0; }  
+.footerWidget .selectedCountry { float: left; width: 80px; cursor: pointer; }
+.footerWidget .dateList { float: left; margin-top: -30px; margin-left: 730px; width: 230px; padding: 0; }
+  .footerWidget .dateList li { list-style: none; }
+  .footerWidget .dateList legend { float:left;margin-top: 8px; margin-right: 10px; }
+  .footerWidget .dateList input[type="text"] { width: 50px; }
+
+/* Footer Widget Errors */ /* Added 2/3/14 */
+
+.footerWidget.error { bottom: 50px; border: 0 !important; }
+.widgetErrorBox { display: none; position: absolute; left: 50%; bottom: 50px; width: 960px; height: 36px; margin-left: -500px; margin-bottom: 0; margin-top: 260px; padding: 10px 20px 0 20px; background: rgba(255,255,255,0.75); -pie-background: rgba(255,255,255,0.75); border-radius: 6px; behavior: url(PIE.htc); text-align: center; color: #e34300; }
+  .widgetErrorBox a { float: right; color: #155947; }
+  
+/*
+  Thank You - (12/6/13)
+-----------------------------*/
+  body.thankyou h1 { margin-bottom: 30px; text-align: center; }
+
+  body.thankyou .col-1 { float: right; width: 320px; }  
+  body.thankyou .col-2 { float: left; width: 595px; }
+    
+  body.thankyou .container { margin-top: -40px; margin-bottom: -290px; padding-bottom: 100px; background: url(../files/images/backgrounds/bkg-thankyou.png) no-repeat center bottom; }
+  body.thankyou .content { width: 980px; padding-left: 20px; }
+  body.thankyou .siteFooter { background-color: #02b485; background-position: 0 -40px; }
+  body.thankyou .disclaimer { position: relative; z-index: 2; margin: 90px auto 0; } /* Changed 7/1/14 */
+
+.saveCards { margin: 0; padding: 0; font-size: 12px; font-size: 1.2rem; font-family: "Museo Sans Rounded 700"; }
+  .saveCards li { display: inline-block; padding-right: 25px; }
+
+.print, .save { display: inline-block; min-height: 26px; padding: 10px 0 0 46px; background: url(../files/images/links/link-print.png) no-repeat 0 -36px; }
+  .save { background-image: url(../files/images/links/link-save.png); }
+    
+  .print:hover, .print:focus, .print:active, .save:hover, .save:focus, .save:active { background-position: -36px 0; }  
+
+
+/* Cards */
+.cardArea { position: relative; z-index: 1; width: 100%; min-width: 1000px; margin: 250px 0 -290px; padding: 0; background: #02b485 url(../files/images/backgrounds/bkg-footer.png) repeat-x; }
+  .cardArea > ul { position: relative; top: -260px; width: 1000px; margin: 0 auto; padding: 0; }
+  .cardArea > ul > li { display: inline-block; margin: 0 18px 20px 0; vertical-align: top; }
+  
+  .cardArea .socialMedia { overflow: hidden; float: none; display: block; margin: 15px 0 0; width: 100%; margin: 12px 0 0; padding: 0; text-align: center; }
+  .cardArea .socialMedia li { display: inline; margin: 0 -5px 0 0; padding: 0; }
+  .cardArea .socialMedia a { width: 37px; }
+  .cardArea .socialMedia img { box-shadow: none; vertical-align: top; }
+    .cardArea .socialMedia a:hover img, .cardArea .socialMedia a:focus img, .cardArea .socialMedia a:active img { left: -37px; }
+
+.cards { overflow: hidden; width: 288px; height: 196px; margin: 0; padding: 75px 0 0 182px; background: url(../files/images/backgrounds/bkg-cards.png) no-repeat; border-radius: 20px; box-shadow: 0 0 6px 1px rgba(0,0,0,0.2); font-size: 12px; font-size: 1.2rem; line-height: 1.3333; }
+  .cards ul { margin: 0 0 10px; padding: 0; }
+  .cards li { padding: 0; }
+  .cards p { margin: 0 0 10px; }
+  .cards h3 { margin: 0; font-size: 27px; font-size: 2.7rem; line-height: 1.1;  font-family: "Museo Sans Rounded 900"; }
+  .cards strong { font-family: "Museo Sans Rounded 700"; }
+  
+.pickPhoto { position: absolute; z-index: 2; width: 141px; height: 141px; margin: -57px 0 0 -165px; }
+  .pickPhoto em { position: absolute; overflow: hidden; display: block; width: 19px; height: 12px; margin: -135px 0 0 8px; padding: 0; background: url(../files/images/buttons/button-photo.png) no-repeat; text-indent: -200px; }
+  
+.selectPhoto { overflow: hidden; position: absolute; z-index: 1; display: none; width: 375px; height: 180px; margin: -100px 0 0 -174px; padding: 10px 0 0 10px; background: #fff; box-shadow: 0 0 6px 2px rgba(0,0,0,0.1); border: 1px solid #e2eff3; border-radius: 11px; }  
+  .selectPhoto ul { overflow: hidden; margin: -2px 0 0 147px; padding: 0; }
+  .selectPhoto li { float: left; display: block; margin: 0 10px 3px 0; }
+  .selectPhoto label { overflow: hidden; cursor: pointer; }
+  .selectPhoto img { vertical-align: top; }
+  .selectPhoto .submit { overflow: hidden; display: block; width: 24px; height: 24px; margin: -184px 0 0 347px; padding: 0; background: url(../files/images/buttons/btn-selectphoto.png) no-repeat; text-indent: -200px; }
+    .selectPhoto .submit:hover, .selectPhoto .submit:focus, .selectPhoto .submit:active { background-position: -24px 0; }
+.showPhotos { display: block; }
+
+.upload { overflow: hidden; }
+  .upload label { display: block; width: 53px; height: 62px; padding: 3px 6px 0 6px; background: url(../files/images/buttons/btn-upload.png) no-repeat; text-align: center; text-indent: 0; }  
+  .upload input { position: absolute; left: -400px; }
+
+.cards .policyNumber { position: absolute; margin: 167px 0 0 -147px; font-size: 11px; font-size: 1.1rem; font-family: "Museo Sans Rounded 700"; color: #00abf4; }
+
+
+/* Date Picker Overwrites */
+.ui-datepicker { position: absolute; padding-top: 3px; margin: -25px 0 0 -64px; box-shadow: 0 0 9px 3px rgba(0,0,0,0.2); }
+.ui-datepicker:after { position: absolute; bottom: -6px; left: 100px; display: block; content: '';  border: 6px solid transparent; border-top:6px solid #fff; border-bottom:  0; }  
+/*.hasDatepicker { display: none; margin-top: 0px; }*/
+
+.ui-widget { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-size: 1.2rem; }
+.ui-widget-content { background: #fff none; color: #000; }
+
+a.ui-state-default { border-radius: 0; }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: #eaeaea none; border: 0; font-weight: normal; text-decoration: none; text-align: center; font-size: 15px; font-size: 1.5rem; font-family: 'Museo Sans Rounded 500'; color: #666; }
+.ui-datepicker-group-first { margin-right: 16px; }
+  .ui-datepicker-multi-2 .ui-datepicker-group { width: 48%; margin-bottom: 0; }
+  .ui-datepicker-multi .ui-datepicker-header { width: 95%; margin-left: 5px; background: #fff none; border: 0; margin-bottom: 0;  }
+    .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header  { border-left-width: 1px !important; }
+  .ui-datepicker-header .ui-state-hover { background: transparent none; border: 1px solid #fff; }
+
+  .ui-datepicker a.ui-state-default.ui-state-active, .ui-datepicker a.ui-state-default.ui-state-highlight.ui-state-active, .ui-datepicker a.ui-state-default.ui-state-active.ui-state-hover { background: #ff6600; font-weight: bold; color: #fff !important; }
+  .ui-datepicker a.ui-state-default.ui-state-hover { background: #ffb975;
+  
+    -webkit-transition: all .15s ease-in;
+    -moz-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+  
+  }
+
+.ui-icon-circle-triangle-e { background: url(../files/images/icons/icon-next.png) no-repeat 8px 3px !important; }
+.ui-icon-circle-triangle-w { background: url(../files/images/icons/icon-prev.png) no-repeat 4px 3px !important; }
+.ui-widget-header { background: transparent; border: 0; }
+  .ui-datepicker .ui-datepicker-title { font-weight: normal; font-size: 15px; font-size: 1.5rem; font-family: 'Museo Sans Rounded 700'; color: #666; }
+    .ui-datepicker td a { color: #666 !important; text-align: center; }
+  .ui-datepicker th, .ui-datepicker td  { padding: 1px !important; font-weight: normal; font-size: 11px !important; font-size: 1.1rem !important; }
+.ui-datepicker th { font-family: 'Museo Sans Rounded 500'; font-size: 12px; font-size: 1.2rem; color: #666; }
+/* Selector Dates */    
+.date-range-selected > .ui-state-active,
+.date-range-selected > .ui-state-default {
+   background: none;
+   background-color: #ffd1b6;
+}  
+
+.date-range-selected-start > .ui-state-active,
+.date-range-selected-start > .ui-state-default {
+   background: #e34300; font-weight: bold; color: #fff !important;
+}
+
+.date-range-selected-end > .ui-state-active,
+.date-range-selected-end > .ui-state-default {
+   background: #e34300 !important; font-weight: bold; color: #fff !important;
+}
+
+/* Input Focuses */
+#returnDateDisplay, #departureDateDisplay { position: relative; z-index: 20; }
+#returnDateDisplay:focus, #returnDateDisplay:active, .returnFocus { outline: none; border-color: #00b485 !important; }
+#departureDateDisplay:focus, #departureDateDisplay:active, .departureFocus { outline: none; border-color: #00b485 !important; }
+  .hasDatepicker .closeWindow { position: absolute; z-index: 4; top: auto; left: auto; margin: -8px 0 0 63px; text-decoration: none; }
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { width: 2.8em; cursor: pointer; }  
+
+/* IE8/9 */
+.ie8 select, .ie9 select { background-image: none !important;  }
+
+
+/*
+  Contact
+-----------------------------*/
+.contactPage { overflow: visible; width: 940px; margin-bottom: -100px; } /* Changed 4/7/14 */
+  .contactPage h1, .contactPage h2 { margin-bottom: 0; }
+  .contactPage h3 { margin-bottom: 0; font-family: 'Museo Sans Rounded 700'; }
+  
+  .contactPage .article { float: left; width: 610px; }
+  .contactPage .sidebar { position: relative; z-index: 1; float: right; width: 272px; padding: 20px 20px 0; background: #fff; border: 1px solid #f4f5f5; border-radius: 10px; box-shadow: 0 4px 15px 0 rgba(0,0,0,0.1); }
+  
+  .sidebar select { width: 98%; margin: 0; padding: 6px 25px 6px 3px; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;
+  background: #fff url(../files/images/backgrounds/bkg-select-arrow.png) no-repeat 95% 2px;
+  font-size: 16px; font-size: 1.6rem; /* Changed 2/3/14 */
+line-height: 1;/* Changed 2/3/14 */
+  moz-appearance: none; text-indent: 0.01px; text-overflow: '';
+  -webkit-appearance:none; cursor: pointer;
+  }
+  .sidebar select::-ms-expand { display: none; }
+
+.ie9 .sidebar select, .ie8 .sidebar select { padding: 6px; }
+
+  .sidebar label { position: absolute; left: -9999px; }
+    .sidebar .checkHolder label { position: static; }
+  .sidebar textarea { width: 95%; }  
+
+  .contactForm > ol { list-style-type: none; margin: 0; padding: 0; }
+  .contactForm > ol > li { margin: 0; padding: 0 0 15px; }
+  .contactForm input[type='text'] { width: 95%; }
+
+.support { margin: 0 0 30px; padding: 0 0 10px; border-bottom: 1px solid #c8d0d1; }
+  .support li { display: inline-block; width: 47%; padding: 0; vertical-align: top; } /* Changed 2/3/14 */
+  
+  .contactPage .intro { width: 383px; min-height: 170px; margin: 0 0 25px -123px; padding: 0 690px 15px 123px; background: url(../files/images/backgrounds/bkg-contact.png) no-repeat center bottom; }  
+  
+  .contactForm ul { margin: 0; padding: 0; }
+  
+    .contactForm input[type="submit"] { width: 74px; height: 74px; background: url(../files/images/buttons/btn-submit-contact.png) no-repeat 0 0; border-radius: 37px; } /* Updated 2/3/14 */
+      .contactForm input[type="submit"]:hover, .contactForm input[type="submit"]:focus, .contactForm input[type="submit"]:active {background-position: -74px 0; } /* Updated 2/3/14 */
+
+.privacyList li { list-style: outside disc; } /* Addded 4/2/14 */
+
+  /* Added 4/3/14 */
+  .ie8 .contactForm input[type="checkbox"] { position: static; margin-bottom: -30px !important; }  
+  .ie8 .contactForm input[type="checkbox"] + label:before { display: none; }

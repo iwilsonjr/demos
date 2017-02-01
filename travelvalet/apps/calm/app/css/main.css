@@ -1,0 +1,515 @@
+/*
+
+Cover More/Calm App - CDG Interactive, Inc.
+--------------------------------------------*/
+
+/*
+
+Custom Fonts Initialization
+--------------------------------------------*/
+@font-face {
+    font-family: 'NunitoLight';
+    src: url('type/nunito-light-webfont.eot');
+    src: url('type/nunito-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/nunito-light-webfont.woff') format('woff'),
+         url('type/nunito-light-webfont.ttf') format('truetype'),
+         url('type/nunito-light-webfont.svg#NunitoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('type/nunito-regular-webfont.eot');
+    src: url('type/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/nunito-regular-webfont.woff') format('woff'),
+         url('type/nunito-regular-webfont.ttf') format('truetype'),
+         url('type/nunito-regular-webfont.svg#NunitoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FranklinGothicFSBook';
+    src: url('type/FranklinGothic-Book-webfont.eot');
+    src: url('type/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/FranklinGothic-Book-webfont.woff') format('woff'),
+         url('type/FranklinGothic-Book-webfont.ttf') format('truetype'),
+         url('type/FranklinGothic-Book-webfont.svg#FranklinGothicFSBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FranklinGothicFSMedium';
+    src: url('type/FranklinGothic-Med-webfont.eot');
+    src: url('type/FranklinGothic-Med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/FranklinGothic-Med-webfont.woff') format('woff'),
+         url('type/FranklinGothic-Med-webfont.ttf') format('truetype'),
+         url('type/FranklinGothic-Med-webfont.svg#FranklinGothicFSMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kohinoor Medium';
+    src: url('type/indian_type_foundry_-_kohinoor_medium-webfont.eot');
+    src: url('type/indian_type_foundry_-_kohinoor_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/indian_type_foundry_-_kohinoor_medium-webfont.woff') format('woff'),
+         url('type/indian_type_foundry_-_kohinoor_medium-webfont.ttf') format('truetype'),
+         url('type/indian_type_foundry_-_kohinoor_medium-webfont.svg#kohinoormedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+  HTML5 Reset :: style.css
+  ----------------------------------------------------------
+  We have learned much from/been inspired by/taken code where offered from:
+  
+  Eric Meyer          :: http://ericmeyer.com
+  HTML5 Doctor        :: http://html5doctor.com
+  and the HTML5 Boilerplate  :: http://html5boilerplate.com
+  
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }                  
+
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img, object, embed { max-width: 100%; vertical-align: top; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted #000; cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, select { vertical-align: middle; }
+
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+
+select, input, textarea { font: 99% sans-serif; }
+
+table { font-size: inherit; font: 100%; }
+ 
+/* Accessible focus treatment
+  people.opera.com/patrickl/experiments/keyboard/test */
+
+a:hover, a:active { outline: none; }
+
+small { font-size: 85%; }
+
+/* Make sure sup and sub don't screw with your line-heights
+  gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable, label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/* make buttons play nice in IE */
+button { width: auto; overflow: visible; }
+
+
+/*
+JQM Overwrites
+--------------------------------------------*/
+.ui-loader { display: none; }
+  .locationForm .ui-btn-inner { display: none; }
+  .locationForm .ui-btn { display: inline; }
+
+
+/*
+
+Site Defaults
+--------------------------------------------*/
+
+/* --- Block Elements --- */
+
+html { background: #a2c0ca none; font-size: 62.5%; line-height: 62.5%; color: #383e40; } /* font-size corresponds to 10px base, 10px - 1.0rem */
+
+a img { border: none; }
+
+/* --- Header Text --- */
+h1, .h1 { margin: 0 0 10px; padding: 0; font-size: 20px; line-height: 22px; font: 2.0rem/2.2rem NunitoLight, Arial, Helvetica, sans-serif; color: #319bc0; }
+h2, .h2 { margin: 0 0 7px; padding: 0; font-size: 19px; font: 1.9rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #319bc0; letter-spacing: 0; }
+h3, .h3 { margin: 0 0 2px; padding: 0; font-size: 10px; font: 1.0rem/1 NunitoLight, Arial, Helvetica, sans-serif; text-transform: uppercase; }
+
+/* --- Block Text --- */
+p, blockquote, caption, div { margin-bottom: 5px; }
+
+/* --- Text Elements --- */
+a { color: #4a4e51; text-decoration: none; }
+  a:hover, a:focus { color: #4a4e51; }
+sup { font-size: 9px; font-size: 0.9rem; }
+small { font-size: 10px; font-size: 1.0rem; }
+strong { font-weight: normal; font-family: NunitoLight, Arial, Helvetica, sans-serif; }
+em { font-style: italic; }
+address { display: block; margin: 0 0 5px; font-style: normal; }
+
+/* --- List Items --- */
+ul, ol { list-style: none outside none; margin: 0 0 5px; }
+
+/* --- Inputs --- */
+input[type='text'] { width: 70%; padding: 2px 4px; border: 0; border-radius: 4px; box-shadow: inset 0 0 3px rgba(160,181,190,0.75); font-size: 15px; font: 1.5rem/1 FranklinGothicFSBook, Arial, Helvetica, sans-serif; color: #616f72; }
+input[type='submit'], input[type='button'] { width: 22px; height: 22px; margin: 0 0 0 5px; border: 1px solid #4484a0; border-radius: 3px; box-shadow: 0 0 1px rgba(19,19,19,0.50); text-indent: -100px; }
+
+input#locate {
+
+background: #559fbe no-repeat center center; /* Old browsers */
+background-image: url(../files/images/buttons/btn-locate.png), -moz-linear-gradient(top,  #559fbe 0%, #307ba6 100%); /* FF3.6+ */
+background-image: url(../files/images/buttons/btn-locate.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#559fbe), color-stop(100%,#307ba6)); /* Chrome,Safari4+ */
+background-image: url(../files/images/buttons/btn-locate.png), -webkit-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Chrome10+,Safari5.1+ */
+background-image: url(../files/images/buttons/btn-locate.png), -o-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Opera 11.10+ */
+background-image: url(../files/images/buttons/btn-locate.png), -ms-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* IE10+ */
+background-image: url(../files/images/buttons/btn-locate.png), linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#559fbe', endColorstr='#307ba6',GradientType=0 ); /* IE6-9 */
+  
+}
+
+input[type='button'] {
+
+background: #559fbe no-repeat center center; /* Old browsers */
+background-image: url(../files/images/buttons/btn-listview.png), -moz-linear-gradient(top,  #559fbe 0%, #307ba6 100%); /* FF3.6+ */
+background-image: url(../files/images/buttons/btn-listview.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#559fbe), color-stop(100%,#307ba6)); /* Chrome,Safari4+ */
+background-image: url(../files/images/buttons/btn-listview.png), -webkit-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Chrome10+,Safari5.1+ */
+background-image: url(../files/images/buttons/btn-listview.png), -o-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Opera 11.10+ */
+background-image: url(../files/images/buttons/btn-listview.png), -ms-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* IE10+ */
+background-image: url(../files/images/buttons/btn-listview.png), linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#559fbe', endColorstr='#307ba6',GradientType=0 ); /* IE6-9 */
+  
+}
+
+
+/*
+     Utility ID's
+     ----------------------- */      
+.hide { position: absolute !important; top: 0; left: -9999px; }
+
+
+
+/*
+
+Site Styles
+--------------------------------------------*/
+
+/*
+  Body
+-----------------------------*/
+body { font: 1.2rem/1.85rem Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; }
+
+
+/*
+  Container Wrapper
+-----------------------------*/
+.containerWrapper { overflow: hidden; max-width: 320px; /*min-height: 480px;*/ margin: 0 auto; padding: 0; background: transparent url(../files/images/backgrounds/bkg-container.jpg) no-repeat center 0; }
+
+/*
+  Container
+-----------------------------*/
+.container { overflow: hidden; float: left; max-width: 314px; margin: 0 auto; padding: 0 3px 20px; }
+
+/*
+  Menu Slider
+-----------------------------*/
+.menuSlider { overflow: hidden; width: 640px; }
+
+/* Display menu */
+.displayMenu .menuTab, .displayMenu .navBlock { left: -282px; -webkit-animation: openNav 0.3s; -moz-animation: openNav 0.3s; -ms-animation: openNav 0.3s; -o-animation: openNav 0.3s; animation: openNav 0.3s; }
+.closeMenu .menuTab, .closeMenu .navBlock { left: 0; -webkit-animation: closeNav 0.3s; -moz-animation: closeNav 0.3s; -ms-animation: closeNav 0.3s; -o-animation: closeNav 0.3s; animation: closeNav 0.3s }
+
+/* Open/Close Navigation */
+@-webkit-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@-moz-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@-ms-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@-o-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@keyframes openNav { from { left: 0; } to { left: -282px; }}
+
+@-webkit-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@-moz-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@-ms-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@-o-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@keyframes closeNav { from { left: -282px; } to { left: 0; }}  
+
+
+/*
+  Navigation Block (Menu/Cover-More Apps)
+-----------------------------*/
+.navBlock { position: relative; z-index: 5; width: 320px; padding: 0;
+
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #1e5799 0%, #053251 0%, #053b61 55%, #064968 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1e5799), color-stop(0%,#053251), color-stop(55%,#053b61), color-stop(100%,#064968)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* IE10+ */
+background: linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#064968',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+.navigation { margin: 0; }
+  .navigation li { }
+  .navigation a { display: block; padding: 13px 0 13px 70px; background: transparent none no-repeat 0 13px; box-shadow: inset 0 -10px 20px 5px rgba(0,0,0,0.2); font-size: 11px; line-height: 16px; font-size: 1.1rem; line-height: 1.6rem; color: #fffdf4; }
+    .navigation li:nth-child(1) a { background-image: url(../files/images/links/link-mediate.png); }
+    .navigation li:nth-child(2) a { background-image: url(../files/images/links/link-locate.png); }
+    .navigation li:nth-child(3) a { background-image: url(../files/images/links/link-travel.png); }        
+  .navigation em { display: block; font-size: 25px; font: 2.5rem/1 NunitoLight, Arial, Helvetica, sans-serif; text-transform: uppercase; }
+  
+  .menuFooter { position: relative; z-index: 3; clear: both; width: 100%; height: 240px; padding: 30px 15px; background: url(../files/images/backgrounds/bkg-menufooter.jpg) no-repeat 0 0; background-size: 100% auto; }
+    .menuFooter .callCoverMore { position: relative; left: 50%; float: left; display: block; width: 149px; height: 46px; margin: 15px 0 10px -75px; }
+    .menuFooter span { position: relative; top: -1px; float: left; clear: both; display: inline-block; width: auto; height: auto; margin: 0 4px 10px 0px; background: none; font-size: 1.2rem; color: #78d5ec; }
+    .menuFooter img { float: left; }
+
+
+/*
+  Header
+-----------------------------*/
+.siteHeader { height: 95px; margin: 0; padding: 5px 0 0; }
+  .siteHeader strong { display: block; padding: 0 0 0 19px; font-size: 39px; font: 3.9rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #fffdf4; text-transform: uppercase; }
+  .siteHeader img { display: block; margin: 0 0 -2px 19px; }
+  .siteHeader p { float: left; }
+  
+/* Menu Tab */
+.menuTab { overflow: hidden; position: relative; z-index: 5; float: right; display: block; width: 37px; height: 53px; margin: 3px -3px 0 0; padding: 0; background: transparent url(../files/images/links/link-menu.png) no-repeat 0 0; text-indent: -100px; }
+  .menuSelected { background-position: -37px 0; }
+
+
+/*
+  Content
+-----------------------------*/
+.content { margin: 0; padding: 0 20px 1px; background: #f7f9fa url(../files/images/backgrounds/bkg-content.jpg) no-repeat center 0; border-radius: 0 0 5px 5px; box-shadow: 0 15px 5px 1px rgba(160,181,190,0.75); }
+
+.mediateBlock { }
+  .mediateBlock h1 { position: absolute; left: -9999px; }
+
+/* Changed 10/2/12 */
+.mediateSelector { overflow: hidden; position: relative; top: -10px; width: 320px; margin: 0 0 10px -23px; font-size: 0; }
+  .mediateSelector li { float: left; display: block; width: 159px; height: 58px; }
+    .mediateSelector li:first-child { margin-right: 2px; }
+  .mediateSelector a { display: inline-block; width: 159px; height: 51px; margin: 0; padding: 7px 0 0; background: transparent url(../files/images/backgrounds/bkg-mediateselector.png) no-repeat -161px 0; font-size: 12px; line-height: 15px; font-size: 1.2rem; line-height: 1.5rem; color: #616f72; text-align: center; }
+    .mediateSelector li:first-child a { background-position: 0 0; }  
+    .mediateSelector li.selected a { background-position: -322px 0; }
+    
+  .mediateSelector strong { display: block; margin: 0 0 2px; font-size: 22px; font: 2.2rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #5e95a3; text-align: center; text-transform: uppercase; }
+    .mediateSelector li.selected strong { color: #6c950b; }  
+
+.videoBlock { display: inline-block; margin: 0 0 10px; padding: 6px; border: 1px solid #e3e6e8; border-radius: 4px; text-align: center; }
+
+.mediateLister { margin: 0; font-size: 11px; line-height: 14px; font: 1.3rem/2.0rem FranklinGothicFSBook, Arial, Helvetica, sans-serif; color: #383e40; }
+  .mediateLister h2 { margin-bottom: 10px; font-size: 29px; line-height: 32px; font-size: 2.9rem; line-height: 3.2rem; }
+    .mediateLister h2 em { position: relative; top: -1px; display: inline-block; padding: 4px 10px; background: #e9f0f3 none; border: 2px solid #d9e3e7; border-radius: 4px; font-style: normal; font-size: 15px; line-height: 16px; font-size: 1.5rem; line-height: 1.6rem; color: #74a4b0; vertical-align: bottom; text-transform: uppercase; }
+  .mediateLister h3 { margin: 0 0 5px; font-size: 15px; font: 1.5rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #5e95a3; text-transform: none; }
+  .mediateLister li { padding: 0 0 10px; }
+  .mediateLister audio { margin: 10px 0 0; width: 100%; }
+
+.listenLink { float: right; overflow: hidden; position: relative; z-index: 1; top: 50px; left: 20px; display: block; width: 64px; height: 64px; margin: 0 0 -64px; padding: 0; background: transparent url(../files/images/buttons/btn-listen.png) no-repeat 0 0; text-indent: -200px; }
+  
+.displaySelector { width: 314px; margin: 0 0 10px -20px; padding: 0 0 20px; background: transparent url(../files/images/backgrounds/bkg-displayselector.png) no-repeat center bottom; border-radius: 0 0 4px 4px; font-size: 0; text-align: center; white-space: nowrap; }
+  .displaySelector li { display: inline-block; width: 15.66667%; vertical-align: top; text-align: center; }
+  .displaySelector a { display: inline-block; width: 24px; height: 21px; padding: 2px 0 0; background: #e4f1f6 none; border: 3px solid #f4f9fb; border-radius: 4px; box-shadow: 0 2px 3px 1px #ccc; font-size: 19px; line-height: 19px; font: 1.9rem/1 NunitoRegular, Arial, Helvetica, sans-serif; color: #5e95a3; text-align: center; }
+    .displaySelector li.selected a { width: 30px; height: 26px; padding: 5px 0 0; background: #2599c8 none; box-shadow: inset 0 2px 3px 1px #444; border: 0; color: #fff; }
+    .displaySelector li:last-child { border-right: 0; }
+/* Changed 10/2/12 */
+  
+/* Location Form */
+.locationForm { margin: 0 0 10px; padding: 14px;
+
+background: #f3f3e8; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3f3e8 20%, #d9d9cc 50%, #e3e3d5 80%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,#f3f3e8), color-stop(50%,#d9d9cc), color-stop(80%,#e3e3d5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* IE10+ */
+background: linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3e8', endColorstr='#e3e3d5',GradientType=0 ); /* IE6-9 */
+
+border: 1px solid #f6f6ed; border-radius: 4px; box-shadow: 0 0 12px rgba(152,157,157,0.35); }
+  .locationForm label { position: absolute; left: -999px; }
+  
+.locationDisplay { width: 293px; min-height: 234px; margin: 0 0 20px -10px; padding: 0; }  
+  .locationDisplay h2 { margin-bottom: 10px; }
+  .locationDisplay ol { margin-left: 20px; list-style-type: decimal; }
+  .locationDisplay li { padding: 7px 0; border-bottom: 2px solid #e1e8ea; line-height: 1.3; }
+  
+  #locationPlaces { border: 1px solid #999; border-radius: 5px; }
+  #locationList { width: 263px; min-height: 219px; padding: 15px 15px 0; }
+  
+.bubbleClass { padding: 3px;  }
+.bubbleClass a {text-decoration: underline;}  
+
+/* Travel Tips */
+.tipsLister { margin-top: -20px; }
+  .tipsLister li { padding: 10px 0 7px; border-bottom: 2px solid #e1e8ea; }
+    .tipsLister li:last-child { border-bottom: 0; }
+  
+  .packingList ol { margin: -20px -13px 7px -13px; border: 2px solid #e5e8e3; border-radius: 3px; }
+  .packingList li { padding: 7px 10px 10px; border-bottom: 2px solid #e5e8e3; }  
+    .packingList li:first-child { padding-top: 12px; border-top: 0; }
+    .packingList li:last-child { border-bottom: 0; }    
+  .packingList label { padding: 0 0 0 10px; font-size: 14px; font: 1.4rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #605e52; vertical-align: bottom; }
+  .packingList .top { position: relative; top: -11px; display: block; height: 5px; margin: 0 -12px; background: #b6e3f3 none; border: 1px solid #d9ebef; border-bottom-color: #c2dadf; }
+  
+
+
+/*
+  Footer
+-----------------------------*/
+.siteFooter { height: 55px; padding: 20px 0 0 21px; border-top: 1px solid #042641; box-shadow: inset 0 10px 30px 5px rgba(0,0,0,0.2); font-size: 11px; line-height: 18px; font: 1.1rem/1.8rem NunitoLight, Arial, Helvetica, sans-serif; color: #e5e5e5; word-spacing: 1px; }
+  .siteFooter img { vertical-align: text-top; }
+
+/* Footer */
+
+footer { position: fixed; bottom: 0; width: 316px; height: 16px; margin: 0 auto; padding: 12px 0 18px 0; background-color: #fff; border: 2px solid #e0e0e0; text-align: center; }
+  footer span { position: relative; float: left; display: inline-block; margin: 5px 30px 0 35px; font-family: 'Kohinoor Medium'; font-size: 0.9rem; color: #008bb9; }
+  footer img { float: left; }
+  footer a { display: block; width: 100%; height: 20px; padding: 0; text-decoration: none; }  
+  
+  
+/*
+  Home Screen
+-----------------------------*/  
+/* Container Wrapper */
+  body.home .containerWrapper { padding: 0; background-image: url(../files/images/backgrounds/bkg-containerwrapper_home.jpg); }
+
+/* Header */
+  body.home .siteHeader { margin: 0; }
+    body.home .siteHeader strong { padding: 0; }
+  body.home .siteHeader img { display: inline; margin: 0 }
+  body.home .siteHeader p { float: none; text-align: center; }
+  
+/* Footer */
+  body.home footer { margin-left: -3px; }
+
+/* Content */
+  body.home .content { padding: 165px 20px 0; background: transparent none; border-radius: 0; box-shadow: none; text-align: center; }  
+
+/* Start Link */  
+.startLink { display: inline-block; width: 216px; height: 54px; margin: 0; padding: 5px 0 0;
+
+background: rgb(133,179,23); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(133,179,23,1) 0%, rgba(147,199,54,1) 0%, rgba(128,175,34,1) 43%, rgba(108,148,11,1) 50%, rgba(129,176,22,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(133,179,23,1)), color-stop(0%,rgba(147,199,54,1)), color-stop(43%,rgba(128,175,34,1)), color-stop(50%,rgba(108,148,11,1)), color-stop(100%,rgba(129,176,22,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(133,179,23,1) 0%,rgba(147,199,54,1) 0%,rgba(128,175,34,1) 43%,rgba(108,148,11,1) 50%,rgba(129,176,22,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(133,179,23,1) 0%,rgba(147,199,54,1) 0%,rgba(128,175,34,1) 43%,rgba(108,148,11,1) 50%,rgba(129,176,22,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(133,179,23,1) 0%,rgba(147,199,54,1) 0%,rgba(128,175,34,1) 43%,rgba(108,148,11,1) 50%,rgba(129,176,22,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(133,179,23,1) 0%,rgba(147,199,54,1) 0%,rgba(128,175,34,1) 43%,rgba(108,148,11,1) 50%,rgba(129,176,22,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85b317', endColorstr='#81b016',GradientType=0 ); /* IE6-9 */
+
+
+box-shadow: 0 0 2px 1px rgba(24,162,192,0.75), inset 0 0 3px 0 rgba(77,133,10,0.50); border: 1px solid #9dcf33; border-top-width: 2px; border-radius: 5px; font-size: 11px; line-height: 16px; font-size: 1.1rem; line-height: 1.6rem; color: #dbe8c5; }  
+  
+  .startLink em { display: block; margin: 0 0 -1px; font-size: 34px; font: 3.4rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #fffdf4; text-transform: uppercase; }
+    .startLink:hover, .startLink:focus { color: #dbe8c5; }
+    
+/* Mediate Selector */    
+body.home .mediateSelector { position: static; margin: 35px 0 0 -23px; }  
+
+  body.home .mediateSelector a { postion: relative; z-index: 1; width: 107px; height: 46px; padding: 12px 0 0 52px; background: transparent url(../files/images/links/link-locate_home.png) no-repeat 3px 12px; font-size: 11px; font-size: 1.1rem; text-align: left; }
+    body.home .mediateSelector li:nth-child(2) a { background-image: url(../files/images/links/link-travel_home.png); }  
+    
+  body.home .mediateSelector strong { margin: 0 0 1px; color: #1a8ba8; text-align: left; }    
+  
+
+/* High PPI Devices ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  
+/*
+
+Site Defaults
+--------------------------------------------*/
+/* --- Inputs --- */  
+input[type='submit'] {
+background-image: url(../files/images/buttons/btn-locate@2x.png), -moz-linear-gradient(top,  #559fbe 0%, #307ba6 100%); /* FF3.6+ */
+background-image: url(../files/images/buttons/btn-locate@2x.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#559fbe), color-stop(100%,#307ba6)); /* Chrome,Safari4+ */
+background-image: url(../files/images/buttons/btn-locate@2x.png), -webkit-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Chrome10+,Safari5.1+ */
+background-image: url(../files/images/buttons/btn-locate@2x.png), -o-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Opera 11.10+ */
+background-image: url(../files/images/buttons/btn-locate@2x.png), -ms-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* IE10+ */
+background-image: url(../files/images/buttons/btn-locate@2x.png), linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* W3C */  
+background-size: 18px auto;
+}
+
+input[type='button'] {
+background-image: url(../files/images/buttons/btn-listview@2x.png), -moz-linear-gradient(top,  #559fbe 0%, #307ba6 100%); /* FF3.6+ */
+background-image: url(../files/images/buttons/btn-listview@2x.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#559fbe), color-stop(100%,#307ba6)); /* Chrome,Safari4+ */
+background-image: url(../files/images/buttons/btn-listview@2x.png), -webkit-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Chrome10+,Safari5.1+ */
+background-image: url(../files/images/buttons/btn-listview@2x.png), -o-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Opera 11.10+ */
+background-image: url(../files/images/buttons/btn-listview@2x.png), -ms-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* IE10+ */
+background-image: url(../files/images/buttons/btn-listview@2x.png), linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* W3C */
+background-size: 18px auto;
+}  
+
+/*
+  Container Wrapper
+-----------------------------*/
+.containerWrapper { background-image: url(../files/images/backgrounds/bkg-container@2x.jpg); background-size: 320px auto; }
+
+/*
+  Navigation Block (Menu/Cover-More Apps)
+-----------------------------*/
+  .navigation li a { background-size: 59px auto; }
+    .navigation li:nth-child(1) a { background-image: url(../files/images/links/link-mediate@2x.png); }
+    .navigation li:nth-child(2) a { background-image: url(../files/images/links/link-locate@2x.png); }
+    .navigation li:nth-child(3) a { background-image: url(../files/images/links/link-travel@2x.png); }        
+
+
+/* Menu Tab */
+.menuTab { background-image: url(../files/images/links/link-menu@2x.png); background-size: 74px auto; }
+
+
+/*
+  Content
+-----------------------------*/
+.content { background-image: url(../files/images/backgrounds/bkg-content@2x.jpg); background-size: 320px auto; }
+
+.listenLink { background-image: url(../files/images/buttons/btn-listen@2x.png); background-size: 64px auto; }
+  
+.displaySelector { background-image: url(../files/images/backgrounds/bkg-displayselector@2x.png); background-size: 320px auto; }
+
+  
+/*
+  Home Screen
+-----------------------------*/  
+/* Container Wrapper */
+  body.home .containerWrapper { background-image: url(../files/images/backgrounds/bkg-containerwrapper_home@2x.jpg); background-size: 320px auto; }
+
+    
+/* Mediate Selector */    
+
+  body.home .mediateSelector a { background-image: url(../files/images/links/link-locate_home@2x.png); background-size: 45px auto; }
+    body.home .mediateSelector li:nth-child(2) a { background-image: url(../files/images/links/link-travel_home@2x.png); }  
+  
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+
+    <!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+    <head>
+        <title>Code Pen - Flexbox/Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Based on Dudley Storey's Responsive Pivot Table pen, removing the JS dependency 
+				http://codepen.io/dudleystorey/pen/ZBPraK
+
+			 This version (forked version of original) - http://codepen.io/iwilsonjr/pen/aBxJpz
+        -->
+
+        <style>
+			@font-face {
+				font-family: 'Calluna';
+				src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/CallunaSansRegular.otf') format('woff');
+			}
+			* {
+				box-sizing: border-box;
+			}
+
+			/* Base */
+			table {
+				margin: 2rem auto;
+				font-size: 1.6rem;
+				border-collapse: collapse;
+				font-family: Calluna, Arial, sans-serif;
+			}
+
+			td {
+				width: 5rem;
+				padding: .5rem;	
+				text-align: right;
+			}
+
+			thead th {
+				border-bottom: 1px solid #777;
+				font-weight: 400;
+			}
+			tbody th {
+				padding-right: 1rem;
+				font-weight: 400;
+				text-align: right;
+			}
+			caption {
+				margin-bottom: 1rem;
+				font-weight: 600;
+				font-feature-settings: "smcp";
+			}
+			tbody td {
+				font-feature-settings: "tnum";
+				color: #444;
+			}
+
+
+
+			@media screen and (max-width: 522px) {
+
+				table {
+					display: flex;
+					flex-direction: row;
+				  	margin: 5rem auto 2rem;
+				  	font-size: 1.2rem;
+				}
+				td {
+					width: auto;
+					text-align: center;
+
+				}
+				thead { 
+					padding-top: 50px;
+					padding-right: 2rem; 
+					border-right: 1px solid #777;
+				}
+				thead th {
+					display: block;
+					padding: .5rem;
+					border-bottom: 0;
+					text-align: center;
+				}
+				thead td {
+					display: none;
+				}
+				tbody { 
+					display: flex;
+					flex-direction: row;
+				}
+				tbody th {
+					display: block; 
+					height: 50px;
+					padding-left: 2rem;
+					font-weight: 400;
+					text-align: center;
+				}
+				caption {
+					top: 1.6rem;
+					position: absolute;	
+					width: calc(100% - 10px);
+				}
+				tbody td {
+				  display: block;
+				  text-align: center;
+				  padding-left: 2rem;
+				}
+
+			}
+
+			@media screen and (max-width: 636px) {
+				table {
+					font-size: 1.0rem; 
+				}
+			}
+
+        </style>
+    </head>
+
+    <body>        
+
+
+
+<table id="gg" class="large">
+	<caption>2014 Greenhouse gas emissions, per country</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th scope="col">China</th>
+			<th scope="col"><abbr title="United States of America">USA</abbr></th>
+			<th scope="col"><abbr title="European Union">EU</abbr></th>
+			<th scope="col">India</th>
+			<th scope="col">Russia</th>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">CO<sub>2</sub> (mt)</th>
+			<td>10,540</td>
+			<td>5,334</td>
+			<td>3,415</td>
+			<td>2,341</td>
+			<td>1,766</td>
+		<tr>
+			<th scope="row">Emission per capita (t)</th>
+			<td>7.6</td>
+			<td>16.5</td>
+			<td>6.7</td>
+			<td>1.8</td>
+			<td>12.4</td>
+	</tbody>
+</table>
+
+    </body>
+</html>

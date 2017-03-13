@@ -13,7 +13,7 @@ Live (Medibank) ‐ https://travel.medibank.com.au/<br />
 Liva (AU Post) ‐ https://auspost.poweredbycovermore.com/</li>
 
 <li>virgin‐au (2014)<br />
-Live site ‐ https://virginaustralia.poweredbycovermore.com/<li>
+Live site ‐ https://virginaustralia.poweredbycovermore.com/</li>
 
 <li>travelvalet (2012) ‐ code for web/hybrid apps</li>
 

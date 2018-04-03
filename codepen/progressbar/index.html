@@ -1,0 +1,131 @@
+<!doctype html>
+
+    <html lang="en">
+
+    <head>
+        <title>Progress Bar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+        <style>
+            html { width: 100%; height: 100%; background: #fff; color: #484848; } /* 16px = 1.0625rem */
+
+            a img { border: none; }
+            body { min-width: 320px; margin: 0 auto; padding: 0; font-size: 1.0625rem; line-height: 1.25; font-family: 'Oswald', sans-serif; }
+            ol { list-style: decimal outside none; margin: 0 0 15px 30px; }
+                ol li { margin: 0; padding: 0 0 5px; }
+
+                /* 
+                  Breadcrumb/Navigation
+                -----------------------------*/  
+                nav { height: 90px; margin-bottom: 30px; background: #0083c0; box-sizing: border-box; }
+
+                .siteNavigation { overflow: hidden; height: 90px; margin: 0 auto; padding-top: 27px; text-align: center; box-sizing: border-box; } 
+                  .siteNavigation ol { display: inline-block; counter-reset: item; list-style-type: none; margin: 0; padding: 0; background: url(files/images/backgrounds/bkg-navigation.gif) no-repeat 0 50%; background-size: 100% 1px; font-family: 'Oswald', sans-serif; text-align: center; }
+                  .siteNavigation li { float: left; display: block; margin: 0; padding: 0 20px 0 0; box-sizing: border-box; }
+                    .siteNavigation li:last-child { padding-right: 0; }
+                    .siteNavigation a, .siteNavigation span, .siteNavigation em { overflow: hidden; display: block; width: 40px; height: 40px; padding: 0; background: #cde9f6; border: 4px solid #0082c2; border-radius: 20px; line-height: 1; text-indent: -150px; box-sizing: border-box; }
+                    .siteNavigation a, .siteNavigation li.completed span { background: #8dc945; }
+                    .siteNavigation em { background: #fff; }      
+
+                    .siteNavigation li:before { content: counter(item); counter-increment: item; position: absolute; display: inline-block; margin: 12px 0 0 -4px; padding: 0; font-size: 1.0625rem; line-height: 1; color: #0082c2; text-align: center; }
+                      .siteNavigation li.completed:before { color: #fff; } 
+                      .siteNavigation li:last-child:before { content: ""; width: 12px; height: 14px; margin: 13px 0 0 -5px; background: url(files/images/backgrounds/bkg-final-step.png) no-repeat 50% 50%; background-size: 12px 14px; }
+
+                  .siteNavigation li.selected:after { content: ""; position: absolute; display: inline-block; width: 0; height: 0; margin-top: -6px; margin-left: -20px; border: 20px solid transparent; border-bottom: 20px solid #fff; }
+        </style>
+
+    </head>
+
+    <body>
+
+        <ol>                    
+            <li class="selected"><em>Get a quote</em></li>     
+            <li><span>Plan Options</span></li>
+            <li><span>Travellers</span></li>
+            <li><span>Payment</span></li> 
+            <li><span>Confirmation</span></li>                                      
+        </ol>
+
+        <!--First-->
+        <nav role="navigation"> 
+            
+            <div class="siteNavigation">
+                <ol>                    
+                    <li class="selected"><em>Get a quote</em></li>     
+                    <li><span>Plan Options</span></li>
+                    <li><span>Travellers</span></li>
+                    <li><span>Payment</span></li> 
+                    <li><span>Confirmation</span></li>                                      
+                </ol>
+            </div> 
+
+        </nav>
+        <!--/First-->
+
+        <!--Second-->
+        <nav role="navigation"> 
+            
+            <div class="siteNavigation">
+                <ol>                    
+                    <li class="completed"><a href="#">Get a quote</a></li>     
+                    <li class="selected"><em>Plan Options</em></li>
+                    <li><span>Travellers</span></li>
+                    <li><span>Payment</span></li> 
+                    <li><span>Confirmation</span></li>                                      
+                </ol>
+            </div> 
+
+        </nav>
+        <!--/Second-->   
+
+        <!--Third-->
+        <nav role="navigation"> 
+            
+            <div class="siteNavigation">
+                <ol>                    
+                    <li class="completed"><a href="#">Get a quote</a></li>     
+                    <li class="completed"><a href="#">Plan Options</a></li>
+                    <li class="selected"><em>Travellers</em></li>
+                    <li><span>Payment</span></li> 
+                    <li><span>Confirmation</span></li>                                      
+                </ol>
+            </div> 
+
+        </nav>
+        <!--/Third-->
+
+        <!--Fourth-->
+        <nav role="navigation"> 
+            
+            <div class="siteNavigation">
+                <ol>                    
+                    <li class="completed"><a href="#">Get a quote</a></li>     
+                    <li class="completed"><a href="#">Plan Options</a></li>
+                    <li class="completed"><a href="#">Travellers</a></li>
+                    <li class="selected"><em>Payment</em></li> 
+                    <li><span>Confirmation</span></li>                                      
+                </ol>
+            </div> 
+
+        </nav>
+        <!--/Fourth-->     
+       
+        <!--Final-->
+        <nav role="navigation">
+            
+            <div class="siteNavigation">
+                <ol>                    
+                    <li class="completed"><span>Get a quote</span></li>     
+                    <li class="completed"><span>Plan Options</span></li>
+                    <li class="completed"><span>Travellers</span></li>
+                    <li class="completed"><span>Payment</span></li> 
+                    <li class="selected"><em>Confirmation</em></li>                                      
+                </ol>
+            </div> 
+
+        </nav>
+        <!--/Final-->
+
+    </body>
+</html>

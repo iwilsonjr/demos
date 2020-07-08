@@ -1,0 +1,421 @@
+<!doctype html>
+
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+    <head>
+        <title>Innate - Country Selector/Revision 3.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <link rel="stylesheet" href="css/jquery-ui-1.11.4.min.css" />        
+        <link rel="stylesheet" href="css/main.css" />
+    	<link rel="stylesheet" href="css/widget.css" />  
+    </head>
+
+    <body>
+
+                            
+        <form id="quoteForm" action="#" method="get">
+        
+            <div id="quoteWidget" class="quoteWidget">
+
+                <ol>
+                                  
+                    <li>
+
+
+
+                        <!--Country Inputs-->  
+                        <label for="country">destination</label>
+                        <input type="text" name="country" id="country" value="" class="country" autocomplete="off" tabindex="0" />
+                        <!--Country Inputs--> 
+
+                        <!--Auto Complete-->  
+                        <div id="autoCountry" class="popular"></div>
+                        <!--Auto Complete-->
+
+                        <!--Activate Visual Selector--> 
+                        <button type="button" class="countrySelector" id="selector">Select Region/Country from List</button>
+                       
+                        
+                        <!--Country Display - Visual-->
+    					<div class="ui-countryselector" hidden="hidden">
+                        
+                            <a href="#" title="X" class="closeWindow">X <em>Close Window</em></a>
+
+                            <div class="groups-container" id="groups-container">
+
+                            <!-- Worldwide -->
+                              <fieldset class="group">
+                                <legend>Region - Region 1</legend>
+
+                                <input type="radio" name="regionID" id="region-115" value="115"><label for="region-115" class="group-label region-1"><strong>Region 1</strong></label>
+
+                                <div class="columns">
+
+                                  <ul class="column">        
+                                    <li><input type="radio" name="destinationCountryID" id="country-2754" value="2754"><label for="country-2754">Gibraltar</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-242" value="242"><label for="country-242">Antarctica (Cruising)</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-184" value="184"><label for="country-184">Argentina</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-187" value="187"><label for="country-187">Bahamas</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-189" value="189"><label for="country-189">Barbados</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-190" value="190"><label for="country-190">Belize</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-191" value="191"><label for="country-191">Bermuda</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-192" value="192"><label for="country-192">Bolivia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-193" value="193"><label for="country-193">Brazil</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-194" value="194"><label for="country-194">Canada</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-195" value="195"><label for="country-195">Cayman Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-196" value="196"><label for="country-196">Chile</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-197" value="197"><label for="country-197">Colombia</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-82" value="82"><label for="country-82">Comoros</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-198" value="198"><label for="country-198">Costa Rica</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-199" value="199"><label for="country-199">Cuba</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-200" value="200"><label for="country-200">Dominica</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-249" value="249"><label for="country-249">Dominican Rep.</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-202" value="202"><label for="country-202">Ecuador</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-203" value="203"><label for="country-203">El Salvador</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-204" value="204"><label for="country-204">Falkland Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-206" value="206"><label for="country-206">French Guiana</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-208" value="208"><label for="country-208">Greenland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-209" value="209"><label for="country-209">Grenada</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-210" value="210"><label for="country-210">Guadeloupe</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-211" value="211"><label for="country-211">Guatemala</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-212" value="212"><label for="country-212">Guyana</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-213" value="213"><label for="country-213">Haiti</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-214" value="214"><label for="country-214">Honduras</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-215" value="215"><label for="country-215">Jamaica</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-217" value="217"><label for="country-217">Martinique</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-218" value="218"><label for="country-218">Mexico</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-223" value="223"><label for="country-223">Netherlands Antilles</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-224" value="224"><label for="country-224">Nicaragua</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-255" value="255"><label for="country-255">Northern Marianas</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-225" value="225"><label for="country-225">Panama</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-226" value="226"><label for="country-226">Paraguay</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-227" value="227"><label for="country-227">Peru</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-144" value="144"><label for="country-144">Puerto Rico</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-149" value="149"><label for="country-149">Sao Tome And Principe</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-277" value="277"><label for="country-277">St. Kitts-Nevis</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-230" value="230"><label for="country-230">St. Lucia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-278" value="278"><label for="country-278">St. Vincent &amp; Grenadines</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-233" value="233"><label for="country-233">Suriname</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-279" value="279"><label for="country-279">Trinidad &amp; Tobago</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-236" value="236"><label for="country-236">United States of America</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-237" value="237"><label for="country-237">Uruguay</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-238" value="238"><label for="country-238">Venezuela</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-280" value="280"><label for="country-280">Virgin Islands</label></li>
+                                  </ul>    
+
+                                </div>
+
+                              </fieldset>                              
+                            <!-- Worldwide -->
+
+                            <!-- Worldwide excluding the Americas &amp; Antarctica -->
+                              <fieldset class="group">
+                                <legend>Region - Region 2</legend>
+
+                                <input type="radio" name="regionID" id="region-116" value="116"><label for="region-116" class="group-label region-2"><strong>Region 2</strong></label>
+
+                                <div class="columns">
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-62" value="62"><label for="country-62">Afghanistan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-10" value="10"><label for="country-10">Albania</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-11" value="11"><label for="country-11">Algeria</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-12" value="12"><label for="country-12">Andorra</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-63" value="63"><label for="country-63">Angola</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-65" value="65"><label for="country-65">Armenia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-13" value="13"><label for="country-13">Austria</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-66" value="66"><label for="country-66">Azerbaijan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-245" value="245"><label for="country-245">Azores</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-67" value="67"><label for="country-67">Bahrain</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-188" value="188"><label for="country-188">Bangladesh</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-14" value="14"><label for="country-14">Belarus</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-15" value="15"><label for="country-15">Belgium</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-68" value="68"><label for="country-68">Benin</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-69" value="69"><label for="country-69">Bhutan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-282" value="282"><label for="country-282">Bosnia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-70" value="70"><label for="country-70">Botswana</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-17" value="17"><label for="country-17">Bulgaria</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-72" value="72"><label for="country-72">Burkina Faso</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-73" value="73"><label for="country-73">Burundi</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-75" value="75"><label for="country-75">Cameroon</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-283" value="283"><label for="country-283">Canary Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-246" value="246"><label for="country-246">Cape Verde</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-77" value="77"><label for="country-77">Central African Republic</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-78" value="78"><label for="country-78">Chad</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-79" value="79"><label for="country-79">China</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-286" value="286"><label for="country-286">Congo, Democratic Republic</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-18" value="18"><label for="country-18">Croatia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-55" value="55"><label for="country-55">Cyprus</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-19" value="19"><label for="country-19">Czech Republic</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-20" value="20"><label for="country-20">Denmark</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-87" value="87"><label for="country-87">Djibouti</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-21" value="21"><label for="country-21">Egypt</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-89" value="89"><label for="country-89">Equatorial Guinea</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-90" value="90"><label for="country-90">Eritrea</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-22" value="22"><label for="country-22">Estonia</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-91" value="91"><label for="country-91">Ethiopia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-205" value="205"><label for="country-205">Faroe Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-23" value="23"><label for="country-23">Finland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-24" value="24"><label for="country-24">France</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-93" value="93"><label for="country-93">Gabon</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-94" value="94"><label for="country-94">Gambia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-25" value="25"><label for="country-25">Georgia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-26" value="26"><label for="country-26">Germany</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-95" value="95"><label for="country-95">Ghana</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-27" value="27"><label for="country-27">Gibraltar</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-56" value="56"><label for="country-56">Greece</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-96" value="96"><label for="country-96">Guam</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-97" value="97"><label for="country-97">Guinea</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-98" value="98"><label for="country-98">Guinea-Bissau</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-262" value="262"><label for="country-262">Herzegovina</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-28" value="28"><label for="country-28">Hungary</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-29" value="29"><label for="country-29">Iceland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-100" value="100"><label for="country-100">India</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-102" value="102"><label for="country-102">Iran</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-103" value="103"><label for="country-103">Iraq</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-30" value="30"><label for="country-30">Israel</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-31" value="31"><label for="country-31">Italy</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-250" value="250"><label for="country-250">Ivory Coast</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-104" value="104"><label for="country-104">Japan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-105" value="105"><label for="country-105">Jordan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-32" value="32"><label for="country-32">Kazakhstan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-106" value="106"><label for="country-106">Kenya</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-107" value="107"><label for="country-107">Kiribati</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-263" value="263"><label for="country-263">Korea (north)</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-264" value="264"><label for="country-264">Korea (south)</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-109" value="109"><label for="country-109">Kuwait</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-110" value="110"><label for="country-110">Kyrgyzstan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-33" value="33"><label for="country-33">Latvia</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                   <li><input type="radio" name="destinationCountryID" id="country-112" value="112"><label for="country-112">Lebanon</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-113" value="113"><label for="country-113">Lesotho</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-114" value="114"><label for="country-114">Liberia</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-115" value="115"><label for="country-115">Libya</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-34" value="34"><label for="country-34">Liechtenstein</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-35" value="35"><label for="country-35">Lithuania</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-36" value="36"><label for="country-36">Luxembourg</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-116" value="116"><label for="country-116">Macau</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-37" value="37"><label for="country-37">Macedonia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-117" value="117"><label for="country-117">Madagascar</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-118" value="118"><label for="country-118">Malawi</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-120" value="120"><label for="country-120">Maldives</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-121" value="121"><label for="country-121">Mali</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-57" value="57"><label for="country-57">Malta</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-122" value="122"><label for="country-122">Mauritania</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-123" value="123"><label for="country-123">Mauritius</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-267" value="267"><label for="country-267">Moldova</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-221" value="221"><label for="country-221">Monaco</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-126" value="126"><label for="country-126">Mongolia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-268" value="268"><label for="country-268">Montenegro</label></li> <!--checked-->
+                                    <li><input type="radio" name="destinationCountryID" id="country-40" value="40"><label for="country-40">Morocco</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-127" value="127"><label for="country-127">Mozambique</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-129" value="129"><label for="country-129">Namibia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-130" value="130"><label for="country-130">Nauru</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-131" value="131"><label for="country-131">Nepal</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-41" value="41"><label for="country-41">Netherlands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-133" value="133"><label for="country-133">Niger</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-134" value="134"><label for="country-134">Nigeria</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-42" value="42"><label for="country-42">Norway</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-139" value="139"><label for="country-139">Oman</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-140" value="140"><label for="country-140">Pakistan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-43" value="43"><label for="country-43">Poland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-44" value="44"><label for="country-44">Portugal</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-145" value="145"><label for="country-145">Qatar</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-45" value="45"><label for="country-45">Romania</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-270" value="270"><label for="country-270">Russia</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-147" value="147"><label for="country-147">Rwanda</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-47" value="47"><label for="country-47">San Marino</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-150" value="150"><label for="country-150">Saudi Arabia</label></li>      
+                                    <li><input type="radio" name="destinationCountryID" id="country-151" value="151"><label for="country-151">Senegal</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-271" value="271"><label for="country-271">Serbia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-152" value="152"><label for="country-152">Seychelles</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-153" value="153"><label for="country-153">Sierra Leone</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-49" value="49"><label for="country-49">Slovakia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-50" value="50"><label for="country-50">Slovenia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-156" value="156"><label for="country-156">Somalia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-157" value="157"><label for="country-157">South Africa</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-272" value="272"><label for="country-272">South Korea</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-58" value="58"><label for="country-58">Spain</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-158" value="158"><label for="country-158">Sri Lanka</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-159" value="159"><label for="country-159">Sudan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-161" value="161"><label for="country-161">Swaziland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-51" value="51"><label for="country-51">Sweden</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-52" value="52"><label for="country-52">Switzerland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-162" value="162"><label for="country-162">Syria</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-163" value="163"><label for="country-163">Taiwan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-164" value="164"><label for="country-164">Tajikistan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-165" value="165"><label for="country-165">Tanzania</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-167" value="167"><label for="country-167">Togo</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-53" value="53"><label for="country-53">Tunisia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-59" value="59"><label for="country-59">Turkey</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-169" value="169"><label for="country-169">Turkmenistan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-171" value="171"><label for="country-171">Uganda</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-54" value="54"><label for="country-54">Ukraine</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-172" value="172"><label for="country-172">United Arab Emirates</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-173" value="173"><label for="country-173">Uzbekistan</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-273" value="273"><label for="country-273">Vatican City</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-178" value="178"><label for="country-178">Yemen</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-179" value="179"><label for="country-179">Zambia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-180" value="180"><label for="country-180">Zimbabwe</label></li>
+                                  </ul>
+                                </div>
+                                
+                              </fieldset>
+                            <!-- Worldwide excluding the Americas &amp; Antarctica --> 
+
+                            <!-- UK, Ireland, Hong Kong, Singapore &amp; Sth East Asia--> 
+                              <fieldset class="group">
+                                <legend>Region - Region 3</legend>
+
+                                <input type="radio" name="regionID" id="region-117" value="117"><label for="region-117" class="group-label region-3"><strong>Region 3</strong></label>
+
+                                <div class="columns">
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-71" value="71"><label for="country-71">Brunei</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-74" value="74"><label for="country-74">Cambodia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-88" value="88"><label for="country-88">East Timor</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-1" value="1"><label for="country-1">England</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-274" value="274"><label for="country-274">Federated States of Micronesia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-99" value="99"><label for="country-99">Hong Kong</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-101" value="101"><label for="country-101">Indonesia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-287" value="287"><label for="country-287">Ireland, Republic</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-253" value="253"><label for="country-253">Laos</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-119" value="119"><label for="country-119">Malaysia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-216" value="216"><label for="country-216">Marshall Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-219" value="219"><label for="country-219">Micronesia</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-254" value="254"><label for="country-254">Myanmar (Burma)</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-2" value="2"><label for="country-2">Northern Ireland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-141" value="141"><label for="country-141">Palau</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-143" value="143"><label for="country-143">Philippines</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-3" value="3"><label for="country-3">Scotland</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-154" value="154"><label for="country-154">Singapore</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-166" value="166"><label for="country-166">Thailand</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-4" value="4"><label for="country-4">United Kingdom</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-257" value="257"><label for="country-257">Vietnam</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-5" value="5"><label for="country-5">Wales</label></li>
+                                  </ul>
+                                </div>
+
+                              </fieldset>
+                            <!-- UK, Ireland, Hong Kong, Singapore &amp; Sth East Asia--> 
+
+                            <!-- South Pacific and Norfolk Islands-->                                     
+                              <fieldset class="group">
+                                <legend>Region 4</legend>
+
+                                <input type="radio" name="regionID" id="region-118" value="118"><label class="group-label region-4" for="region-118"><strong>Region 4</strong></label>
+
+                                <div class="columns">
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-181" value="181"><label for="country-181">American Samoa</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-85" value="85"><label for="country-85">Cook Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-92" value="92"><label for="country-92">Fiji</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-207" value="207"><label for="country-207">French Polynesia</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-130" value="130"><label for="country-130">Nauru</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-132" value="132"><label for="country-132">New Caledonia</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-136" value="136"><label for="country-136">Norfolk Island</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-142" value="142"><label for="country-142">Papua New Guinea</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-148" value="148"><label for="country-148">Samoa</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-155" value="155"><label for="country-155">Solomon Islands</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-301" value="301"><label for="country-301">Tahiti</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-168" value="168"><label for="country-168">Tonga</label></li>
+                                  </ul>
+
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-170" value="170"><label for="country-170">Tuvalu</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-174" value="174"><label for="country-174">Vanuatu</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-260" value="260"><label for="country-260">Western Samoa</label></li>
+                                  </ul>
+                                </div>
+
+                              </fieldset>
+                            <!-- South Pacific and Norfolk Islands--> 
+
+
+                            <!-- Australia-->                                     
+                              <fieldset class="group">
+                                <legend>Region - Region 5</legend>
+
+                                <input type="radio" name="regionID" id="region-119" value="119"><label class="group-label region-5" for="region-119"><strong>Region 5</strong></label>
+
+                                <div class="columns">
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-60" value="60"><label for="country-60">Australia</label></li>
+                                  </ul>
+                                </div>
+
+                              </fieldset>
+                            <!-- Australia--> 
+
+                            <!-- New Zealand-->                                     
+                              <fieldset class="group">
+                                <legend>Region - Region 6</legend>
+
+                                <input type="radio" name="regionID" id="region-120" value="120"><label class="group-label region-6" for="region-120"><strong>Region 6</strong></label>
+
+                                <div class="columns">
+                                  <ul class="column">
+                                    <li><input type="radio" name="destinationCountryID" id="country-258" value="258"><label for="country-258">Domestic Cruise</label></li>
+                                    <li><input type="radio" name="destinationCountryID" id="country-61" value="61"><label for="country-61">New Zealand</label></li>
+                                  </ul>
+                                </div>
+
+                              </fieldset>
+                            <!-- New Zealand-->
+  
+                            </div>  
+                        
+                        </div>
+                        <!--Country Display - Visual-->
+                                      
+                    </li>                                                                 
+                </ol>
+                
+                <div class="buttonWell">
+                    <input type="submit" name="getQuote" value="Get Quote" class="btnSubmit" id="btnSubmit" />
+                </div>
+                
+            </div>
+        </form>                        
+
+        <!--JavaScript Calls-->      
+        <script src="library/jquery-2.1.3.min.js"></script>
+        <script src="library/jquery-ui-1.11.4.min.js"></script> 
+        <script src="js/widget.js"></script>              
+        <!--JavaScript Calls-->
+
+    </body>
+</html>

@@ -1,0 +1,80 @@
+/*
+
+Cover-More/Medibank Theme Style Sheet - Travellers - Innate
+--------------------------------------------*/
+
+/* Datepicker Overrides to the Overrides */
+.dob { z-index: 10; position: relative; }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { display: none; }
+
+  .ui-datepicker select { width: 86px; margin-right: 5px !important; height: 37px; font-family: "DIN Medium"; }
+  .ui-datepicker .ui-datepicker-title { margin-top: -7px; margin-left: 10px; }
+  .ui-datepicker .ui-datepicker-header { height: 54px; }
+
+/* EMC */
+.healix { margin: 20px 0 0; padding: 0; }
+  .healix h3 { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e2dfda; font-size: 1.375rem; } /* Changed 4/8/16 */
+  .healix fieldset, .healix div { margin-bottom: 20px; }
+  .healix div { margin-top: 20px; padding-top: 20px; }
+
+    .healix div > label { margin-bottom: 10px; font-family: "DIN Regular"; }
+    .healix legend { display: table; font-family: "DIN Regular"; white-space: normal; }   
+
+  .healix .buttonWell { margin: 40px 0 0; padding: 0; border: 0; }
+
+  .healix .buttonWell input { float: none; margin-bottom: 15px; padding-top: 0; background: #1483c0; border: 0; } 
+    .healix .buttonWell input:hover, .healix .buttonWell input:focus, .healix .buttonWell input:active { background: #0074a8; }
+
+    .healix .buttonWell input[type="button"]:last-child { margin-bottom: 0; } 
+
+  .healix table { width: 100%; margin-top: 25px; }
+  .healix thead { display: none; }
+  .healix th, .healix td { display: list-item; padding-bottom: 5px; }
+  .healix tr { display: block; margin-bottom: 10px; }
+.healix em { font-style: normal; font-weight: bold; }
+
+.healixBlock .radioList label.error { position: relative; top: 35px; left: -123px; height: 60px; }
+
+.notice { list-style-type: disc; margin-left: 60px; }
+
+/* Fancybox/EMC - Added 11/4/16 */
+.modal { margin: 0 auto; padding: 22px 25px 17px; background: #fff; box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25); border: 0; border-radius: 3px; font-size: 1.0rem; line-height: 1.25; font-family: "DIN Medium"; color: #4d4d4d;  }
+  .modal .scrollableArea { overflow: auto !important; max-height: 320px; margin: 0; }
+
+  .modal p { margin: 0 0 12px; }
+  .modal .buttonWell { float: none; margin-top: 10px; padding: 0; text-align: left; }
+
+  .modal input[type="button"] { width: 100%; height: 50px; margin-right: 10px; margin-bottom: 10px; padding: 0; background: #0092d2 url(../files/images/buttons/btn-next.png) no-repeat; background-position: right 20px center; background-size: 12px 12px; border: 0; border-radius: 3px; font-size: 1.0625rem; font-family: "DIN Bold"; color: #fff; text-align: center; box-sizing: border-box; }
+
+    .modal input[type="button"]:hover { background-color: #0074a8; }  
+    .modal input[type="button"]:focus, .modal input[type="button"]:active { background-color: #0074a8; }  
+
+.fancybox-close { overflow: hidden; position: absolute; clip: rect(0,0,0,0); height: 0; width: 0; }   
+.fancybox-skin { background: none; }
+/*.fancybox-overlay { background: rgba(0,0,0,0.30); }*/
+
+@media screen and (min-width: 480px) {
+
+  .modal input[type="button"] { width: 160px; }
+  .modal .buttonWell { width: auto; }    
+
+}
+
+
+/* 
+  Large Phone/Small Tablet - 640px/40em
+-----------------------------*/
+@media screen and (min-width: 40em) {
+
+  .healix thead { display: table-row-group; }
+    .healix thead th { padding-bottom: 15px; }
+  .healix th, .healix td { display: table-cell; padding-right: 10px; padding-bottom: 5px; }
+  .healix tr { display: table-row; margin-bottom: 10px; }    
+  .healix em { display: none; }
+
+  .healix .buttonWell { margin: 40px 0 5px; }    
+    .healix .buttonWell input { display: inline-block; width: auto; padding: 0 20px; } 
+ 
+  .healix .emcInfo { margin-bottom: 0; padding-right: 0; padding-left: 0; }
+
+}

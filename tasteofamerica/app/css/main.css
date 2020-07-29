@@ -1,0 +1,519 @@
+/*
+
+Default Main Style Sheet - CQ Roll Call/A Taste of America
+--------------------------------------------*/
+
+
+/*
+Font-Declarations
+--------------------------------------------*/
+/**
+ * @license
+ * MyFonts Webfont Build ID 2788201, 2014-04-03T16:49:09-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Museo Sans 700 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/700/
+ * 
+ * Webfont: Museo Sans 300 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/300/
+ * 
+ * Webfont: Museo Sans 500 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/500/
+ * 
+ * Webfont: Museo Sans 900 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-sans/900/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2788201
+ * Licensed pageviews: 5,000,000
+ * Webfonts copyright: Copyright (c) 2008 by Jos Buivenga. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/2a8b69");*/
+
+  
+@font-face {font-family: 'Museo Sans 700';src: url('type/2A8B69_0_0.eot');src: url('type/2A8B69_0_0.eot?#iefix') format('embedded-opentype'),url('type/2A8B69_0_0.woff') format('woff'),url('type/2A8B69_0_0.ttf') format('truetype'),url('type/2A8B69_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Museo Sans 300';src: url('type/2A8B69_1_0.eot');src: url('type/2A8B69_1_0.eot?#iefix') format('embedded-opentype'),url('type/2A8B69_1_0.woff') format('woff'),url('type/2A8B69_1_0.ttf') format('truetype'),url('type/2A8B69_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Museo Sans 500';src: url('type/2A8B69_2_0.eot');src: url('type/2A8B69_2_0.eot?#iefix') format('embedded-opentype'),url('type/2A8B69_2_0.woff') format('woff'),url('type/2A8B69_2_0.ttf') format('truetype'),url('type/2A8B69_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Museo Sans 900';src: url('type/2A8B69_4_0.eot');src: url('type/2A8B69_4_0.eot?#iefix') format('embedded-opentype'),url('type/2A8B69_4_0.woff') format('woff'),url('type/2A8B69_4_0.ttf') format('truetype'),url('type/2A8B69_4_0.svg#wf') format('svg');}
+ 
+
+/*
+! normalize.css v3.0.1 | MIT License | git.io/normalize 
+--------------------------------------------------------------*/
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary { display: block; }
+audio,canvas,progress,video { display: inline-block; vertical-align: baseline; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden],template { display: none; }
+a { background: transparent; }
+a:active, a:hover { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b,strong { font-weight: bold; }
+dfn { font-style: italic; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+mark { background: #ff0; color: #000; }
+small { font-size: 80%; }
+sub,sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 1em 40px; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+pre { overflow: auto; }
+code,kbd,pre,samp { font-family: monospace, monospace; font-size: 1em; }
+button,input,optgroup,select,textarea { color: inherit; font: inherit; margin: 0; }
+button { overflow: visible; }
+button,select { text-transform: none; }
+button, html input[type="button"],input[type="reset"],input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button[disabled],html input[disabled] { cursor: default; }
+button::-moz-focus-inner,input::-moz-focus-inner { border: 0; padding: 0; }
+input { line-height: normal; }
+input[type="checkbox"],input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0; padding: 0; }
+textarea { overflow: auto; }
+optgroup { font-weight: bold; }
+table { border-collapse: collapse; border-spacing: 0; }
+td, th { padding: 0; }
+
+/*
+
+Initialization/Defaults
+--------------------------------------------*/
+
+html { width: 100%; height: 100%; background: #182133; font-size: 62.5%; color: #000; -webkit-tap-highlight-color: rgba(0,0,0,0); } /* 62.5% = 10px = 1.0rem */
+
+/* --- Block Elements --- */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a img { border: none; }
+
+/* --- Block Text --- */
+p, blockquote, caption, div { margin: 0 0 10px; } 
+
+/* --- Text Elements --- */
+a { color: #dc002b; text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+sup { font-size: 9px; font-size: 0.9rem; }
+small { font-size: 10px; font-size: 1.0rem; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+/* --- List Items --- */
+ul, ol { list-style: none outside none; }
+ul {}
+ul li {}
+ol {}
+ol li {}
+
+/* --- Inputs --- */
+fieldset { border: 0; }
+legend { }
+form { }
+input { margin-bottom: 0; }
+select { margin-bottom: 0; }
+button {}
+textarea { margin-bottom: 0; }
+
+/* --- Clearfix Hack --- */
+
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after { visibility: hidden; display: block; font-size: 0; line-height: 0; content: " "; clear: both; height: 1px; width: 1px; margin: 0 -1px -1px 0; overflow: hidden; }
+.clearfix { display: inline-block; }
+
+
+/* 
+     Utility ID's
+     ----------------------- */      
+.clear { display: block; clear: both; overflow: hidden; width: 1px; height: 1px; margin: 0 -1px -1px 0; border: 0; font-size: 0; line-height: 0; }
+.hide { position: absolute; left: -9999px; }
+
+
+/*
+
+Site Styles
+--------------------------------------------*/
+
+/* 
+	Body
+-----------------------------*/
+body { width: 100%; height: 100%; font-size: 10px; font-size: 1.0rem; line-height: 1.5; font-family: 'Museo Sans 500', sans-serif; } 
+
+/* 
+	Containe Wrapper
+-----------------------------*/
+.containerWrapper { overflow: hidden; width: 100%; min-width: 1080px; margin: 0; padding: 0; background: transparent url(../images/backgrounds/bkg-containerwrapper.jpg) no-repeat center 220px; }
+
+
+/* 
+	Container
+-----------------------------*/
+.container { width: 1080px; height: 1901px; margin: 0 auto; padding: 0; }
+
+
+/* 
+	Header
+-----------------------------*/
+.header { width: 100%; height: 220px; margin: 0 auto; padding: 0; background: #fff url(../images/backgrounds/bkg-header.jpg) no-repeat 0 0; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+
+	.header h1, .header strong { position: absolute; left: -9999px; }
+	.header a { position: relative; z-index: 1; display: block; width: 220px; height: 302px; margin: 0 auto; }
+
+
+/* 
+	Ads Space
+-----------------------------*/
+.adSpace { width: 190px; height: 158px; position: absolute; top: 25px; z-index: 1; margin: 0; padding: 8px 0 0 10px; background: transparent url(../images/backgrounds/bkg-adspace.png) no-repeat 0 0; }
+
+.adRight { margin-left: 880px; }
+
+
+/* 
+	Content Wrapper
+-----------------------------*/
+.contentWrapper { width: 1080px; height: 1689px; margin: 0 auto; padding: 0; } 
+
+/* 
+	Top Section
+-----------------------------*/
+
+.topSection { position: relative; width: 100%; height: 160px; padding: 25px; background: #4e5a20; background: rgba(19,34,65,0.4); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	.topSection p { margin: 0; width: 380px; font-size: 14px; font-size: 1.4rem; line-height: 1.4; font-family: 'Museo Sans 500'; color: #fff; }
+		.topSection p strong { font-weight: normal; font-family: 'Museo Sans 900'; }
+
+.rounds { position: absolute; bottom: 0; width: 100%; height: 50px; margin: 0 0 0 -25px; padding: 0 40px; background: #132241; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	.rounds li { float: left; display: block; width: 135px; height: 30px; margin: 0 0 0 10px; padding: 10px 0; font-size: 14px; font-size: 1.4rem; line-height: 1.1; font-family: 'Museo Sans 700'; color: #a7a9b1; text-align: center; }
+		.rounds li:first-child { margin: 0 !important; }
+
+	.week1 .round1, .week2 .round2, .week3 .round3, .week4 .round4  { margin: 0 0 0 5px; background: #2c3b5a; color: #fff; }
+	.week5 .round4, .week6 .round4  { margin: 0 0 0 5px; background: #2c3b5a; color: #fff; }
+
+	.rounds span { display: block; margin: 3px 0 0; font-family: 'Museo Sans 300'; }
+
+	.topSection .socialLinks { position: absolute; top: 0; right: 0; }
+
+
+/* 
+	Content
+-----------------------------*/
+.content { width: 1080px; height: 1683px; margin: 0; padding: 0; /* background: url(../images/backgrounds/bkg-regions-legacy.png) no-repeat 0 0; */ background: url(../images/backgrounds/bkg-regions-top.png) no-repeat 0 0, url(../images/backgrounds/bkg-regions-bottom.png) no-repeat 0 830px; background-size: 1080px 795px, 1080px 795px; }
+
+/* Voting Area */
+.votingBlock { position: absolute; top: 400px; width: 144px; height: 148px; margin: 0 0 0 469px; padding: 0; font-size: 14px; font-size: 1.4rem; line-height: 1.3571; color: #fff; text-align: center; }
+	.votingBlock span { display: inline-block; padding: 0 10px 5px; }
+	.week6 .votingBlock, .week5 .votingBlock { display: none; }
+	#bracketForm * { -webkit-user-select: none; }
+.secondVoting { top: 1845px; }	
+
+.votingBlock input { display: block; width: 144px; height: 138px; background: transparent url(../images/buttons/btn-vote.png) no-repeat 0 0; background-size: auto 138px; text-indent: -200px; overflow: hidden; border: none; cursor: pointer; }
+	.votingBlock input:hover, .votingBlock input:focus { background-position: -144px 0; } 
+	
+.endRound { display: block; margin-left: -20px; padding-top: 40px; font-size: 12px; line-height: 17px; text-align: center; }
+	
+/* Match Ups */
+.matchup { display: block; width: 135px; height: 95px; margin: 0 0 5px; padding: 0; overflow: visible; }
+	
+	/* Ipad Fix */
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		.matchup { margin-bottom: 5px; }
+	}	
+	.nonactive .matchup > * { display: none; }   
+
+
+/* 
+	Brackets
+-----------------------------*/
+.brackets h2, .brackets h3, .brackets h4, .brackets dt, .brackets legend { position: absolute; left: -9999px; }
+
+.west, .midwest, .northeast, .southeast, .finals { position: absolute; margin: 0; }
+
+/* First Round */
+.firstRound { overflow: hidden; width: 1000px; height: 1669px; margin: 0 0 0 40px; padding:  0; background: url(../images/backgrounds/bkg-brackets-week1.svg) no-repeat 135px 31px; background-size: 730px 1586px; }
+
+	.week2 .firstRound { background: url(../images/backgrounds/bkg-brackets-week2.svg) no-repeat 135px 31px; background-size: 730px 1586px; }
+	.week3 .firstRound { background: url(../images/backgrounds/bkg-brackets-week3.svg) no-repeat 135px 31px; background-size: 730px 1586px; }
+	.week4 .firstRound, .week5 .firstRound, .week6 .firstRound { background: url(../images/backgrounds/bkg-brackets-week4.svg) no-repeat 135px 31px; background-size: 730px 1586px; }
+
+	.firstRound .west, .firstRound .northeast { top: 390px }
+	.firstRound .midwest, .firstRound .southeast {top: 1222px; }
+
+	.firstRound .northeast, .firstRound .southeast { margin-left: 865px; }
+
+/* Quaterfinals */	
+.quarters { width: 710px; margin: 0 0 0 185px; }
+	.quarters .matchup { margin-bottom: 105px; }
+
+	.quarters .west, .quarters .northeast { top: 438px; }
+	.quarters .midwest, .quarters .southeast { top: 1273px; }	
+
+	.quarters .northeast, .quarters .southeast { margin-left: 575px; }
+
+/* Semifinals */	
+.semis { width: 490px; margin: 0 0 0 295px; } 
+	.semis .matchup { margin-bottom: 305px; }
+
+	.semis .west, .semis .northeast { top: 538px; }
+	.semis .midwest, .semis .southeast { top: 1373px; }		
+
+	.semis .northeast, .semis .southeast { margin-left: 355px; }		
+
+/* Finals */
+.finals { position: absolute; top: 1005px; margin-left: 472px; width: 116px; height: 351px; padding: 45px 10px 0; background: #fff; border: 0; border-radius: 4px; }	
+	.finals .northeast, .finals .southeast, .finals .west, .finals .midwest { position: static; margin: 0; }
+	.finals .competitor { margin-bottom: 3px; }
+	/*.finals img { margin-left: -24px; margin-bottom: 7px; }*/
+	.finals p { font-size: 1.4rem; line-height: 1.357; color: #333; text-align: center; }
+
+	.finals.active, .finals.nonactive { padding: 0; background: transparent; }
+
+
+/* 
+	Competitors
+-----------------------------*/
+	.competitor { height: 46px; margin: 0 0 3px; padding: 0; background: #d4d2b5; border: 0; border-radius: 4px; font-family: "Museo Sans 300"; color: #132241; }
+	
+			.competitor label { font-size: 14px; line-height: 14px; }
+			.active label { display: block; width: 135px; cursor: pointer; } /* Added 5/2/16 */
+			
+			.competitor label strong { display: inline-block; width: 21px; height: 17px; margin: 0; padding: 3px 5px 0 11px; font-weight: normal; font-family: 'Museo Sans 700'; text-align: center; }
+
+				.competitor label strong:after { content:"|"; display: inline-block; position: relative; top: -1px; left: 5px; margin: 0; padding: 0; }										
+
+			.competitor label em { display: inline-block; height: 17px; margin: 0; padding: 3px 0 0; font-style: normal; }
+
+				.competitor label span { overflow: hidden; float: left; clear: both; display: block; width: 113px; height: 20px; margin: 0; padding: 6px 11px 0; background: #f1efd7; border-radius: 0 0 4px 4px; font-size: 14px; font-size: 1.4rem; line-height: 1; }
+					
+	.selection { position: absolute; z-index: 3; left: -9999px; display: block; float: left; width: 135px; height: 41px; margin: -21px 0 0; padding: 6px 0 0; background: #dc002b; border: 0; border-radius: 4px; font-size: 12px; font-size: 1.2rem; line-height: 1.1; font-family: 'Museo Sans 500'; color: #fff; text-align: center; text-transform: uppercase; }
+		.selection strong { display: block; margin: 0; padding: 0; cursor: pointer; font-weight: normal; overflow: hidden; } /* JS version */
+			.selection strong span { font-size: 22px; font-size: 2.2rem; font-family: 'Museo Sans 900'; }
+		.selection input { position: absolute; left: -9999px; } /* JS Version */
+
+	/* Changed/Added 5/2/16 */
+	.menu { position: absolute; z-index: 2; left: -9999px; float: right; width: 260px; min-height: 200px; margin: -190px 0 0 145px; padding: 0; background: #fff; border-radius: 4px; box-shadow: 0 10px 15px -1px rgba(0,0,0,0.2); } 
+		.menu .top, .menu .bottom { display: none; }
+		.menu:before { content: ""; position: absolute; left: -8px; top: 177px; display: block; width: 24px; height: 27px; background: url(../images/backgrounds/bkg-menu.png) no-repeat; }
+		
+		.menu .text { margin: 0; padding: 0 20px; font-size: 1.4rem; line-height: 1.1; text-align: center; }
+
+		.menu h5 { height: 40px; margin: 0 -20px; padding: 11px 0 0; background: #d4d2b5; border-radius: 4px 4px 0 0; font-size: 18px; font-size: 1.8rem; font-family: 'Museo Sans 500'; color: #132241; text-transform: uppercase; text-align: center; box-sizing: border-box; } 
+		
+		.foodItem { display: block; margin: 0; padding: 5px 28px; font-weight: normal; font-size: 28px; font-size: 2.8rem; font-family: 'Museo Sans 900'; color: #dc002b; text-align: center; }
+
+		.foodImg { display: block; margin: 0 auto 17px; padding: 0; }
+
+        .menu .beerChoice { margin: 0 0 15px; padding: 0; background: transparent none; text-align: center; } 
+        	/*.menu .beerChoice:before { content: ""; position: relative; top: 5px; left: 86px; display: block; width: 25px; height: 26px; background: url(../images/backgrounds/bkg-beerchoice.gif) no-repeat; }*/
+
+		
+			.beerChoice h6 { margin: 25px 0 5px; font-weight: normal; font-size: 14px; font-size: 1.4rem; line-height: 1; font-family: 'Museo Sans 500'; color: #132241; text-transform: uppercase; }
+				.beerChoice h6:before, .beerChoice h6:after { content: "-"; display: inline-block; margin: 0 3px; }
+			.beerChoice p { padding-bottom: 0; background-image: none !important; }
+			.beer { text-decoration: underline; }
+			/*.beer { font-size: 18px; font-size: 1.8rem; font-family: "Museo Sans 300"; color: #dc002b } 
+			.beer2 { font-size: 16px; font-size: 1.6rem; font-family: "Museo Sans 300"; color: #dc002b }		*/	
+
+	.bracketSponsor { margin: 0; padding: 5px 20px 10px; background: #d4d2b5; border-radius: 0 0 4px 4px; font-size: 1.4rem; text-align: center; }
+		.bracketSponsor img { margin-top: 5px; }
+
+	/* Changed/Added 5/2/16 */
+
+			/* Active State */			
+			.active .competitor label span { background: #fff; }
+			
+		.northeast .menu, .southeast .menu { margin-left: -270px; } /* East Bracket */
+			.northeast .menu:before, .southeast .menu:before { left: 245px; background-position: -24px 0; }
+
+			/*.finals .west .menu, .finals .northeast .menu, .finals .midwest .menu, .finals .southeast .menu { margin-top: -105px; } Removed 5/2/16*/
+			.finals .midwest .menu, .finals .southeast .menu { margin-left: -270px; } /* Finals - East Bracket */		
+
+		.finals .midwest .menu:before, .finals .southeast .menu:before { left: 245px; background-position: -24px 0;  }
+
+	/* Hover Functionality */
+	.active .competitor:hover .selection, .active .competitor:hover .menu, .active .competitor:focus .selection, .active .competitor:focus .menu, .active .competitor:active .selection, .active .competitor:active .menu   { left: auto !important; }
+		/*.active .competitor:hover .foodImg { display: block !important; }*/
+			
+	/* Picked */
+	.picked { display: none; }	
+
+	.pickedFood { background: #a90000; color: #fff; }
+			.pickedFood label span { background: #dc002b !important; color: #fff; }
+		.pickedFood .menu { color: #132241; }
+
+/* 
+	Footer Wrapper
+-----------------------------*/
+.footerWrapper { width: 100%; min-width: 1080px; margin: 0; padding: 0; }
+
+
+/* 
+	Footer
+-----------------------------*/
+.footer { width: 1040px; min-height: 195px; margin: 0 auto; padding: 32px 20px; } 
+	.contestRules { float: left; width: 209px; height: 47px; margin: 0; padding: 22px 0 0; }
+	.rulesLink { overflow: hidden; display: block; width: 155px; height: 33px; background: transparent url(../images/links/link-ruleslink.png) no-repeat 0 0; text-indent: -200px; }
+		.rulesLink:hover, .rulesLink:focus { background-position: -155px 0; }
+		#rulesLink { display: inline !important; }
+		#rulesLink:hover, #rulesLink:focus { color: #fff; }
+	.footer a { color: #b2b8c5; text-decoration: none; }
+	
+	/* Sponsors */
+	.sponsors { width: 100%; min-height: 100px; margin: 0; padding: 15px 0 0 25px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+		.sponsors h3 { float: left; width: 116px; height: 8px; margin: 0 0 30px; padding: 0; font-size: 14px; font-size: 1.4rem; color: #b2b8c5; }
+		.sponsors h3.broughtBy { float: right; width: 140px; margin-top: -35px; text-align: right; clear: none; }
+		.sponsors ul { float: left; clear: both; margin: 0; padding: 0; }
+		.sponsors ul.broughtBy { clear: right; float: right; }
+			.sponsors ul.broughtBy li { float: right; }
+		.sponsors li { overflow: hidden; height: 90px; display: inline-block; padding: 0 0 0 75px; }
+		body.home .sponsors li { overflow: hidden; height: 90px; display: inline-block; padding: 0 0 0 75px; }
+			.sponsors li:first-child { padding: 0; }
+		body.home .sponsors li:last-child { padding: 0 0 0 60px !important; }
+		.sponsors img { position: relative; top: 0; }
+		.sponsors a { display: block; width: 100%; position: relative; text-align: center;  }
+			.sponsors a:hover img { top: -90px; }
+			.sponsors ul.broughtBy li a:hover img { top: -92px; }
+	.footerNotice { margin: 70px 0 20px; font-size: 12px; font-size: 1.2rem; color: #b2b8c5; text-align: center;  }
+	body.home .footerNotice { margin-top: 0; }
+	.copyRight { width: 100%; margin: 15px 0 0; color: #b2b8c5; font-size: 14px; font-size: 1.4rem; text-align: center }
+		.copyRight span { padding: 0 10px; }
+				
+		
+/* 
+	AJAX Window
+-----------------------------*/
+
+/* Demo Class */
+body.demo { padding: 20px; }
+
+.ajaxWindow { width: 718px; margin: 0; padding: 0; font-size: 14px; font-size: 1.4rem; line-height: 1.6428; color: #2f3135; }
+
+	.ajaxWindow .top { display: none; width: 772px; height: 12px; margin: 0; padding: 0; background: transparent url(../images/backgrounds/bkg-ajaxwindow_top.png) no-repeat 0 0; font-size: 0; line-height: 0; }
+	.ajaxWindow .bottom { display: none; width: 772px; height: 16px; margin: 0; padding: 0; background: transparent url(../images/backgrounds/bkg-ajaxwindow_bottom.png) no-repeat 0 0; font-size: 0; line-height: 0; }	
+	
+	.ajaxWindow .text { width: 100%; min-height: 467px; margin: 0; padding: 0; background: #fff; }
+	
+	.ajaxWindow h2 { width: 100%; height: 38px; margin: 0; padding: 20px 20px 40px; color: #132241; font-size: 30px font-size: 3.0rem; line-height: 1; font-family: 'Museo Sans 500'; background: #d4d2b5; text-transform: uppercase; font-weight: normal; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	
+	.ajaxWindow h3 { margin: 0 0 5px; padding: 0; color: #132241; font-weight: normal; font-size: 16px; font-size: 1.6rem; line-height: 1.4; font-family: 'Museo Sans 500'; }
+	
+	.closeWindow { float: right; display: block; width: 36px; height: 36px; margin: -48px 20px 0 0; background: transparent url(../images/links/link-closewindow.png) no-repeat 0 0; background-size: 72px 36px; text-indent: -100px; overflow: hidden; }
+		.closeWindow:hover, .closeWindow:focus { background-position: -36px 0; }
+		
+	
+	.ajaxWindow .scrollBox { overflow: auto; width: 100%; height: 410px; margin: 0; padding: 10px 20px 00px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-overflow-scrolling: touch; }		
+		
+	.ads { float: right; margin: 0 0 0 50px; color: #2f3135; font-size: 10px; font-size: 1.0; text-transform: uppercase; }
+		.ads img { vertical-align: top; }
+		.ads iframe { border: none; } 
+
+	.ajaxWindow p { margin: 20px 0 20px; font-size: 16px; font-size: 1.6rem; line-height: 1.5; font-family: 'Museo Sans 300'; color: #000; }
+	
+	.ajaxWindow form { float: left; width: 100%; margin: 0 0 0; padding: 0; }
+			.ajaxWindow form ol { float: left; clear: both; padding: 0; }
+			.ajaxWindow form li { float: left; margin: 0 0 0 20px; padding: 0 0 3px; }
+			.ajaxWindow form li:first-child { margin: 0; padding: 0 0 3px; }
+		.socialLinks { float: left; clear: left; margin: 20px 0 0; padding: 0; }
+		.socialLinks li { float: left; width: 36px; margin: 0 20px 0 0; }
+		.socialLinks a { overflow: hidden; display: block; width: 36px; height: 36px; }
+			.socialLinks a:hover img, .socialLinks a:focus img { margin-left: -36px; }
+		
+	.ajaxWindow label { display: block; font-size: 16px; font-size: 1.6rem; font-family: 'Museo Sans 300'; color: #000; }
+	.ajaxWindow input { width: 240px; height: 27px; padding: 1px 4px; background: #ddd; border: none; }
+	
+	.ajaxWindow .buttonWell { float: right; margin: 0; padding: 0; }	
+		.ajaxWindow .buttonWell input { overflow: hidden; display: block; width: 154px; height: 105px; background: transparent url(../images/buttons/btn-submit.png) no-repeat 0 0; text-indent: -200px; background-size: 308px 105px; cursor: pointer; }
+			.ajaxWindow .buttonWell input:hover, .ajaxWindow .buttonWell input:focus { background-position: -154px 0; }	
+			
+	.ajaxWindow .rulesText { width: 717px; height: 427px; padding: 0 20px 20px 35px; font-size: 12px; font-size: 1.2rem; line-height: 1.5833; }
+		.rulesText .ads { margin: 0 0 10px 30px; }
+		
+		.rulesText .closeWindow { margin-right: 15px; }
+		
+	.ajaxWindow .rulesText .scrollBox { overflow: auto; width: 697px; height: 325px; padding: 20px 10px 10px; }
+
+	.textSeparator { display: none; }
+		.rulesText .textSeparator { display: block; width: 704px; height: 6px; margin: 0; padding: 0; background: transparent url(../images/backgrounds/bkg-rulestext.png) no-repeat 0 0; font-size: 0; line-height: 0; }
+		
+	div#nyroModalFull div#nyroModalWrapper div.wrapper div#nyroModalContent, div#nyroModalFull div#nyroModalWrapper, div#nyroModalFull .wrapper { padding: 0; margin: 0 0 0; }
+	div#nyroModalFull div#nyroModalWrapper a#closeBut { display: none; }
+	div#nyroModalFull div#nyroModalWrapper div#nyroModalContent { overflow: hidden; }
+
+/* 
+	Homepage/Intro
+-----------------------------*/	
+/* Container */
+	body.home .containerWrapper { min-width: 840px; }
+
+/* Container */
+	body.home .container { width: 100%; min-width: 840px; height: auto; }
+
+/* Content */
+	body.home .contentWrapper { width: 840px; height: auto; }
+
+	body.home .content { overflow: hidden; width: 840px; height: auto; margin: 0 auto; padding: 100px 0 0; background: transparent none; }
+
+		body.home .content h2 { float: left; width: 605px; margin: 0 0 20px; padding: 0; font-size: 41px; font-size: 4.1rem; line-height: 1.1; font-family: 'Museo Sans 500'; color: #fff; }
+		body.home h2 span { font-family: 'Museo Sans 900'; }
+
+		.start { overflow: hidden; float: right; display: block; width: 166px; height: 100px; margin: 0 0 20px; padding: 0; background: transparent url(../images/buttons/btn-start.png) no-repeat 0 0; background-size: auto 100px; text-indent: -250px; }
+			.start:hover, .start:focus { background-position: -166px 0; }	
+
+		.intro { overflow: hidden; float: none; clear: both; margin: 0 0 75px; padding: 0; background: #fff; color: #333; }	
+			.intro strong { font-weight: normal; font-family: 'Museo Sans 700'; }
+
+		.col_a { float: left; width: 470px; margin: 0; padding: 30px; font-size: 14px; font-size: 1.4rem; line-height: 1.5833; color: #260d07; }
+		.col_b { float: right; width: 250px; margin: 0; padding: 30px; }
+			
+		.byline { font-size: 20px; font-size: 2.0rem; line-height: 1.35; }
+		
+		.directions { margin-top: 15px; padding: 15px 0 0; border-top: 1px solid #dc002b; font-size: 16px; font-size: 1.6rem; line-height: 1.4; color: #666; }
+	
+
+					
+	/* Sponsors */	
+	body.home .sponsors { width: 100%; min-height: 0; margin: 0; padding: 0; }
+		body.home .sponsors h3 { margin: 0 0 40px; color: #182133; }
+		body.home .sponsors ul { margin: 0; padding: 0; }		
+		body.home .sponsors li { padding: 0 0 15px 0; float: left; width: 125px; height: 60px; }
+			body.home .sponsors li img { width: auto; height: 52px; left:0; margin-left: auto; }
+				body.home .sponsors li a:hover img { top: 0; }
+
+	/* Footer */
+	body.home .footerWrapper { min-width: 840px; }
+
+	body.home .footer { width: auto; }	
+
+	body.home .copyRight { line-height: 2.5; }
+
+		body.home .copyRight img { margin-bottom: 20px; }
+		body.home .copyRight a { overflow: hidden; display: inline-block; height: 90px; }
+			body.home .copyRight a:hover img { margin-top: -92px; }
+
+/* 
+	Error
+-----------------------------*/	
+span.error, label.error { display: block; margin: 7px 0; padding: 3px 0 0 32px; min-height: 20px; background: transparent url(../images/backgrounds/bkg-error.png) no-repeat 0 0; font-size: 13px; font-size: 1.3rem; color: #ec2118; }
+
+input.error, select.error, textarea.error { border: 1px solid #ec2118 !important; }

@@ -1,0 +1,38 @@
+/*
+
+Cover-More/Virgin Australia Theme Style Sheet - Travellers - Innate
+--------------------------------------------*/
+
+/* Datepicker Overrides to the Overrides */
+.dob { z-index: 10; position: relative; }
+  .dob.focusLevel { width: 100% !important; }
+.datepickerHolder { position: relative; margin-top: 0; }
+
+.ui-datepicker-header { margin-left: 0; padding: 10px 0; background: #fff; border-bottom: 2px solid #807370; }
+.ui-datepicker select { width: 86px; color: #4c4c4c; margin-right: 5px !important; height: 30px; background-position: calc(100% - 7px) 50%; font-family: Arial, sans-serif; }
+.ui-datepicker .ui-datepicker-title { overflow: hidden; text-align: center; }
+.ui-datepicker-calendar { max-width: 250px; }
+
+.ui-datepicker thead { display: none; }
+
+.ui-datepicker .ui-datepicker-prev { display: none; float: left; margin-top: 10px; margin-left: 10px; margin-right: 20px; width: auto; }
+.ui-datepicker .ui-datepicker-next { display: none; float: right; margin-top: 10px; width: auto; margin-right: 6px; }
+.ui-icon-circle-triangle-w, .ui-icon-circle-triangle-e { display: inline-block; text-indent: -9999px; width: 10px; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; }
+.ui-datepicker th, .ui-datepicker td  { text-align: center; font-weight: normal; color: #fff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { display: inline-block; padding: 7px 9px; }
+.ui-datepicker { display: none; width: calc(100% - 20px) !important; padding-top: 43px; padding-right: 10px; padding-left: 10px; margin: -43px 0 0 0; border-radius: 3px; }
+
+.ui-datepicker table { margin: 0 auto 0.4em; }
+
+@media screen and (min-width: 640px) {
+
+}    
+
+@media screen and (min-width: 800px) {
+    
+  .purchaseList li.grid_2 { width: 163px; }      
+  .purchaseList li.grid_5 { width: 417px; }  
+
+select { background-position: 88.5% 50%; }  
+input.dob { background-position: 96.5% 50%; }

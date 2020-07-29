@@ -1,0 +1,2146 @@
+<!doctype html>
+
+    <!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+    <head>
+        <title>Virgin Australia - Get a Quote</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Library CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui-1.11.4.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.mobile-aupost.min.css" />   		
+        <!--/Library CSS-->
+
+        <!--Plugin CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />       
+        <!--/Plugin CSS-->          
+
+        <!--Application CSS-->
+        <link type="text/css" rel="stylesheet" href="css/datepicker.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
+        <!--/Application CSS-->
+
+        <!--Theme CSS-->        
+		    <link type="text/css" rel="stylesheet" href="css/theme-quote.css" />
+        <!--/Theme CSS-->
+    </head>
+
+    <body>
+    
+        <!--Header-->
+        <header role="banner">
+            <div class="siteHeader"> 
+            
+                <a href="#" class="siteLogo"><img src="files/images/logos/logo-covermore-header.png" width="220" height="50" alt="Cover-More Travel Insurance" /></a>
+
+                <p class="brandingLogo contentBranding"><img src="files/images/logos/logo-virgin-au.jpg" width="260" height="34" alt="" /><em>a trusted partner of Virgin Australia</em><a href="#">return to virginaustralia.com</a></p>
+
+            </div>
+        </header>
+        <!--/Header--> 
+
+        <!--Outer Container-->
+        <div class="outerContainer">          
+    
+            <!--Container-->
+            <div class="container_12" id="content" role="main">                
+
+                <nav role="navigation"> 
+                    <a href="#content" class="hide">Skip to Content</a>
+
+                    <a href="#nav" class="btnNavigation" id="btnNavigation">Navigation</a>
+
+                    <div class="menu">
+                    
+                      <!--Site Navigation-->
+                      <div class="siteNavigation">
+                        <ul id="nav">  
+                          <li><a href="#">return to virginaustralia.com</a></li>   
+                          <li><a href="quote.html">Get a Quote</a></li>     
+                          <li><a href="plans.html">Plans</a></li>
+                          <li><a href="claims.html">Claims</a></li>
+                          <li><a href="faqs.html">FAQs</a></li>  
+                          <li><a href="emergency-assistance.html">Emergency Assistance</a></li>
+                        </ul>
+                      </div>
+                      <!--/Site Navigation-->
+
+                      <div class="sitePicker">
+                        <ul>
+                          <li class="selected"><a href="#">AU</a></li>
+                          <li><a href="#">NZ</a></li>
+                        </ul> 
+
+                        <select name="sites">
+                          <option value="AU">AU</option>
+                          <option value="NZ">NZ</option>                          
+                        </select>                       
+                      </div>
+
+                      <p class="support">1300 000 000</p>
+
+                    </div>
+
+                </nav> 
+
+                <!--User Content - Zeus-->
+
+                <ul class="locations">
+                  <li class="hide">
+                    <div><!--Location #1--></div>
+                  </li>  
+                  <li class="hide">
+                    <div><!--Location #2--></div>
+                  </li>  
+                  <li class="hide">
+                    <div><!--Location #3--></div>
+                  </li>                                      
+                </ul>
+                
+                <!--/User Content - Zeus-->                              
+
+                <!--Article-->
+                <article>
+
+               
+
+                    <form action="#" data-ajax="false">
+
+                        <!--/Primary Traveller-->
+                        <section class="quoteWidget grid_4">
+
+                            <h1>Get a Quote</h1>
+
+                            <ol class="purchaseList">
+                                <li>                            
+
+                                    <!--Country Inputs-->  
+                                    <label for="country">What countries are you going to? <a href="#help-1" class="help"><img src="files/images/icons/icon-help.svg" width="15" height="15" alt="Help(?) - Where are you going?" /></a></label>
+
+                                    <!--Country Lists-->
+                                    <p class="hide">These are the selected countries. To remove, click/tap button.</p>
+                                    <ul class="countryLister" id="countryLister"></ul>
+                                    
+                                    <input type="text" name="country" id="country" value="" class="country" autocomplete="off" tabindex="0" />
+                                    <div class="hint">
+                                      Start typing a country name
+                                    </div>
+                                    <!--/Country Inputs--> 
+                                    
+                                    <button type="button" class="countrySelector" id="selector">Select Region/Country from List</button> <!--Country Selector Button--> 
+
+                                    <ul id="suggestions" data-role="listview" data-inset="false"></ul> <!--Country Selector/Autocomplete-->
+
+                                    <div class="helpWindow" id="help-1">
+                                        <h3>Where are you going?</h3>
+                                        <p>Choose the country where you will spend the most time.</p>
+                                    </div>
+
+                                    <!--Country Display-->
+                                    <div class="countryDisplay" hidden="hidden">
+                                    
+                                        <!--<a href="#" title="X" class="closeWindow">X</a>-->
+
+                                        <div class="groups-container" id="groups-container">
+
+                                            <fieldset class="group">
+                                              <legend>Region - Worldwide (inc. Americas and Africa)</legend>
+                                              <input type="radio" name="findRegion" id="region-70" value="70" checked>
+                                              <label for="region-70" class="group-label region-1"><strong>Worldwide (inc. Americas and Africa)</strong></label>
+                                              <div class="columns">
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-62" value="62">
+                                                    <label for="region-70-country-62">Afghanistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-10" value="10">
+                                                    <label for="region-70-country-10">Albania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-11" value="11">
+                                                    <label for="region-70-country-11">Algeria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-181" value="181">
+                                                    <label for="region-70-country-181">American Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-12" value="12">
+                                                    <label for="region-70-country-12">Andorra</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-63" value="63">
+                                                    <label for="region-70-country-63">Angola</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-182" value="182">
+                                                    <label for="region-70-country-182">Anguilla</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-64" value="64">
+                                                    <label for="region-70-country-64">Antarctica</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-183" value="183">
+                                                    <label for="region-70-country-183">Antigua And Barbuda</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-184" value="184">
+                                                    <label for="region-70-country-184">Argentina</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-65" value="65">
+                                                    <label for="region-70-country-65">Armenia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-186" value="186">
+                                                    <label for="region-70-country-186">Aruba</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-244" value="244">
+                                                    <label for="region-70-country-244">Ascension Island</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-13" value="13">
+                                                    <label for="region-70-country-13">Austria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-66" value="66">
+                                                    <label for="region-70-country-66">Azerbaijan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-187" value="187">
+                                                    <label for="region-70-country-187">Bahamas</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-67" value="67">
+                                                    <label for="region-70-country-67">Bahrain</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-188" value="188">
+                                                    <label for="region-70-country-188">Bangladesh</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-189" value="189">
+                                                    <label for="region-70-country-189">Barbados</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-14" value="14">
+                                                    <label for="region-70-country-14">Belarus</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-15" value="15">
+                                                    <label for="region-70-country-15">Belgium</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-190" value="190">
+                                                    <label for="region-70-country-190">Belize</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-68" value="68">
+                                                    <label for="region-70-country-68">Benin</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-191" value="191">
+                                                    <label for="region-70-country-191">Bermuda</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-69" value="69">
+                                                    <label for="region-70-country-69">Bhutan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-192" value="192">
+                                                    <label for="region-70-country-192">Bolivia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-70" value="70">
+                                                    <label for="region-70-country-70">Botswana</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-193" value="193">
+                                                    <label for="region-70-country-193">Brazil</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-71" value="71">
+                                                    <label for="region-70-country-71">Brunei</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-17" value="17">
+                                                    <label for="region-70-country-17">Bulgaria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-72" value="72">
+                                                    <label for="region-70-country-72">Burkina Faso</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-73" value="73">
+                                                    <label for="region-70-country-73">Burundi</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-74" value="74">
+                                                    <label for="region-70-country-74">Cambodia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-75" value="75">
+                                                    <label for="region-70-country-75">Cameroon</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-194" value="194">
+                                                    <label for="region-70-country-194">Canada</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-76" value="76">
+                                                    <label for="region-70-country-76">Cape Verde Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-77" value="77">
+                                                    <label for="region-70-country-77">Central African Republic</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-78" value="78">
+                                                    <label for="region-70-country-78">Chad</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-196" value="196">
+                                                    <label for="region-70-country-196">Chile</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-79" value="79">
+                                                    <label for="region-70-country-79">China</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-197" value="197">
+                                                    <label for="region-70-country-197">Colombia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-82" value="82">
+                                                    <label for="region-70-country-82">Comoros</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-83" value="83">
+                                                    <label for="region-70-country-83">Congo</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-85" value="85">
+                                                    <label for="region-70-country-85">Cook Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-198" value="198">
+                                                    <label for="region-70-country-198">Costa Rica</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-18" value="18">
+                                                    <label for="region-70-country-18">Croatia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-199" value="199">
+                                                    <label for="region-70-country-199">Cuba</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-55" value="55">
+                                                    <label for="region-70-country-55">Cyprus</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-19" value="19">
+                                                    <label for="region-70-country-19">Czech Republic</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-20" value="20">
+                                                    <label for="region-70-country-20">Denmark</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-248" value="248">
+                                                    <label for="region-70-country-248">Dijbouti</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-258" value="258">
+                                                    <label for="region-70-country-258">Domestic Cruise</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-200" value="200">
+                                                    <label for="region-70-country-200">Dominica</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-249" value="249">
+                                                    <label for="region-70-country-249">Dominican Rep.</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-88" value="88">
+                                                    <label for="region-70-country-88">East Timor</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-202" value="202">
+                                                    <label for="region-70-country-202">Ecuador</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-21" value="21">
+                                                    <label for="region-70-country-21">Egypt</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-203" value="203">
+                                                    <label for="region-70-country-203">El Salvador</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-1" value="1">
+                                                    <label for="region-70-country-1">England</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-89" value="89">
+                                                    <label for="region-70-country-89">Equatorial Guinea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-90" value="90">
+                                                    <label for="region-70-country-90">Eritrea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-22" value="22">
+                                                    <label for="region-70-country-22">Estonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-91" value="91">
+                                                    <label for="region-70-country-91">Ethiopia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-204" value="204">
+                                                    <label for="region-70-country-204">Falkland Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-205" value="205">
+                                                    <label for="region-70-country-205">Faroe Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-274" value="274">
+                                                    <label for="region-70-country-274">Federated States of Micronesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-92" value="92">
+                                                    <label for="region-70-country-92">Fiji</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-23" value="23">
+                                                    <label for="region-70-country-23">Finland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-24" value="24">
+                                                    <label for="region-70-country-24">France</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-300" value="300">
+                                                    <label for="region-70-country-300">France, Metropolitan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-206" value="206">
+                                                    <label for="region-70-country-206">French Guiana</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-207" value="207">
+                                                    <label for="region-70-country-207">French Polynesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-94" value="94">
+                                                    <label for="region-70-country-94">Gambia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-25" value="25">
+                                                    <label for="region-70-country-25">Georgia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-26" value="26">
+                                                    <label for="region-70-country-26">Germany</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-95" value="95">
+                                                    <label for="region-70-country-95">Ghana</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-27" value="27">
+                                                    <label for="region-70-country-27">Gibraltar</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-56" value="56">
+                                                    <label for="region-70-country-56">Greece</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-208" value="208">
+                                                    <label for="region-70-country-208">Greenland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-209" value="209">
+                                                    <label for="region-70-country-209">Grenada</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-210" value="210">
+                                                    <label for="region-70-country-210">Guadeloupe</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-96" value="96">
+                                                    <label for="region-70-country-96">Guam</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-211" value="211">
+                                                    <label for="region-70-country-211">Guatemala</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-251" value="251">
+                                                    <label for="region-70-country-251">Guernsey (Channel Islands)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-97" value="97">
+                                                    <label for="region-70-country-97">Guinea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-98" value="98">
+                                                    <label for="region-70-country-98">Guinea-Bissau</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-212" value="212">
+                                                    <label for="region-70-country-212">Guyana</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-213" value="213">
+                                                    <label for="region-70-country-213">Haiti</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-262" value="262">
+                                                    <label for="region-70-country-262">Herzegovina</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-214" value="214">
+                                                    <label for="region-70-country-214">Honduras</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-99" value="99">
+                                                    <label for="region-70-country-99">Hong Kong</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-28" value="28">
+                                                    <label for="region-70-country-28">Hungary</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-29" value="29">
+                                                    <label for="region-70-country-29">Iceland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-100" value="100">
+                                                    <label for="region-70-country-100">India</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-101" value="101">
+                                                    <label for="region-70-country-101">Indonesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-102" value="102">
+                                                    <label for="region-70-country-102">Iran</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-103" value="103">
+                                                    <label for="region-70-country-103">Iraq</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-30" value="30">
+                                                    <label for="region-70-country-30">Israel</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-31" value="31">
+                                                    <label for="region-70-country-31">Italy</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-250" value="250">
+                                                    <label for="region-70-country-250">Ivory Coast</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-215" value="215">
+                                                    <label for="region-70-country-215">Jamaica</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-104" value="104">
+                                                    <label for="region-70-country-104">Japan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-252" value="252">
+                                                    <label for="region-70-country-252">Jersey (Channel Island)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-105" value="105">
+                                                    <label for="region-70-country-105">Jordan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-32" value="32">
+                                                    <label for="region-70-country-32">Kazakhstan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-106" value="106">
+                                                    <label for="region-70-country-106">Kenya</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-107" value="107">
+                                                    <label for="region-70-country-107">Kiribati</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-264" value="264">
+                                                    <label for="region-70-country-264">Korea (south)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-265" value="265">
+                                                    <label for="region-70-country-265">Kosovo</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-109" value="109">
+                                                    <label for="region-70-country-109">Kuwait</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-110" value="110">
+                                                    <label for="region-70-country-110">Kyrgyzstan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-253" value="253">
+                                                    <label for="region-70-country-253">Laos</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-33" value="33">
+                                                    <label for="region-70-country-33">Latvia</label>
+                                                  </li>
+                                                </ul>
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-112" value="112">
+                                                    <label for="region-70-country-112">Lebanon</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-113" value="113">
+                                                    <label for="region-70-country-113">Lesotho</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-114" value="114">
+                                                    <label for="region-70-country-114">Liberia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-115" value="115">
+                                                    <label for="region-70-country-115">Libya</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-34" value="34">
+                                                    <label for="region-70-country-34">Liechtenstein</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-35" value="35">
+                                                    <label for="region-70-country-35">Lithuania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-36" value="36">
+                                                    <label for="region-70-country-36">Luxembourg</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-116" value="116">
+                                                    <label for="region-70-country-116">Macau</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-37" value="37">
+                                                    <label for="region-70-country-37">Macedonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-117" value="117">
+                                                    <label for="region-70-country-117">Madagascar</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-118" value="118">
+                                                    <label for="region-70-country-118">Malawi</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-119" value="119">
+                                                    <label for="region-70-country-119">Malaysia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-120" value="120">
+                                                    <label for="region-70-country-120">Maldives</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-121" value="121">
+                                                    <label for="region-70-country-121">Mali</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-57" value="57">
+                                                    <label for="region-70-country-57">Malta</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-216" value="216">
+                                                    <label for="region-70-country-216">Marshall Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-217" value="217">
+                                                    <label for="region-70-country-217">Martinique</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-122" value="122">
+                                                    <label for="region-70-country-122">Mauritania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-123" value="123">
+                                                    <label for="region-70-country-123">Mauritius</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-218" value="218">
+                                                    <label for="region-70-country-218">Mexico</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-267" value="267">
+                                                    <label for="region-70-country-267">Moldova</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-221" value="221">
+                                                    <label for="region-70-country-221">Monaco</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-126" value="126">
+                                                    <label for="region-70-country-126">Mongolia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-268" value="268">
+                                                    <label for="region-70-country-268">Montenegro</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-40" value="40">
+                                                    <label for="region-70-country-40">Morocco</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-127" value="127">
+                                                    <label for="region-70-country-127">Mozambique</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-254" value="254">
+                                                    <label for="region-70-country-254">Myanmar (Burma)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-129" value="129">
+                                                    <label for="region-70-country-129">Namibia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-130" value="130">
+                                                    <label for="region-70-country-130">Nauru</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-131" value="131">
+                                                    <label for="region-70-country-131">Nepal</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-41" value="41">
+                                                    <label for="region-70-country-41">Netherlands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-223" value="223">
+                                                    <label for="region-70-country-223">Netherlands Antilles</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-132" value="132">
+                                                    <label for="region-70-country-132">New Caledonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-61" value="61">
+                                                    <label for="region-70-country-61">New Zealand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-224" value="224">
+                                                    <label for="region-70-country-224">Nicaragua</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-133" value="133">
+                                                    <label for="region-70-country-133">Niger</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-134" value="134">
+                                                    <label for="region-70-country-134">Nigeria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-136" value="136">
+                                                    <label for="region-70-country-136">Norfolk Island</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-2" value="2">
+                                                    <label for="region-70-country-2">Northern Ireland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-255" value="255">
+                                                    <label for="region-70-country-255">Northern Marianas</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-42" value="42">
+                                                    <label for="region-70-country-42">Norway</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-139" value="139">
+                                                    <label for="region-70-country-139">Oman</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-140" value="140">
+                                                    <label for="region-70-country-140">Pakistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-141" value="141">
+                                                    <label for="region-70-country-141">Palau</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-269" value="269">
+                                                    <label for="region-70-country-269">Palestine</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-225" value="225">
+                                                    <label for="region-70-country-225">Panama</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-142" value="142">
+                                                    <label for="region-70-country-142">Papua New Guinea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-226" value="226">
+                                                    <label for="region-70-country-226">Paraguay</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-227" value="227">
+                                                    <label for="region-70-country-227">Peru</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-143" value="143">
+                                                    <label for="region-70-country-143">Philippines</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-43" value="43">
+                                                    <label for="region-70-country-43">Poland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-44" value="44">
+                                                    <label for="region-70-country-44">Portugal</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-144" value="144">
+                                                    <label for="region-70-country-144">Puerto Rico</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-145" value="145">
+                                                    <label for="region-70-country-145">Qatar</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-256" value="256">
+                                                    <label for="region-70-country-256">Republic of Ireland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-275" value="275">
+                                                    <label for="region-70-country-275">Reunion</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-45" value="45">
+                                                    <label for="region-70-country-45">Romania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-270" value="270">
+                                                    <label for="region-70-country-270">Russia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-147" value="147">
+                                                    <label for="region-70-country-147">Rwanda</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-148" value="148">
+                                                    <label for="region-70-country-148">Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-47" value="47">
+                                                    <label for="region-70-country-47">San Marino</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-276" value="276">
+                                                    <label for="region-70-country-276">Sao Tomé and Príncipe</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-150" value="150">
+                                                    <label for="region-70-country-150">Saudi Arabia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-3" value="3">
+                                                    <label for="region-70-country-3">Scotland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-151" value="151">
+                                                    <label for="region-70-country-151">Senegal</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-271" value="271">
+                                                    <label for="region-70-country-271">Serbia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-152" value="152">
+                                                    <label for="region-70-country-152">Seychelles</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-153" value="153">
+                                                    <label for="region-70-country-153">Sierra Leone</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-154" value="154">
+                                                    <label for="region-70-country-154">Singapore</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-49" value="49">
+                                                    <label for="region-70-country-49">Slovakia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-50" value="50">
+                                                    <label for="region-70-country-50">Slovenia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-155" value="155">
+                                                    <label for="region-70-country-155">Solomon Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-156" value="156">
+                                                    <label for="region-70-country-156">Somalia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-157" value="157">
+                                                    <label for="region-70-country-157">South Africa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-58" value="58">
+                                                    <label for="region-70-country-58">Spain</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-158" value="158">
+                                                    <label for="region-70-country-158">Sri Lanka</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-277" value="277">
+                                                    <label for="region-70-country-277">St. Kitts-Nevis</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-230" value="230">
+                                                    <label for="region-70-country-230">St. Lucia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-278" value="278">
+                                                    <label for="region-70-country-278">St. Vincent & Grenadines</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-159" value="159">
+                                                    <label for="region-70-country-159">Sudan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-233" value="233">
+                                                    <label for="region-70-country-233">Suriname</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-161" value="161">
+                                                    <label for="region-70-country-161">Swaziland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-51" value="51">
+                                                    <label for="region-70-country-51">Sweden</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-52" value="52">
+                                                    <label for="region-70-country-52">Switzerland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-162" value="162">
+                                                    <label for="region-70-country-162">Syria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-163" value="163">
+                                                    <label for="region-70-country-163">Taiwan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-164" value="164">
+                                                    <label for="region-70-country-164">Tajikistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-165" value="165">
+                                                    <label for="region-70-country-165">Tanzania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-166" value="166">
+                                                    <label for="region-70-country-166">Thailand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-167" value="167">
+                                                    <label for="region-70-country-167">Togo</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-168" value="168">
+                                                    <label for="region-70-country-168">Tonga</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-279" value="279">
+                                                    <label for="region-70-country-279">Trinidad & Tobago</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-53" value="53">
+                                                    <label for="region-70-country-53">Tunisia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-59" value="59">
+                                                    <label for="region-70-country-59">Turkey</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-169" value="169">
+                                                    <label for="region-70-country-169">Turkmenistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-170" value="170">
+                                                    <label for="region-70-country-170">Tuvalu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-171" value="171">
+                                                    <label for="region-70-country-171">Uganda</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-54" value="54">
+                                                    <label for="region-70-country-54">Ukraine</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-172" value="172">
+                                                    <label for="region-70-country-172">United Arab Emirates</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-236" value="236">
+                                                    <label for="region-70-country-236">United States of America</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-237" value="237">
+                                                    <label for="region-70-country-237">Uruguay</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-173" value="173">
+                                                    <label for="region-70-country-173">Uzbekistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-174" value="174">
+                                                    <label for="region-70-country-174">Vanuatu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-273" value="273">
+                                                    <label for="region-70-country-273">Vatican City</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-238" value="238">
+                                                    <label for="region-70-country-238">Venezuela</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-257" value="257">
+                                                    <label for="region-70-country-257">Vietnam</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-280" value="280">
+                                                    <label for="region-70-country-280">Virgin Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-5" value="5">
+                                                    <label for="region-70-country-5">Wales</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-178" value="178">
+                                                    <label for="region-70-country-178">Yemen</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-281" value="281">
+                                                    <label for="region-70-country-281">Zaire</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-179" value="179">
+                                                    <label for="region-70-country-179">Zambia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-70-country-180" value="180">
+                                                    <label for="region-70-country-180">Zimbabwe</label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </fieldset>
+                                            <fieldset class="group">
+                                              <legend>Region - Europe, Asia and the Middle East</legend>
+                                              <input type="radio" name="findRegion" id="region-71" value="71">
+                                              <label for="region-71" class="group-label region-2"><strong>Europe, Asia and the Middle East</strong></label>
+                                              <div class="columns">
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-62" value="62">
+                                                    <label for="region-71-country-62">Afghanistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-10" value="10">
+                                                    <label for="region-71-country-10">Albania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-181" value="181">
+                                                    <label for="region-71-country-181">American Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-12" value="12">
+                                                    <label for="region-71-country-12">Andorra</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-65" value="65">
+                                                    <label for="region-71-country-65">Armenia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-13" value="13">
+                                                    <label for="region-71-country-13">Austria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-66" value="66">
+                                                    <label for="region-71-country-66">Azerbaijan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-67" value="67">
+                                                    <label for="region-71-country-67">Bahrain</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-188" value="188">
+                                                    <label for="region-71-country-188">Bangladesh</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-14" value="14">
+                                                    <label for="region-71-country-14">Belarus</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-15" value="15">
+                                                    <label for="region-71-country-15">Belgium</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-69" value="69">
+                                                    <label for="region-71-country-69">Bhutan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-71" value="71">
+                                                    <label for="region-71-country-71">Brunei</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-17" value="17">
+                                                    <label for="region-71-country-17">Bulgaria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-74" value="74">
+                                                    <label for="region-71-country-74">Cambodia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-79" value="79">
+                                                    <label for="region-71-country-79">China</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-85" value="85">
+                                                    <label for="region-71-country-85">Cook Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-18" value="18">
+                                                    <label for="region-71-country-18">Croatia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-55" value="55">
+                                                    <label for="region-71-country-55">Cyprus</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-19" value="19">
+                                                    <label for="region-71-country-19">Czech Republic</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-20" value="20">
+                                                    <label for="region-71-country-20">Denmark</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-258" value="258">
+                                                    <label for="region-71-country-258">Domestic Cruise</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-88" value="88">
+                                                    <label for="region-71-country-88">East Timor</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-1" value="1">
+                                                    <label for="region-71-country-1">England</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-22" value="22">
+                                                    <label for="region-71-country-22">Estonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-205" value="205">
+                                                    <label for="region-71-country-205">Faroe Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-274" value="274">
+                                                    <label for="region-71-country-274">Federated States of Micronesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-92" value="92">
+                                                    <label for="region-71-country-92">Fiji</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-23" value="23">
+                                                    <label for="region-71-country-23">Finland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-24" value="24">
+                                                    <label for="region-71-country-24">France</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-207" value="207">
+                                                    <label for="region-71-country-207">French Polynesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-25" value="25">
+                                                    <label for="region-71-country-25">Georgia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-26" value="26">
+                                                    <label for="region-71-country-26">Germany</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-27" value="27">
+                                                    <label for="region-71-country-27">Gibraltar</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-56" value="56">
+                                                    <label for="region-71-country-56">Greece</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-96" value="96">
+                                                    <label for="region-71-country-96">Guam</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-251" value="251">
+                                                    <label for="region-71-country-251">Guernsey (Channel Islands)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-262" value="262">
+                                                    <label for="region-71-country-262">Herzegovina</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-214" value="214">
+                                                    <label for="region-71-country-214">Honduras</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-99" value="99">
+                                                    <label for="region-71-country-99">Hong Kong</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-29" value="29">
+                                                    <label for="region-71-country-29">Iceland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-100" value="100">
+                                                    <label for="region-71-country-100">India</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-101" value="101">
+                                                    <label for="region-71-country-101">Indonesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-102" value="102">
+                                                    <label for="region-71-country-102">Iran</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-103" value="103">
+                                                    <label for="region-71-country-103">Iraq</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-30" value="30">
+                                                    <label for="region-71-country-30">Israel</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-31" value="31">
+                                                    <label for="region-71-country-31">Italy</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-104" value="104">
+                                                    <label for="region-71-country-104">Japan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-252" value="252">
+                                                    <label for="region-71-country-252">Jersey (Channel Island)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-105" value="105">
+                                                    <label for="region-71-country-105">Jordan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-32" value="32">
+                                                    <label for="region-71-country-32">Kazakhstan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-107" value="107">
+                                                    <label for="region-71-country-107">Kiribati</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-264" value="264">
+                                                    <label for="region-71-country-264">Korea (south)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-265" value="265">
+                                                    <label for="region-71-country-265">Kosovo</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-109" value="109">
+                                                    <label for="region-71-country-109">Kuwait</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-110" value="110">
+                                                    <label for="region-71-country-110">Kyrgyzstan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-253" value="253">
+                                                    <label for="region-71-country-253">Laos</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-33" value="33">
+                                                    <label for="region-71-country-33">Latvia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-112" value="112">
+                                                    <label for="region-71-country-112">Lebanon</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-34" value="34">
+                                                    <label for="region-71-country-34">Liechtenstein</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-35" value="35">
+                                                    <label for="region-71-country-35">Lithuania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-36" value="36">
+                                                    <label for="region-71-country-36">Luxembourg</label>
+                                                  </li>
+                                                </ul>
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-116" value="116">
+                                                    <label for="region-71-country-116">Macau</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-37" value="37">
+                                                    <label for="region-71-country-37">Macedonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-118" value="118">
+                                                    <label for="region-71-country-118">Malawi</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-119" value="119">
+                                                    <label for="region-71-country-119">Malaysia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-120" value="120">
+                                                    <label for="region-71-country-120">Maldives</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-216" value="216">
+                                                    <label for="region-71-country-216">Marshall Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-267" value="267">
+                                                    <label for="region-71-country-267">Moldova</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-221" value="221">
+                                                    <label for="region-71-country-221">Monaco</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-126" value="126">
+                                                    <label for="region-71-country-126">Mongolia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-268" value="268">
+                                                    <label for="region-71-country-268">Montenegro</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-254" value="254">
+                                                    <label for="region-71-country-254">Myanmar (Burma)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-130" value="130">
+                                                    <label for="region-71-country-130">Nauru</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-131" value="131">
+                                                    <label for="region-71-country-131">Nepal</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-41" value="41">
+                                                    <label for="region-71-country-41">Netherlands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-132" value="132">
+                                                    <label for="region-71-country-132">New Caledonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-61" value="61">
+                                                    <label for="region-71-country-61">New Zealand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-136" value="136">
+                                                    <label for="region-71-country-136">Norfolk Island</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-2" value="2">
+                                                    <label for="region-71-country-2">Northern Ireland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-255" value="255">
+                                                    <label for="region-71-country-255">Northern Marianas</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-42" value="42">
+                                                    <label for="region-71-country-42">Norway</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-139" value="139">
+                                                    <label for="region-71-country-139">Oman</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-140" value="140">
+                                                    <label for="region-71-country-140">Pakistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-141" value="141">
+                                                    <label for="region-71-country-141">Palau</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-269" value="269">
+                                                    <label for="region-71-country-269">Palestine</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-142" value="142">
+                                                    <label for="region-71-country-142">Papua New Guinea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-143" value="143">
+                                                    <label for="region-71-country-143">Philippines</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-43" value="43">
+                                                    <label for="region-71-country-43">Poland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-44" value="44">
+                                                    <label for="region-71-country-44">Portugal</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-145" value="145">
+                                                    <label for="region-71-country-145">Qatar</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-256" value="256">
+                                                    <label for="region-71-country-256">Republic of Ireland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-45" value="45">
+                                                    <label for="region-71-country-45">Romania</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-270" value="270">
+                                                    <label for="region-71-country-270">Russia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-148" value="148">
+                                                    <label for="region-71-country-148">Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-47" value="47">
+                                                    <label for="region-71-country-47">San Marino</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-150" value="150">
+                                                    <label for="region-71-country-150">Saudi Arabia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-3" value="3">
+                                                    <label for="region-71-country-3">Scotland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-271" value="271">
+                                                    <label for="region-71-country-271">Serbia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-154" value="154">
+                                                    <label for="region-71-country-154">Singapore</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-49" value="49">
+                                                    <label for="region-71-country-49">Slovakia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-50" value="50">
+                                                    <label for="region-71-country-50">Slovenia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-155" value="155">
+                                                    <label for="region-71-country-155">Solomon Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-58" value="58">
+                                                    <label for="region-71-country-58">Spain</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-158" value="158">
+                                                    <label for="region-71-country-158">Sri Lanka</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-51" value="51">
+                                                    <label for="region-71-country-51">Sweden</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-52" value="52">
+                                                    <label for="region-71-country-52">Switzerland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-162" value="162">
+                                                    <label for="region-71-country-162">Syria</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-163" value="163">
+                                                    <label for="region-71-country-163">Taiwan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-164" value="164">
+                                                    <label for="region-71-country-164">Tajikistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-166" value="166">
+                                                    <label for="region-71-country-166">Thailand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-168" value="168">
+                                                    <label for="region-71-country-168">Tonga</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-59" value="59">
+                                                    <label for="region-71-country-59">Turkey</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-169" value="169">
+                                                    <label for="region-71-country-169">Turkmenistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-170" value="170">
+                                                    <label for="region-71-country-170">Tuvalu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-54" value="54">
+                                                    <label for="region-71-country-54">Ukraine</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-172" value="172">
+                                                    <label for="region-71-country-172">United Arab Emirates</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-173" value="173">
+                                                    <label for="region-71-country-173">Uzbekistan</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-174" value="174">
+                                                    <label for="region-71-country-174">Vanuatu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-273" value="273">
+                                                    <label for="region-71-country-273">Vatican City</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-257" value="257">
+                                                    <label for="region-71-country-257">Vietnam</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-5" value="5">
+                                                    <label for="region-71-country-5">Wales</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-71-country-178" value="178">
+                                                    <label for="region-71-country-178">Yemen</label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </fieldset>
+                                            <fieldset class="group">
+                                              <legend>Region - UK and South East Asia</legend>
+                                              <input type="radio" name="findRegion" id="region-72" value="72">
+                                              <label for="region-72" class="group-label region-3"><strong>UK and South East Asia</strong></label>
+                                              <div class="columns">
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-181" value="181">
+                                                    <label for="region-72-country-181">American Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-71" value="71">
+                                                    <label for="region-72-country-71">Brunei</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-74" value="74">
+                                                    <label for="region-72-country-74">Cambodia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-85" value="85">
+                                                    <label for="region-72-country-85">Cook Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-258" value="258">
+                                                    <label for="region-72-country-258">Domestic Cruise</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-88" value="88">
+                                                    <label for="region-72-country-88">East Timor</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-1" value="1">
+                                                    <label for="region-72-country-1">England</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-274" value="274">
+                                                    <label for="region-72-country-274">Federated States of Micronesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-92" value="92">
+                                                    <label for="region-72-country-92">Fiji</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-207" value="207">
+                                                    <label for="region-72-country-207">French Polynesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-96" value="96">
+                                                    <label for="region-72-country-96">Guam</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-251" value="251">
+                                                    <label for="region-72-country-251">Guernsey (Channel Islands)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-101" value="101">
+                                                    <label for="region-72-country-101">Indonesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-252" value="252">
+                                                    <label for="region-72-country-252">Jersey (Channel Island)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-107" value="107">
+                                                    <label for="region-72-country-107">Kiribati</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-111" value="111">
+                                                    <label for="region-72-country-111">Lao People's Democratic Republic</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-119" value="119">
+                                                    <label for="region-72-country-119">Malaysia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-216" value="216">
+                                                    <label for="region-72-country-216">Marshall Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-254" value="254">
+                                                    <label for="region-72-country-254">Myanmar (Burma)</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-130" value="130">
+                                                    <label for="region-72-country-130">Nauru</label>
+                                                  </li>
+                                                </ul>
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-132" value="132">
+                                                    <label for="region-72-country-132">New Caledonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-61" value="61">
+                                                    <label for="region-72-country-61">New Zealand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-136" value="136">
+                                                    <label for="region-72-country-136">Norfolk Island</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-2" value="2">
+                                                    <label for="region-72-country-2">Northern Ireland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-255" value="255">
+                                                    <label for="region-72-country-255">Northern Marianas</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-141" value="141">
+                                                    <label for="region-72-country-141">Palau</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-142" value="142">
+                                                    <label for="region-72-country-142">Papua New Guinea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-143" value="143">
+                                                    <label for="region-72-country-143">Philippines</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-256" value="256">
+                                                    <label for="region-72-country-256">Republic of Ireland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-148" value="148">
+                                                    <label for="region-72-country-148">Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-3" value="3">
+                                                    <label for="region-72-country-3">Scotland</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-154" value="154">
+                                                    <label for="region-72-country-154">Singapore</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-155" value="155">
+                                                    <label for="region-72-country-155">Solomon Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-166" value="166">
+                                                    <label for="region-72-country-166">Thailand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-168" value="168">
+                                                    <label for="region-72-country-168">Tonga</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-170" value="170">
+                                                    <label for="region-72-country-170">Tuvalu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-174" value="174">
+                                                    <label for="region-72-country-174">Vanuatu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-257" value="257">
+                                                    <label for="region-72-country-257">Vietnam</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-72-country-5" value="5">
+                                                    <label for="region-72-country-5">Wales</label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </fieldset>
+                                            <fieldset class="group">
+                                              <legend>Region - Indonesia, NZ and South West Pacific</legend>
+                                              <input type="radio" name="findRegion" id="region-73" value="73">
+                                              <label for="region-73" class="group-label region-4"><strong>Indonesia, NZ and South West Pacific</strong></label>
+                                              <div class="columns">
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-181" value="181">
+                                                    <label for="region-73-country-181">American Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-85" value="85">
+                                                    <label for="region-73-country-85">Cook Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-258" value="258">
+                                                    <label for="region-73-country-258">Domestic Cruise</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-88" value="88">
+                                                    <label for="region-73-country-88">East Timor</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-92" value="92">
+                                                    <label for="region-73-country-92">Fiji</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-207" value="207">
+                                                    <label for="region-73-country-207">French Polynesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-101" value="101">
+                                                    <label for="region-73-country-101">Indonesia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-107" value="107">
+                                                    <label for="region-73-country-107">Kiribati</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-130" value="130">
+                                                    <label for="region-73-country-130">Nauru</label>
+                                                  </li>
+                                                </ul>
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-132" value="132">
+                                                    <label for="region-73-country-132">New Caledonia</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-61" value="61">
+                                                    <label for="region-73-country-61">New Zealand</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-136" value="136">
+                                                    <label for="region-73-country-136">Norfolk Island</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-142" value="142">
+                                                    <label for="region-73-country-142">Papua New Guinea</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-148" value="148">
+                                                    <label for="region-73-country-148">Samoa</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-155" value="155">
+                                                    <label for="region-73-country-155">Solomon Islands</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-168" value="168">
+                                                    <label for="region-73-country-168">Tonga</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-170" value="170">
+                                                    <label for="region-73-country-170">Tuvalu</label>
+                                                  </li>
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-73-country-174" value="174">
+                                                    <label for="region-73-country-174">Vanuatu</label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </fieldset>
+                                            <fieldset class="group">
+                                              <legend>Region - Australia</legend>
+                                              <input type="radio" name="findRegion" id="region-74" value="74">
+                                              <label for="region-74" class="group-label region-5"><strong>Australia</strong></label>
+                                              <div class="columns">
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-74-country-261" value="261">
+                                                    <label for="region-74-country-261">Antarctica-Sightseeing Flight</label>
+                                                  </li>
+                                                </ul>
+                                                <ul class="column">
+                                                  <li class="dCountry">
+                                                    <input type="radio" name="findCountry" id="region-74-country-60" value="60">
+                                                    <label for="region-74-country-60">Australia</label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </fieldset>                                           
+
+                                        </div>  
+                                    
+                                    </div>
+                                    <!--Country Display-->
+
+                                </li>                                                    
+                                <li>
+                                	
+                                    <!--<div class="dateSpacer">&nbsp;</div>-->
+                                    <div class="datepickerHolder">
+
+                                        <label for="travelDate">When are you going? <a href="#help-2" class="help"><img src="files/images/icons/icon-help.svg" width="15" height="15" alt="Help(?) - When are you going?" /></a></label>                                    
+                                        <input type="text" name="travelDate" id="travelDate" value="" maxlength="20" autocomplete="off" />                                    
+
+
+
+                                        <div id="calendarDate"><!--<a href="#" title="X" class="closeWindow">X</a>--></div>    
+
+                                        <div class="helpWindow" id="help-2">
+                                            <h3>When are you going?</h3>                                        
+                                            <p>This is a test. This is a help window.</p>
+
+                                        </div>                                                                   
+                                    </div>
+                                    
+                                </li>
+                                
+                                <li class="ageHolder">
+
+                                    <div>
+                                        <label for="numberAdults">Number of travellers <a href="#help-3" class="help"><img src="files/images/icons/icon-help.svg" width="15" height="15" alt="Help(?) - Number of travellers" /></a></label>
+                                        <select id="numberAdults" name="numberAdults">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>                        
+                                    </div>
+
+                                    <fieldset id="adultTravellers">
+                                        <legend>Age of travellers</legend>
+                                        
+
+                                        <ul>         
+                                            <li>
+                                                <label for="travelerAge_1">1</label>
+                                                <input id="travelerAge_1" name="travelerAge_1" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                                                <div class="error">Any children entered into this field will be treated and charged as an adult. If this traveller is an accompanied child, please enter their details into the Accompanied Children field below
+                                                  <button type="button">Continue</button></div>
+                                            </li>                
+                                            <li class="hide"> 
+                                                <label for="travelerAge_2">2</label>
+                                                <input id="travelerAge_2" name="travelerAge_2" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                                            </li>                
+                                            <li class="hide">
+                                                <label for="travelerAge_3">3</label>
+                                                <input id="travelerAge_3" name="travelerAge_3" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                                            </li>                
+                                            <li class="hide">
+                                                <label for="travelerAge_4">4</label>
+                                                <input id="travelerAge_4" name="travelerAge_4" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" class="error" />             
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+
+
+                                    
+
+                                    <div class="helpWindow" id="help-3">
+                                        <h3>Number of travellers</h3>                                        
+                                        <p>This is a test. This is a help window.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="ageHolder">
+
+                                    <div>
+                                        <label for="numberChildren">Number of accompanied children <a href="#help-4" class="help"><img src="files/images/icons/icon-help.svg" width="15" height="15" alt="Help(?) - Age of all accompanied children" /></a></label>
+                                        <select id="numberChildren" name="numberChildren">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>                                        
+                                        </select>                        
+                                    </div>
+
+                                    <fieldset class="hide" id="childTravellers">
+                                        <legend>Age of all accompanied children</legend>
+                                        
+                                        
+                                        <ul>            
+                                            <li>
+                                                <label for="childAge_1">1</label>
+                                                <input id="childAge_1" name="childAge_1" type="text" pattern="[0-9]*" autocomplete="off" value="" min="0" max="20" maxlength="2" />
+                                            </li>                
+                                            <li class="hide"> 
+                                                <label for="childAge_2">2</label>
+                                                <input id="childAge_2" name="childAge_2" type="text" pattern="[0-9]*" autocomplete="off" value="" min="0" max="20" maxlength="2" />
+                                            </li>                
+                                            <li class="hide">
+                                                <label for="childAge_3">3</label>
+                                                <input id="childAge_3" name="childAge_3" type="text" pattern="[0-9]*" autocomplete="off" value="" min="0" max="20" maxlength="2" />
+                                            </li>                
+                                            <li class="hide">
+                                                <label for="childAge_4">4</label>
+                                                <input id="childAge_4" name="childAge_4" type="number" pattern="[0-9]*" autocomplete="off" value="" min="0" max="20" maxlength="2" />
+                                            </li>
+                                            <li class="hide">
+                                                <label for="childAge_5">5</label>
+                                                <input id="childAge_5" name="childAge_5" type="number" pattern="[0-9]*" autocomplete="off" value="" min="0" max="20" maxlength="2" />
+                                            </li>                
+                                            <li class="hide">
+                                                <label for="childAge_6">6</label>
+                                                <input id="childAge_6" name="childAge_6" type="text" pattern="[0-9]*" autocomplete="off" value="" min="0" max="20" maxlength="2" />
+                                            </li>
+                                        </ul> 
+                    
+                                    </fieldset>
+                                    
+
+                                    <div class="helpWindow" id="help-4">
+                                        <h3>Age of all accompanied children</h3>                                        
+                                        <p>This is a test. This is a help window.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <fieldset>
+                                        <legend>Do all travellers live in Australia? <a href="#help-5" class="help"><img src="files/images/icons/icon-help.svg" width="15" height="15" alt="Help(?) - All live in Australia?" /></a></legend>
+                                        
+                                        <ul class="radioList">
+                                            <li>
+                                                <input type="radio" name="liveAustralia_1" id="liveAustralia_1_1" value="Yes" />
+                                                <label for="liveAustralia_1_1">Yes</label>
+                                            </li>
+                                            <li>
+
+                                                <input type="radio" name="liveAustralia_1" id="liveAustralia_1_2" value="No" />
+                                                <label for="liveAustralia_1_2">No</label>
+                                            </li>                                        
+                                        </ul>
+                                    </fieldset>
+
+                                    <div class="helpWindow" id="help-5">
+                                        <h3>Do all travellers live in Australia?</h3>                                        
+                                        <p>This is a test. This is a help window.</p>
+                                    </div>
+                                </li>
+                                <li class="grid_2 alpha">
+                                    <label for="velocityNumber">Velocity Number</label>             
+                                    <input type="text" name="velocityNumber" id="velocityNumber" value="" maxlength="20" autocomplete="off" />
+                                </li>
+                                <li class="grid_2 omega">
+                                    <label for="promoCode">Promo Code</label>             
+                                    <input type="text" name="promoCode" id="promoCode" value="" maxlength="20" autocomplete="off" />
+                                </li>                                
+                            </ol>
+
+                          <div class="buttonWell">
+                              <input type="submit" name="submitForm" value="Get a quote" />
+                          </div>                             
+
+                        </section>
+                        <!--/Primary Traveller-->
+                      
+                    </form>
+
+                    <!--Featured-->
+                    <section class="featured">
+
+                      <h2>Featured Benefits</h2>
+
+                      <p>No matter where you travel, you can relax knowing you are well protected. Cover-More travel insurance gives you access to 24-hour Emergency Assistance and Medical Cover from a leader in Assistance Services.</p>
+
+                      <ul>
+                        <li>
+                          <img src="files/images/content/emergency-medical.jpg" width="320" height="120" alt="" />
+                          <h3>Emergency Assistance</h3>
+                          <p>Our team works around the clock assisting our customers when they need help. All of our travel insurance policyholders have access to our 24/7 emergency medical assistance.</p>
+                        </li>
+                        <li>
+                          <img src="files/images/content/trip-cancellation.jpg" width="320" height="120" alt="" />
+                          <h3>Trip Cancellation</h3>
+                          <p>Protect your travel investment if your trip is cancelled due to unforeseen circumstances by choosing the travel insurance cover that meets your needs – based on your non-refundable travel costs.</p>
+                        </li>
+                        <li>
+                          <img src="files/images/content/luggage.jpg" width="320" height="120" alt="" />
+                          <h3>Luggage and Personal Effects</h3>
+                          <p>Missing suitcase? Cracked iPad? Get coverage for lost luggage and travel documents and accidental damage of your gear as well as an allowance for delayed baggage.</p>
+                        </li>                                                  
+                      </ul>
+
+                    </section>
+                    <!--/Featured-->
+
+                    <!--Carousel-->
+                    <section class="carousel">
+
+                      <div class="owl-carousel">
+
+                        <div>
+                          <img src="files/images/content/testimonial-1.jpg" width="1280" height="300" alt="" />
+                          <div>                          
+                            <p>&quot;I was so surprised to receive your reply almost by return mail when I claimed in May. I expected a long and convoluted dialogue whilst I tried to convince you of the circumstances.</p>
+
+                            <p>You have restored my faith in travel insurance and I will certainly be recommending you to friends when they travel.&quot;  - <strong>Susan</strong></p>
+                          </div>
+                        </div>
+
+                        <div>
+                          <img src="files/images/content/testimonial-2.jpg" width="1280" height="300" alt="" />
+                          <div class="alignLeft">
+                            <p>&quot;I would like to say thank you for the quick processing of my travel claim. I have had difficulty in getting the appropriate information from overseas travel vendors but felt no such frustration with your company. My daughter is travelling to New Zealand in early December, and I will ensure she has travel insurance through your company. My congratulations on being extremely prompt and the quick finalisation of my claim.&quot;  - <strong>Maureen</strong></p>
+                          </div>
+                        </div>
+
+                        <div>
+                          <img src="files/images/content/velocity-banner.jpg" width="1280" height="300" alt="" class="veloBanner" />
+                        </div>                        
+
+                      </div>
+                  
+                    </section>
+                    <!--/Carousel-->                    
+
+                    <!--Coverage-->
+                    <section class="coverage">
+
+                      <h2>Travel insurance Australians count on</h2>
+
+                      <ul>
+                        <li>
+                          <img src="files/images/icons/icon-personalised.png" width="120" height="100" alt="" />Personalised Cover
+                        </li>
+                        <li>
+                          <img src="files/images/icons/icon-emergency.png" width="120" height="100" alt="" />Emergency Assistance
+                        </li>
+                        <li>
+                          <img src="files/images/icons/icon-claims.png" width="120" height="100" alt="" />Pain Free Claims
+                        </li>
+                        <li>
+                          <img src="files/images/icons/icon-velocity.png" width="120" height="115" alt="" />Earn Velocity Points
+                        </li>                                                                        
+                      </ul>
+
+                    </section>                                        
+                    <!--/Coverage-->
+
+                </article>
+                <!--Article-->
+
+                <!--Offer-->
+                <aside class="offer">
+                    Get a travel insurance quote, fast and easy <a href="#" class="btnLink">Get a Quote</a>
+                </aside>
+                <!--Offer-->                
+                          
+            </div>
+            <!--Container-->
+        
+        </div>
+        <!--Outer Container-->
+                
+        <!--Footer-->
+        <footer role="contentinfo">
+
+            <div class="siteFooter container_12">
+
+                <p>To earn and redeem Velocity Points you must be a Velocity member. Velocity membership and Points earn and redemption are subject to the <a href="#">Member Terms and Conditions</a>, as amended from time to time.</p>
+
+                <p>Limits, exclusions and conditions apply. This is general advice only. We do not provide any advice based on any consideration of your objectives, financial situation or needs. Consider the Product Disclosure Statement (available from us) before deciding about this insurance. Insurance administered by Cover-More Insurance Services Pty Ltd ABN 95003114145 AFSL 241713. The issuer of insurance is Great Lakes Reinsurance (UK) PLC ARBN 127 740 532, ABN 18 964 580 576, AFSL No. 318603, trading as ‘Great Lakes Australia’.</p>
+
+                <ul>
+                    <li><a href="#">Product Disclosure Statement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>                      
+                </ul>
+
+                <p><a href="#"><img src="files/images/logos/logo-covermore-footer.png" width="152" height="32" alt="Powered by Cover-More Travel Insurance" /></a></p>
+
+            </div>
+
+        </footer>
+        <!--Footer-->          
+    
+       <!--JavaScript Calls--> 
+        
+        <!--Library JS-->          
+        <script src="library/jquery-2.1.3.min.js" type="text/javascript"></script>
+		    <script src="library/jquery-ui-1.11.4.min.js" type="text/javascript"></script> 
+        <!--<script src="library/jquery.mobile-aupost.min.js"></script>-->
+        <!--/Library JS-->
+
+        <!--Plugin JS-->          
+        <script src="library/jquery.qtip.min.js" type="text/javascript"></script>
+        <!--<script src="library/jqm.autoComplete-1.5.2.js"></script>-->
+        <script src="library/owl.carousel.min.js"></script>  
+        <!--/Plugin JS--> 
+
+        <!--Application JS-->                                
+        <script src="js/utility.js" type="text/javascript"></script>
+        <!--/Application JS--> 
+
+        <!--Theme JS-->        
+        <script src="js/quote.js" type="text/javascript"></script>
+        <!--/Theme JS--> 
+
+        <!--/JavaScript Calls-->
+       
+    </body>
+</html>

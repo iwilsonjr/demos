@@ -1,0 +1,229 @@
+<!doctype html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+
+    <head>
+        <title>youGo - Purchase Process/Purchase</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />       
+    	<link type="text/css" rel="stylesheet" href="css/mobile.css" />  
+        <link type="text/css" rel="stylesheet" href="css/purchase.css" />         
+    </head>
+
+    <body>
+    
+        <!--Header-->
+        <header role="banner">
+            <div class="siteHeader"> 
+            
+                <a href="home.html" class="siteLogo"><img src="files/images/logos/logo-yougo.png" width="414" height="128" alt="youGo Travel Insurance" /></a> <!--Site Logo-->
+                
+				<a href="#" class="navToggle"></a>
+                                
+                <nav role="navigation"> 
+                    <a href="#content" class="hide">Skip to Content</a>                                
+                    
+                    <!--Process Navigation-->
+                    <ol class="breadcrumbs">
+                        <li>Trip Info</li>     
+                        <li>Quote</li>                                  
+                        <li>EMC</li>
+                        <li>Traveller Info</li>
+                        <li><strong>Purchase</strong></li>                        
+                    </ol>
+                    <!--Process Navigation-->
+                    
+                    <!--Price Recap-->
+                    <div class="priceRecap">
+
+                        <p><em>Trip Info:</em> <span>You +1, Federated States of Micronesia, 07/07/14 - 07/07/15</span> <a href="home.html" class="editLink">Edit</a></p>
+                        
+                        <div class="priceList">
+                            <strong class="price">$0,000.00</strong>
+                            
+                            <div class="priceSummary">
+                            
+                                <strong class="subheader">Your Costs</strong>
+                            
+                                <dl>
+                                    <dt class="base">Base Price</dt>
+                                        <dd>$200.00</dd>
+                                    <dt>Adventure Cover</dt>
+                                        <dd>$30.00</dd>
+                                    <dt>Existing Medical Conditions (EMC)<br /><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></dt>
+                                        <dd>$20.00</dd>
+                                    <dt class="total">Total</dt>
+                                        <dd class="total"><span>$</span>250<span>.00</span></dd>
+                                </dl>
+                            
+                            </div>
+                        </div>
+           
+                    </div>
+                    <!--Price Recap-->                   
+                     
+                </nav>
+                
+            </div>
+        </header>
+        <!--Header-->
+    
+        <!--Container-->
+        <div class="container purchaseContainer" role="main">          
+            
+            <!--Content-->
+            <div class="content purchaseContent" id="content">
+                
+                <h1>Purchase</h1>
+            
+                <!--User Content-->
+                
+                <form id="quoteForm" action="thank-you.html" method="get">
+                
+                    <div class="col-1">
+                    
+                        <h2>Your Costs</h2>
+                        
+                        <table class="priceTable">
+                            <tbody>
+                                <tr class="base-price">
+                                    <th scope="row"><img src="files/images/icons/icon-base.png" width="40" height="22" alt="base" />Base</th>
+                                    <td>$200.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img src="files/images/icons/icon-adventure.png" width="40" height="19" alt="adventure" />Adventure Cover</th>
+                                    <td>$30.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img src="files/images/icons/icon-medical.png" width="40" height="24" alt="medical" />Existing Medical Conditions (EMC)<br /><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></th>
+                                    <td>$20.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img src="files/images/icons/icon-cancellation.png" width="40" height="29" alt="cancellation" />Cancellation</th>
+                                    <td>$20.00</td>
+                                </tr>  
+                                <tr>
+                                    <th scope="row"><!--<img src="files/images/icons/icon-cancellation.png" width="40" height="29" alt="discount" />-->Discount</th>
+                                    <td>$20.00</td>
+                                </tr> 
+                                <tr class="total">
+                                    <th scope="row">Total</th>
+                                    <td>$<span>250</span>.00</td>
+                                </tr>                                                                                               
+                            </tbody>
+                        </table>
+                        
+                    	<img src="files/images/content/hugo-purchase.png" width="240" height="301" alt="hugo" class="hugoPurchase" /> 
+                    
+                    </div>
+                    
+                    <div class="col-2">
+                             
+                        <!--Discount Code - Added 6/27/14--> 
+                        <h2>Discount Code</h2>
+
+                        <div class="paymentBlock discountArea">
+
+                            <ol>
+                                <li>
+                                    <label for="discountCode">Discount Code</label>
+                                    <input type="text" name="discountCode" id="discountCode" placeholder="discount code" value="" maxlength="10" size="14" autocomplete="off">
+                                    <input type="button" value="Apply" />
+                                </li>                           
+                            </ol>
+
+                        </div>
+                        <!--Discount Code - Added 6/27/14--> 
+
+                        <h2>Payment Information</h2>
+
+                        <div class="paymentBlock">
+
+                            <div id="errorContainer" class="hide">
+                                <p>Whoops. You must enter the card expiration.</p>
+                            </div>
+
+                            <ol>
+                                <li>
+                                    <label for="card">Card Type</label>
+                                    <select name="cardType" id="cardType">
+                                        <option value="">card type</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="Mastercard">Mastercard</option>
+                                    </select>
+                                    <ul class="credit">
+                                      <li><img src="files/images/content/card01.jpg" width="46" height="29" alt="VISA"></li>
+                                      <li><img src="files/images/content/card02.jpg" width="47" height="29" alt="Mastercard"></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" name="cardNumber" id="cardNumber" placeholder="card number" value="" maxlength="16" size="30" autocomplete="off">
+                                </li> 
+                                <li class="inline">
+                                    <label for="expireDate">Card Number</label>
+                                    <input type="text" name="expireDate" id="expireDate" placeholder="expiration (mm/yy)" value="" maxlength="6" size="20" autocomplete="off">                                                         
+                                </li>                                                    
+                                <li class="inline">
+                                    <label for="ccv">Security Code</label>                                        
+                                    <input type="text" name="securityCode" id="securityCode" placeholder="security code" value="" maxlength="3" autocomplete="off" size="10">
+                                </li>
+                                <li class="securePayment">
+                                    <a href="https://sealinfo.thawte.com/thawtesplash?form_file=fdf/thawtesplash.fdf&amp;dn=SECURE.COVERMORE.CO.nz&amp;lang=en" target="_blank"><img src="files/images/logos/logo-secure-payment.png" width="265" height="54" alt="Your payment is secure"></a>
+                                </li>                            
+                            </ol>
+
+                        </div>
+                        
+                      <div class="buttonWell">
+                          <input type="submit" value="Buy" class="buy" />
+                      </div>                         
+      
+                    </div>
+                
+                </form>
+                
+                <!--User Content-->                        
+                  
+            </div>
+            <!--Content-->
+            
+        </div>
+        <!--Container-->
+        
+        <!--Footer-->
+        <footer role="contentinfo">
+            <div class="siteFooter">
+                
+                <!--Process Navigation-->
+                <ol class="breadcrumbs">
+                    <li>Trip Info</li>     
+                    <li>Quote</li>                                  
+                    <li>EMC</li>
+                    <li>Traveller Info</li>
+                    <li><strong>Purchase</strong></li>                   
+                </ol>
+                <!--Process Navigation-->   
+                            
+            	<div class="disclaimer">
+                    <p>youGo Travel Insurance policies are underwritten by Cover-More Travel Insurance.</p>
+     
+                    <p>Cover-More NZ is licensed and regulated by the Financial Markets Authority for its financial adviser services as a Qualifying Financial Entity ("QFE"). The Financial Markets Authority may be contacted by visiting www.fma.govt.nz or by calling (04) 472 9830. You can obtain information about financial advisers from the Authority. You may also report information about Cover-More or our advisers to the Authority.</p>  
+                </div>             
+                              
+            </div>
+        </footer>
+        <!--Footer-->        
+    
+        <!--JavaScript Calls-->  
+        <script src="library/jquery-1.10.2.min.js" type="text/javascript"></script> 
+		<script src="library/selectivizr-min.js" type="text/javascript"></script>
+        <script src="library/jquery.placeholder.js" type="text/javascript"></script>            
+        <script src="js/utility.js" type="text/javascript"></script>    
+        <script src="js/purchase.js" type="text/javascript"></script>           
+        <!--JavaScript Calls-->
+       
+    </body>
+</html>

@@ -1,0 +1,284 @@
+hr {
+    border: none;
+    border-top: 1px solid #e2dfda;
+    margin: 10px 0
+}
+h1 a,
+h2 b,
+h2 strong {
+    display: block;
+    color: #dc1928
+}
+a#contact-us-hdr {
+    background: url("../files/images/landing/speech-bubble.gif") no-repeat;
+    padding-left: 24px;
+    padding-bottom: 1px
+}
+.l-homepage div.tiles-container {
+    width: 755px;
+    padding-top: 398px;
+    height: 218px;
+    margin: 0 0 0 -20px
+}
+.l-homepage div.tiles-container div.tile {
+    margin-left: 10px;
+    padding: 20px 30px;
+    height: 175px;
+    width: 185px;
+    float: left;
+    color: #000000;
+    background-image: url("../files/images/landing/bg-tile-blue.png");
+    display: block;
+    text-decoration: none
+}
+.l-homepage div.tiles-container div:first-child div.tile {
+    margin-left: 0
+}
+.l-homepage div.tiles-container div.tile .primary-cta {
+    position: absolute;
+    bottom: 35px
+}
+.clickable-tile {
+    cursor: pointer
+}
+#track-banner {
+    height: 100px;
+    margin: 20px 0
+}
+#track-banner > div {
+    float: left;
+    height: 80px;
+    width: 197px;
+    padding: 10px 15px;
+    margin: 0 0 0 15px;
+    border-radius: 3px;
+    position: relative
+}
+#track-banner > div.blue {
+    background-color: #cce2ed
+}
+#track-banner > div.green {
+    background-color: #e1e6cd
+}
+#track-banner > div.yellow {
+    background-color: #ffedba
+}
+#track-banner h2 {
+    color: #dc1928;
+    font-size: 18px;
+    font-weight: 700
+}
+#track-banner h3 {
+    width: 162px;
+    color: #382f2d;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px
+}
+#track-banner > div.first {
+    margin: 0
+}
+#track-banner div.red-arrow-big {
+    position: absolute;
+    top: 30px;
+    left: 188px;
+    width: 24px;
+    height: 40px;
+    background: url("../files/images/landing/red-arrow-big.png") no-repeat center
+}
+#track-eparcel-link a {
+    text-decoration: underline
+}
+.track-banner-p3 {
+    width: 162px;
+    color: #382f2d;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    font-family: "Letter Regular", Arial, sans-serif;
+    margin: 0
+}
+#apdm-li {
+    background-color: white;
+    float: right;
+    margin: 0
+}
+#apdm-li.dd-open {
+    border-left: 1px solid #e2dfda;
+    border-right: 1px solid #e2dfda;
+    border-bottom: 1px solid white
+}
+#apdm-li > #apdm-link {
+    padding: 0 20px;
+    color: #dc1928;
+    outline: none
+}
+#apdm-li > #apdm-link:hover,
+#apdm-li > #apdm-link:focus {
+    text-decoration: underline
+}
+#apdm-drop-down {
+    background-color: white;
+    display: none
+}
+#apdm-drop-down.dd-open {
+    border-top: 1px solid #e2dfda;
+    border-bottom: 1px solid #e2dfda
+}
+#apdm-drop-down .apdm-drop-down-content {
+    width: 960px;
+    top: 1px;
+    position: relative;
+    min-height: 280px;
+    overflow: auto;
+    margin: 0 auto 76px auto
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-logo img {
+    margin: 18px 0
+}
+#apdm-drop-down .apdm-drop-down-content h2 {
+    color: #382f2d;
+    font-weight: 400;
+    font-size: 26px
+}
+#apdm-drop-down .apdm-drop-down-content h2 b {
+    font-weight: 400
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-link {
+    font: 400 16px/40px"Letter Regular", Arial, sans-serif;
+    text-decoration: underline;
+    color: #807370
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-link:hover {
+    color: #dc1928
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons {
+    font: 400 15px"Letter Regular", Arial, sans-serif;
+    display: block;
+    margin-top: 20px
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons a {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 20px
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .primary-button {
+    color: white;
+    background-color: #dc1928;
+    border: 1px solid #dc1928
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .primary-button:hover,
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .primary-button:focus {
+    background-color: #ee2d3c;
+    border-color: #ee2d3c
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .primary-button:active {
+    background-color: #bc111e;
+    border-color: #bc111e
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .secondary-button {
+    color: #807370;
+    background-color: white;
+    border: 1px solid #807370
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .secondary-button:hover,
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .secondary-button:focus {
+    color: #dc1928;
+    border-color: #dc1928
+}
+#apdm-drop-down .apdm-drop-down-content .mypost-buttons .secondary-button:active {
+    color: #bc111e;
+    border-color: #bc111e
+}
+#apdm-drop-down .apdm-drop-down-content > img {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+#apdm-drop-down .apdm-drop-down-content p {
+    color: #382f2d
+}
+#apdm-drop-down .apdm-drop-down-content .primary-cta {
+    margin-right: 6px
+}
+#apdm-drop-down .apdm-drop-down-content .cta-link {
+    font: 700 16px/40px"Letter Regular", Arial, sans-serif;
+    color: #382f2d
+}
+#apdm-drop-down .apdm-drop-down-content .cta.clearfix {
+    margin: 12px 0
+}
+#apdm-drop-down .apdm-drop-down-content .hide {
+    background: url("../files/images/landing/icons/addons/hide-charcoal.png") no-repeat scroll 27px 14px transparent;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -999px;
+    top: 0;
+    width: 40px
+}
+#apdm-drop-down .apdm-left-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 420px
+}
+#upsell-banner {
+    height: 100px;
+    margin: 20px 0
+}
+#upsell-banner > div {
+    float: left;
+    height: 80px;
+    width: 197px;
+    padding: 10px 15px;
+    margin: 0 0 0 15px;
+    border-radius: 3px;
+    position: relative
+}
+#upsell-banner > div.blue {
+    background-color: #cce2ed
+}
+#upsell-banner > div.green {
+    background-color: #e1e6cd
+}
+#upsell-banner > div.yellow {
+    background-color: #ffedba
+}
+#upsell-banner h2 {
+    color: #dc1928;
+    font-size: 20px;
+    font-weight: 700
+}
+#upsell-banner p {
+    width: 162px;
+    font-size: 16px;
+    color: #382f2d;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 2px
+}
+#upsell-banner > div.first {
+    margin: 0
+}
+#upsell-banner div.chevron-right {
+    position: absolute;
+    top: 36px;
+    left: 188px;
+    width: 18px;
+    height: 30px;
+    background: url("../files/images/landing/ap-chevronRight-18x30.png") no-repeat center
+}
+.upsell-banner-p3 {
+    width: 162px;
+    color: #382f2d;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 2px;
+    font-family: "Letter Regular", Arial, sans-serif;
+    font-size: 16px
+}

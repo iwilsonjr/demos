@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Cover-More/JetLag/Time of Day</title>
+        <meta charset="utf-8" />
+        
+        <!-- iPhone -->
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+        
+        <!-- iPhone 5 -->
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        
+        <!-- iPhone -->
+        <link rel="apple-touch-icon-precomposed" href="files/images/icons/apple-touch-icon-precomposed.png" />
+        <link href="files/images/icons/apple-touch-startup-image-320x480.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image" />
+        
+        <!-- iPhone (Retina) -->
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="files/images/icons/apple-touch-icon-120x120-precomposed.png" />
+        <link href="files/images/icons/apple-touch-startup-image-640x960.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+        
+        <!-- iPhone 5 -->
+        <link href="files/images/icons/apple-touch-startup-image-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    
+        <!-- CSS -->
+       <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css" />
+       <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    
+    <body>
+    
+        <div class="container" data-role="page">
+
+          <!--Header-->        
+          <header> 
+              <a href="direction.html" class="siteLogo"><img src="files/images/logos/logo-jetlag.png" alt="JetLag Jettison" width="320" height="95" /></a>
+              
+              <!--Menu Navigation-->
+              <nav class="menuNavigation"> 
+                  <strong><a href="#sitemenu" id="menuLink"></a></strong> <span><a href="#"><img src="files/images/logos/logo-jetlag_menu.png" alt="JetLag Jettison" width="231" height="95" /></a></span>
+                  
+                  <ul id="sitemenu">
+                      <li><a href="direction.html">Start Over</a></li>                  
+                  </ul>
+                  
+                  <div class="menuFooter"> 
+                      <span>All of our best travel apps wrapped into one!</span> 
+                      <img src="files/images/logos/logo-travel-valet-2x.png" alt="Travel Valet" width="240" height="42" /> 
+                  </div>
+              </nav>
+              <!--Menu Navigation-->  
+              
+          </header>
+          <!--Header-->
+                    
+          <div class="content">
+          
+           		<!--Question--> 
+                <h1><em class="questionMarker thirdQuestion">(Question 3 out of 5)</em> What time of day are you arriving?</h1>
+           		<!--Question--> 
+
+                <!--Display Label-->                
+                <div class="displayBox arrivalCounter">
+           	    	<img src="files/images/content/label-2.png" width="1450" height="195" alt="Arrival" /> 
+                </div>
+                <!--Display Label-->                
+                                
+                <form action="travel.html">
+                    <fieldset>
+                        <ul>
+                            <li>
+                            	<label for="question_3_0">Morning</label>
+                            	<input type="radio" name="question_3" id="question_3_0" value="Morning" checked="checked" />
+                            </li>
+                            <li>
+                            	<label for="question_3_1">Afternoon</label>
+                            	<input type="radio" name="question_3" id="question_3_1" value="Afternoon" />
+                            </li>
+                            <li>
+                            	<label for="question_3_2">Evening</label>
+                            	<input type="radio" name="question_3" id="question_3_2" value="Evening" />
+                            </li>                                                                                         
+                        </ul>
+                    </fieldset>
+                    
+                    <!--Pagination-->                     
+                    <div class="pagination">
+                        <span class="prev" id="prev"></span>
+                        <span class="next" id="next"></span>
+                    </div>
+                    <!--Pagination--> 
+                    
+                    <!--Answer-->                                                               
+                    <div class="buttonWell">
+                    	<span class="answer" id="answer"></span>
+                    	<input type="submit" name="submitAnswer" value="&gt;Next" />                               
+                    </div> 
+                    <!--Answer--> 
+                                                      
+                </form>
+          </div>
+          
+          <!--Footer--> 
+         <footer>
+         	<a href="#" target="_blank">
+         		<span>Brought to you by</span>
+         		<img src="files/images/logos/logo-customer-care-2x.png" alt="CustomerCare Medical Assistance" width="144" height="23" />
+         	</a>
+         </footer>              
+          <!--Footer-->
+                            
+        </div>
+
+        <!-- Javascript Calls --> 
+        <script type="text/javascript" src="library/modernizr-2.6.2.min.js"></script>          
+		<script type="text/javascript" src="library/jquery-1.8.3.min.js"></script> 
+        <script type="text/javascript" src="library/jquery.mobile-1.2.0.min.js"></script>
+        <script type="text/javascript" src="js/utility.js"></script>
+        <!-- Javascript Calls --> 
+    
+    </body>
+</html>

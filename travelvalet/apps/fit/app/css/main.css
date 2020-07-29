@@ -1,0 +1,517 @@
+/*
+
+Cover More/FIT App - CDG Interactive, Inc.
+--------------------------------------------*/
+
+/*
+
+Custom Fonts Initialization
+--------------------------------------------*/
+@font-face {
+    font-family: 'NunitoLight';
+    src: url('type/nunito-light-webfont.eot');
+    src: url('type/nunito-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/nunito-light-webfont.woff') format('woff'),
+         url('type/nunito-light-webfont.ttf') format('truetype'),
+         url('type/nunito-light-webfont.svg#NunitoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('type/nunito-regular-webfont.eot');
+    src: url('type/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/nunito-regular-webfont.woff') format('woff'),
+         url('type/nunito-regular-webfont.ttf') format('truetype'),
+         url('type/nunito-regular-webfont.svg#NunitoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FranklinGothicFSBook';
+    src: url('type/FranklinGothic-Book-webfont.eot');
+    src: url('type/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/FranklinGothic-Book-webfont.woff') format('woff'),
+         url('type/FranklinGothic-Book-webfont.ttf') format('truetype'),
+         url('type/FranklinGothic-Book-webfont.svg#FranklinGothicFSBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kohinoor Medium';
+    src: url('type/indian_type_foundry_-_kohinoor_medium-webfont.eot');
+    src: url('type/indian_type_foundry_-_kohinoor_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('type/indian_type_foundry_-_kohinoor_medium-webfont.woff') format('woff'),
+         url('type/indian_type_foundry_-_kohinoor_medium-webfont.ttf') format('truetype'),
+         url('type/indian_type_foundry_-_kohinoor_medium-webfont.svg#kohinoormedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }									
+
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img, object, embed { max-width: 100%; vertical-align: top; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted #000; cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, select { vertical-align: middle; }
+
+pre { 
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+
+select, input, textarea { font: 99% sans-serif; }
+
+table { font-size: inherit; font: 100%; }
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+small { font-size: 85%; }
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable, label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/* make buttons play nice in IE */
+button { width: auto; overflow: visible; }
+
+
+/*
+JQM Overwrites
+--------------------------------------------*/
+.ui-loader { display: none; }
+.ui-page { min-height: 480px !important; }  
+  .locationForm .ui-btn-inner { display: none; }
+  .locationForm .ui-btn { display: inline; }
+
+/*
+
+Site Defaults
+--------------------------------------------*/
+
+/* --- Block Elements --- */
+
+html { background: #a2c0ca none; font-size: 62.5%; line-height: 62.5%; color: #383e40; } /* font-size corresponds to 10px base, 10px - 1.0rem */
+
+a img { border: none; }
+
+/* --- Header Text --- */
+h1, .h1 { margin: 0 0 10px; padding: 0; font-size: 20px; line-height: 22px; font: 2.0rem/2.2rem NunitoLight, Arial, Helvetica, sans-serif; color: #319bc0; }
+h2, .h2 { margin: 0 0 7px; padding: 0; font-size: 19px; font: 1.9rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #319bc0; letter-spacing: 0; }
+h3, .h3 { margin: 0 0 2px; padding: 0; font-size: 10px; font: 1.0rem/1 NunitoLight, Arial, Helvetica, sans-serif; text-transform: uppercase; }
+
+/* --- Block Text --- */
+p, blockquote, caption, div { margin-bottom: 5px; } 
+
+/* --- Text Elements --- */
+a { color: #4a4e51; text-decoration: none; }
+	a:hover, a:focus { color: #4a4e51; }
+sup { font-size: 9px; font-size: 0.9rem; }
+small { font-size: 10px; font-size: 1.0rem; }
+strong { font-weight: normal; font-family: NunitoLight, Arial, Helvetica, sans-serif; }
+em { font-style: italic; }
+address { display: block; margin: 0 0 5px; font-style: normal; }
+
+/* --- List Items --- */
+ul, ol { list-style: none outside none; margin: 0 0 5px; }
+
+/* --- Inputs --- */
+input[type='text'] { width: 215px; padding: 2px 4px; border: 0; border-radius: 4px; box-shadow: inset 0 0 3px rgba(160,181,190,0.75); font-size: 15px; font: 1.5rem/1 FranklinGothicFSBook, Arial, Helvetica, sans-serif; color: #616f72; }
+input[type='submit'], input[type='button'] { width: 22px; height: 22px; margin: 0; border: 1px solid #4484a0; border-radius: 3px; box-shadow: 0 0 1px rgba(19,19,19,0.50); text-indent: -100px; }
+
+input#locate { margin-left: 5px;
+
+background: #559fbe no-repeat center center; /* Old browsers */
+background-image: url(../files/images/buttons/btn-locate.png), -moz-linear-gradient(top,  #559fbe 0%, #307ba6 100%); /* FF3.6+ */
+background-image: url(../files/images/buttons/btn-locate.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#559fbe), color-stop(100%,#307ba6)); /* Chrome,Safari4+ */
+background-image: url(../files/images/buttons/btn-locate.png), -webkit-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Chrome10+,Safari5.1+ */
+background-image: url(../files/images/buttons/btn-locate.png), -o-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* Opera 11.10+ */
+background-image: url(../files/images/buttons/btn-locate.png), -ms-linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* IE10+ */
+background-image: url(../files/images/buttons/btn-locate.png), linear-gradient(top,  #559fbe 0%,#307ba6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#559fbe', endColorstr='#307ba6',GradientType=0 ); /* IE6-9 */
+	
+}
+
+/* 
+     Utility ID's
+     ----------------------- */      
+.hide { position: absolute !important; top: 0; left: -9999px; }
+
+
+/*
+
+Site Styles
+--------------------------------------------*/
+
+/* 
+	Body
+-----------------------------*/
+body { font: 1.2rem/1.85rem Arial, Helvetica, sans-serif; -webkit-text-size-adjust: 100%; } 
+
+
+/* 
+	Container Wrapper
+-----------------------------*/
+.containerWrapper { overflow: hidden; max-width: 320px; /*min-height: 480px;*/ margin: 0 auto; padding: 0; background: url(../files/images/backgrounds/bkg-containerwrapper_body.jpg) repeat-y center 0, url(../files/images/backgrounds/bkg-container.jpg) no-repeat center 0; }
+
+/* 
+	Container
+-----------------------------*/
+.container { overflow: hidden; float: left; min-width: 320px; margin: 0 auto; padding: 0; }
+
+/* 
+	Menu Slider
+-----------------------------*/
+.menuSlider { overflow: hidden; width: 960px; }
+
+/* Display menu */
+.displayMenu .menuTab, .displayMenu .navBlock { left: -282px; -webkit-animation: openNav 0.3s; -moz-animation: openNav 0.3s; -ms-animation: openNav 0.3s; -o-animation: openNav 0.3s; animation: openNav 0.3s; }
+.closeMenu .menuTab, .closeMenu .navBlock { left: 0; -webkit-animation: closeNav 0.3s; -moz-animation: closeNav 0.3s; -ms-animation: closeNav 0.3s; -o-animation: closeNav 0.3s; animation: closeNav 0.3s; }
+
+/* Open/Close Navigation */
+@-webkit-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@-moz-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@-ms-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@-o-keyframes openNav { from { left: 0; } to { left: -282px; }}
+@keyframes openNav { from { left: 0; } to { left: -282px; }}
+
+@-webkit-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@-moz-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@-ms-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@-o-keyframes closeNav { from { left: -282px; } to { left: 0; }}
+@keyframes closeNav { from { left: -282px; } to { left: 0; }}	
+
+
+/* 
+	Navigation Block (Menu/Cover-More Apps)
+-----------------------------*/
+.navBlock, body.locate .container.navBlock { position: relative; z-index: 5; width: 320px; min-height: 480px; padding: 0; 
+
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #1e5799 0%, #053251 0%, #053b61 55%, #064968 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1e5799), color-stop(0%,#053251), color-stop(55%,#053b61), color-stop(100%,#064968)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* IE10+ */
+background: linear-gradient(-45deg,  #1e5799 0%,#053251 0%,#053b61 55%,#064968 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#064968',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.navigation { margin: 0; }
+	.navigation li { }
+	.navigation a { display: block; padding: 13px 0 13px 50px; background: transparent none no-repeat 0 13px; box-shadow: inset 0 -10px 20px 5px rgba(0,0,0,0.2); font-size: 11px; line-height: 16px; font-size: 1.1rem; line-height: 1.6rem; color: #fffdf4; }
+		.navigation li:nth-child(1) a { background-image: url(../files/images/links/link-getfit.png); }
+		.navigation li:nth-child(2) a { background-image: url(../files/images/links/link-fit-finder.png); }
+/*		.navigation li:nth-child(3) a { background-image: url(../files/images/links/link-travel.png); }	*/			
+	.navigation em { display: block; font-size: 25px; font: 2.5rem/1 NunitoLight, Arial, Helvetica, sans-serif; text-transform: uppercase; }
+	
+.apps { padding: 7px 13px 20px; background: url(../files/images/backgrounds/bkg-apps.png) repeat 0 0; box-shadow: inset 0 -10px 30px 10px rgba(0,0,0,0.2); }
+	.apps h2 { margin: 0 0 10px; padding: 0 0 7px 11px; border-bottom: 1px solid #042944; font-size: 11px; font: 1.1rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #78d5ec; text-transform: uppercase; }
+	.apps ul { padding-left: 7px; }
+	.apps li { display: inline-block; margin: 0 17px 10px 0; width: 67px; line-height: 1.3; text-align: center; vertical-align: top; }
+	.apps img { display: inline-block; margin: 0 0 10px; border-radius: 8px; box-shadow: 0 0 5px 2px rgba(0,0,0,0.2); }
+	.apps a { font-weight: bold; color: #fffdf4; text-shadow: 0 3px 2px rgba(2,27,52,0.75); }
+
+
+/* 
+	Header
+-----------------------------*/
+.siteHeader { height: 95px; margin: 0; padding: 5px 0 0; }
+	.siteHeader strong { display: block; padding: 0 0 0 19px; font-size: 39px; font: 3.9rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #fffdf4; text-transform: uppercase; }
+	
+/* Menu Tab */
+.menuTab { overflow: hidden; position: relative; z-index: 5; float: right; display: block; width: 37px; height: 53px; margin: -100px -3px 0 0; padding: 0; background: transparent url(../files/images/links/link-menu.png) no-repeat 0 0; text-indent: -100px; }
+	.menuSelected { background-position: -37px 0; }
+
+
+/* 
+	Content
+-----------------------------*/
+.content { margin: 0; padding: 0 20px 1px; border-radius: 0 0 5px 5px; box-shadow: 0 15px 5px 1px rgba(160,181,190,0.75); }
+
+.mediateBlock { padding: 7px 7px 0; background: url(../files/images/backgrounds/bkg-mediablock.jpg) no-repeat center 0, url(../files/images/backgrounds/bkg-mediablock_body.jpg) repeat-y center 0; border: 6px solid #fbfbfb; border-radius: 3px; }
+	.mediateBlock h2 { margin-bottom: 5px; padding-bottom: 15px; background: transparent url(../files/images/backgrounds/bkg-header_workout.png) no-repeat center 100%; font-size: 31px; font: 3.122rem/1 NunitoRegular, Arial, Helvetica, sans-serif; color: #1a8ba8; text-shadow: 0 0 1px #177e9c; text-transform: uppercase; }
+		.mediateBlock h2 img { margin-right: 10px; vertical-align: text-top; }
+
+.mediateSelector { overflow: hidden; position: relative; width: 314px; margin: 0 0 -6px 0; font-size: 0; }
+	.mediateSelector li { float: left; display: block; width: 156px; height: 56px; background: transparent url(../files/images/links/link-plane.png) no-repeat 0 0; }
+		.mediateSelector li.selected { background-position: -156px 0; }
+		.mediateSelector li:first-child { margin-right: 2px; background-image: url(../files/images/links/link-ground.png); }
+		
+	.mediateSelector a { display: block; height: 43px; margin: 0; padding: 16px 10px 0 55px; font-size: 13px; line-height: 13px; font: italic bold 1.3rem/1.3rem NunitoLight, Arial, Helvetica, sans-serif; color: #696c6d; text-transform: uppercase; }
+		.mediateSelector li.selected a { color: #d7d8d9; }
+		
+	.mediateSelector strong { display: block; margin: 0 0 2px; font-size: 22px; font: 2.2rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #5e95a3; text-align: center; text-transform: uppercase; }
+		.mediateSelector li.selected strong { color: #6c950b; }	
+
+.mediateLister { margin: 0 -6px; border-bottom: 6px solid #fbfbfb; border-radius: 0 0 3px 3px;  font-size: 11px; line-height: 14px; font: 1.05rem/1.4rem FranklinGothicFSBook, Arial, Helvetica, sans-serif; }
+	.mediateLister h2 { margin-bottom: 10px; font-size: 29px; line-height: 32px; font-size: 2.9rem; line-height: 3.2rem; }
+		.mediateLister h2 em { position: relative; top: -1px; display: inline-block; padding: 4px 10px; background: #e9f0f3 none; border: 2px solid #d9e3e7; border-radius: 4px; font-style: normal; font-size: 15px; line-height: 16px; font-size: 1.5rem; line-height: 1.6rem; color: #74a4b0; vertical-align: bottom; text-transform: uppercase; }
+	.mediateLister li { padding: 0 0 10px; }
+
+	
+.displaySelector { overflow: hidden; width: 314px; margin: 0 0 -6px -13px; 
+
+background: rgb(211,211,212); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(211,211,212,1) 0%, rgba(228,228,229,1) 21%, rgba(237,237,238,1) 66%, rgba(234,239,239,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(211,211,212,1)), color-stop(21%,rgba(228,228,229,1)), color-stop(66%,rgba(237,237,238,1)), color-stop(100%,rgba(234,239,239,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(211,211,212,1) 0%,rgba(228,228,229,1) 21%,rgba(237,237,238,1) 66%,rgba(234,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(211,211,212,1) 0%,rgba(228,228,229,1) 21%,rgba(237,237,238,1) 66%,rgba(234,239,239,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(211,211,212,1) 0%,rgba(228,228,229,1) 21%,rgba(237,237,238,1) 66%,rgba(234,239,239,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(211,211,212,1) 0%,rgba(228,228,229,1) 21%,rgba(237,237,238,1) 66%,rgba(234,239,239,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d4', endColorstr='#eaefef',GradientType=0 ); /* IE6-9 */
+
+border-top: 1px solid #c9cacb; border-radius: 0 0 3px 3px; font-size: 0; text-align: center; white-space: nowrap; }
+
+	.displaySelector li { display: inline-block; width: 15.66667%; border-right: 3px solid #d5d5d6; vertical-align: top; }
+	.displaySelector a { display: block; width: 100%; padding: 11px 0; font-size: 22px; font: 2.2rem/1 NunitoRegular, Arial, Helvetica, sans-serif; color: #5e6264; text-shadow: 0 0 2px rgba(232,244,249,0.75); text-align: center; vertical-align: top; }
+		.displaySelector li.selected a { background: #2696c0 none; border: 0; color: #f4f4f5; text-shadow: none; }
+		.displaySelector li:last-child { border-right: 0; }
+
+
+/* 
+	Footer
+-----------------------------*/
+/*
+.siteFooter { height: 55px; padding: 20px 0 0 21px; border-top: 1px solid #042641; box-shadow: inset 0 10px 30px 5px rgba(0,0,0,0.2); font-size: 11px; line-height: 18px; font: 1.1rem/1.8rem NunitoLight, Arial, Helvetica, sans-serif; color: #e5e5e5; word-spacing: 1px; }
+	.siteFooter img { vertical-align: text-top; }
+*/
+
+/* Footer */
+
+footer { position: absolute; bottom: -30px; width:316px; height: 16px; margin: 0 auto; padding: 12px 0 18px 0; background-color: #fff; border: 2px solid #e0e0e0; text-align: center; }
+	footer span { position: relative; float: left; display: inline-block; margin: 5px 30px 0 35px; font-family: 'Kohinoor Medium'; font-size: 0.9rem; color: #008bb9; }
+	footer img { float: left; }
+	footer a { display: block; width: 100%; height: 20px; padding: 0; text-decoration: none; }
+	
+	
+/* 
+	Workout Screen
+-----------------------------*/	
+.workOut { width: 314px; padding: 0 3px; box-shadow: none; }
+
+.workoutBlock { width: 100%; font-size: 11px; font: 1.1rem/1.2 NunitoRegular, Arial, Helvetica, sans-serif; color: #525556; text-transform: uppercase; }
+	.workoutBlock td { padding: 8px 8px 10px; background: transparent url(../files/images/backgrounds/bkg-workout_cell.png) no-repeat center 100%; vertical-align: top; text-align: center; }
+		.workoutBlock tr:last-child td { background-image: none; }
+	.workoutBlock .rest { background: transparent url(../files/images/backgrounds/bkg-rest.png) no-repeat center 1em; font-size: 10px; font-size: 1.0rem; color: #727d82; }
+	
+	
+/* 
+	Location Screen - Changed 7/30/12
+-----------------------------*/	
+	body.locate .siteHeader { position: absolute; top: 0; z-index: 2; width: 305px; height: 99px; margin: 0; padding: 7px 0 0 15px; background: transparent url(../files/images/backgrounds/bkg-location_header.png) no-repeat 0 0; }
+		body.locate .siteHeader p { height: 40px; }
+	body.locate .fitLink { padding: 9px 0 0 95px; }
+	
+	body.locate .container { height: 330px; padding: 150px 0 0; background: transparent none; }
+	body.locate .content { width: 300px; height: 280px; margin: 0 auto; padding: 0; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+	
+	/* Navigation Menu */
+	body.locate .menuTab { margin: -82px 0 0 0; }
+
+/* Location Form */
+.locationForm { position: relative; z-index: 3; width: 80%; height: 22px; margin: -30px auto 15px; padding: 14px; 
+
+background: #f3f3e8; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3f3e8 20%, #d9d9cc 50%, #e3e3d5 80%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,#f3f3e8), color-stop(50%,#d9d9cc), color-stop(80%,#e3e3d5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* IE10+ */
+background: linear-gradient(top,  #f3f3e8 20%,#d9d9cc 50%,#e3e3d5 80%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3e8', endColorstr='#e3e3d5',GradientType=0 ); /* IE6-9 */
+
+border: 1px solid #f6f6ed; border-radius: 4px; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+	.locationForm label { position: absolute; left: -999px; }
+
+	
+.bubbleClass { min-height: 33px; padding: 5px 40px 5px 10px; background: transparent url(../files/images/backgrounds/bkg-bubbleclass.png) no-repeat 94% 11px; font: 1.9rem/1 NunitoRegular, Arial, Helvetica, sans-serif; color: #c2c6cd; }	
+	
+	
+/* 
+	Home Screen
+-----------------------------*/	
+/* Container Wrapper */
+	body.home .containerWrapper { padding: 0; background-image: url(../files/images/backgrounds/bkg-home_1.jpg); }
+
+/* Header */
+	body.home .siteHeader { margin: 0; }
+		body.home .siteHeader strong { position: absolute; left: -9999px; }
+	body.home .siteHeader img { display: inline; margin: 0 }
+	body.home .siteHeader p { float: none; text-align: center; }
+	body.home h1 { text-align: center; }	
+	
+/* Container */
+	body.home .container { position: absolute; z-index: 3; }
+	
+/* Animation Functionality */
+@-webkit-keyframes layerAnimation1 { 28%, 72% { opacity: 0; } 33%, 67% { opacity: 1; }}
+@-moz-keyframes layerAnimation1 { 28%, 72% { opacity: 0; } 33%, 67% { opacity: 1; }}
+@-ms-keyframes layerAnimation1 { 28%, 72% { opacity: 0; } 33%, 67% { opacity: 1; }}
+@-o-keyframes layerAnimation1 { 28%, 72% { opacity: 0; } 33%, 67% { opacity: 1; }}
+@keyframes layerAnimation1 { 28%, 72% { opacity: 0; } 33%, 67% { opacity: 1; }}
+
+@-webkit-keyframes layerAnimation2 { 61%, 100% { opacity: 0; } 67%, 94% { opacity: 1; }}
+@-moz-keyframes layerAnimation2 { 61%, 100% { opacity: 0; } 67%, 94% { opacity: 1; }}
+@-ms-keyframes layerAnimation2 { 61%, 100% { opacity: 0; } 67%, 94% { opacity: 1; }}
+@-o-keyframes layerAnimation2 { 61%, 100% { opacity: 0; } 67%, 94% { opacity: 1; }}
+@keyframes layerAnimation2 { 61%, 100% { opacity: 0; } 67%, 94% { opacity: 1; }}
+
+/* Animation Layer */
+	#layer1 { position: absolute; z-index: 1; display: block; width: 320px; height: 480px; margin: 0; padding: 0; background: transparent url(../files/images/backgrounds/bkg-home_2.jpg) no-repeat 0 0; opacity: 0; font-size: 0; line-height: 0; -webkit-animation: layerAnimation1 30s infinite; -moz-animation: layerAnimation1 30s infinite; -ms-animation: layerAnimation1 30s infinite; -o-animation: layerAnimation1 30s infinite; animation: layerAnimation1 30s infinite; }
+		
+	#layer2 { position: absolute; z-index: 2; display: block; width: 320px; height: 480px; margin: 0; padding: 0; background: transparent url(../files/images/backgrounds/bkg-home_3.jpg) no-repeat 0 0; opacity: 0; font-size: 0; line-height: 0; -webkit-animation: layerAnimation2 30s infinite; -moz-animation: layerAnimation2 30s infinite; -ms-animation: layerAnimation2 30s infinite; -o-animation: layerAnimation2 30s infinite; animation: layerAnimation2 30s infinite; }	
+	
+		
+/* Content */
+	body.home .content { width: 280px; margin-left: -3px; padding: 197px 20px 0; background: transparent none; border-radius: 0; box-shadow: none; text-align: center; }	
+	body.home p { margin-bottom: 15px; }
+
+/* Start Link */	
+.startLink { display: inline-block; width: 216px; height: 54px; margin: 0 0 0 3px; padding: 5px 0 0; 
+
+background: #2a58bc;
+background: -moz-linear-gradient(top, #2a58bc 0%, #3360b8 2%, #3360b7 2%, #2855bc 5%, #244ca5 48%, #224492 53%, #22438d 55%, #28478d 71%, #355198 93%, #355298 95%, #345091 98%, #37539a 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2a58bc), color-stop(2%,#3360b8), color-stop(2%,#3360b7), color-stop(5%,#2855bc), color-stop(48%,#244ca5), color-stop(53%,#224492), color-stop(55%,#22438d), color-stop(71%,#28478d), color-stop(93%,#355198), color-stop(95%,#355298), color-stop(98%,#345091), color-stop(100%,#37539a));
+background: -webkit-linear-gradient(top, #2a58bc 0%,#3360b8 2%,#3360b7 2%,#2855bc 5%,#244ca5 48%,#224492 53%,#22438d 55%,#28478d 71%,#355198 93%,#355298 95%,#345091 98%,#37539a 100%);
+background: -o-linear-gradient(top, #2a58bc 0%,#3360b8 2%,#3360b7 2%,#2855bc 5%,#244ca5 48%,#224492 53%,#22438d 55%,#28478d 71%,#355198 93%,#355298 95%,#345091 98%,#37539a 100%);
+background: -ms-linear-gradient(top, #2a58bc 0%,#3360b8 2%,#3360b7 2%,#2855bc 5%,#244ca5 48%,#224492 53%,#22438d 55%,#28478d 71%,#355198 93%,#355298 95%,#345091 98%,#37539a 100%);
+background: linear-gradient(to bottom, #2a58bc 0%,#3360b8 2%,#3360b7 2%,#2855bc 5%,#244ca5 48%,#224492 53%,#22438d 55%,#28478d 71%,#355198 93%,#355298 95%,#345091 98%,#37539a 100%);
+
+
+box-shadow: 0 0 2px 1px rgba(31,75,110,0.75); border-radius: 5px; font-size: 11px; line-height: 16px; font-size: 1.1rem; line-height: 1.6rem; color: #dbe8c5; }	
+	
+	.startLink em { display: block; margin: 0 0 -1px; font-size: 34px; font: 3.4rem/1 NunitoRegular, Arial, Helvetica, sans-serif; color: #fffdf4; text-transform: uppercase; }
+		.startLink:hover, .startLink:focus { color: #dbe8c5; }
+		
+/* Fit Link */	
+.fitLink { display: inline-block; width: 148px; height: 42px; margin: 0; padding: 10px 0 0 60px; font-size: 11px; line-height: 16px; font-size: 1.1rem; line-height: 1.6rem; color: #616f72; text-align: left; }	
+	
+	.fitLink em { display: block; margin: 0 0 -1px; font-size: 22px; font: 2.2rem/1 NunitoLight, Arial, Helvetica, sans-serif; color: #1a8ba8; text-transform: uppercase; }
+		.fitLink:hover, .fitLink:focus { color: #616f72; }
+
+
+
+/* High PPI Devices ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-device-pixel-ratio: 3/2), 
+only screen and (min-device-pixel-ratio: 1.5) {
+	
+/*
+
+Site Defaults
+--------------------------------------------*/
+/* 
+	Container Wrapper
+-----------------------------*/
+.containerWrapper { background-image: url(../files/images/backgrounds/bkg-containerwrapper_body@2x.jpg), url(../files/images/backgrounds/bkg-container@2x.jpg); background-size: auto auto, 320px auto; }
+
+/* 
+	Navigation Block (Menu/Cover-More Apps)
+-----------------------------*/
+	.navigation li a { background-size: 45px auto; }
+		.navigation li:nth-child(1) a { background-image: url(../files/images/links/link-getfit@2x.png); }
+		.navigation li:nth-child(2) a { background-image: url(../files/images/links/link-fit-finder@2x.png); }
+		/*.navigation li:nth-child(3) a { background-image: url(../files/images/links/link-travel@2x.png); }*/				
+
+
+/* Menu Tab */
+.menuTab { background-image: url(../files/images/links/link-menu@2x.png); background-size: 74px auto; }
+
+.menuNavigation .menuFooter { position: relative; z-index: 3; clear: both; width: 100%; height: 240px; padding: 30px 15px; background: url(../files/images/backgrounds/bkg-menufooter.jpg) no-repeat 0 0; background-size: 274px 300px; }
+		.menuNavigation .menuFooter .callCoverMore { position: relative; left: 50%; float: left; display: block; width: 149px; height: 46px; margin: 15px 0 10px -75px; }
+	.menuNavigation .menuFooter span { position: relative; top: -1px; float: left; clear: both; display: inline-block; width: auto; height: auto; margin: 0 4px 10px 0px; background: none; font-size: 1.2rem; color: #78d5ec; }
+	.menuNavigation .menuFooter img { float: left; }
+
+
+
+/* 
+	Content
+-----------------------------*/
+.mediateBlock { background: url(../files/images/backgrounds/bkg-mediablock@2x.jpg) no-repeat center 0, url(../files/images/backgrounds/bkg-mediablock_body@2x.jpg) repeat-y center 0; background-size: 302px auto, 302px auto; }
+	.mediateBlock h1 { background-image: url(../files/images/backgrounds/bkg-header_workout@2x.png); background-size: 282px auto; }
+
+/*.mediateSelector { margin-bottom: -7px; }*/
+	.mediateSelector li { background-image: url(../files/images/links/link-plane@2x.png); background-size: 312px 56px; }
+		.mediateSelector li:first-child { background-image: url(../files/images/links/link-ground@2x.png); }
+
+/* 
+	Home Screen
+-----------------------------*/	
+/* Container Wrapper */
+	body.home .containerWrapper { background-image: url(../files/images/backgrounds/bkg-home_1@2x.jpg); background-size: 320px auto; }
+	
+/* Animation Layer */
+	#layer1 { background-image: url(../files/images/backgrounds/bkg-home_2@2x.jpg); background-size: 320px auto; }
+		
+	#layer2 { background-image: url(../files/images/backgrounds/bkg-home_3@2x.jpg); background-size: 320px auto; }
+	
+	
+/* 
+	Workout Screen
+-----------------------------*/	
+	.workoutBlock td { background-image: url(../files/images/backgrounds/bkg-workout_cell@2x.png); background-size: 71px auto; }
+	.workoutBlock .rest { background-image: url(../files/images/backgrounds/bkg-rest@2x.png); background-size: 21px auto; }	
+		
+	
+/* 
+	Location Screen
+-----------------------------*/	
+	body.locate .siteHeader { background-image: url(../files/images/backgrounds/bkg-location_header@2x.png); background-size: 320px auto; }
+
+.bubbleClass { background-image: url(../files/images/backgrounds/bkg-bubbleclass@2x.png); background-size: 33px auto; }		
+	
+}

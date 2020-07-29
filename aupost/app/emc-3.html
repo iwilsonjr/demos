@@ -1,0 +1,347 @@
+<!doctype html>
+
+    <!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+    <head>
+        <title>AU Post - EMC (Acceptance)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Library CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui-1.11.4.min.css" />
+        <!--/Library CSS-->
+
+        <!--Plugin CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+        <!--/Plugin CSS-->        
+
+        <!--Application CSS-->
+        <link type="text/css" rel="stylesheet" href="css/datepicker.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/print.css" media="print" />
+        <!--/Application CSS-->
+
+        <!--Theme CSS-->
+		<link type="text/css" rel="stylesheet" href="css/theme-traveller-info.css" />
+        <!--/Theme CSS-->
+    </head>
+
+    <body>
+    
+        <!--Header-->
+        <header role="banner">
+            <div class="siteHeader"> 
+            
+                <a href="#" class="siteLogo"><img src="files/images/logos/logo-aupost.png" width="317" height="30" alt="Australia Post Travel Insurance" /></a>
+
+            </div>
+        </header>
+        <!--/Header--> 
+
+        <!--Outer Container-->
+        <div class="outerContainer">       
+    
+            <!--Container-->
+            <div class="container_12" id="content" role="main">
+
+                <nav role="navigation"> 
+                    <a href="#content" class="hide">Skip to Content</a>
+                    
+                    <!--Site Navigation-->
+                    <div class="siteNavigation" id="nav">
+                        <ol>                    
+                            <li class="completed"><a href="#">Get a quote</a></li>     
+                            <li class="completed"><a href="#">Plan Options</a></li>
+                            <li class="selected"><em>Travellers</em></li>
+                            <li><span>Payment</span></li>                  
+                        </ol>
+                    </div>
+                    <!--/Site Navigation--> 
+
+                </nav>            
+
+                <!--Summary Bar-->
+                <aside class="planSummary" id="planSummary">
+                    <a href="#" class="btnNavigation" id="navSummary">Open Trip Summary</a>                    
+                    <dl class="tripSummary">
+                        <dt>Trip Summary</dt>
+                        <dd>Federated States of Micronesia</dd>
+                        <dd>Mon 30/3/2015 - Fri 3/4/2015</dd>
+                        <dd>Travellers: Ages 26, 27</dd>
+                        <dd><a href="#">Edit</a></dd>                        
+                    </dl>
+
+                    <p class="policySummary">Plan Total: <em>$175.00</em></p>
+                                
+                </aside>
+                <!--/Summary Bar-->            
+
+                <!--Article-->
+                <article>
+
+                    <!--User Content - Zeus-->
+                    <h1>Travellers</h1>             
+                    
+                    <!--/User Content - Zeus-->                  
+
+                    <form action="#">
+
+                        <!--Primary Traveller-->
+                        <section>
+
+                            <h2>Traveller 1</h2>
+
+                            <ol class="purchaseList">
+                                <li>                            
+                                    <label for="title_1">Title</label>
+                                    <select name="title_1" id="title_1">
+                                        <option value=""></option>
+                                        <option value="Dr">Dr</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Other">Other</option>
+                                        <option value="Prof">Prof</option>
+                                        <option value="Rev">Rev</option>
+                                    </select>
+                                </li>                                                       
+                                <li>
+                                    <label for="firstName_1">First name</label>  
+                                    <label for="firstName_1" class="error">Please enter first name.</label>                                                                   
+                                    <input type="text" name="firstName_1" id="firstName_1" value="" maxlength="20" autocomplete="off" />
+                                </li>
+                                <li>
+                                    <label for="surName_1">Surname</label>                                
+                                    <input type="text" name="surName_1" id="surName_1" value="" maxlength="20" autocomplete="off" />
+                                </li>
+                                <li>
+                                    <label for="dob_1">Date of birth (Age 27)</label> 
+                                    <div class="datepickerHolder">                               
+    	                                <input type="text" name="dob_1" id="dob_1" value="" placeholder="dd/mm/yyyy" maxlength="20" autocomplete="off" class="dob" />
+    	                                <div class="calendarDate" id="calendar_1"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="state">State</label>
+                                    <select name="state" id="state">
+                                        <option value=""></option>  
+                                        <option value="ACT">ACT</option>
+                                        <option value="NSW">NSW</option>
+                                        <option value="NT">NT</option> 
+                                        <option value="QLD">QLD</option>
+                                        <option value="SA">SA</option>  
+                                        <option value="TAS">TAS</option>
+                                        <option value="VIC">VIC</option> 
+                                        <option value="WA">WA</option> 
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="phone">Telephone</label>
+                                    <input name="phone" id="phone" type="text" value="" maxlength="20" autocomplete="off" />
+                                </li>          
+                                <li>
+                                    <label for="emailAddress">Email address</label>
+                                    <input type="text" name="emailAddress" id="emailAddress" value="" autocomplete="off" maxlength="50" /> 
+                                </li>
+                                <li>
+                                    <!-- Healix -->
+                                    <div class="healix">
+
+                                        <fieldset>
+                                            <legend>Do any travellers require Existing Medical Cover (EMC)? <a href="#help-1" class="help"><img src="files/images/icons/icon-help.png" width="15" height="15" alt="Help(?) - EMC" /></a></legend>
+                                            <ul class="radioList">
+                                                <li>
+                                                    <input type="radio" name="existingCondition_1" id="existingCondition_1_1" value="Yes" />
+                                                    <label for="existingCondition_1_1" checked>Yes</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="existingCondition_1" id="existingCondition_1_2" value="No" />
+                                                    <label for="existingCondition_1_2">No</label>
+                                                </li> 
+                                                <li>
+                                                    <input type="radio" name="existingCondition_1" id="existingCondition_1_3" value="Not sure" />
+                                                    <label for="existingCondition_1_3">Not Sure</label>
+                                                </li>                                                                               
+                                            </ul>
+
+                                            <div class="helpWindow" id="help-1">
+                                                <h3>Existing medical cover</h3>
+                                                <p>This is a test. This is a help window.</p>
+                                            </div>                                      
+                                        </fieldset>
+
+                                        <div id="emcAssessmentContainer_1" class="">
+                                            <fieldset>
+                                                <legend><strong>Are You travelling against medical advice or been given a terminal diagnosis?</strong></legend>
+                                                <ul class="radioList">
+                                                    <li>
+                                                        <input type="radio" value="Yes" id="assessment_1_q1_1" name="assessment_1_q1" class="assessmentQuestions">
+                                                        <label for="assessment_1_q1_1">Yes</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" value="No" id="assessment_1_q1_2" name="assessment_1_q1" class="assessmentQuestions">
+                                                        <label for="assessment_1_q1_2" checked>No</label>
+                                                    </li>
+                                                </ul>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend><strong>Are You travelling to seek and/or receive medical advice, treatment or review?</strong></legend>
+                                                <ul class="radioList">
+                                                    <li>
+                                                        <input type="radio" value="Yes" id="assessment_1_q2_1" name="assessment_1_q2" class="assessmentQuestions">
+                                                        <label for="assessment_1_q2_1">Yes</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" value="No" id="assessment_1_q2_2" name="assessment_1_q2" class="assessmentQuestions">
+                                                        <label for="assessment_1_q2_2" checked>No</label>
+                                                    </li>
+                                                </ul>
+                                            </fieldset>
+
+                                            <div id="emcConsentContainer_1" class="">
+                                                <input type="checkbox" value="yes" id="emcConsent_1" name="emcConsent_1" checked>
+                                                <label for="emcConsent_1">Tick here if you are declaring conditions on behalf of a child or another traveller in your party. If so, you must have their consent and full knowledge of their conditions or their claim may not be paid.</label>
+
+                                                <input type="checkbox" name="emcRelease_1" id="emcRelease_1" value="Yes" checked>
+                                                <label for="emcRelease_1">You authorise that medical information provided in this assessment will be sent to the email or postal address provided at the time the policy is purchased?</label>
+
+                                            </div>                                            
+
+                                            <div id="emcConfirmContainer_1" class="hide emcInfo">
+                                              <h3>Confirm Conditions</h3>
+                                              <strong>Total Medical Risk: 7.96</strong>
+
+                                              <table class="emcTable">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Medical Conditions</th>
+                                                    <th>Status</th>
+                                                    <th>Condition Score</th>
+                                                    <th>Group Condition Score</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th><em>Medical Conditions: </em>Asthma</th>
+                                                    <td><em>Status: </em>Cover approved pending payment</td>
+                                                    <td><em>Condition Score: </em>3.96</td>
+                                                    <td><em>Group Condition Score: </em>3.96</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th><em>Medical Conditions: </em>Food allergy</th>
+                                                    <td><em>Status: </em>Cover approved pending payment</td>
+                                                    <td><em>Condition Score: </em>1</td>
+                                                    <td><em>Group Condition Score: </em>5</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th><em>Medical Conditions: </em>Anaphylaxis</th>
+                                                    <td><em>Status: </em>Cover approved pending payment</td>
+                                                    <td><em>Condition Score: </em>5</td>
+                                                    <td><em>Group Condition Score: </em>5</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                                <div class="buttonWell">
+                                                    <input type="button" value="Confirm conditions" name="confirmConditionsBtn_1" id="confirmConditionsBtn_1" class="confirmConditions grid_2 alpha omega">
+                                                </div>
+                                            </div>
+
+
+                                            <div id="emcAcceptContainer_1" class="emcInfo">
+                                              <h3>Accept EMC Coverage</h3>
+                                              <table class="emcTable">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Cost</th>
+                                                    <th>Assessment Number</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td><em>Cost: </em>$144.00</td>
+                                                    <td><em>Assessment Number: </em>2982329</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                                <div class="buttonWell">
+                                                    <input type="button" value="Accept" name="acceptEMCBtn_1" id="acceptEMCBtn_1" class="acceptEMC grid_2 alpha omega">
+                                                    <input type="button" value="Decline" name="declineEMCBtn_1" id="declineEMCBtn_1" class="declineEMC grid_2 alpha omega">
+                                                </div>
+                                            </div>                                                                                       
+
+                                        </div>                                       
+
+                                                                         
+
+                                    </div>
+                                    <!-- Healix -->
+
+                                </li>                     
+                            </ol>
+
+                        </section>
+                        <!--/Primary Traveller-->  
+
+                        <div class="buttonWell">
+                            <input type="submit" name="submitForm" value="Continue" class="grid_2 alpha omega" />
+                        </div>          
+                      
+                    </form>
+
+                </article>
+                <!--Article-->
+                          
+            </div>
+            <!--Container-->
+
+        </div>
+        <!--Outer Container-->
+                
+        <!--Footer-->
+        <footer role="contentinfo">
+
+            <div class="siteFooter container_12">
+
+                <p>Limits, exclusions and conditions apply. This is general advice only. We do not provide any advice based on any consideration of your objectives, financial situation or needs. Consider the Product Disclosure Statement (available from us) before deciding about this insurance. Insurance administered by Cover-More Insurance Services Pty Ltd ABN 95003114145 AFSL 241713. The issuer of insurance is Great Lakes Reinsurance (UK) PLC ARBN 127 740 532, ABN 18 964 580 576, AFSL No. 318603, trading as ‘Great Lakes Australia’.</p>
+
+                <ul>
+                    <li><a href="#">Product Disclosure Statement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>                      
+                </ul>
+
+            </div>
+
+        </footer>
+        <!--Footer-->         
+    
+        <!--JavaScript Calls--> 
+        
+        <!--Library JS-->          
+        <script src="library/jquery-2.1.3.min.js" type="text/javascript"></script>
+        <script src="library/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+        <!--/Library JS-->
+
+        <!--Plugin JS-->          
+        <script src="library/jquery.waypoints.min.js" type="text/javascript"></script>  
+        <script src="library/sticky.min.js" type="text/javascript"></script>
+        <script src="library/jquery.qtip.min.js" type="text/javascript"></script>        
+        <!--/Plugin JS--> 
+
+        <!--Application JS-->                                
+        <script src="js/utility.js" type="text/javascript"></script>
+        <!--/Application JS--> 
+
+        <!--Theme JS-->        
+        <script src="js/traveller.js" type="text/javascript"></script>
+        <!--/Theme JS--> 
+
+        <!--/JavaScript Calls-->        
+       
+    </body>
+</html>

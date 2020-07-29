@@ -1,0 +1,158 @@
+/*
+
+Cover-More/Virgin Australia Theme Style Sheet - Plan Options - Innate
+--------------------------------------------*/
+
+h1 { margin-left: 0; border-bottom: 0; }
+h2 { margin-bottom: 5px; }
+
+.planSummary { margin-top: 15px; }
+
+/* Article */
+article { padding: 0 0 40px; background: none; }
+
+
+/* Group Selector */
+.groupSelector { position: absolute; overflow: hidden; clip: rect(0,0,0,0); width: 0 !important; height: 0; /*margin: 0 0 30px 20px;*/ font-size: 1.4rem; }  /* Changed 1/13/16 */
+  .groupSelector li { padding: 0; background: none; }
+
+
+/* Intro */
+.intro { margin-bottom: 0; padding: 0 20px; font-size: 1.6rem; }
+  .intro strong { display: block; font-weight: normal; font-size: 2.4rem; font-family: "Proxima Nova Semibold"; } 
+  .intro em { font-style: normal; font-size: 1.4rem; }
+  .intro p { margin-bottom: 2px; }
+
+.introDisplay { background: #f6f6f6; padding: 20px; border-bottom: 1px solid #fff; }
+
+.promoCode { font-size: 1.4rem; color: #46900a; }
+  .promoCode span { text-decoration: line-through; }
+
+.planImg { display: block; width: 100%; max-width: 600px; height: auto; margin-bottom: 0; }
+
+/* Form Styles */
+  .intro legend { float: left; min-height: 0; }
+  .intro .radioList { clear: none; margin: 0; padding: 1px 0 0 30px; }  
+.buttonWell { padding: 10px 0 }
+
+.grid_2 input { margin: 0; }    
+
+/* Plans */
+.plans { max-width: 600px; padding: 0; }
+
+
+/* Select Button */
+.selectPlan { margin-top: 10px; }
+
+/* Benefits Table */
+.benefitsTable { float: none; clear: both; width: calc(100% - 40px); margin: 0 20px; background: #f6f6f6; border-bottom: 50px solid #f6f6f6; }
+  .benefitsTable th, .benefitsTable td { width: 50%; line-height: 1.3; }  
+  .benefitsTable th { padding: 10px 12px 10px 20px; font-weight: normal; }
+  .benefitsTable td { padding: 10px 20px 10px 12px; font-weight: bold; }
+  .benefitsTable tr:nth-child(odd) { background: #eaeaea; }
+
+  .benefitsTable tr:nth-child(n+4) { position: absolute; overflow: hidden; clip: rect(0,0,0,0); }
+
+  .benefitsTable tr.intro td { font-weight: normal; }
+  .benefitsTable tr.intro .selectPlan { margin-bottom: 0; }
+
+  /* Open Benefits */
+.benefitsLink { position: relative; top: -34px; display: inline-block; margin: 0 0 0 45px; padding: 0; text-decoration: none; } /* Changed 1/13/16 */
+  .benefitsLink:before { content: ""; position: relative; left: -5px; display: inline-block; width: 0; height: 0; border: 6px solid transparent; border-left: 8px solid #dc1928; }
+  .openBenefits + .benefitsLink:before { border: 6px solid transparent; border-bottom: 8px solid #dc1928; }  
+  .benefitsLink:hover, .benefitsLink:focus, .benefitsLink:active { text-decoration: underline; }
+
+  .benefitsLink + .intro { margin-bottom: 50px; padding-top: 20px; border-top: 2px solid #fff; }
+
+  .openBenefits tr:nth-child(n+4) { position: static;  }
+
+/* Benefit Hovers */
+.popup { position: absolute; z-index: 2; margin: 7px 0 0; visibility: hidden; }
+  .popup:before { left: 0; }  
+  .popup p { min-height: 0; margin: 0; }
+
+  .groupPlans.hide { position: static; width: auto !important; height: auto; } /* Added 1/13/16 */
+
+
+/* 
+  Phone
+-----------------------------*/
+@media screen and (min-width: 480px) {
+
+
+}
+
+
+
+/* 
+  Large Phone/Small Tablet
+-----------------------------*/
+@media screen and (min-width: 640px) {
+ 
+
+}
+
+
+/* 
+  Tablet
+-----------------------------*/
+@media screen and (min-width: 800px) {
+
+
+}
+
+
+/* 
+  Desktop
+-----------------------------*/
+@media screen and (min-width: 800px) {  
+
+  h1 { margin-bottom: 65px; }
+
+  /* Plan Summary */
+  .planSummary { top: 234px; width: 1050px; height: 40px; margin: 0; padding-top: 1px; background: #f6f6f6; }
+
+  .policySummary { display: none; }
+
+  .tripSummary { display: inline-block; margin: 0; padding: 0 0 0 40px; background: url(../files/images/backgrounds/bkg-tripsummary.png) no-repeat 10px 50%; background-size: 20px auto; white-space: nowrap; text-overflow: ellipsis; } 
+      .tripSummary dt { display: inline-block; margin: 0; padding: 0; font-weight: bold; }
+      .tripSummary dt:after { content: ":"; display: inline-block; width: 5px; margin: 0; padding: 0; font-size: 1.5rem; }  
+      .tripSummary dd { display: inline-block; font-size: 1.4rem; font-family: Arial, sans-serif; }
+
+      .tripSummary dd:after, .tripSummary dd:nth-child(2):after  { content: "|"; position: relative; top: -1px; left: 2px; display: inline-block; width: 10px; margin: 0; padding: 0; text-align: center; }   
+      .tripSummary dd:nth-child(n+4):after { display: none; }        
+      .tripSummary dd:last-child { margin-left: 22px; }
+
+
+  /* Group Selector */
+  .groupSelector { } 
+    .groupSelector li { display: inline-block; }
+
+    .groupSelector li:after { content: "|"; position: relative; top: -1px; left: 2px; display: inline-block; width: 10px; margin: 0; padding: 0; text-align: center; }  
+      .groupSelector li:last-child:after { display: none; }    
+
+     /* Group Plans */
+  .groupPlans { float: left; margin-top: 15px; } /* Added 1/13/16 */  
+    .groupPlans > div:last-child { margin-right: 0 !important; }
+
+  /* Plans */
+  .plans { float: left; width: 340px; margin-right: 15px; margin-bottom: 15px; background: #f6f6f6; border-radius: 3px; }
+
+    .intro { margin-bottom: 10px; } 
+
+    .introDisplay { padding: 0; }
+
+  .planImg { position: relative; top: -10px; width: 340px; margin-left: -20px; margin-bottom: 10px;  }
+
+
+  .selectPlan { display: block; margin-bottom: 23px; }
+
+  .benefitsLink { position: static; margin: 15px 25px; }
+  .benefitsLink + .intro { margin-bottom: 0; }
+
+
+      /* Benefit Hovers */
+      .benefitsTable { width: 100%; margin: 0; border-bottom: 0; }      
+      .benefitsTable th:hover .popup  { cursor: pointer; visibility: visible; pointer: cursor; }
+
+}

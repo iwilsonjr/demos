@@ -1,0 +1,270 @@
+/* --- Large (< 960px) --- */
+
+@media only screen and (min-width: #{$large}) {
+    .container {
+        width: 100%;
+        max-width: 1200px;
+    }
+    .blkHeader {
+        width: calc(100% - 60px);
+        padding: 0 30px;
+        a {
+            margin-top: 17px;
+            &.blkHeaderInfo {
+                width: 500px;
+            }
+        }
+    }
+    .siteLogo {
+        margin-top: 0;
+    }
+    .btnNavigation {
+        position: relative;
+        z-index: -1;
+    }
+    /* Site Navigation */
+    .navPrimary {
+        height: 35px;
+        margin: 0;
+        padding: 0 0 0 48px;
+        background: #ccc;
+        border-bottom: 0;
+        font-size: 18px;
+        @include lineHeight(18px, 18px);
+        letter-spacing: -4px;
+        word-spacing: -4px;
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            background: none;
+            &:nth-child(3) {
+                display: inline-block;
+            }
+        }
+        a {
+            display: block;
+            height: 27px;
+            margin: 0;
+            padding: 8px 35px 0;
+            background: #ccc;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .navPrimary a:hover,
+    .navPrimary a:focus,
+    .navPrimary a:active,
+    .navPrimary li.selected a,
+    .navPrimary li.selected a:hover,
+    .navPrimary li.selected a:focus,
+    .navPrimary li.selected a:active,
+    .navPrimary li.current_page_item a {
+        background-color: #e0e0e0;
+        color: #{$bodyTextColor};
+        text-decoration: none;
+    }
+    .no-js .navPrimary li {
+        &:hover {
+            background: #e0e0e0;
+        }
+        &:hover>ul,
+        &:focus>ul {
+            left: 0;
+        }
+    }
+    html.no-fontface .navPrimary a {
+        font-weight: bold;
+    }
+    .navSite {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        h2 {
+            display: none;
+        }
+    }
+    .navFind {
+        li {
+            padding: 0 0 2px;
+        }
+        h3 {
+            font-size: 17px;
+            font-family: #{$headerBold};
+        }
+        h4 {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+    }
+    .navFind .blkForm,
+    .blkArchives ul {
+        float: left;
+    }
+    .blkCategories {
+        border-right: 1px solid #bbb;
+    }
+    .blkArchives {
+        min-height: 290px;
+        margin-bottom: 15px;
+        padding-right: 0;
+        padding-left: 34px;
+        border-right: 1px solid #bbb;
+    }
+    .blkSearch {
+        padding-right: 0;
+        padding-left: 34px;
+    }
+    .blkCategories,
+    .blkArchives,
+    .blkSearch {
+        width: calc(33.3333% - 40px);
+        padding-bottom: 20px;
+    }
+    /* Content */
+    .content {
+        padding: 80px 60px 0 30px;
+    }
+    /* Article */
+    article {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 160px 1fr;
+        grid-column-gap: 60px;
+        display: -ms-grid;
+        -ms-grid-rows: 1fr;
+        -ms-grid-columns: 160px 60px 1fr;
+    }
+    article.page {
+        display: block;
+    }
+    /* Blog */
+    .blogHeader {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+    }
+    ul.blogLister {
+        margin: 0 0 20px;
+    }
+    .entryData {
+        grid-row: 1/6;
+        grid-column: 1/2;
+        padding: 7px 0 0;
+        Font-size: 16px;
+        text-align: center;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 6;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        span {
+            display: block;
+            &:first-child {
+                margin-bottom: -5px;
+                font-size: 38px;
+                font-family: #{$headerText};
+            }
+            &:last-child {
+                font-size: 18px;
+            }
+        }
+        strong {
+            display: block;
+            margin: 0 0 10px;
+            padding: 0 0 10px;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        li {
+            padding: 5px 0 !important;
+            @include lineHeight(16px, 19px);
+        }
+    }
+    .no-fontface .entryData span:first-child {
+        font-weight: bold;
+    }
+    .blogEntry {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        min-height: 160px;
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+    }
+    article footer {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+    }
+    .entryFooter {
+        padding: 0;
+    }
+    .pageNavigation {
+        margin-left: 140px;
+        li:first-child,
+        li:last-child {
+            width: 356px;
+        }
+    }
+    article .pageNavigation {
+        grid-row: 4/5;
+        grid-column: 2/3;
+        margin-left: 0;
+        margin-bottom: 0;
+        -ms-grid-row: 4;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+    }
+    .commentsDisplay {
+        grid-row: 5/6;
+        grid-column: 2/3;
+        margin-left: 0;
+        -ms-grid-row: 5;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+    }
+    .comments {
+        margin: 15px 0 0 147px;
+    }
+    /* Navigation Opened State */
+    .jsNavOpen .navFind {
+        padding: 30px 35px 12px;
+        border-top: 1px solid #f9f9f9;
+        border-bottom: 1px solid #f9f9f9;
+    }
+    /* AJAX Window */
+    .ajaxWindow {
+        top: 207px;
+        left: calc(50% - 600px);
+        width: calc(50% + 600px);
+        max-width: 1200px;
+        padding: 35px 0;
+    }
+    .closeWindow {
+        display: none;
+    }
+    /* Archives Pages */
+    .ver {
+        margin: 0 -60px 20px -30px;
+        padding: 0 60px 20px 250px;
+    }
+    /* No-JS */
+    .no-js {
+        .navFind {
+            padding: 30px 25px 12px;
+        }
+        .navPrimary {
+            position: absolute;
+            top: 190px;
+            width: calc(100% - 48px);
+            max-width: 1152px;
+        }
+    }
+}

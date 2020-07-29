@@ -1,0 +1,89 @@
+/* -------------------------------- [ Typeface Elements ] */
+
+@font-face {
+	font-family: #{$twpText};
+    src: url('#{$typepath}/FunctionPro-Book-webfont.eot');
+    src: url('#{$typepath}/FunctionPro-Book-webfont.eot?#iefix') format('embedded-opentype'),
+		url('#{$typepath}/FunctionPro-Book-webfont.woff') format('woff'), 
+		url('#{$typepath}/FunctionPro-Book-webfont.ttf') format('truetype'), 
+		url('#{$typepath}/FunctionPro-Book-webfont.svg#FunctionProBook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: #{$headerText};
+    src: url('#{$typepath}/FunctionPro-Demi-webfont.eot');
+    src: url('#{$typepath}/FunctionPro-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+		url('#{$typepath}/FunctionPro-Demi-webfont.woff') format('woff'), 
+		url('#{$typepath}/FunctionPro-Demi-webfont.ttf') format('truetype'), 
+		url('#{$typepath}/FunctionPro-Demi-webfont.svg#FunctionProDemi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: #{$headerBold};
+    src: url('#{$typepath}/FunctionPro-Bold-webfont.eot');
+    src: url('#{$typepath}/FunctionPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),	
+		url('#{$typepath}/FunctionPro-Bold-webfont.woff') format('woff'), 
+		url('#{$typepath}/FunctionPro-Bold-webfont.ttf') format('truetype'), 
+		url('#{$typepath}/FunctionPro-Bold-webfont.svg#FunctionProBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: #{$headerRegular};
+    src: url('#{$typepath}/FunctionPro-Medium-webfont.eot');
+    src: url('#{$typepath}/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),	
+		url('#{$typepath}/FunctionPro-Medium-webfont.woff') format('woff'), 
+		url('#{$typepath}/FunctionPro-Medium-webfont.ttf') format('truetype'), 
+		url('#{$typepath}/FunctionPro-Medium-webfont.svg#FunctionProRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: #{$bodyText};
+    src: url('#{$typepath}/FontSiteSans-Roman-webfont.eot');
+    src: url('#{$typepath}/FontSiteSans-Roman-webfont.eot?#iefix') format('embedded-opentype'),	
+		url('#{$typepath}/FontSiteSans-Roman-webfont.woff') format('woff'), 
+		url('#{$typepath}/FontSiteSans-Roman-webfont.ttf') format('truetype'), 
+		url('#{$typepath}/FontSiteSans-Roman-webfont.svg#FontSiteSansRoman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: #{$bodyItalic};
+    src: url('#{$typepath}/FoundationSans-Italic-webfont.eot');
+    src: url('#{$typepath}/FoundationSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('#{$typepath}/FoundationSans-Italic-webfont.woff') format('woff'),
+		url('#{$typepath}/FoundationSans-Italic-webfont.ttf') format('truetype'),
+		url('#{$typepath}/FoundationSans-Italic-webfont.svg#foundation_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: #{$bodyBold};
+    src: url('#{$typepath}/FontSiteSans-Bold-webfont.eot');
+    src: url('#{$typepath}/FontSiteSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),	
+		url('#{$typepath}/FontSiteSans-Bold-webfont.woff') format('woff'), 
+		url('#{$typepath}/FontSiteSans-Bold-webfont.ttf') format('truetype'), 
+		url('#{$typepath}/FontSiteSans-Bold-webfont.svg#FontSiteSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: #{$bodyBoldItalic};
+    src: url('#{$typepath}/FoundationSans-BoldItalic-webfont.eot');
+    src: url('#{$typepath}/FoundationSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$typepath}/FoundationSans-BoldItalic-webfont.woff') format('woff'),
+         url('#{$typepath}/FoundationSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('#{$typepath}/FoundationSans-BoldItalic-webfont.svg#foundation_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

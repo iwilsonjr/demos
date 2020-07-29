@@ -1,0 +1,114 @@
+/* --- Small (< 320px) --- */
+
+@media only screen and (max-width: #{$small}) {
+    body {
+        width: 320px;
+        line-height: 1.5;
+    }
+    blockquote {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    textarea {
+        width: 250px;
+    }
+    .blkHeader {
+        width: 320px;
+        padding: 10px 0 0 0;
+    }
+    .siteLogo {
+        margin-left: 5px;
+    }
+    /* Site Navigation */
+    .navSite {
+        width: 320px;
+        height: 0;
+    }
+    .navFind {
+        margin: 0;
+        padding: 10px 0;
+        background: #e0e0e0 none;
+        letter-spacing: 0;
+        word-spacing: 0;
+        li {
+            padding-bottom: 5px;
+        }
+    }
+    .blkArchives,
+    .blkCategories,
+    .navFind .blkForm {
+        overflow: hidden;
+        float: none;
+        clear: both;
+    }
+    .blkArchives,
+    .blkCategories,
+    .blkSearch {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #f9f9f9;
+    }
+    .blkSearch {
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    .navFind .blkForm {
+        padding-bottom: 0;
+    }
+    /* Content */
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .entryData {
+        span {
+            padding-right: 5px;
+            &:first-child {
+                font-family: #{$headerRegular};
+            }
+        }
+        ul {
+            margin: 0 0 5px;
+        }
+        a {
+            display: inline-block;
+            margin-right: -4px;
+        }
+        li {
+            display: inline;
+            &:after {
+                content: " ,";
+            }
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+    .blkFooter {
+        width: 83.75%;
+        padding: 13px 8.125%;
+    }
+    /* padding left/right = 13px */
+    .ajaxWindow,
+    .jsPageTransition {
+        width: 320px;
+    }
+    .ajaxWindow .blkForm {
+        margin-left: 0;
+    }
+    .closeWindow {
+        margin-left: 220px;
+    }
+    .jsNavOpen {
+        .navSite {
+            height: auto;
+        }
+        .navFind {
+            padding-left: 0;
+        }
+    }
+    /* Archives Pages */
+    .ver {
+        padding-bottom: 10px;
+    }
+}

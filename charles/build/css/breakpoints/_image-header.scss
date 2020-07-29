@@ -1,0 +1,38 @@
+/* --- Image Header (< 600px) --- */
+
+@media only screen and (max-width: #{$imageBreak}) {
+    .blkHeader {
+        strong,
+        em {
+            position: absolute;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            width: 0 !important;
+            height: 0;
+        }
+    }
+    blockquote {
+        margin: 35px 20px 50px !important;
+    }
+    .siteLogo {
+        width: 141px;
+        height: 170px;
+    }
+    .navSite {
+        top: 190px;
+    }
+    .ajaxWindow {
+        top: 191px;
+    }
+}
+
+@media only screen and (min-width: #{$imageBreak}) and (max-width: #{$large}) {
+    .blkHeader {
+        height: 160px;
+        a {
+            &.blkHeaderInfo {
+                width: 500px;
+            }
+        }
+    }
+}

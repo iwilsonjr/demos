@@ -1,0 +1,87 @@
+/* --- Medium (320px <> 960px) --- */
+
+@media only screen and (min-width: #{$small}) and (max-width: #{$large}) {
+    body {
+        width: 100%;
+        @include lineHeight(19px, 27px);
+    }
+    /* width = 800px */
+    blockquote {
+        margin: 35px 50px 50px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+        max-width: 300px;
+    }
+    .blkHeader {
+        width: 100%;
+        padding: 10px 0 0;
+        strong {
+            margin-top: 40px;
+        }
+    }
+    .navPrimary,
+    .navSite h2 {
+        padding-left: 20px;
+    }
+    .navSite {
+        height: 0;
+    }
+    .blkCategories,
+    .blkArchives,
+    .blkSearch {
+        padding-left: 10px;
+    }
+    .blkSearch {
+        padding-bottom: 10px;
+    }
+    .navFind .blkForm,
+    .blkArchives ul {
+        float: left;
+    }
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .entryData {
+        span {
+            padding-right: 5px;
+            &:first-child {
+                font-family: #{$headerRegular};
+            }
+        }
+        ul {
+            margin: 0 0 5px;
+        }
+        a {
+            display: inline-block;
+            margin-right: -4px;
+        }
+        li {
+            display: inline;
+            &:after {
+                content: " ,";
+            }
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+    .closeWindow {
+        margin-left: 65%;
+    }
+    .jsNavOpen {
+        .navSite {
+            height: auto;
+        }
+        .navFind {
+            padding-left: 10px;
+        }
+    }
+    /* No-JS */
+    .no-js .navFind {
+        padding: 12px 10px;
+    }
+}

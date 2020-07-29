@@ -1,0 +1,573 @@
+/* -------------------------------- [ Initialization/Defaults ] */
+
+
+/* Based on normalize.css */
+
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+
+
+/* --- HTML5 display definitions --- */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+/* --- Block Elements --- */
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #bcbcbc;
+    font-size: #{$defaultFontSize};
+    color: #{$bodyTextColor};
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    @include lineHeight(18px, 27px);
+    font-family: #{$fontStack};
+}
+
+
+/* --- Links --- */
+
+a {
+    color: #{$bodyTextColor};
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    outline: thin dotted;
+}
+
+a img {
+    border: 0;
+}
+
+
+/* --- Header Text --- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: normal;
+    font-family: #{$headerText};
+    @include lineHeight(15px, 18px);
+}
+
+h1,
+h2.entryHeader {
+    font-size: 30px;
+    em {
+        font-style: italic;
+        font-family: #{$headerText};
+    }
+}
+
+h2 {
+    font-size: 25px;
+    &+blockquote {
+        margin-top: 30px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+h3,
+h4,
+h6 {
+    text-transform: uppercase;
+}
+
+h5,
+h6 {
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    a {
+        text-decoration: none;
+    }
+}
+
+.no-fontface {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+    }
+}
+
+
+/* --- Block Text --- */
+
+p,
+blockquote,
+caption {
+    margin: 0 0 20px;
+}
+
+blockquote {
+    margin: 25px 65px 50px;
+    padding-left: 15px;
+    border-left: 9px solid #999;
+}
+
+
+/* --- Text Elements --- */
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+    font-style: normal;
+    font-family: #{$bodyItalic};
+}
+
+.no-fontface i,
+.no-fontface cite,
+.no-fontface em,
+.no-fontface var,
+.no-fontface address,
+.no-fontface dfn {
+    font-style: italic;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: normal;
+    font-family: #{$bodyBold};
+}
+
+.no-fontface b,
+.no-fontface strong {
+    font-weight: bold;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 13px;
+}
+
+sub,
+sup {
+    font-size: 12px;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/* --- List Items --- */
+
+ul {
+    margin: 0 0 20px 15px;
+    padding: 0;
+}
+
+ul>li {
+    list-style-type: none;
+    padding-left: 20px;
+    background: url(#{$assets}/lists/list-standard.png) no-repeat 0 10px;
+}
+
+ul>li>li {
+    list-style-type: disc;
+    padding-left: 0;
+    background: none;
+}
+
+ul>li>li>li {
+    list-style-type: circle;
+}
+
+ol {
+    margin: 0 0 20px 35px;
+    padding: 0;
+}
+
+ol>li {
+    list-style-type: decimal;
+    padding-left: 0;
+    background: none;
+}
+
+ol>li>li {
+    list-style-type: lower-alpha;
+}
+
+ol>li>li>li {
+    list-style-type: lower-roman;
+}
+
+
+/* --- Definition Elements --- */
+
+dl {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+
+/* --- Embedded content --- */
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* --- Figures --- */
+
+figure {
+    margin: 0;
+}
+
+
+/* --- Forms --- */
+
+.blkForm {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.blkForm ol {
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.blkForm ol li {
+    list-style-type: none;
+    padding: 0 0 20px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+legend,
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 18px;
+    font-family: #{$headerText};
+    text-transform: uppercase;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+
+/* Input Fields - Defaults */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: 1.2;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+
+/* Input Fields - Custom */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="password"] {
+    padding: 4px;
+    box-shadow: 0;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+input[type='submit'],
+.comment-reply-link,
+#reply-title #cancel-comment-reply-link {
+    padding: 9px;
+    background-color: #000;
+    box-shadow: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 17px;
+    font-family: #{$headerText};
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+input[type='submit']:hover,
+input[type='submit']:focus,
+input[type='submit']:active,
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:active,
+#reply-title #cancel-comment-reply-link:hover,
+#reply-title #cancel-comment-reply-link:focus,
+#reply-title #cancel-comment-reply-link:active {
+    background-color: #707070;
+    text-decoration: none;
+}
+
+.comment-reply-link,
+#reply-title #cancel-comment-reply-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+select {
+    padding: 4px 14px 4px 6px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.4rem) center;
+    background-size: 16px;
+    border: 1px solid #000;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #000;
+    border: 0;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+textarea {
+    padding: 4px;
+    box-shadow: 0;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+
+/* Placeholder */
+
+::-webkit-input-placeholder {
+    color: #595959;
+}
+
+:-moz-placeholder {
+    color: #595959;
+}
+
+
+/* Firefox 18- */
+
+::-moz-placeholder {
+    color: #595959;
+}
+
+
+/* Firefox 19+ */
+
+:-ms-input-placeholder {
+    color: #595959;
+}
+
+
+/* --- Table  Elements --- */
+
+table {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* --- Global Box-Sizing --- */
+
+::selection {
+    background: #04a4cc;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-webkit-selection {
+    background: #04a4cc;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #04a4cc;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+/* -------------------------------- [ Utility ID's ] */
+
+.hide {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 0 !important;
+    height: 0;
+}

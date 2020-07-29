@@ -1,0 +1,42 @@
+/* -------------------------------- [ Legacy/No-JS ] */ 
+
+	.no-js {
+
+		.navSite, .navFind { position: static; height: auto; }
+		
+	}
+
+
+@supports (not (display:grid)) and (not (display:-ms-grid)) {
+	
+	@media only screen and (min-width: #{$large}) {	
+
+		.blogHeader { margin-left: 140px; }
+
+		.entryData { float: left; margin-top: -44px; width: 160px; }
+
+		.blog {
+
+			.blogHeader { margin-left: 0; }
+
+			.entryData { margin-top: 0; }
+
+		}
+
+		.blogEntry { float: right; width: 760px; }	
+
+		article footer { float: left; margin-left: 140px; }
+
+		.pageNavigation { overflow: hidden; width: 762px; margin-bottom: 45px; margin-left: 140px; 
+
+			&.blog { margin-left: 140px; }
+
+		}
+
+		.commentsDisplay { margin: 13px 0 0 140px; }
+
+
+	}
+
+}
+

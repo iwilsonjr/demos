@@ -1,0 +1,35 @@
+@function calculateLH($size, $lineSpacing) {
+    $lhCalc: $lineSpacing / $size;
+    @return $lhCalc;
+}
+
+@mixin lineHeight($size, $lineSpacing) {
+    line-height: calculateLH($size, $lineSpacing);
+}
+
+
+/* Defaults - Fonts */
+
+$fontStack: "\'FontSite Sans Roman\', Helvetica, Arial, sans-serif";
+$bodyText: "\'FontSite Sans Roman\'";
+$bodyItalic: "\'Foundation Sans Italic\'";
+$bodyBold: "\'FontSite Sans Bold\'";
+$bodyBoldItalic: "\'Foundation Sans Bold Italic\'";
+$headerText: "\'Function Pro Demi\'";
+$headerBold: "\'Function Pro Bold\'";
+$headerRegular: "\'Function Pro Regular\'";
+$headerBoldItalic: "\'Function Pro Bolditalic\'";
+$twpText: "\'Function Pro Book\'";
+$bodyTextColor: "#1b1b1b";
+$defaultFontSize: 10px/16px * 100%;
+
+/* File Path Constants */
+
+$assets: "/wp-content/themes/charles-child/images";
+$typepath: "/wp-content/themes/charles-child/type";
+
+/* Breakpoints */
+
+$small: (320px/16px) * 1em;
+$imageBreak: (601px/16px) * 1em;
+$large: (960px/16px) * 1em;

@@ -1,0 +1,30 @@
+{
+    "name": "charles",
+    "version": "1.0.0",
+    "description": "The Wilson Project site",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w build/css/style.scss css/style.css --output-style compressed --source-map css/style.css.map",
+        "browser-sync": "browser-sync start --proxy http://localhost:8888 --files=*.php,*.css,*.js --no-open --no-notify",
+        "uglify:utility": "uglifyjs build/js/utility.js --compress --mangle -o js/utility.js",
+        "start": "npm run sass & npm run browser-sync",
+        "production": "node postcss.config.js & npm run uglify:utility"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/iwilsonjr/charles/"
+    },
+    "author": "Ivan Wilson",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "jquery": "^3.5.0",
+        "node-sass": "^4.14.0",
+        "postcss": "^5.2.15",
+        "postcss-cli": "^3.0.0-beta",
+        "postcss-pxtorem": "^4.0.0"
+    },
+    "dependencies": {
+        "uglify-es": "^3.3.9"
+    }
+}

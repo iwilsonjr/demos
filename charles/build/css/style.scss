@@ -1,0 +1,748 @@
+/*
+	Theme Name: Charles
+	Theme URI: http://www.thewilsonproject.com/
+	Description: Delta Version of The Wilson Project, based on HTML5 Blank WordPress Theme (http://html5blank.com)
+	Version: 1.0
+	Author: Ivan Wilson (@iwilsonjr)
+	Author URI: http://www.thewilsonproject.com/ls
+	Tags: HTML5, CSS3
+	
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@import "base/config";
+@import "base/typography";
+@import "base/normalize";
+@import "base/defaults";
+@import "base/wp_core";
+
+/* -------------------------------- [ Layout ] */
+
+
+/* --- Defaults --- */
+
+
+/* Container */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+/* Article */
+
+article.page {
+    padding-bottom: 40px;
+}
+
+
+/* Site Header */
+
+.blkHeader {
+    height: 190px;
+    margin: 0;
+    padding-top: 15px;
+    background: #39c;
+    strong,
+    em {
+        display: block;
+        font-family: #{$twpText};
+        color: #fff;
+    }
+    strong {
+        margin: 35px 0 7px;
+        font-size: 35px;
+        @include lineHeight(35px, 35px);
+    }
+    em {
+        font-size: 18px;
+        @include lineHeight(18px, 18px);
+    }
+    a {
+        display: inline-block;
+        margin-top: 0;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+            outline: 1px solid;
+            text-decoration: none;
+        }
+        &.blkHeaderInfo {
+            white-space: nowrap;
+        }
+    }
+}
+
+.btnNavigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    a {
+        overflow: hidden;
+        display: block;
+        width: 57px;
+        height: 52px;
+        margin: 0;
+        padding: 0;
+        background: url(#{$assets}/icons/icon-navigation.png) no-repeat;
+        background-size: 114px auto;
+        text-indent: -200px;
+        &:hover,
+        &:focus,
+        &:active {
+            outline: 0;
+        }
+    }
+}
+
+.jsNavOpen .btnNavigation a {
+    background-position: -57px 0;
+}
+
+.siteLogo {
+    overflow: hidden;
+    float: left;
+    display: block;
+    width: 140px;
+    height: 139px;
+    margin: 5px 15px 0 10px;
+    padding: 0;
+    img {
+        vertical-align: top;
+    }
+}
+
+
+/* WP Core Overwrites */
+
+.wp-caption {
+    background: transparent;
+    border: 0;
+    text-align: left;
+    .wp-caption-text {
+        margin: 0;
+        padding: 0 4px 5px;
+        font-size: 17px;
+        @include lineHeight(17px, 20px);
+        font-family: #{$bodyItalic};
+    }
+}
+
+
+/* Site Navigation */
+
+.navSite {
+    overflow: hidden;
+    position: absolute;
+    top: 171px;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    background: #e0e0e0 none;
+    h2 {
+        margin: 20px 0 10px;
+        padding: 0 0 10px 10px;
+        border-bottom: 1px solid #f9f9f9;
+        font-family: #{$headerBold};
+        text-transform: uppercase;
+    }
+}
+
+.navPrimary {
+    margin: 0 0 7px;
+    padding: 0 0 7px 10px;
+    border-bottom: 1px solid #f9f9f9;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+        padding: 0 0 5px;
+        background: none;
+        font-family: #{$headerBold};
+        text-transform: uppercase;
+        letter-spacing: 0;
+        word-spacing: 0;
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+    a {
+        text-decoration: none;
+        &:focus,
+        &:active,
+        &:hover {
+            text-decoration: underline;
+        }
+        &:hover {
+            outline: none;
+        }
+    }
+}
+
+.navFind {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    li {
+        display: block;
+        margin: 0;
+        padding: 0 20px 2px 0;
+        background: none;
+        font-size: 19px;
+        @include lineHeight(15px, 19px);
+        text-transform: none;
+    }
+    h3 {
+        font-size: 18px;
+        font-family: #{$headerBold};
+        text-decoration: underline;
+    }
+    h4 {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    select {
+        font-size: 18px;
+    }
+}
+
+.blkArchives,
+.blkCategories,
+.blkSearch {
+    float: left;
+    width: 100%;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+.blkArchives {
+    min-width: 190px;
+    .blkForm {
+        width: 240px;
+    }
+    option:nth-child(2),
+    option:nth-child(3),
+    option:nth-child(4),
+    option:nth-child(5),
+    option:nth-child(6),
+    option:nth-child(7) {
+        display: none;
+    }
+}
+
+.blkCategories {
+    min-width: 200px;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.blkSearch {
+    padding-right: 0;
+    input {
+        margin-bottom: 10px;
+    }
+}
+
+.content {
+    padding: 30px 20px 0;
+}
+
+
+/* Archives Pages */
+
+.ver {
+    display: block;
+    margin: 0 -20px 20px;
+    padding: 0 20px 20px;
+    font-size: 19px;
+    @include lineHeight(19px, 28px);
+    border-bottom: 1px solid #ccc;
+    font-family: #{$headerBold};
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.blogLister {
+    margin: 0;
+    padding: 0;
+    &>li {
+        overflow: hidden;
+        list-style-type: none;
+        padding: 0;
+        background: none;
+    }
+}
+
+.blogEntry {
+    margin: 0 0 15px;
+    padding: 0;
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+    iframe,
+    embed {
+        max-width: 100%;
+        max-height: 400px;
+    }
+}
+
+.entryData {
+    margin: 0 0 20px;
+    span {
+        display: inline;
+        &:first-child {
+            font-family: #{$headerText};
+        }
+    }
+    strong {
+        display: block;
+        margin: 0 0 5px;
+        font-size: 23px;
+        font-family: #{$headerRegular};
+        text-transform: uppercase;
+    }
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+    ul {
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: 'FontSite Sans Bold';
+        a:empty {
+            display: none;
+        }
+    }
+}
+
+.no-fontface .entryData span:first-child {
+    font-weight: bold;
+}
+
+.entryFooter {
+    margin: 0 0 65px;
+}
+
+.pageNavigation {
+    overflow: hidden;
+    margin: 0 0 50px;
+    padding: 0;
+    text-transform: uppercase;
+    ul {
+        overflow: hidden;
+        margin: 0;
+        padding: 15px 10px;
+        background: #ccc;
+    }
+    li {
+        display: none;
+        width: 45%;
+        padding: 0;
+        background: none;
+        text-align: center;
+        &:first-child {
+            display: block;
+            float: left;
+            text-align: left;
+        }
+        &:last-child {
+            display: block;
+            float: right;
+            width: 45%;
+            padding: 0;
+            text-align: right;
+        }
+        &:first-child .current,
+        &:last-child .current {
+            display: none;
+        }
+    }
+}
+
+.blkFooter {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 25px 0;
+    font-size: 14px;
+    @include lineHeight(14px, 20px);
+    background: #39c;
+    font-family: #{$headerRegular};
+    color: #fff;
+    text-align: center;
+}
+
+.commentsDisplay {
+    margin: 13px 0 0;
+    padding: 30px 0;
+    border-top: 9px solid #ccc;
+}
+
+#respond {
+    padding-top: 5px;
+}
+
+ol+#respond {
+    padding-top: 35px;
+    border-top: 9px solid #ccc;
+}
+
+#reply-title {
+    a {
+        display: block;
+        margin: 10px 0;
+        font-family: #{$fontStack};
+        text-transform: none;
+        text-decoration: none;
+    }
+    small {
+        display: block;
+        margin: 10px 0 20px;
+        font-size: 18px;
+    }
+}
+
+.comments {
+    margin-top: 20px;
+    padding: 25px 0 0 0;
+    font-size: 18px;
+}
+
+
+/* Navigation Open/Closed States */
+
+.jsNavOpen .navFind {
+    height: auto;
+    padding: 10px 2px 10px 10px;
+}
+
+
+/* AJAX Window */
+
+.ajaxWindow {
+    position: absolute;
+    top: 161px;
+    width: 100%;
+    min-height: 380px;
+    margin: 0 auto;
+    padding: 35px 0;
+    background-color: #e0e0e0;
+    font-size: 14px;
+    text-align: center;
+    .blkForm,
+    .buttonWell {
+        text-align: left;
+    }
+    .blkForm {
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+
+.closeWindow {
+    position: relative;
+    top: 0;
+    font-size: 16px;
+    font-family: #{$headerRegular};
+    text-decoration: none;
+}
+
+.thanks {
+    width: 400px;
+    margin: 50px auto 0;
+}
+
+
+/* -------------------------------- [ Header ] */
+
+.blkHeader h1,
+.blkHeader h2 {
+    @extend .hide
+}
+
+
+/* -------------------------------- [ Site Navigation ] */
+
+
+/* Contextual Navigation */
+
+.navFind {
+    ul {
+        margin-left: 0;
+    }
+    a {
+        background: none;
+        font-family: #{$bodyText};
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.blkCategories li:hover {
+    background: transparent none;
+}
+
+.navFind .blkForm {
+    label {
+        @extend .hide
+    }
+    div {
+        display: inline;
+    }
+    input[type='submit'] {
+        padding: 4px;
+    }
+}
+
+
+/* -------------------------------- [ Blog Classes/IDs ] */
+
+.blog h1 a {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+    &:hover {
+        outline: none;
+    }
+}
+
+.entryData a {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.entryFooter {
+    padding: 0;
+    text-transform: uppercase;
+    a {
+        text-transform: none;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    strong {
+        font-family: #{$headerText};
+    }
+}
+
+
+/* May need to eliminate, not to conflict with WP styles */
+
+.photoImg {
+    margin: 10px 0 25px;
+    img {
+        border: 3px solid #999;
+        border-radius: 3px;
+    }
+}
+
+
+/* Added 4/13/17 - Restarting The Engine */
+
+.thankList {
+    li {
+        padding-bottom: 10px;
+    }
+    span {
+        display: block;
+        margin: 20px 0;
+    }
+}
+
+
+/* -------------------------------- [ Pagination ] */
+
+.pageNavigation a {
+    display: inline-block;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+    span {
+        text-transform: none;
+    }
+}
+
+.prev,
+[rel='prev'] {
+    padding-left: 20px;
+    background: url(#{$assets}/links/link-previous.png) no-repeat 0 9px;
+    background-size: 15px 200px;
+}
+
+
+/*.prev:hover, .prev:focus, [rel='prev']:hover, [rel='prev']:focus { background-position: 0 -185px; }*/
+
+.next,
+[rel='next'] {
+    padding-right: 20px;
+    background: url(#{$assets}/links/link-next.png) no-repeat 100% 9px;
+    background-size: 15px 200px;
+}
+
+
+/*.next:hover, .next:focus, [rel='next']:hover, [rel='next']:focus { background-position: 100% -185px; }*/
+
+.pageNavigation.blog {
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+[rel='prev']:before {
+    display: block;
+    content: 'PREVIOUS';
+}
+
+[rel='next']:before {
+    display: block;
+    content: 'NEXT';
+}
+
+
+/* -------------------------------- [ Comments Display ] */
+
+.commentsDisplay {
+    h2 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        @include lineHeight(25px, 28px);
+        text-decoration: underline;
+    }
+    ol {
+        margin: 0;
+        counter-reset: item;
+    }
+    li {
+        list-style-type: none;
+        padding: 20px 20px 20px 20px;
+        &:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+        &:before {
+            content: counter(item)". ";
+            counter-increment: item;
+        }
+        div {
+            margin: -27px 0 0;
+            padding-left: 20px;
+        }
+        p,
+        ol,
+        ul {
+            margin-bottom: 10px;
+        }
+    }
+    .vcard {
+        font-size: 14px;
+        font-family: #{$bodyItalic};
+    }
+}
+
+.comment-meta span {
+    margin-left: 10px;
+    font-family: #{$bodyText};
+}
+
+
+/* -------------------------------- [ Comments ] */
+
+.comments {
+    h2 {
+        margin-bottom: 25px;
+        font-size: 25px;
+        @include lineHeight(25px, 28px);
+        text-decoration: underline;
+    }
+    .buttonWell {
+        margin-bottom: -10px;
+    }
+}
+
+
+/* -------------------------------- [ Form Handling ] */
+
+span.error {
+    display: block;
+    margin: 5px 0;
+    color: #c00;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+select {
+    &.errorField {
+        border: 3px solid #c00;
+    }
+}
+
+
+/* -------------------------------- [ Loading Screen ] */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+}
+
+main .loading {
+    margin-top: 60px;
+}
+
+
+/* -------------------------------- [ Contact Form ] */
+
+.contactForm {
+    margin-bottom: 60px;
+    .ajaxWindow & {
+        margin-bottom: 0;
+    }
+}
+
+
+/* -------------------------------- [ Breakpoints ] */
+
+@import "breakpoints/small";
+@import "breakpoints/image-header";
+@import "breakpoints/medium";
+@import "breakpoints/large";
+@import "base/legacy";
+@import "base/print";

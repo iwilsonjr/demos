@@ -2,91 +2,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title>Roll Call/A Taste of America</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="css/main.css" rel="stylesheet" type="text/css" />
-	<!--[if IE 8]><link href="css/legacy.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <title>Roll Call/A Taste of America</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 8]><link href="css/legacy.css" rel="stylesheet" type="text/css" /><![endif]-->
 </head>
 
 <body>
 
-	<div class="ajaxWindow">
-		<span class="top"></span>
-		
-		<div class="text">
-			<h2>Thanks for Voting!</h2>
-			<a href="#" class="closeWindow">Close Window</a> 
-			<div class="scrollBox">
-				<div class="ads">
-					Advertisement <br />
-					<img src="images/content/ad.png" width="301" height="250" alt="Ad" />
-				</div>
-				<p>Thank you for participating in Roll Call's Taste of America. Share with your friends for a chance to win two tickets to the Elite Eight Reception at Nationals Park immediately prior to Congressional Baseball Game.</p>
-				
-				<h3>Spread the word:</h3>
-				<ol class="socialLinks">
-					<li>
-						<a class="shareFacebook" href="#"><img src="images/links/link-facebook.png" alt="Share on Facebook" width="72" height="36" /></a>
-					</li>
-					<li>
-						<a class="shareTwitter" href="#"><img src="images/links/link-twitter.png" alt="Share on Twitter" width="72" height="36" /></a>
-					</li>
-					<li>
-						<a class="shareGoogle" href="#"><img src="images/links/link-google.png" alt="Share on Google+" width="72" height="36" /></a>
-					</li>						
-				</ol>
+    <div class="ajaxWindow">
+        <span class="top"></span>
 
-				<form action="">
-					<h3>Or share via email:</h3>				
-					<ol>
-						<li>
-							<label for="yourEmail">Your Email</label>
-							<input type="text" name="yourEmail" id="yourEmail" value="" />
-						</li>
-						<li>
-							<label for="friendsEmail">Your Friend's Email</label>
-							<input type="text" name="friendsEmail" id="friendsEmail" value="" />
-						</li>						
-					</ol>
-					<div class="buttonWell">
-						<input type="submit" name="submitEmail" id="submitEmail" value="Submit" />
-					</div>
-				</form>
-			
-			</div>	
-			<span class="textSeparator"></span>	
-		</div>
-		
-		<span class="bottom"></span>
-	</div>
-	
-<script type="text/javascript">
-$(".shareFacebook").click(function(){       
-    var url = 'http://www.rollcalltasteofamerica.com';
-    var img = '';
-    var title = 'Taste of America';
-    var fbWin=window.open('http://www.facebook.com/sharer/sharer.php?s=100&p[url]='+url+'&p[images][0]='+img+'&p[title]='+title,'','width=400,height=400');
-    fbWin.focus();
-    return false;  
-  });
-  
-   $(".shareTwitter").click(function(){    
-    var twitterType = $(this).attr('class');
-    var url='http://www.rollcalltasteofamerica.com';
-    var text="Vote for your state in Roll Call's Taste of America!";
-    var hash="TofA2014";
-    var twitWin=window.open('http://twitter.com/intent/tweet?text='+text+'&hashtags='+hash+'&url='+url,'','width=425,height=500');
-    twitWin.focus();
-    return false;   
-  });
-  
-  $(".shareGoogle").click(function(){    
-    var url='http://www.rollcalltasteofamerica.com';
-    var googWin=window.open('https://plus.google.com/share?url='+url,'','width=500,height=500');
-    googWin.focus();
-    return false;   
-  });
-</script>
+        <div class="text">
+            <h2>Thanks for Voting!</h2>
+            <a href="#" class="closeWindow">Close Window</a>
+            <div class="scrollBox">
+                <div class="ads">
+                    Advertisement <br />
+                    <img src="images/content/ad.png" width="301" height="250" alt="Ad" />
+                </div>
+                <p>Thank you for participating in Roll Call's Taste of America. Share with your friends for a chance to win two tickets to the Elite Eight Reception at Nationals Park immediately prior to Congressional Baseball Game.</p>
+
+                <h3>Spread the word:</h3>
+                <ol class="socialLinks">
+                    <li>
+                        <a class="shareFacebook" href="#"><img src="images/links/link-facebook.png" alt="Share on Facebook" width="72" height="36" /></a>
+                    </li>
+                    <li>
+                        <a class="shareTwitter" href="#"><img src="images/links/link-twitter.png" alt="Share on Twitter" width="72" height="36" /></a>
+                    </li>
+                    <li>
+                        <a class="shareGoogle" href="#"><img src="images/links/link-google.png" alt="Share on Google+" width="72" height="36" /></a>
+                    </li>
+                </ol>
+
+                <form action="">
+                    <h3>Or share via email:</h3>
+                    <ol>
+                        <li>
+                            <label for="yourEmail">Your Email</label>
+                            <input type="text" name="yourEmail" id="yourEmail" value="" />
+                        </li>
+                        <li>
+                            <label for="friendsEmail">Your Friend's Email</label>
+                            <input type="text" name="friendsEmail" id="friendsEmail" value="" />
+                        </li>
+                    </ol>
+                    <div class="buttonWell">
+                        <input type="submit" name="submitEmail" id="submitEmail" value="Submit" />
+                    </div>
+                </form>
+
+            </div>
+            <span class="textSeparator"></span>
+        </div>
+
+        <span class="bottom"></span>
+    </div>
 
 </body>
 

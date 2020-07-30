@@ -8,7 +8,10 @@
 
 <li>country (country-ui) ‐ country selector for CDG/Innate (version 4 was latest version)<br />
 Used in Cover-More white-label sites such as Austrailan Post, Virgin Australia, Cover-More's Australian and New Zealand sites, and <a href="https://insurance.airnewzealand.com.au/">Air New Zealand's travel insurance site</a><br />
-Demo ‐ https://thewilsonproject.com/demos/country-ui/</li>
+Demo ‐ https://thewilsonproject.com/demos/country-ui/<br /><br />
+
+Currently working on version 5.0 - https://github.com/iwilsonjr/country, removing jQuery dependency for native/ES6 JS
+</li>
 
 <li>CQ Roll Call's Taste of America (2008 - 2014) (tasteofamerica)<br />
 This was a contest started by CQ Roll Call, in conjunction with the annual Congressional baseball game.<br />

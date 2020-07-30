@@ -7,7 +7,7 @@
 <li>Charles WP Theme (charles) ‐ code for current TWP site (https://thewilsonproject.com)</li>
 
 <li>country (country-ui) ‐ country selector for CDG/Innate (version 4 was latest version)<br />
-Used in Cover-More white-label sites such as Austrailan Post, Virgin Australia, Cover-More's Australian and New Zealand sites, and <a href="https://insurance.airnewzealand.com.au/">Air New Zealand's travel insurance site</a>br />
+Used in Cover-More white-label sites such as Austrailan Post, Virgin Australia, Cover-More's Australian and New Zealand sites, and <a href="https://insurance.airnewzealand.com.au/">Air New Zealand's travel insurance site</a><br />
 Demo ‐ https://thewilsonproject.com/demos/country-ui/</li>
 
 <li>CQ Roll Call's Taste of America (2008 - 2014) (tasteofamerica)<br />

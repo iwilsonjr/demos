@@ -1,0 +1,104 @@
+/*
+
+PDF Style Sheet - ahm/Cover More
+--------------------------------------------*/
+
+
+/*
+
+Custom Fonts
+--------------------------------------------*/
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3251461, 2016-07-15T13:13:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ProximaNova-Extrabld by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/extrabld/
+ * Licensed pageviews: 1,000,000
+ * 
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * Licensed pageviews: 2,000,000
+ * 
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * Licensed pageviews: 3,000,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3251461
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/319d05");*/
+ 
+  
+@font-face {font-family: 'ProximaNova-Regular';src: url('type/319D05_2_0.woff2') format('woff2'),url('type/319D05_2_0.woff') format('woff'),url('type/319D05_2_0.ttf') format('truetype');}
+
+
+/*
+
+Initialization/Defaults
+--------------------------------------------*/
+/* --- Block Elements --- */
+html { width: 100%; height: 100%; background: #fff; color: #484848; } /* 16px = 1.0rem */
+
+
+/* --- Block Text --- */
+p, blockquote, caption { margin: 0 0 20px; }
+div { margin: 0; }
+hr { margin-bottom: 15px; }
+
+/* --- Text Elements --- */
+a { color: #000; text-decoration: underline; }
+  a:hover, a:focus, a:active {  }
+sup { font-size: 0.9rem; }
+small { font-size: 1.0rem; }
+strong { font-family: "ProximaNova-Extrabld"; };
+em { font-style: italic; }
+
+/* --- List Items --- */
+ul { list-style: none outside none; margin: 0 0 15px 30px; padding: 0; }
+ol { list-style: decimal outside none; margin: 0 0 15px 30px; }
+  ul li, ol li { margin: 0; padding: 0 0 5px; }
+
+
+
+/*
+
+Site Styles
+--------------------------------------------*/
+
+
+/* 
+  Body
+-----------------------------*/
+body { min-width: 320px; margin: 0; padding: 40px; font-size: 1.0rem; line-height: 1.375; font-family: 'ProximaNova-Regular', Helvetica, Arial, sans-serif; }
+
+
+/* 
+  Cards
+-----------------------------*/
+.card { margin: 0; padding: 0; }
+  .card li { width: 300px; height: 190px; margin: 0 0 40px; }
+
+.cardContent { position: relative; float: right; width: 145px; margin-top: -147px; margin-right: 5px; font-size: 0.75rem; line-height: 1.3; }
+  .cardContent p { margin-bottom: 10px; }
+
+
+  /* Print */
+
+@media only print {
+  .card li:nth-child(4n) { page-break-after: always; }
+}
+

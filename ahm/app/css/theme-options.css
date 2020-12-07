@@ -1,0 +1,277 @@
+/*
+
+Cover-More/ahm Theme Style Sheet - Plan Options - Innate
+--------------------------------------------*/
+
+@media screen and (min-width: 58.125em) {
+  .carousel { max-width: 930px; margin-left: 15px; /* min-height: 900px; */ }
+  .buttonWellContainer { clear: both; }
+/*   section { overflow: hidden } */
+  
+}
+
+
+/* Carousel */
+.owl-controls { position: absolute; top: -25px; width: 100%; height: 10px; }
+.owl-dots { width: 60px; height: 10px; margin: 0 auto; }
+.owl-dots .owl-dot { float: left; margin: 0 5px; width: 10px; height: 10px; background: #ddd; border-radius: 50%; }
+   .owl-dots .owl-dot.active { background: #000; }
+.owl-dots span { display: block; width: 100%; height: 100%;  }
+@media screen and (min-width: 50em) {
+  .owl-controls { display: none; }
+}
+
+  section { margin-top: 15px; background: #f5f5f5; border: 1px solid #c0c0c0; }
+  section.selected { background: #e0e0e0; margin-top: 0; padding-top: 15px; padding-bottom: 15px; }
+  
+
+/* .discount { margin: 0 -10px 15px; padding: 10px 0 20px 5px; background: #f2f2f2; border-radius: 4px 4px 0 0; box-sizing: border-box; } */
+.discountMessage { margin-top: -30px; margin-bottom: 40px; }
+.discountMessage p { margin-bottom: 0; }
+.discountMessage strong { font-weight: normal; }
+@media screen and (min-width: 50em) {
+  .discountMessage { margin-bottom: 0; }
+}
+@media screen and (min-width: 60em) {
+  .discountMessage { margin-bottom: 15px; }
+}
+
+
+/* Intro */
+.intro { overflow: hidden; position: relative; width: calc(100% + 2px); margin-left: -1px; margin-top: -1px; margin-bottom: 15px; padding-bottom: 25px; background: #000; color: #fff; text-align: center; }
+  .intro h2 { width: 170px; min-height: 60px; margin: 20px auto 10px; padding: 0;  font-size: 1.25rem; color: #fff; }
+    .intro strong { font-weight: normal; font-family: 'ProximaNova-Extrabld'; font-size: 3.375rem; line-height: 1; }
+    .intro strong span { position: relative; top: -15px; font-size: 1.875rem; }
+    .intro .bestFit { position: absolute; display: block; top: 25px; left: -30px; width: 140px; height: 25px; padding-top: 4px; background: #c0c0c0; color: #000; text-align: center; font-family: 'ProximaNova-Extrabld'; line-height: 1; font-size: 1rem; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+section.selected .intro { margin-top: -16px; padding-top: 15px; }
+.intro p { margin-bottom: 0; }
+
+/* Options */
+
+.options { min-height: 135px; }
+.touchevents .options { min-height: 230px; }
+.options label { font-size: 0.875rem; margin-left: 0; color: #000; }
+.options legend { text-align: left; font-size: 1.25rem; font-family: 'ProximaNova-Extrabld'; white-space: nowrap; }
+  .options legend span { font-family: 'ProximaNova-Light'; font-size: 0.8125rem; }
+  .options .radioList { margin-bottom: 0; }
+  .touchevents .options .radioList { margin-bottom: 15px; }
+  .options .radioList li { padding: 0 0.46875rem; white-space: nowrap; }
+  .options .radioList li:first-child { padding-left: 0; }
+  .options .radioList li:last-child { padding-right: 0; }
+  .options .radioList li:nth-child(2) { padding: 0 0.234375rem !important; }
+  .touchevents .options input[type="radio"] + label { width: 100%; min-width: 0; height: 30px; margin-right: 0; padding: .3rem 0; text-align: center; line-height: 1; border-radius: 3px; }
+
+
+/* Select Plan Radio */
+
+.planSelect input[type="radio"] { position: absolute; clip: rect(0px 0px 0px 0px); }
+.planSelect input[type="radio"] + label { display: inline-block; width: 100%; height: 50px; margin: 0 0 20px; padding: 15px 0 0; background: #000; color: #fff; border-radius: 3px; text-align: center; font-size: 1.25rem; font-family: 'ProximaNova-Extrabld'; line-height: 1; transition: box-shadow .2s ease; }
+    .planSelect input[type="radio"] + label:hover,  .planSelect input[type="radio"] + label:focus,  .planSelect input[type="radio"] + label:active { box-shadow: 0 0 0 2px #000; }
+
+.planSelect input[type="radio"]:checked + label, .planSelect input[type="radio"]:checked + label:hover, .planSelect input[type="radio"]:checked + label:focus, .planSelect input[type="radio"]:checked + label:active { background: #e0e0e0 url(../files//images/buttons/btn-selected-plan.svg) no-repeat center center; background-size: 56px 40px; color: #e0e0e0; box-shadow: none; cursor: default; text-indent: -9999px; border: 0; transition: none; }
+
+
+
+
+
+/* Help Override */
+
+.options .help img { top: 4px; }
+.options .ajaxHelp img { top: 4px; }
+.helpWindow { position: absolute; overflow: hidden; clip: rect(0,0,0,0); width: 0; height: 0; }
+
+/* Plans */
+.plans { }
+
+
+/* Benefits Table */
+.benefits h3 { padding-top: 15px; border-top: 1px solid #c0c0c0; font-size: 1.25rem; color: #000; }
+.benefitsTable { float: none; clear: both; min-height: 160px; margin-bottom: 20px; }
+  .benefitsTable th, .benefitsTable td { width: 50%; font-size: 0.75rem; } 
+   .benefitsTable td { text-align: right; } 
+  .benefitsTable th { padding: 0 0 10px 0; font-weight: normal; }
+  .benefitsTable td { padding: 0 0 10px 20px; font-family: 'ProximaNova-Extrabld'; }
+
+  .benefitsTable tr:nth-child(n+4) { display: none; }
+  .benefitsTable sup { font-family: Arial; font-weight: bold; font-size: 0.75rem; }
+
+  /* Open Benefits */
+.benefits .btnLink { display: block; width: 120px; height: 35px; margin: 0 0 20px; padding: 8px 0 0 20px; font-family: 'ProximaNova-Extrabld'; background: url(../files//images/backgrounds/bkg-expand-benefits.svg) no-repeat 0 15px; background-size: 15px 35px; color: #404040; text-decoration: none; }
+.benefits .btnLink:hover, .benefits .btnLink:focus, .benefits .btnLink:active { text-decoration: underline; }
+  .openBenefits .btnLink { background-position: 0 -10px; }
+  .openBenefits tr:nth-child(n+4) { display: table-row; }
+
+/* Add-ons */
+.extras { max-width: calc(100% - 1.75rem); margin-left: .875rem; padding-top: 25px; }
+  .extras h2 { padding: 0; font-size: 1.25rem; }
+  .extras .purchaseList { overflow: hidden; margin: 20px 0 0; padding: 0; }
+    .extras .purchaseList > li { position: relative; float: left; width: 100%; margin: 0 0 20px; padding: 0 1.1rem; background-color: #f5f5f5; border: 1px solid #c0c0c0; }
+      .extras .purchaseList > li.selected { background-color: #e0e0e0; }
+    .extras .purchaseList h3 { margin-top: 120px; }
+
+      .extras label.error { height: auto; margin: 8px 0; padding: 0; background: none; }
+      .extras .purchaseList li { background-repeat: no-repeat; background-position: center 0; background-size: 500px 100px; }
+      .extras .cancellation { background-image: url(../files//images/backgrounds/bkg-canx.svg); }
+      .extras .winter { background-image: url(../files//images/backgrounds/bkg-winter.svg); }
+      .extras .rental { background-image: url(../files//images/backgrounds/bkg-rental.svg); }       
+      .extras .motorcycle { background-image: url(../files//images/backgrounds/bkg-motor.svg); }
+      .extras .luggage { background-image: url(../files//images/backgrounds/bkg-luggage.svg); }
+      
+      
+      .extras .luggage.selected:after { position: absolute; left: 0; bottom: -32px; z-index: 2; width: calc(100% + 2px); height: 32px; margin-left: -1px; content: ''; background: #e0e0e0; border: 1px solid #c0c0c0; border-top: 0; border-bottom: 0; } 
+
+    input[type="checkbox"] { position: absolute; clip: rect(0px 0px 0px 0px); }
+    input[type="checkbox"] + label { display: inline-block; width: 100%; height: 50px; border: 2px solid #000; margin: 0 0 20px 0; padding: 12px 0; background: transparent; color: #000; font-family: 'ProximaNova-Extrabld'; font-size: 1.25rem; text-align: center; line-height: 1; border-radius: 3px;  transition: box-shadow .2s ease; }
+    input[type="checkbox"]:checked + label, input[type="checkbox"] + label:hover, input[type="checkbox"] + label:focus, input[type="checkbox"] + label:active { background-color: #000; color: #fff; }
+    input[type="checkbox"]:checked + label:hover, input[type="checkbox"]:checked + label:focus, input[type="checkbox"]:checked + label:active  { box-shadow: 0 0 0 2px #000; }
+    
+    .extras i { margin-right: 5px; }
+  
+  .extras em { display: block; font-size: 1rem; font-family: 'ProximaNova-Light'; font-style: normal; }
+  
+  .extras .help { position: static; display: inline-block; margin: 0; }
+  
+  
+/* Luggage Coverage */
+
+#luggageItemsContainer { margin-top: 10px; width: 100%; min-height: 150px; margin-right: 0; padding: 1.25em; text-align: left; background: #e0e0e0; border: 1px solid #c0c0c0; border-radius: 0; font-size: 1.0rem; }
+#luggageItemsContainer h3 { min-height: 0; margin-top: 0; }
+  #luggageItemsContainer table { width: 100%; border: 0; border-spacing: 5px; border-collapse: separate; }
+  #luggageItemsContainer tr { display: block; padding: 0; background: none; }
+  #luggageItemsContainer th { /* display: none;  */height: 15px; vertical-align: top; }  
+
+  #luggageItemsContainer input, #luggageItemsContainer select { margin-bottom: 0; }
+  #luggageItemsContainer [readonly], #luggageItemsContainer [readonly]:hover,#luggageItemsContainer [readonly]:focus,#luggageItemsContainer [readonly]:active { background: none; outline: 0; border: 0; cursor: default; }
+  #luggageItemsContainer label { display: block; }
+
+#luggageItemsContainer .tableHeaders { display: none; }
+  #luggageItemsContainer select, #luggageItemsContainer p { margin: 0; }
+
+  #luggageItemsContainer .removeLuggageItem { font-family: 'ProximaNova-Extrabld'; margin-left: 0; }
+    #luggageItemsContainer button:hover, #luggageItemsContainer button:active, #luggageItemsContainer button:focus { text-decoration: underline; }
+
+ 
+
+.luggageRow { overflow: hidden; border-bottom: 1px solid #c0c0c0; }
+.luggageRow:first-child { border-top: 1px solid #c0c0c0; }
+  .luggageRow td { padding-bottom: 5px; font-family: 'ProximaNova-Regular'; }
+#luggageItemsContainer button.add { height: 50px; margin-top: 20px; padding-top: 15px; font-family: 'ProximaNova-Extrabld'; font-size: 1.25rem; transition: box-shadow .2s ease; }
+  #luggageItemsContainer button.add:hover, #luggageItemsContainer button.add:focus, #luggageItemsContainer button.add:active { text-decoration: none; box-shadow: 0 0 0 2px #000; } 
+
+/* Benefit Hovers */
+.popup { position: absolute; z-index: 2; margin: 7px 0 0; visibility: hidden; }
+  .popup:before { left: 0; }  
+  .popup p { min-height: 0; margin: 0; }
+
+.footnotes { margin: 40px 0 0; font-size: 0.75rem; font-family: Helvetica, Arial, sans-serif; color: #404040; }
+.disclaimer { padding-top: 0; }
+
+
+  @media screen and (min-width: 30em) {
+        .extras .purchaseList > li { width: 48.5%; min-height: 280px; }
+        .extras.taller .purchaseList > li { min-height: 350px; }
+        .extras .purchaseList > li:nth-child(odd) { margin-right: 3%; }
+        .extras h2 { font-size: 2rem; }
+        .extras h3 { min-height: 70px; }
+        .benefitsTable th, .benefitsTable td { font-size: 0.875rem; }  
+    
+  }
+  @media screen and (min-width: 45em) {
+        .extras .purchaseList > li { /*width: 22.5%;*/ width: 25%; margin-right: 3.3333%; }
+        .extras .purchaseList > li:nth-child(odd) { margin-right: 3.3333%; }
+        .extras .purchaseList > li:nth-child(4) { clear: both; /*margin-right: 0;*/ }
+      #luggageItemsContainer { max-width: 100% !important; }
+  }
+  
+
+
+
+
+/*[id^="qtip-"][aria-hidden] { left: calc(50% - 300px) !important; }*/
+
+
+
+
+/* 
+  Additional Phone/Table Breakpoint - 500px/31.25em
+-----------------------------*/
+@media screen and (min-width: 31.25em) {
+
+  /* Plan Selector */
+        .planSelector li { font-size: 1.0rem; }
+
+}
+
+/* 
+  Large Phone/Small Tablet - 640px/40em
+-----------------------------*/
+@media screen and (min-width: 40em) {
+
+  /* Plan Selector */
+  .discount { margin: 0 -15px 15px; padding-left: 10px; }
+
+    /* Benefit Hovers */
+    .benefitsTable th:hover .popup  { cursor: pointer; visibility: visible; cursor: pointer; } 
+
+  /* Luggage Coverage */
+  #luggageItemsContainer button { margin-left: 5px; }  
+
+    .luggageRow td { padding-top: 0; padding-bottom: 0; font-size: 1.25rem; }
+
+      #luggageItemsContainer th { font-weight: normal; }
+      #luggageItemsContainer tr td:first-child, #luggageItemsContainer tr th:first-child { padding-left: 0; }
+      #luggageItemsContainer tr:last-child td { border-bottom: 1px solid #dbdbdb; } 
+      #luggageItemsContainer tr:nth-child(2) td { border-bottom: 0; }
+#luggageItemsContainer button.add { margin-top: 35px; width: 100%; }
+
+
+}
+
+
+/* 
+  Tablet - 800px/50em
+-----------------------------*/
+@media screen and (min-width: 50em) {
+
+  /* Article */
+  article.columns { padding-left: 15px; padding-right: 15px; }
+
+  /* Plan Selector */
+        .planSelector input[type="radio"] + label { position: relative; min-height: 157px; padding: 17px 70px 17px 30px; background-position: right 20px bottom -215px; background-size: 32px 355px; font-size: 1.0625rem; } /* Changed 4/7/16 */
+      .planSelector input[type="radio"]:checked + label { background-position: right 20px bottom 108px; } 
+    .planSelector strong { position: absolute; bottom: 10px; font-size: 2.0rem; }
+    .planSelector .regularPrice { bottom: 10px; }
+
+  /* Discounts - Added 4/7/16 */
+  .discountedPrice strong { bottom: 50px; }
+  .discountedPrice input[type="radio"] + label { min-height: 197px; background-position: right 20px bottom -175px; }
+    .discountedPrice input[type="radio"]:checked + label { background-position: right 20px bottom 148px; } 
+
+
+}
+
+
+/* 
+  Desktop - 960px/60em
+-----------------------------*/
+@media screen and (min-width: 60em) {
+
+  .btnSummary { top: 277px; }
+        .carousel { margin-top: -15px; }
+
+  #luggageItemsContainer .help { right: 28px; }
+
+  .discount { position: absolute; margin-top: -50px; padding-left: 0; background: none; }
+
+  .owl-grab { transform: translate3d(0px, 0px, 0px) !important; transition: 0 !important; -webkit-transition: 0 !important; cursor: default !important; }
+
+  .benefitsTable th { position: relative; }
+
+  .owl-carousel .owl-stage-outer { overflow: visible; }
+  
+
+}
+
+.nogap { min-height: 0px !important; }
+
+.smallergap { min-height: 70px !important; }

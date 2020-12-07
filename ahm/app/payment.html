@@ -1,0 +1,279 @@
+<!doctype html>
+
+    <!--[if IE 9 ]> <html class="no-js" lang="en" dir="ltr" class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+
+    <head>
+        <title>ahm Quote - Travel Information</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Plugin CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+        <!--/Plugin CSS-->        
+
+        <!--Application CSS-->
+        <link type="text/css" rel="stylesheet" href="css/foundation.css">        
+        <link type="text/css" rel="stylesheet" href="css/main.css" />      
+        <!--<link type="text/css" rel="stylesheet" href="css/print.css" media="print" />-->
+        <!--/Application CSS-->
+
+        <!-- Modernizr -->
+        <script src="library/modernizr-custom.min.js"></script>
+        <!-- /Modernizr -->        
+    </head>
+
+  <body>
+
+  <!--Header-->
+  <header role="banner">
+    <div class="siteHeader"> 
+    
+      <a href="#" class="siteLogo"><img src="files/images/logos/logo-ahm.svg" width="82" height="52" alt="ahm by Medibank" /></a>
+
+      <p class="support"><a href="#">0000 000 000</a></p>
+
+    </div>
+  </header>
+  <!--/Header-->
+
+    <!--Outer Wrapper-->
+    <div class="outerWrapper">
+
+      <h1>travel insurance</h1>
+
+      <!--Site Navigation-->
+      <div class="navWrapper row">
+        <nav class="small-12 columns" role="navigation"> 
+
+          <a href="#content" class="hide">Skip to Content</a>
+          
+          <ol class="siteNavigation">                    
+            <li class="completed"><a href="#">1 <span class="show-for-large">Trip details</span></a></li>     
+            <li class="completed"><a href="#">2 <span class="show-for-large">Cover options</span></a></li>
+            <li class="completed"><a href="#">3 <span class="show-for-large">Travellers</span></a></li>
+            <li class="selected"><em>4 <span class="show-for-large">Payment</span></em></li>                  
+          </ol>
+
+        </nav>
+      </div>
+      <!--/Site Navigation-->
+
+      <!--Trip Summary-->
+      <div class="summaryWrapper row column">
+
+        <!--Summary Bar-->
+        <aside class="planSummary small-12 columns" id="planSummary">                   
+          <dl class="tripSummary">
+            <dt>Trip summary</dt>
+            <dd>Germany</dd>
+            <dd>30/06/2015 - 31/07/2016</dd>
+            <dd>Ages: 32</dd>                     
+          </dl>
+          
+          <a href="#" class="editLink">Edit</a> 
+
+          <div class="costSummary" id="costSummary">
+            <h2>Your trip</h2>
+
+            <table class="priceTable">
+              <tbody>
+                <tr>
+                  <th scope="row">Comprehensive Single Trip</th>
+                  <td>$36.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Winter Cover</th>
+                  <td>$9.00</td>
+                </tr>                                                       
+              </tbody>
+            </table>
+          </div> 
+
+          <p class="policySummary">Total <em>$175<span>.00</span></em></p>
+
+          <a href="#costSummary" class="btnSummary" id="navSummary">Display Cost Summary</a>
+                    
+        </aside>
+        <!--/Summary Bar-->
+
+      </div>
+      <!--/Trip Summary-->
+
+      <form action="#">
+        <section class="purchaseForm small-12 columns">
+	        <h2>Payment</h2>
+
+          <ol class="purchaseList row small-collapse medium-uncollapse">
+
+            <li class="small-12 columns payment">
+
+                <fieldset class="paymentType">
+                    <legend class="show-for-sr">Payment type</legend>
+                    <ul class="radioList">
+                        <li>
+                            <input type="radio" name="paymentMethod" id="paymentMethod_1" value="credit" checked="checked" />
+                            <label for="paymentMethod_1">Credit Card</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="paymentMethod" id="paymentMethod_2" value="paypal" />
+                            <label for="paymentMethod_2">PayPal</label>
+                        </li>             
+                    </ul>                                     
+                </fieldset>                                                                         
+
+            </li> 
+
+            <li class="small-12 columns">
+                <label for="cardNumber">Card number</label>
+                <input type="text" name="cardNumber" id="cardNumber" value="" placeholder="" autocomplete="off" pattern="[0-9]*" />
+            </li>                                                                                    
+            <li class="small-12 medium-7 columns">
+
+              <fieldset class="expireFields">
+                <legend>Expiration date</legend>
+                <div>
+                  <label for="expireMonth" class="show-for-sr">Expiration Month</label>
+                  <select name="expireMonth" id="expireMonth">
+                    <option value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="expireYear" class="show-for-sr">Expiration Year</label>
+                  <select name="expireYear" id="expireYear">
+                    <option value="">Year</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </select>
+                </div>
+              </fieldset>
+
+            </li>                       
+            <li class="small-12 medium-5 columns">
+                <label for="securityCode">Security code <a href="#help-3" class="help"><img src="files/images/links/link-help.svg" width="14" height="14" alt="Help(?) - Security Code" /></a> </label>
+                                                 
+                <input type="text" name="securityCode" id="securityCode" value="" maxlength="4" autocomplete="off" pattern="[0-9]*" />
+
+                <div class="helpWindow" id="help-3">
+                    <h3>Security code</h3>
+                    <p>This is a test. This is a help window.</p>
+                </div>                                 
+            </li>
+
+            <li class="small-12 columns">
+                <fieldset>                                       
+                    <ul class="declarations">
+                        <li>
+                            <input type="checkbox" name="declarations" id="declarations" value="Yes">
+                            <label for="declarations" class="show-for-sr">Confirmation</label>
+                            <p>I have read and understood: the combined Product Disclosure Statement and Financial Services Guide (incorporating the policy wording and Your Duty of Disclosure) and the <a href="#">Privacy Notice</a>. The travel insurance <a href="#">Privacy Policy</a> is attached for your reference.</p>                                            
+                        </li>
+                        <li>
+                            <input type="checkbox" name="consent" id="consent" value="Yes">
+                            <label for="consent" class="show-for-sr">Consent</label>
+                            <p>I consent to receiving disclosure documents, the combined FSG/PDS, policy documents, travel alerts and the details and outcome of any medical assessment (if applicable), electronically including via the email address provided.</p>                                            
+                        </li>
+                        <li>
+                            <input type="checkbox" name="understand" id="understand" value="Yes">
+                            <label for="understand" class="show-for-sr">Understand</label>
+                            <p>I have read and understood the latest travel insurance <a href="#">claims advice</a>.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="authorise" id="authorise" value="Yes">
+                            <label for="authorise" class="show-for-sr">Authorise</label>
+                            <p>I authorise Great Lakes Australia and Cover-More or any other licensee who arranges this insurance and the Providing Entity, to give or to obtain from any other insurer, an insurance reference bureau, medical provider, lawyer, or recovery agent any information relating to any insurance held or claim made by me.</p>
+                        </li> 
+                    </ul>                                    
+                </fieldset> 
+                
+
+                <div class="helpWindow" id="help-2">
+                    <h3>Declarations</h3>
+                    <p>This is a test. This is a help window.</p>
+                </div>                                                                            
+            </li>  
+
+            <li class="small-12 columns securityLogo">
+                <img src="files/images/logos/logo-security.png" width="199" height="39" alt="Security" />
+            </li>             
+
+          </ol>
+        </section>
+        
+        <div class="row column small-collapse">
+          <div class="buttonWell small-12 columns row">
+            <input type="submit" value="Pay now" class="float-right button small-12 columns btnPay" />
+            <a href="#" class="float-right small-7 columns">Back</a>
+          </div>
+        </div>
+      </form>
+
+      <!--Disclaimer-->
+      <div class="disclaimer">
+        <p>Limits, sub limits, exclusions and conditions apply. This is general advice only. The issuer of the travel insurance is Great Lakes Australia (ARBN 127 740 532, ABN 18 964 580 576, AFSL 318603). Please review your own needs and consider the Combined FSG/PDS to decide if this product is right for you.</p>
+      </div>
+      <!--/Disclaimer-->      
+
+    </div>
+    <!--/Outer Wrapper-->
+
+    <!--Footer-->
+    <footer role="contentinfo">
+
+      <ul>
+          <li><a href="#">Product disclosure statement</a></li>
+          <li><a href="#">Terms &amp; conditions</a></li>         
+          <li><a href="#">Privacy policy</a></li>                      
+      </ul>
+
+    </footer>
+    <!--/Footer--> 
+
+    <!--JavaScript Calls--> 
+
+    <!--Library JS-->          
+    <script src="library/jquery-2.2.4.min.js"></script>
+    <script src="library/jquery-ui-1.11.4.min.js"></script>
+    <!--/Library JS-->
+
+    <!--Plugin JS-->          
+    <script src="library/jquery.waypoints.min.js"></script>  
+    <script src="library/sticky.min.js"></script>
+    <script src="library/jquery.qtip.min.js"></script>
+    <script src="library/jquery.placeholder.min.js"></script>                 
+    <!--/Plugin JS--> 
+
+    <!--Application JS-->                                
+    <script src="js/utility.js"></script>
+    <!--/Application JS--> 
+
+    <!--Theme JS-->        
+    <script src="js/payment.js"></script>
+    <!--/Theme JS--> 
+
+    <!--/JavaScript Calls--> 
+
+  </body>
+</html>

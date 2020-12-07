@@ -1,0 +1,40 @@
+/* Begin Datepicker Overrides */
+
+.datepickerHolder { position: relative; width: 100%; margin: 0; }
+
+.calendarDate { display: none; }
+  .calendarDate:before { content: ""; position: absolute; left: calc(50% - 45px); display: inline-block; width: 0; height: 0; margin-top: -22px; border: 8px solid transparent; border-bottom: 10px solid #000; }
+
+.ui-datepicker { position: absolute; z-index: 10; width: 100%; min-width: 272px; max-width: 320px; margin: -5px 0 0; padding: 0 12px 20px; box-shadow: 0 5px 15px 2px rgba(0,0,0,0.12); border: 2px solid #000; border-radius: 3px; }
+
+
+  .ui-datepicker .ui-datepicker-header { height: 47px; padding: 15px 0 0; margin: 0 -12px; background: #000; border: 0; border-radius: 0; color: #fff; }    
+  .ui-datepicker .ui-datepicker-title { margin: 0; padding: 0; font-weight: normal; font-size: 1.0rem; line-height: 1; font-family: "ProximaNova-Extrabld"; }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: transparent none; border: 0; text-align: center; }  
+
+  .ui-datepicker-header .ui-state-hover { background: transparent none; border: 0; }
+  .ui-datepicker a.ui-state-default.ui-state-active, .ui-datepicker a.ui-state-default.ui-state-highlight.ui-state-active, .ui-datepicker a.ui-state-default.ui-state-active.ui-state-hover { background: #000; font-family: "ProximaNova-Extrabld"; color: #fff; }
+  .ui-datepicker a.ui-state-default.ui-state-hover { background: #000; font-family: "ProximaNova-Extrabld"; color: #fff; -webkit-transition: all .15s ease-in; -moz-transition: all .15s ease-in; transition: all .15s ease-in; }
+
+.ui-datepicker table { margin: 15px 0 0; padding: 0; }
+    .ui-datepicker td a, .ui-datepicker td span { display: inline-block; width: 32px; height: 32px; padding-top: 8px; font-family: 'ProximaNova-Light'; color: #000; text-align: center; }
+    .ui-datepicker td a { color: #fff; border-radius: 50%; }    
+  .ui-datepicker th, .ui-datepicker td { padding: 0; font-size: 1.0rem; line-height: 1; text-align: center; }
+  .ui-datepicker th { padding: 8px 0; font-weight: normal; font-family: "ProximaNova-Extrabld"; color: #000; }
+  td.ui-state-disabled { opacity: 1.0; }
+
+
+/* Input Focuses */
+  .datepickerHolder input[type="text"] { background: #fff url(../files/images/backgrounds/bkg-calendar.png) no-repeat !important; background-position: right 12px center !important; background-size: 18px 18px !important; white-space: nowrap; text-overflow: ellipsis; /*cursor: pointer;*/ } 
+
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { width: 2.8em; margin-top: 7px; cursor: pointer; }
+  .ui-datepicker .ui-datepicker-prev { left: 0; top: 0; }
+  .ui-datepicker .ui-datepicker-next { right: 0; top: 0; }
+
+    .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { width: 12px; height: 19px; margin-left: -4px; background-size: 12px 19px !important; }
+    .ui-datepicker .ui-datepicker-next span { margin-top: -7px; }
+  .ui-icon-circle-triangle-e { background: url(../files/images/buttons/btn-calendar-next.png) no-repeat !important; }
+  .ui-icon-circle-triangle-w { background: url(../files/images/buttons/btn-calendar-prev.png) no-repeat !important; }
+  .ui-datepicker .ui-datepicker-prev-hover { left: 0; top: 0; }
+  .ui-datepicker .ui-datepicker-next-hover { right: 0; top: 0; }

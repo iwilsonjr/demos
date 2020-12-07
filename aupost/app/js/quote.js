@@ -1,8 +1,6 @@
 // detect IE
 var IEversion = detectIE();
 
-alert(IEversion);
-
 $(document).ready(function(){
 //Start JQuery Code
 

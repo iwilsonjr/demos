@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 100" style="enable-background:new 0 0 500 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E0E0E0;}
+	.st1{fill:#C0C0C0;}
+</style>
+<title>cancel-cover</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="cancel-cover">
+		<g id="Group">
+			<g id="BG">
+				<rect id="Rectangle-path" class="st0" width="500" height="100"/>
+			</g>
+			<g id="Shadows" transform="translate(226.000000, 29.000000)">
+				<polygon id="Shape" class="st1" points="23.306,0.61 94.047,35.454 165.428,71 61.939,71 0.003,41.812 42.534,40.768 				"/>
+			</g>
+		</g>
+		<path id="Shape_1_" d="M250.816,30.965l19.623,35.999c0.615,1.092,0.605,2.164-0.03,3.216c-0.635,1.072-1.578,1.607-2.829,1.607
+			h-39.274c-1.23,0-2.163-0.536-2.799-1.607c-0.655-1.072-0.675-2.144-0.059-3.216l19.653-35.999
+			c0.277-0.516,0.669-0.932,1.175-1.25s1.067-0.477,1.682-0.477c0.595,0,1.151,0.159,1.668,0.477s0.914,0.734,1.191,1.25H250.816z
+			 M244.891,43.531l0.804,13.458h4.616l0.774-13.458H244.891L244.891,43.531z M248.017,65.805c0.874,0,1.618-0.312,2.233-0.937
+			c0.615-0.625,0.923-1.364,0.923-2.219c0-0.855-0.313-1.589-0.939-2.203c-0.626-0.614-1.365-0.922-2.219-0.923
+			c-0.853-0.001-1.593,0.307-2.219,0.923s-0.939,1.351-0.939,2.203c0,0.852,0.313,1.592,0.939,2.219
+			c0.626,0.627,1.365,0.939,2.219,0.937H248.017z"/>
+	</g>
+</g>
+</svg>

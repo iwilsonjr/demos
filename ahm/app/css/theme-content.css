@@ -1,0 +1,10 @@
+/*
+
+Content Style Sheet - ahm/Cover More
+--------------------------------------------*/
+
+h1 { margin-bottom: 30px; }
+
+	.alerts ul { margin-left: 15px; padding: 0; }
+	.alerts li { margin-bottom: 12px; line-height: 1.4; }
+	.alerts strong, .alerts em { display: block; }

@@ -1,0 +1,455 @@
+<!doctype html>
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+
+<head>
+<title>youGo - Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, initial-scale=1.0" />
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<link type="text/css" rel="stylesheet" href="css/mobile.css" />
+<link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css" />
+<link type="text/css" rel="stylesheet" href="css/theme-home.css" />
+
+</head>
+
+<body class="home">
+ <!--Container-->
+ <div class="container" role="main">
+  <div class="section1" id="section1">  
+   <!--Header-->
+   <header role="banner">
+    <div class="siteHeader">    
+	 
+ 	 <a href="/" class="siteLogo"><img src="files/images/logos/logo-yougo.png" width="414" height="128" alt="youGo Travel Insurance" /></a>                                                 	                               
+     <a href="#" class="navToggle"></a>
+     <nav role="navigation"> 
+      <a href="#content" class="hide">Skip to Content</a> 
+      
+  	  <ul class="siteNavigation">
+<li><a href="#">Why youGo</a></li>
+<li><a href="#">Who Goes</a></li>
+<li><a href="#">Travel&nbsp;Insurance 101</a></li>
+</ul> 
+<ul class="socialMedia">
+<li><a href="#" target="_blank"><img src="files/images/icons/icon-facebook.png" alt="Facebook" width="60" height="30" /></a></li>
+<li><a href="#" target="_blank"><img src="files/images/icons/icon-twitter.png" alt="Twitter" width="60" height="30" /></a></li>
+</li>
+
+
+</ul>
+
+<div class="agentLogin">
+	<a class="loginBtn" href="#"><img src="files/images/icons/icon-agent-login.png" alt="Agent Login" width="212" height="36" /></a>
+	<div class="loginPopup" id="loginPopup">
+		<h2>Agent Login</h2>
+		<form action="#">
+			<div class="contactForm">
+				<ol>
+					<li>
+						<label for="username" class="hide">Username</label>
+						<input type="text" maxlength="20" autocomplete="off" name="username" id="username" placeholder="Username">
+					</li>
+					<li>
+						<label for="password" class="hide">Password</label>
+						<input type="password" class="password" maxlength="35" autocomplete="off" name="password" id="password" placeholder="Password">
+					</li>
+					<li class="alphaLI">
+						<label for="alphaCode" class="hide">Alpha Code</label>
+						<input type="text" class="alphaCode" maxlength="50" autocomplete="off" name="alphaCode" id="alphaCode" placeholder="Alpha Code">
+					</li>
+					<li class="buttonWell">
+						<input type="submit" value="submit">
+					</li>
+				</ol>
+				<div class="clearfix"></div>
+				<p><a href="#">Forgot Password?</a></p>
+				<p><strong>Login Help</strong><br />
+If you don't have a login, or are having trouble with your login details, please 
+call our Customer Service team on <br />
+<strong>1300 72 88 22</strong></p>
+			</div>
+		</form>	                            
+	</div>
+</div>
+
+
+<ul class="utilityNavigation">
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Emergency Assistance</a></li>  
+<li><a href="#">Claims</a></li>                                                     
+ </ul>                                                 	                        
+     </nav> 
+    </div>
+   </header>
+   <!--Header-->
+    
+    
+  <form id="quoteForm" action="#" method="post">
+   <div class="quoteForm" id="content">       
+    <h1>Get Travel Insurance for <span>You</span></h1>         
+    <div class="ageWrapper">
+     <ol class="travellerList">
+      
+       <li>
+        <input type="text" name="travelerAge_1" id="travelerAge_1" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+        <label for="travelerAge_1" class="hide">Age</label>
+        
+       </li>
+      
+       <li class="hide">
+        <input type="text" name="travelerAge_2" id="travelerAge_2" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+        <label for="travelerAge_2" class="hide">Age</label>
+        
+         <a href="#" class="deleteLink hide">-</a>
+        
+       </li>
+      
+       <li class="hide">
+        <input type="text" name="travelerAge_3" id="travelerAge_3" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+        <label for="travelerAge_3" class="hide">Age</label>
+        
+         <a href="#" class="deleteLink hide">-</a>
+        
+       </li>
+      
+       <li class="hide">
+        <input type="text" name="travelerAge_4" id="travelerAge_4" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+        <label for="travelerAge_4" class="hide">Age</label>
+        
+         <a href="#" class="deleteLink hide">-</a>
+        
+       </li>
+      
+       <li class="hide">
+        <input type="text" name="travelerAge_5" id="travelerAge_5" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+        <label for="travelerAge_5" class="hide">Age</label>
+        
+         <a href="#" class="deleteLink hide">-</a>
+        
+       </li>
+      
+       <li class="hide">
+        <input type="text" name="travelerAge_6" id="travelerAge_6" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+        <label for="travelerAge_6" class="hide">Age</label>
+        
+         <a href="#" class="deleteLink hide">-</a>
+        
+       </li>
+                  
+     </ol>
+     <a href="#" class="addLink" id="addTravellerHome">+</a>
+    </div>
+    <ol class="regionSet">
+    <li>
+     <fieldset>
+      <legend class="goTo">Go To</legend>
+      <label for="regionID" class="hide">Destination</label>
+      <select name="regionID" id="regionID">      
+       <option value="">Select Area</option>
+            
+       <option value="155">Worldwide (inc. Americas and Africa)</option>                
+            
+       <option value="156">Europe, Asia and the Middle East</option>                
+            
+       <option value="157">UK and South East Asia</option>                
+            
+       <option value="158">Indonesia, NZ and South West Pacific</option>                
+            
+       <option value="159">Australia</option>                
+       
+      </select>
+      <label for="destinationCountryID" class="hide">Country</label>
+      <select name="destinationCountryID" id="destinationCountryID">
+       <option value="">Select Country</option>       
+       
+      </select>
+     </fieldset>
+    </li>
+    <li>
+     <fieldset>
+      <legend class="when">When</legend>
+      <label for="departureDate" class="hide">Departing</label>
+      <input type="text" name="departureDate" id="departureDate"value="" autocomplete="off" maxlength="8" placeholder="From" readonly />
+                       
+      <label for="returnDate" class="hide">Returning</label>
+      <input type="text" name="returnDate" id="returnDate" value="" autocomplete="off" maxlength="8" placeholder="To" readonly />
+      <div id="calendarDateHome"><a href="#" title="X" class="closeWindow">X</a></div>
+     </fieldset>
+    </li>
+   </ol>
+        
+    <!-- submit -->
+    <input type="submit" id="btnSubmit" value="Go" disabled="disabled" class="disabled" />
+        
+    <div class="priceInfo">
+<p>as low as <span class="price"><span>$</span>20<span>.00<span class="asterisk">*</span></span></span> <span class="perDay">*age 0-29, up to 2 days travel in Indonesia, NZ and S. Pacific, $250 excess</span> | <a href="http://yougotravelinsurance.com.au/files/documents/youGo_PDS_WEB.PDF" target="_blank">View FSG/PDS</a></p>
+<strong>Get Cover. Get Going!</strong></div>
+<p><a class="pdsLink" href="#" target="_blank">View FSG/PDS</a></p>  
+          
+    <div class="hugoContainer">
+     <div class="hugo">
+      <div class="errorMessage"><strong>Whoops!</strong></div>
+     </div>
+    </div>
+   </div>
+      
+  </form>                           
+  
+    
+   <!--Footer-->
+   <div class="siteFooter">
+    
+    <ul class="benefits">
+        <li> <a href="#"><img src="files/images/lists/list-benefits-medical.png" alt="list-benefits-medical" width="144" height="67" /></a>
+          <p>Overseas Medical and Dental</p>
+        </li>
+        <li> <a href="#"><img src="files/images/lists/list-benefits-cancel.png" alt="list-benefits-cancel" width="144" height="67" /></a>
+          <p>Amendment or Cancellation Costs</p>
+        </li>
+        <li> <a href="#"><img src="files/images/lists/list-benefits-luggage.png" alt="list-benefits-luggage" width="144" height="67" /></a>
+          <p>Luggage and Travel Documents</p>
+        </li>
+        <li> <a href="#"><img src="files/images/lists/list-benefits-lost-luggage.png" alt="list-benefits-lost-luggage" width="144" height="67" /></a>
+          <p>Delayed Luggage Allowance</p>
+        </li>
+        <li> <a href="#"><img src="files/images/lists/list-benefits-money.png" alt="list-benefits-money" width="144" height="67" /></a>
+          <p>Money</p>
+        </li>
+        <li> <a href="#"><img src="files/images/lists/list-benefits-delay.png" alt="list-benefits-delay" width="144" height="67" /></a>
+          <p>Travel Delay</p>
+        </li>
+      </ul>                             
+    <a href="#section2" class="scrollToRollLink"> <span class="caps">Scroll to Roll</span> <span class="youGoStyle">YOUGO STYLE</span> <img src="files/images/links/link-scroll-section1.png" width="116" height="64" alt="Scroll to Roll" /></a> </div>    
+    <div class="topGreen"></div>
+    <div class="earth"></div>    
+  </div>
+  <div class="section2" id="section2">
+   <div class="sectionHead">     
+    
+    <a href="/" class="siteLogo"> <img src="files/images/logos/logo-yougo-transparent.png" width="82" height="40" alt="youGo" /></a> <ul class="siteNavigation">
+<li><a href="http://yougotravelinsurance.com.au/content/18/en/why-choose-yougo-travel-insurance">Why youGo</a></li>
+<li><a href="http://yougotravelinsurance.com.au/content/19/en/who-goes-with-yougo-travel-insurance">Who Goes</a></li>
+<li><a href="http://yougotravelinsurance.com.au/content/20/en/travel-tips">Travel&nbsp;Insurance 101</a></li>
+</ul> <ul class="socialMedia"><!--   <li><a href="#"><img src="files/images/icons/icon-pinterest.png" width="60" height="30" alt="Pinterest" /></a></li>-->
+<li><a href="https://www.facebook.com/pages/YouGo-Travel-Insurance/504199386358456" target="_blank"><img src="files/images/icons/icon-facebook.png" alt="Facebook" width="60" height="30" /></a></li>
+<li><a href="https://twitter.com/yougotravelins" target="_blank"><img src="files/images/icons/icon-twitter.png" alt="Twitter" width="60" height="30" /></a></li>
+<!--<li><a href="#"><img src="files/images/icons/icon-googleplus.png" width="60" height="30" alt="Google Plus" /></a></li>--></ul> <ul class="utilityNavigation">
+<li><a href="http://yougotravelinsurance.com.au/content/25/en/contact-yougo-travel-insurance">Contact Us</a></li>
+<li><a href="http://yougotravelinsurance.com.au/content/29/en/emergency-assistance">Emergency Assistance</a></li>  
+<li><a href="http://yougotravelinsurance.com.au/content/26/en/file-a-travel-insurance-claim">Claims</a></li>                                                     
+ </ul>                                                 	                                              
+   </div>
+   <div class="sectionContent">
+    
+    <h2>Unlucky You</h2> <div class="addonContent">
+<p>Travelling can be full of surprises. What if you, your stuff, or your trip suddenly hit an unlucky patch? Find out how some common misfortune could impact your trip by clicking these unlucky travel situations.</p>
+<form action="#" method="post">
+<div class="addonList"><fieldset class="adventure"><legend>Broke leg paragliding</legend>
+<ul class="brokeLeg">
+<li><label for="cover-0">Yes<input id="cover-0" type="radio" name="cover" value="yes" /></label></li>
+<li><label for="cover-1">No<input id="cover-1" type="radio" name="cover" value="no" /></label></li>
+</ul>
+</fieldset><fieldset class="youGlobal"><legend>Allergic reaction to sushi</legend>
+<ul class="allergicReaction">
+<li><label for="sim-0">Yes<input id="sim-0" type="radio" name="sim" value="yes" /></label></li>
+<li><label for="sim-1">No<input id="sim-1" type="radio" name="sim" value="no" /></label></li>
+</ul>
+</fieldset><fieldset class="goLounge"><legend>Attacked by<br /> a shark!</legend>
+<ul class="shark">
+<li><label for="pass-0">Yes<input id="pass-0" type="radio" name="pass" value="yes" /></label></li>
+<li><label for="pass-1">No<input id="pass-1" type="radio" name="pass" value="no" /></label></li>
+</ul>
+</fieldset></div>
+<div class="hugoBlock"><img class="hugo-0 showThisHugo" src="files/images/content/section2/hugo-0.jpg" alt="" /> <img class="hugo-1" src="files/images/content/section2/hugo-1.jpg" alt="" /> <img class="hugo-2" src="files/images/content/section2/hugo-2.jpg" alt="" /> <img class="hugo-3" src="files/images/content/section2/hugo-3.jpg" alt="" /> <img class="hugo-4" src="files/images/content/section2/hugo-4.jpg" alt="" /> <img class="hugo-5" src="files/images/content/section2/hugo-5.jpg" alt="" /> <img class="hugo-6" src="files/images/content/section2/hugo-6.jpg" alt="" /> <img class="hugo-7" src="files/images/content/section2/hugo-7.jpg" alt="" /></div>
+</form>
+
+</div>                                               
+   </div>
+   <a href="#section3" class="scrollToRollLink"> <img src="files/images/links/link-scroll-section2.png" width="116" height="64" alt="Scroll to Roll" /></a> </div>
+   <div class="section3" id="section3">
+    <div class="sectionHead">   
+     
+     <a href="/" class="siteLogo"> <img src="files/images/logos/logo-yougo-transparent.png" width="82" height="40" alt="youGo" /></a> 
+    
+     <ul class="siteNavigation">
+<li><a href="#">Why youGo</a></li>
+<li><a href="#">Who Goes</a></li>
+<li><a href="#">Travel&nbsp;Insurance 101</a></li>
+</ul> <ul class="socialMedia">
+<li><a href="# target="_blank"><img src="files/images/icons/icon-facebook.png" alt="Facebook" width="60" height="30" /></a></li>
+<li><a href="#" target="_blank"><img src="files/images/icons/icon-twitter.png" alt="Twitter" width="60" height="30" /></a></li>
+</ul> 
+
+<ul class="utilityNavigation">
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Emergency Assistance</a></li>  
+<li><a href="#">Claims</a></li>                                                     
+ </ul>                                                 	                                                
+    </div>
+    <div class="sectionContent">
+     
+     <h2>Unlucky You</h2> <div class="addonContent2"><form action="#" method="post">
+<div class="addonList"><fieldset class="walletSet"><legend>Your fancy new travel wallet was stolen</legend>
+<ul class="walletStolen">
+<li><label for="wallet2-0">Yes<input id="wallet2-0" type="radio" name="wallet2" value="yes" /></label></li>
+<li><label for="wallet2-1">No<input id="wallet2-1" type="radio" name="wallet2" value="no" /></label></li>
+</ul>
+</fieldset><fieldset class="adventure2"><legend>Your luggage, and all its embarrassing contents, were lost</legend>
+<ul class="lostLuggage">
+<li><label for="cover2-0">Yes<input id="cover2-0" type="radio" name="cover2" value="yes" /></label></li>
+<li><label for="cover2-1">No<input id="cover2-1" type="radio" name="cover2" value="no" /></label></li>
+</ul>
+</fieldset><fieldset class="youGlobal2"><legend>Your flight is delayed<br> by severe weather.</legend>
+<ul class="pilotLate">
+<li><label for="sim2-0">Yes<input id="sim2-0" type="radio" name="sim2" value="yes" /></label></li>
+<li><label for="sim2-1">No<input id="sim2-1" type="radio" name="sim2" value="no" /></label></li>
+</ul>
+</fieldset><fieldset class="goLounge2"><legend>Your bus was hijacked by a crazed football hooligan</legend>
+<ul class="busHijacked">
+<li><label for="pass2-0">Yes<input id="pass2-0" type="radio" name="pass2" value="yes" /></label></li>
+<li><label for="pass2-1">No<input id="pass2-1" type="radio" name="pass2" value="no" /></label></li>
+</ul>
+</fieldset></div>
+<div class="hugoBlock2"><img class="hugo2-0 showThisHugo" src="files/images/content/section3/hugo-0.jpg" alt="" /> <img class="hugo2-1" src="files/images/content/section3/hugo-1.jpg" alt="" /> <img class="hugo2-2" src="files/images/content/section3/hugo-2.jpg" alt="" /> <img class="hugo2-3" src="files/images/content/section3/hugo-3.jpg" alt="" /> <img class="hugo2-4" src="files/images/content/section3/hugo-4.jpg" alt="" /> <img class="hugo2-5" src="files/images/content/section3/hugo-5.jpg" alt="" /> <img class="hugo2-6" src="files/images/content/section3/hugo-6.jpg" alt="" /> <img class="hugo2-7" src="files/images/content/section3/hugo-7.jpg" alt="" /> <img class="hugo2-8" src="files/images/content/section3/hugo-8.jpg" alt="" /> <img class="hugo2-9" src="files/images/content/section3/hugo-9.jpg" alt="" /> <img class="hugo2-10" src="files/images/content/section3/hugo-10.jpg" alt="" /> <img class="hugo2-11" src="files/images/content/section3/hugo-11.jpg" alt="" /> <img class="hugo2-12" src="files/images/content/section3/hugo-12.jpg" alt="" /> <img class="hugo2-13" src="files/images/content/section3/hugo-13.jpg" alt="" /> <img class="hugo2-14" src="files/images/content/section3/hugo-14.jpg" alt="" /> <img class="hugo2-15" src="files/images/content/section3/hugo-15.jpg" alt="" /></div>
+</form>
+
+</div>                                                  
+    </div>
+    <a href="#section4" class="scrollToRollLink"> <img src="files/images/links/link-scroll-section3.png" width="116" height="64" alt="Scroll to Roll" /></a>
+   </div>
+   <div class="section4" id="section4">
+    <div class="sectionHead">   
+	 
+ 	 <a href="/" class="siteLogo"> <img src="files/images/logos/logo-yougo-transparent.png" width="82" height="40" alt="youGo" /></a> <ul class="siteNavigation">
+<li><a href="#">Why youGo</a></li>
+<li><a href="#">Who Goes</a></li>
+<li><a href="#">Travel&nbsp;Insurance 101</a></li>
+</ul> <ul class="socialMedia">
+<li><a href="#" target="_blank"><img src="files/images/icons/icon-facebook.png" alt="Facebook" width="60" height="30" /></a></li>
+<li><a href="#" target="_blank"><img src="files/images/icons/icon-twitter.png" alt="Twitter" width="60" height="30" /></a></li>
+</ul> 
+<ul class="utilityNavigation">
+<li><a href="http://yougotravelinsurance.com.au/content/25/en/contact-yougo-travel-insurance">Contact Us</a></li>
+<li><a href="http://yougotravelinsurance.com.au/content/29/en/emergency-assistance">Emergency Assistance</a></li>  
+<li><a href="http://yougotravelinsurance.com.au/content/26/en/file-a-travel-insurance-claim">Claims</a></li>                                                     
+ </ul>                                                 	                                                
+    </div>
+    <div class="hugoBeach"></div>
+    <div class="sectionContent">
+     
+     <p>Your unlucky travel situations could cause some serious financial stress. Fortunately, there's youGo Travel Insurance. A youGo policy won't give you the luck of the Irish, but you can travel with peace of mind knowing that potential travel surprises may be covered.</p>
+      <h2>Lucky You!</h2> <h3>Get a quote below</h3>                                      
+    </div>     
+    <!-- Footer Widget -->
+    
+   <div class="widgetErrorBox">
+     <p>&nbsp;</p>
+		
+     </div> 
+  <div class="footerWidget">
+  <form id="footerQuoteForm" action="" method="post">
+        <div class="quoteForm"> <strong>Get Travel Insurance for You:</strong>
+          <div class="ageWrapper">
+            <ol class="travellerList">
+              <li>
+                <input type="text" name="f_travelerAge_1" id="f_travelerAge_1" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+                <label for="f_travelerAge_1" class="hide">Age</label>
+              </li>
+              <li class="hide">
+                <input type="text" name="f_travelerAge_2" id="f_travelerAge_2" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+                <label for="f_travelerAge_2" class="hide">Age</label>
+                <a href="#" class="deleteLink hide">-</a> </li>
+              <li class="hide">
+                <input type="text" name="f_travelerAge_3" id="f_travelerAge_3" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+                <label for="f_travelerAge_3" class="hide">Age</label>
+                <a href="#" class="deleteLink hide">-</a> </li>
+              <li class="hide">
+                <input type="text" name="f_travelerAge_4" id="f_travelerAge_4" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+                <label for="f_travelerAge_4" class="hide">Age</label>
+                <a href="#" class="deleteLink hide">-</a> </li>
+              <li class="hide">
+                <input type="text" name="f_travelerAge_5" id="f_travelerAge_5" value="" placeholder="Age" autocomplete="off"  pattern="[0-9]*" />
+                <label for="f_travelerAge_5" class="hide">Age</label>
+                <a href="#" class="deleteLink hide">-</a> </li>
+              <li class="hide">
+                <input type="text" name="f_travelerAge_6" id="f_travelerAge_6" value="" placeholder="Age" autocomplete="off" pattern="[0-9]*" />
+                <label for="f_travelerAge_6" class="hide">Age</label>
+                <a href="#" class="deleteLink hide">-</a> </li>
+            </ol>
+            <a href="#" class="addLink" id="addTraveller">+</a> </div>
+          <fieldset>
+            <legend class="goTo">Go To</legend>
+            <input class="selectedCountry" type="text" name="f_selectedCountry" id="f_selectedCountry" value="" placeholder="Select" readonly />
+          </fieldset>
+          <div class="regionPopup hide">
+            <ol class="regionSet">
+              <li>
+                <fieldset>
+                  <label for="f_regionID" class="hide">Destination</label>
+                  <select name="f_regionID" id="f_regionID">
+                    <option value="">Select Region</option>
+                           
+                    <option value="155">Worldwide (inc. Americas and Africa)</option>              
+                           
+                    <option value="156">Europe, Asia and the Middle East</option>              
+                           
+                    <option value="157">UK and South East Asia</option>              
+                           
+                    <option value="158">Indonesia, NZ and South West Pacific</option>              
+                           
+                    <option value="159">Australia</option>              
+                    
+                  </select>
+                  <label for="f_destinationCountryID" class="hide">Country</label>
+                  <select name="f_destinationCountryID" id="f_destinationCountryID" disabled>
+                    <option value="">Select Country</option>
+                  </select>
+                </fieldset>
+              </li>
+            </ol>
+          </div>
+          <ol class="dateList">
+            <li>
+              <fieldset>
+                <legend class="when">When</legend>
+                <label for="f_departureDate" class="hide">Departing</label>
+                <input type="text" name="f_departureDate" id="f_departureDate" value="" placeholder="From" autocomplete="off" maxlength="10" readonly />
+                <label for="f_returnDate" class="hide">Returning</label>
+                <input type="text" name="f_returnDate" id="f_returnDate" value="" placeholder="To" autocomplete="off" maxlength="10" readonly />
+              </fieldset>
+            </li>
+          </ol>
+          
+          <!-- submit -->
+          <input type="submit" id="submitForm" value="Go" />  
+        </div>
+      </form> 
+      
+      
+ 	 <div class="disclaimer">
+<p>Limits, exclusions and conditions apply.<br /> <a href="#" target="_blank">Privacy Policy</a></p>
+<p>This product is issued by Great Lakes Reinsurance (UK) PLC (ARBN 127 740 532, ABN 18 964 580 576, AFSL 318603), trading as &ldquo;Great Lakes Australia&rdquo;. This is general advice only. Please consider your own needs, financial situation and objectives and read the <a href="#" target="_blank">Combined FSG/PDS</a> before deciding to buy this insurance.</p>
+</div>                                                 	                              
+    
+      </div>
+     
+           
+    <!-- /Footer Widget -->     
+   </div>  
+   <!--User Content-->   
+  </div>
+  <!--Container-->  
+  <!--JavaScript Calls-->
+  <script src="library/jquery-1.10.2.min.js" type="text/javascript"></script> 
+<script src="library/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script> 
+<script src="library/selectivizr-min.js" type="text/javascript"></script>
+<script src="library/jquery.placeholder.js" type="text/javascript"></script>
+<script src="library/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="js/home.js" type="text/javascript"></script>
+<script src="js/tripdetails.js" type="text/javascript"></script> 
+<!--JavaScript Calls-->
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!doctype html>
+
+    <!--[if IE 9 ]> <html class="no-js" lang="en" dir="ltr" class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+
+    <head>
+        <title>ahm Quote - Trip Details</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Library CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui-1.11.4.min.css" />
+        <!--/Library CSS-->
+
+        <!--Plugin CSS-->
+        <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+        <!--/Plugin CSS-->        
+
+        <!--Application CSS-->
+        <link type="text/css" rel="stylesheet" href="css/foundation.css">        
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/datepicker.css" />        
+        <!--<link type="text/css" rel="stylesheet" href="css/print.css" media="print" />-->
+        <!--/Application CSS-->
+
+        <!--Theme CSS-->
+        <link type="text/css" rel="stylesheet" href="css/theme-quote.css" />
+        <!--/Theme CSS-->
+        
+        <!-- Modernizr -->
+        <script src="library/modernizr-custom.min.js"></script>
+        <!-- /Modernizr -->
+    </head>
+
+  <body>
+
+  <!--Header-->
+  <header role="banner">
+    <div class="siteHeader"> 
+    
+      <a href="#" class="siteLogo"><img src="files/images/logos/logo-ahm.svg" width="82" height="52" alt="ahm by Medibank" /></a>
+
+      <p class="support"><a href="#">0000 000 000</a></p>
+
+    </div>
+  </header>
+  <!--/Header-->
+
+    <!--Outer Wrapper-->
+    <div class="outerWrapper">
+
+      <h1>travel insurance</h1>
+
+      <!--Site Navigation-->
+      <div class="navWrapper row">
+        <nav class="small-12 columns" role="navigation"> 
+
+          <a href="#content" class="hide">Skip to Content</a>
+          
+          <ol class="siteNavigation">                    
+            <li class="selected"><em>1 <span class="show-for-large">Trip details</span></em></li> 
+            <li><span>2 <span class="show-for-large">Cover options</span><span></li>   
+            <li><span>3 <span class="show-for-large">Travellers</span><span></li>   
+            <li><span>4 <span class="show-for-large">Payment</span><span></li>                   
+          </ol>
+
+        </nav>
+      </div>
+      <!--/Site Navigation-->
+
+      <form action="#">
+        <section class="purchaseForm small-12 columns">
+	        <h2>Trip details</h2>
+          <ol class="purchaseList row small-collapse medium-uncollapse">
+            <li class="small-12 columns">                            
+
+              <!--Where-->
+              <fieldset class="quoteWhere">
+                <legend>Where is your trip? <a href="#help-1" class="help"><img src="files/images/links/link-help.svg" width="14" height="14" alt="Help(?) - Where is your trip?" /></a></legend>    
+
+                <!--Popular Destinations-->
+                <div id="popular" class="popular">
+
+                  <strong>Popular Destinations</strong>
+                  <ul>
+                    <li><a href="#United%20States%20of%20America">United States of America</a></li>
+                    <li><a href="#Japan">Japan</a></li>
+                    <li><a href="#France">France</a></li>  
+                    <li><a href="#Fiji">Fiji</a></li> 
+                    <li><a href="#South%20West%20Pacific%20Cruise">South West Pacific Cruise</a></li>
+                    <li><a href="#England">England</a></li>    
+                    <li><a href="#Australia%20(Domestic%20Cruise)">Australia (Domestic Cruise)</a></li>                                 
+                  </ul>
+ 
+                </div>
+
+                <p class="selectRegion" id="selectRegion"><em>Not sure?</em> <a href="#countryDisplay">See region list</a></p>                  
+                
+                <!--Country Inputs-->                 
+                <input type="text" name="country" id="country" value="" class="country" placeholder="What country are you spending the most time in?" autocomplete="off" tabindex="0" />
+                <!--/Country Inputs--> 
+
+                <!--Auto Complete-->  
+                <div id="autoCountry" class="autoCountry"></div>
+                <!--Auto Complete-->
+
+                <div class="helpWindow show-for-sr" id="help-1">
+
+                    <h3>Where are you going?</h3>
+                    <p>Areas of travel</p>
+                    <p>We need You to tell us your destination(s). Where You travel will influence Your premium.</p>
+                    <ul>
+                        <li>Enter or select every country You will be travelling to wherever possible.</li>
+                        <li>For each country You select, covered for travel to all other countries within that region is also included regardless of whether the countries are selected or not.</li>
+                    </ul>
+
+                    <p>Stopping over somewhere?</p>
+                    <ul><li>If You are stopping in a country for less than 72 hours, You do not need to enter or select that country.</li></ul>
+
+                    <p>What to do if You do not know every single country You will be travelling to</p>
+                    <ul><li>If You are not sure of all Your destinations, select a region instead – cover then applies for travel to all countries within that region.  You can also select Worldwide.</li></ul>
+
+                    <p>If you have any questions please call us on 1300 72 88 22.</p>
+
+                </div>                        
+                
+                <button type="button" class="countrySelector" id="selector">Select Region/Country from List</button> <!--Country Selector Button--> 
+
+                <!--Country Display-->
+                <div class="ui-countryselector" hidden="hidden" id="countryDisplay">
+
+                    <h3>Region list</h3>
+                
+                    <div class="groups-container" id="groups-container">
+
+                    <!--Australia-->                                     
+                      <fieldset class="group">
+                        <legend>Region - Australia</legend>
+
+                        <input type="radio" name="findRegion" id="region-123" value="120"><label class="group-label region-1" for="region-123"><strong>Australia</strong></label> <!--checked="checked"-->
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-60" value="60"><label for="country-60">Australia</label></li>   
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-601" value="601"><label for="country-601">Domestic Cruise</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-60180" value="60180"><label for="country-60180">Australia Inbound</label></li>
+                          </ul>
+                        </div>
+
+                      </fieldset>
+                    <!--Australia-->                          
+
+                    <!--Africa-->
+                      <fieldset class="group">
+                        <legend>Region - Africa</legend>
+
+                        <input type="radio" name="findRegion" id="region-115" value="115"><label for="region-115" class="group-label region-2"><strong>Africa</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-1180" value="1180"><label for="country-1180">All of Africa</label></li>                            
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-11" value="11"><label for="country-11">Algeria</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-63" value="63"><label for="country-63">Angola</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-68" value="68"><label for="country-68">Benin</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-70" value="70"><label for="country-70">Botswana</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-72" value="72"><label for="country-72">Burkina Faso</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-73" value="73"><label for="country-73">Burundi</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-75" value="75"><label for="country-75">Cameroon</label></li>
+
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-246" value="246"><label for="country-246">Cape Verde</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-77" value="77"><label for="country-77">Central African Republic</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-78" value="78"><label for="country-78">Chad</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-286" value="286"><label for="country-286">Congo, Democratic Republic</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-87" value="87"><label for="country-87">Djibouti</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-89" value="89"><label for="country-89">Equatorial Guinea</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-90" value="90"><label for="country-90">Eritrea</label></li> 
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-91" value="91"><label for="country-91">Ethiopia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-93" value="93"><label for="country-93">Gabon</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-94" value="94"><label for="country-94">Gambia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-95" value="95"><label for="country-95">Ghana</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-97" value="97"><label for="country-97">Guinea</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-98" value="98"><label for="country-98">Guinea-Bissau</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-250" value="250"><label for="country-250">Ivory Coast</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-105" value="105"><label for="country-105">Jordan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-32" value="32"><label for="country-32">Kazakhstan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-106" value="106"><label for="country-106">Kenya</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-113" value="113"><label for="country-113">Lesotho</label></li>
+                          </ul>
+
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-114" value="114"><label for="country-114">Liberia</label></li>      
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-115" value="115"><label for="country-115">Libya</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-117" value="117"><label for="country-117">Madagascar</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-118" value="118"><label for="country-118">Malawi</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-120" value="120"><label for="country-120">Maldives</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-121" value="121"><label for="country-121">Mali</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-122" value="122"><label for="country-122">Mauritania</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-123" value="123"><label for="country-123">Mauritius</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-40" value="40"><label for="country-40">Morocco</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-127" value="127"><label for="country-127">Mozambique</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-129" value="129"><label for="country-129">Namibia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-133" value="133"><label for="country-133">Niger</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-134" value="134"><label for="country-134">Nigeria</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-147" value="147"><label for="country-147">Rwanda</label></li>        
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-151" value="151"><label for="country-151">Senegal</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-152" value="152"><label for="country-152">Seychelles</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-153" value="153"><label for="country-153">Sierra Leone</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-156" value="156"><label for="country-156">Somalia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-159" value="159"><label for="country-159">Sudan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-161" value="161"><label for="country-161">Swaziland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-165" value="165"><label for="country-165">Tanzania</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-167" value="167"><label for="country-167">Togo</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-53" value="53"><label for="country-53">Tunisia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-171" value="171"><label for="country-171">Uganda</label></li>
+
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-179" value="179"><label for="country-179">Zambia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-180" value="180"><label for="country-180">Zimbabwe</label></li>
+                          </ul>
+                        </div>
+
+                      </fieldset>                              
+                    <!--Africa-->
+
+                    <!--Americas-->
+                      <fieldset class="group">
+                        <legend>Region - Americas</legend>
+
+                        <input type="radio" name="findRegion" id="region-116" value="116"><label for="region-116" class="group-label region-3"><strong>Americas</strong></label> 
+
+                        <div class="columns">
+
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-18480" value="18480"><label for="country-18480">All of Americas</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-184" value="184"><label for="country-184">Argentina</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-187" value="187"><label for="country-187">Bahamas</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-189" value="189"><label for="country-189">Barbados</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-190" value="190"><label for="country-190">Belize</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-191" value="191"><label for="country-191">Bermuda</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-192" value="192"><label for="country-192">Bolivia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-193" value="193"><label for="country-193">Brazil</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-194" value="194"><label for="country-194">Canada</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-195" value="195"><label for="country-195">Cayman Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-196" value="196"><label for="country-196">Chile</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-197" value="197"><label for="country-197">Colombia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-82" value="82"><label for="country-82">Comoros</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-198" value="198"><label for="country-198">Costa Rica</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-199" value="199"><label for="country-199">Cuba</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-200" value="200"><label for="country-200">Dominica</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-249" value="249"><label for="country-249">Dominican Rep.</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-202" value="202"><label for="country-202">Ecuador</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-203" value="203"><label for="country-203">El Salvador</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-204" value="204"><label for="country-204">Falkland Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-206" value="206"><label for="country-206">French Guiana</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-208" value="208"><label for="country-208">Greenland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-209" value="209"><label for="country-209">Grenada</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-210" value="210"><label for="country-210">Guadeloupe</label></li>
+                          </ul>
+
+                          <ul class="column">
+
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-211" value="211"><label for="country-211">Guatemala</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-212" value="212"><label for="country-212">Guyana</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-213" value="213"><label for="country-213">Haiti</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-214" value="214"><label for="country-214">Honduras</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-215" value="215"><label for="country-215">Jamaica</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-217" value="217"><label for="country-217">Martinique</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-218" value="218"><label for="country-218">Mexico</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-223" value="223"><label for="country-223">Netherlands Antilles</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-224" value="224"><label for="country-224">Nicaragua</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-255" value="255"><label for="country-255">Northern Marianas</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-225" value="225"><label for="country-225">Panama</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-226" value="226"><label for="country-226">Paraguay</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-227" value="227"><label for="country-227">Peru</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-144" value="144"><label for="country-144">Puerto Rico</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-149" value="149"><label for="country-149">Sao Tome And Principe</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-277" value="277"><label for="country-277">St. Kitts-Nevis</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-230" value="230"><label for="country-230">St. Lucia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-278" value="278"><label for="country-278">St. Vincent &amp; Grenadines</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-233" value="233"><label for="country-233">Suriname</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-279" value="279"><label for="country-279">Trinidad &amp; Tobago</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-236" value="236"><label for="country-236">United States of America</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-237" value="237"><label for="country-237">Uruguay</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-238" value="238"><label for="country-238">Venezuela</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-280" value="280"><label for="country-280">Virgin Islands</label></li>
+                          </ul>    
+
+                        </div>
+                        
+                      </fieldset>
+                    <!--Americas--> 
+
+                    <!--Asia--> 
+                      <fieldset class="group">
+                        <legend>Region - Asia</legend>
+
+                        <input type="radio" name="findRegion" id="region-117" value="117"><label for="region-117" class="group-label region-4"><strong>Asia</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-10480" value="10480"><label for="country-10480">All of Asia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-104" value="104"><label for="country-104">Japan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-71" value="71"><label for="country-71">Brunei</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-74" value="74"><label for="country-74">Cambodia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-88" value="88"><label for="country-88">East Timor</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-274" value="274"><label for="country-274">Federated States of Micronesia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-99" value="99"><label for="country-99">Hong Kong</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-101" value="101"><label for="country-101">Indonesia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-253" value="253"><label for="country-253">Laos</label></li>
+                          </ul>
+
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-119" value="119"><label for="country-119">Malaysia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-216" value="216"><label for="country-216">Marshall Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-219" value="219"><label for="country-219">Micronesia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-254" value="254"><label for="country-254">Myanmar (Burma)</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-141" value="141"><label for="country-141">Palau</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-143" value="143"><label for="country-143">Philippines</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-154" value="154"><label for="country-154">Singapore</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-166" value="166"><label for="country-166">Thailand</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-257" value="257"><label for="country-257">Vietnam</label></li>
+                          </ul>
+                        </div>
+
+                      </fieldset>
+                    <!--Asia--> 
+
+                    <!--Europe-->                                     
+                      <fieldset class="group">
+                        <legend>Region - Europe</legend>
+
+                        <input type="radio" name="findRegion" id="region-118" value="118"><label for="region-118" class="group-label region-5"><strong>Europe</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-1080" value="1080"><label for="country-1080">All of Europe</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-10" value="10"><label for="country-10">Albania</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-12" value="12"><label for="country-12">Andorra</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-13" value="13"><label for="country-13">Austria</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-245" value="245"><label for="country-245">Azores</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-14" value="14"><label for="country-14">Belarus</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-15" value="15"><label for="country-15">Belgium</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-282" value="282"><label for="country-282">Bosnia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-17" value="17"><label for="country-17">Bulgaria</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-283" value="283"><label for="country-283">Canary Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-246" value="246"><label for="country-246">Cape Verde</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-18" value="18"><label for="country-18">Croatia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-55" value="55"><label for="country-55">Cyprus</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-19" value="19"><label for="country-19">Czech Republic</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-20" value="20"><label for="country-20">Denmark</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-22" value="22"><label for="country-22">Estonia</label></li>      
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-205" value="205"><label for="country-205">Faroe Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-23" value="23"><label for="country-23">Finland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-24" value="24"><label for="country-24">France</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-26" value="26"><label for="country-26">Germany</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-27" value="27"><label for="country-27">Gibraltar</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-56" value="56"><label for="country-56">Greece</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-262" value="262"><label for="country-262">Herzegovina</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-28" value="28"><label for="country-28">Hungary</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-29" value="29"><label for="country-29">Iceland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-287" value="287"><label for="country-287">Ireland, Republic</label></li>                            
+                          </ul>
+
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-31" value="31"><label for="country-31">Italy</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-33" value="33"><label for="country-33">Latvia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-34" value="34"><label for="country-34">Liechtenstein</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-35" value="35"><label for="country-35">Lithuania</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-36" value="36"><label for="country-36">Luxembourg</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-37" value="37"><label for="country-37">Macedonia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-57" value="57"><label for="country-57">Malta</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-267" value="267"><label for="country-267">Moldova</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-221" value="221"><label for="country-221">Monaco</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-268" value="268"><label for="country-268">Montenegro</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-41" value="41"><label for="country-41">Netherlands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-42" value="42"><label for="country-42">Norway</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-43" value="43"><label for="country-43">Poland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-44" value="44"><label for="country-44">Portugal</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-45" value="45"><label for="country-45">Romania</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-270" value="270"><label for="country-270">Russia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-47" value="47"><label for="country-47">San Marino</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-271" value="271"><label for="country-271">Serbia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-49" value="49"><label for="country-49">Slovakia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-50" value="50"><label for="country-50">Slovenia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-58" value="58"><label for="country-58">Spain</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-51" value="51"><label for="country-51">Sweden</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-52" value="52"><label for="country-52">Switzerland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-54" value="54"><label for="country-54">Ukraine</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-273" value="273"><label for="country-273">Vatican City</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-1b" value="1b"><label for="country-1b">England</label></li>
+                          </ul>
+                        </div>
+                            
+                      </fieldset>
+                    <!--Europe--> 
+
+
+                    <!--Australia-->                                     
+                      <fieldset class="group">
+                        <legend>Region - Middle East</legend>
+
+                        <input type="radio" name="findRegion" id="region-119" value="119"><label for="region-119" class="group-label region-6"><strong>Middle East</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-6280" value="6280"><label for="country-6280">All of Middle East</label></li>                            
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-62" value="62"><label for="country-62">Afghanistan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-65" value="65"><label for="country-65">Armenia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-66" value="66"><label for="country-66">Azerbaijan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-67" value="67"><label for="country-67">Bahrain</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-25" value="25"><label for="country-25">Georgia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-102" value="102"><label for="country-102">Iran</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-103" value="103"><label for="country-103">Iraq</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-30" value="30"><label for="country-30">Israel</label></li>
+                          </ul>
+
+                          <ul class="column">
+
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-105" value="105"><label for="country-105">Jordan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-112" value="112"><label for="country-112">Lebanon</label></li>      
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-139" value="139"><label for="country-139">Oman</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-140" value="140"><label for="country-140">Pakistan</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-150" value="150"><label for="country-150">Saudi Arabia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-162" value="162"><label for="country-162">Syria</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-59" value="59"><label for="country-59">Turkey</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-172" value="172"><label for="country-172">United Arab Emirates</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-178" value="178"><label for="country-178">Yemen</label></li>
+                          </ul>
+                        </div>
+
+                      </fieldset>
+                    <!--Australia--> 
+
+                    <!--Pacific-->                                     
+                      <fieldset class="group">
+                        <legend>Region - Pacific</legend>
+
+                        <input type="radio" name="findRegion" id="region-120" value="121"><label for="region-120" class="group-label region-7"><strong>Pacific</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-18180" value="18180"><label for="country-18180">All of Pacific</label></li>                            
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-181" value="181"><label for="country-181">American Samoa</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-85" value="85"><label for="country-85">Cook Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-92" value="92"><label for="country-92">Fiji</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-207" value="207"><label for="country-207">French Polynesia</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-130" value="130"><label for="country-130">Nauru</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-132" value="132"><label for="country-132">New Caledonia</label></li>
+
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-61" value="61"><label for="country-61">New Zealand</label></li>                            
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-136" value="136"><label for="country-136">Norfolk Island</label></li>
+                          </ul>
+
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-142" value="142"><label for="country-142">Papua New Guinea</label></li>                            
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-148" value="148"><label for="country-148">Samoa</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-155" value="155"><label for="country-155">Solomon Islands</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-301" value="301"><label for="country-301">Tahiti</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-168" value="168"><label for="country-168">Tonga</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-170" value="170"><label for="country-170">Tuvalu</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-174" value="174"><label for="country-174">Vanuatu</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-260" value="260"><label for="country-260">Western Samoa</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-2604" value="2604"><label for="country-2604">South West Pacific Cruise</label></li>                            
+                          </ul>
+                        </div>
+
+                      </fieldset>
+                    <!--Pacific--> 
+
+                    <!--UK-->                                     
+                      <fieldset class="group">
+                        <legend>Region - UK</legend>
+
+                        <input type="radio" name="findRegion" id="region-121" value="122"><label for="region-121" class="group-label region-8"><strong>UK</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-1380" value="1380"><label for="country-1380">All of UK</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-1" value="1"><label for="country-1">England</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-5" value="5"><label for="country-5">Wales</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-4" value="4"><label for="country-4">United Kingdom</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-2" value="2"><label for="country-2">Northern Ireland</label></li>
+                            <li class="dCountry"><input type="radio" name="findCountry" id="country-3" value="3"><label for="country-3">Scotland</label></li>                                                                                  
+                          </ul>
+                        </div>
+
+                      </fieldset>
+                    <!--UK-->     
+
+                    <!--Worldwide-->                                     
+                      <fieldset class="group">
+                        <legend>Region - Worldwide</legend>
+
+                        <input type="radio" name="findRegion" id="region-122" value="123"><label for="region-122" class="group-label region-9"><strong>Worldwide</strong></label>
+
+                        <div class="columns">
+                          <ul class="column">
+                              <li><input type="radio" name="findCountry" id="country-24280" value="24280"><label for="country-24280">Anywhere in the world</label></li>
+                              <li><input type="radio" name="findCountry" id="country-242" value="242"><label for="country-242">Antarctica (Cruising)</label></li>
+                              <li><input type="radio" name="findCountry" id="country-2428" value="2428"><label for="country-2428">Antarctica-Sightseeing Flight</label></li>
+                                <li class="dCountry"><input type="radio" name="findCountry" id="country-1a" value="1a"><label for="country-1a">England</label></li>                                                                                
+                          </ul>
+                        </div>
+
+                      </fieldset>
+                    <!--Worldwide-->                                                                                                    
+
+                    </div>  
+                
+                </div>
+                <!--Country Display-->
+
+              </fieldset>
+              <!--/Where-->
+
+            </li>                                                    
+            <li class="small-12 columns">
+
+              <fieldset class="datepickerHolder">
+                <legend>When is your trip? <a href="#help-2" class="help"><img src="files/images/links/link-help.svg" width="14" height="14" alt="Help(?) - When is your trip?" /></a></legend>  
+                
+                <ul>
+                  <li>
+                    <label for="departureDate" class="show-for-sr">Departure Date</label>
+                    <input type="text" name="departureDate" id="departureDate" value="" placeholder="Depart" maxlength="20" autocomplete="off" /> 
+                    <div class="calendarDate" id="departureDateDisplay"></div>
+                  </li>
+                  <li>
+                    <label for="returnDate" class="show-for-sr">Return Date</label>
+                    <input type="text" name="returnDate" id="returnDate" value="" placeholder="Return" maxlength="20" autocomplete="off" />
+                    <div class="calendarDate" id="returnDateDisplay"></div>            
+                  </li>                                        
+                </ul>
+
+              </fieldset>
+
+              <div class="helpWindow" id="help-2">
+                <h3>When is your trip?</h3>                                        
+                <p>This is a test. This is a help window.</p>
+              </div>
+                
+            </li>
+
+            <li class="small-12 medium-6 columns">
+
+              <label for="numberTravellers">Number of travellers <a href="#help-3" class="help"><img src="files/images/links/link-help.svg" width="14" height="14" alt="Help(?) - Current ages of travellers" /></a></label>
+              <select name="numberTravellers" id="numberTravellers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>                         
+              </select>
+
+              <div class="helpWindow" id="help-3">
+                  <h3>Number of travellers</h3>                                        
+                  <p>This is a test. This is a help window.</p>
+              </div>
+
+            </li>
+            
+            <li class="small-12 medium-6 columns ageHolder">
+
+              <fieldset>
+                <legend>Current ages of travellers</legend>
+                
+                <ul>            
+                  <li>
+                      <label for="travelerAge_1" class="show-for-sr">1</label>
+                      <input id="travelerAge_1" name="travelerAge_1" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide"> 
+                      <label for="travelerAge_2" class="show-for-sr">2</label>
+                      <input id="travelerAge_2" name="travelerAge_2" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide">
+                      <label for="travelerAge_3" class="show-for-sr">3</label>
+                      <input id="travelerAge_3" name="travelerAge_3" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide">
+                      <label for="travelerAge_4" class="show-for-sr">4</label>
+                      <input id="travelerAge_4" name="travelerAge_4" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>
+
+                  <li class="hide">
+                      <label for="travelerAge_5" class="show-for-sr">5</label>
+                      <input id="travelerAge_5" name="travelerAge_5" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide"> 
+                      <label for="travelerAge_6" class="show-for-sr">6</label>
+                      <input id="travelerAge_6" name="travelerAge_6" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide">
+                      <label for="travelerAge_7" class="show-for-sr">7</label>
+                      <input id="travelerAge_7" name="travelerAge_7" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide">
+                      <label for="travelerAge_8" class="show-for-sr">8</label>
+                      <input id="travelerAge_8" name="travelerAge_8" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>   
+                  <li class="hide">
+                      <label for="travelerAge_9" class="show-for-sr">9</label>
+                      <input id="travelerAge_9" name="travelerAge_9" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>                
+                  <li class="hide">
+                      <label for="travelerAge_10" class="show-for-sr">10</label>
+                      <input id="travelerAge_10" name="travelerAge_10" type="text" pattern="[0-9]*" autocomplete="off" value="" min="21" max="99" maxlength="2" />
+                  </li>
+                </ul>
+              </fieldset>    
+
+            </li>
+
+            <li class="small-12 columns">
+                <fieldset>
+                    <legend>Do all travellers live in AU? <a href="#help-5" class="help"><img src="files/images/links/link-help.svg" width="14" height="14" alt="Help(?) - Do all travellers live in AU?" /></a></legend>
+                    
+                    <ul class="radioList">
+                        <li>
+                            <input type="radio" name="liveAustralia" id="liveAustralia_1" value="Yes" />
+                            <label for="liveAustralia_1">Yes</label>
+                        </li>
+                        <li>
+
+                            <input type="radio" name="liveAustralia" id="liveAustralia_2" value="No" />
+                            <label for="liveAustralia_2">No</label>
+                        </li>                                        
+                    </ul>
+                </fieldset>
+
+                <div class="helpWindow" id="help-5">
+                    <h3>Do all travellers live in AU?</h3>                                        
+                    <p>This is a test. This is a help window.</p>
+                </div>
+            </li>
+
+            <li class="small-12 columns">
+
+              <input type="checkbox" name="ahmMember" id="ahmMember" value="yes" />
+              <label for="ahmMember">I'm an ahm/Medibank member <a href="#help-6" class="help"><img src="files/images/links/link-help.svg" width="14" height="14" alt="Help(?) - I’m an ahm member" /></a></label>
+
+              <div class="helpWindow" id="help-6">
+                  <h3>I'm an ahm/Medibank member</h3>                                        
+                  <p>This is a test. This is a help window.</p>
+              </div>
+
+            </li> 
+
+            <li class="small-12 columns">
+
+              <input type="checkbox" name="hasPromoCode" id="hasPromoCode" value="yes" />
+              <label for="hasPromoCode">I have a promo code</label>
+
+              <div class="hide" id="enterCode">              
+                <label for="promoCode" class="show-for-sr">Promo Code</label>             
+                <input type="text" name="promoCode" id="promoCode" value="" maxlength="20" autocomplete="off" />
+              </div>
+            </li>         
+
+          </ol>
+        </section>
+        
+        <div class="row column small-collapse">
+          <div class="buttonWell small-12 columns row">
+            <input type="submit" value="Next" class="float-right button small-12 columns" />
+          </div>
+        </div>
+      </form>
+
+      <!--Disclaimer-->
+      <div class="disclaimer">
+        <p>Limits, sub limits, exclusions and conditions apply. This is general advice only. The issuer of the travel insurance is Great Lakes Australia (ARBN 127 740 532, ABN 18 964 580 576, AFSL 318603). Please review your own needs and consider the Combined FSG/PDS to decide if this product is right for you.</p>
+      </div>
+      <!--/Disclaimer-->      
+
+    </div>
+    <!--/Outer Wrapper-->
+
+    <!--Footer-->
+    <footer role="contentinfo">
+
+      <ul>
+          <li><a href="#">Product disclosure statement</a></li>
+          <li><a href="#">Terms &amp; conditions</a></li>          
+          <li><a href="#">Privacy policy</a></li>                      
+      </ul>
+
+    </footer>
+    <!--/Footer--> 
+
+    <!--JavaScript Calls--> 
+
+    <!--Library JS-->          
+    <script src="library/jquery-2.2.4.min.js"></script>
+    <script src="library/jquery-ui-1.11.4.min.js"></script>
+    <!--/Library JS-->
+
+    <!--Plugin JS-->          
+    <script src="library/jquery.qtip.min.js"></script>
+    <script src="library/jquery.placeholder.min.js"></script>                 
+    <!--/Plugin JS--> 
+
+    <!--Application JS-->                                
+    <script src="js/utility.js"></script>
+    <!--/Application JS--> 
+
+    <!--Theme JS-->        
+    <script src="js/quote.js"></script>
+    <!--/Theme JS--> 
+
+    <!--/JavaScript Calls--> 
+
+  </body>
+</html>

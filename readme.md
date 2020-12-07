@@ -35,7 +35,7 @@ Demo ‐ https://thewilsonproject.com/demos/medibank/app/</li>
 Demo ‐ https://thewilsonproject.com/demos/medibank/app/
 </li>
 
-<li>ahm/Medibank (2015-) (medibank)<br />
+<li>ahm/Medibank (2015-) (ahm)<br />
 Live site ‐ https://ahm.com.au/travel-insurance<br />
 Demo site - https://thewilsonproject.com/demos/ahm/app/
 </li>

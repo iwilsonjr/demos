@@ -37,8 +37,9 @@ Demo ‐ https://thewilsonproject.com/demos/medibank/app/
 <li>Virgin Australia (2014 - ) (virgin-au)<br />
 Live site ‐ https://virginaustralia.poweredbycovermore.com/</li>
 
-<li>YouGo Travel (2013 - ) (yougo)<br />
-Live site ‐ http://yougotravelinsurance.com.au/</li> 
+<li>YouGo Travel (2013 - 2020) (yougo)<br />
+Demo ‐ https://thewilsonproject.com/demos/yougo/app/
+</li> 
 
 <li>TravelValet (2012) (travelvalet) ‐ code for web/hybrid apps<br />
 Demo ‐ https://thewilsonproject.com/demos/travelvalet/apps/

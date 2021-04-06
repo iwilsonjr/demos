@@ -19,7 +19,9 @@
 		<!-- post details -->
 		<aside class="entryData">
 
-			<strong><time datetime="<?php the_time('Y-m-d'); ?>" pubdate="pubdate"><span><?php the_time('d'); ?></span> <span><?php the_time('M'); ?></span> <span><?php the_time('Y'); ?></span></time></strong> 
+			<strong><time datetime="<?php the_time('Y-m-d'); ?>" pubdate="pubdate"><span><?php the_time('d'); ?></span> <abbr title="<?php the_time('F'); ?>"><?php the_time('M'); ?></abbr> <span><?php the_time('Y'); ?></span></time></strong> 
+
+			<p class="hide">Related Categories:</p>
 			<ul>
 				<?php
 				// get the category IDs assigned to post

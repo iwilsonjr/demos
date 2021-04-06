@@ -24,6 +24,6 @@
 		<!-- analytics -->
 
 		<?php wp_footer(); ?>		
-		<div class="ajaxWindow hide" id="ajaxWindow"></div>
+
 	</body>
 </html>

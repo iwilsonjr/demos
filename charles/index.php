@@ -15,7 +15,11 @@
 	}
 
 ?>
-	
+
+<!--Site Navigation-->
+<?php get_template_part('navigation'); ?>
+<!--/Site Navigation-->
+
 	<!--Content-->
 	<main>
 
@@ -30,8 +34,6 @@
 		</div>
 	
 	</main>
-	<!--Content-->
-	
-<?php get_sidebar(); ?>
+	<!--/Content-->
 
 <?php get_footer(); ?>

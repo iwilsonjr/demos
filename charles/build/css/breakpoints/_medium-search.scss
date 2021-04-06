@@ -1,0 +1,28 @@
+/* --- Search, Smaller Screens (> 480px) --- */
+
+@media only screen and (min-width: #{$searchBreak}) {
+
+    .blkCategories {
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;    
+        }
+        li {
+            width: calc(50% - 20px);
+        }
+
+    }
+
+    .blkArchives {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+
+    .currentArchives, 
+    .blkForm {
+        min-width: 240px;
+        width: 50%;
+    }
+
+}

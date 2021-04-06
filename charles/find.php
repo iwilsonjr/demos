@@ -1,7 +1,13 @@
+<?php
+/*
+Template Name: Find/Search
+*/
+?>
+
 <?php get_header(); ?>
 	
 <?php get_template_part('navigation'); ?>
-	
+
 	<!--Content-->
 	<main>
 
@@ -16,10 +22,10 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
-			<?php the_content(); ?>
-								
-			<p><?php edit_post_link(); ?></p>
-			
+        <div class="navFind">
+            <?php get_sidebar(); ?>
+		</div>
+
 		</article>
 		<!-- /article -->
 		
@@ -37,6 +43,7 @@
 	
 	<?php } ?>
 	
+ 
 	
 		</div>
 	

@@ -50,7 +50,12 @@
 					<em><?php bloginfo('description'); ?></em>
 				</a>				
 
-				<p class="btnNavigation"><a href="#navigation" id="btnNavigation">Skip to Navigation</a></p>
+				<p class="btnNavigation">
+					<a href="#navigation" id="btnNavigation">
+						Menu
+					<span class="hide">Skip to Navigation</span>
+					</a>
+				</p>
 					
 	        </header>
 	        <!--Site Header-->

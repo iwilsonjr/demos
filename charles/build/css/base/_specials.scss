@@ -1,0 +1,17 @@
+/* -------------------------------- [ Specials ] */
+
+.myWorld {
+	margin: 0;
+	padding: 50px 0;
+}
+
+.myWorld p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border: 1px solid black;
+	font-size: 50px;
+}

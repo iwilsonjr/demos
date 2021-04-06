@@ -19,11 +19,23 @@
         height: 170px;
     }
     .navSite {
-        top: 190px;
+        top: 200px;
     }
     .ajaxWindow {
         top: 191px;
     }
+}
+
+@media only screen and (min-width: #{$imageBreak}) {
+    [role='tablist'] {
+        flex-direction: row;
+    
+        a { 
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+    }
+
 }
 
 @media only screen and (min-width: #{$imageBreak}) and (max-width: #{$large}) {

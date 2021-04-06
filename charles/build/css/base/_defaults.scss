@@ -36,7 +36,7 @@ audio:not([controls]) {
 }
 
 [hidden] {
-    display: none;
+    display: none !important;
 }
 
 
@@ -268,7 +268,8 @@ ul {
 ul>li {
     list-style-type: none;
     padding-left: 20px;
-    background: url(#{$assets}/lists/list-standard.png) no-repeat 0 10px;
+    padding-bottom: 10px;
+    background: url(#{$assets}/lists/list-standard.png) no-repeat 0 13px;
 }
 
 ul>li>li {
@@ -289,6 +290,7 @@ ol {
 ol>li {
     list-style-type: decimal;
     padding-left: 0;
+    padding-bottom: 10px;
     background: none;
 }
 

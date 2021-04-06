@@ -834,10 +834,6 @@ table {
     min-width: 190px;
 }
 
-.blkArchives .blkForm {
-    width: 240px;
-}
-
 .blkArchives option:nth-child(2),
 .blkArchives option:nth-child(3),
 .blkArchives option:nth-child(4),

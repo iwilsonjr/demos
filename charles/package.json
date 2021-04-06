@@ -4,27 +4,42 @@
     "description": "The Wilson Project site",
     "main": "index.js",
     "scripts": {
-        "sass": "node-sass -w build/css/style.scss css/style.css --output-style compressed --source-map css/style.css.map",
-        "browser-sync": "browser-sync start --proxy http://localhost:8888 --files=*.php,*.css,*.js --no-open --no-notify",
-        "uglify:utility": "uglifyjs build/js/utility.js --compress --mangle -o js/utility.js",
-        "start": "npm run sass & npm run browser-sync",
-        "production": "node postcss.config.js & npm run uglify:utility"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/iwilsonjr/charles/"
+        "url": "git+https://github.com/iwilsonjr/charles/"
     },
     "author": "Ivan Wilson",
     "license": "ISC",
-    "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "jquery": "^3.5.0",
-        "node-sass": "^4.14.0",
-        "postcss": "^5.2.15",
-        "postcss-cli": "^3.0.0-beta",
-        "postcss-pxtorem": "^4.0.0"
+    "bugs": {
+        "url": "https://github.com/iwilsonjr/charles/issues"
     },
-    "dependencies": {
-        "uglify-es": "^3.3.9"
-    }
+    "homepage": "https://github.com/iwilsonjr/charlesy#readme",
+    "devDependencies": {
+        "@babel/core": "^7.13.14",
+        "@babel/preset-env": "^7.13.12",
+        "autoprefixer": "^9.8.6",
+        "browser-sync": "^2.26.14",
+        "cssnano": "^4.1.11",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-csscomb": "^3.1.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-uglify-es": "^2.0.0",
+        "node-sass": "^5.0.0",
+        "postcss-pxtorem": "^5.1.1",
+        "uuid": "^8.3.2"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "> 1%",
+        "IE 11"
+    ],
+    "dependencies": {}
 }

@@ -84,9 +84,6 @@
         }
     }
     .navFind {
-        li {
-            padding: 0 0 2px;
-        }
         h3 {
             font-size: 17px;
             font-family: #{$headerBold};
@@ -96,30 +93,20 @@
             font-size: 15px;
         }
     }
-    .navFind .blkForm,
-    .blkArchives ul {
-        float: left;
-    }
-    .blkCategories {
-        border-right: 1px solid #bbb;
-    }
-    .blkArchives {
-        min-height: 290px;
-        margin-bottom: 15px;
-        padding-right: 0;
-        padding-left: 34px;
-        border-right: 1px solid #bbb;
-    }
-    .blkSearch {
-        padding-right: 0;
-        padding-left: 34px;
-    }
     .blkCategories,
     .blkArchives,
     .blkSearch {
-        width: calc(33.3333% - 40px);
         padding-bottom: 20px;
     }
+
+    .blkCategories {
+
+        li {
+            width: calc(33.3% - 20px);
+        }
+
+    }
+
     /* Content */
     .content {
         padding: 80px 60px 0 30px;
@@ -241,7 +228,7 @@
     }
     /* AJAX Window */
     .ajaxWindow {
-        top: 207px;
+        top: 227px;
         left: calc(50% - 600px);
         width: calc(50% + 600px);
         max-width: 1200px;

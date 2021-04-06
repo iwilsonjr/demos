@@ -1,0 +1,135 @@
+/* -------------------------------- [ Site Find/Search ] */
+.navFind {
+    margin: 50px 0 0;
+    padding: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    ul {
+        margin-left: 0;
+    }
+    li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        background: none;
+        font-size: 19px;
+        @include lineHeight(15px, 19px);
+        text-transform: none;
+    }
+    h3 {
+        @extend .hide;
+        font-size: 18px;
+        font-family: #{$headerBold};
+        text-decoration: underline;
+    }
+    h4 {
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    select {
+        font-size: 18px;
+    }
+    a {
+        background: none;
+        font-family: #{$bodyText};
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    .blkForm {
+        label {
+            @extend .hide
+        }
+        div {
+            display: inline;
+        }
+        input[type='submit'] {
+            padding: 4px;
+        }
+    }
+
+}
+
+[role='tablist'] {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    a { 
+        display: block;
+        padding: 10px 20px;
+        border: 0;
+        font-size: 16px;
+        font-family: #{$headerBold} !important;
+        text-transform: uppercase;
+
+        &:hover, &:focus, &:active, &[aria-selected='true'] {
+            text-decoration: none;
+            background: #ccc;
+        }
+    }
+}
+
+.blkArchives,
+.blkCategories,
+.blkSearch {
+    padding-bottom: 40px;
+}
+
+.blkArchives {
+    min-width: 190px;
+
+    option:nth-child(2),
+    option:nth-child(3),
+    option:nth-child(4),
+    option:nth-child(5),
+    option:nth-child(6),
+    option:nth-child(7) {
+        display: none;
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+}
+
+.blkCategories {
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li { 
+        width: 100%;
+        padding-right: 20px;
+        padding-bottom: 5px;
+
+        &:hover {
+            background: transparent none;
+        }
+    }
+
+}
+
+.blkSearch {
+    padding-right: 0;
+    input {
+        margin-bottom: 10px;
+
+        &[type='search'] {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+

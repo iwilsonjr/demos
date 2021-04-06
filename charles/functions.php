@@ -112,10 +112,7 @@ function html5blank_conditional_scripts()
 {
     if (!is_admin()) {
 
-        wp_register_script('axios', 'https://unpkg.com/axios/dist/axios.min.js', array(), '1.0', true); // Conditional script(s)
-        wp_enqueue_script('axios'); // Enqueue it!
-
-        wp_register_script('utility', get_template_directory_uri() . '/build/js/utility.js', array(), '1.0', true); // Conditional script(s)
+        wp_register_script('utility', get_template_directory_uri() . '/js/utility.js', array(), '1.0', true); // Conditional script(s)
         wp_enqueue_script('utility'); // Enqueue it!
 
     }

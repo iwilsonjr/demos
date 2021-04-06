@@ -54,12 +54,12 @@ if(isset($_POST['submitted'])) {
 		//If there is no error, send the email
 		if(!isset($hasError)) {
 
-			$emailTo = 'ivan@thewilsonproject.com';
+			$emailTo = 'webmaster@thewilsonproject.com';
 			$subject = 'Contact Form Submission from '.$name;
 			$body = "Name: $name \n\nEmail: $email \n\nComments: $comments";
 			$headers = 'From: My Site <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 			
-			wp_mail($emailTo, $subject, $body, $headers);
+			mail($emailTo, $subject, $body, $headers);
 
 			$emailSent = true;
 
@@ -96,7 +96,7 @@ get_header();
 			<p class="error">There was an error submitting the form.<p>
 		<?php } ?>
 	
-		<form action="<?php the_permalink(); ?>" class="contactForm" id="contactForm" method="post">
+		<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 
 			<div class="blkForm">
 
@@ -147,6 +147,6 @@ get_header();
 	</main>
 	<!--Content-->
 	
-<?php get_sidebar(); ?>
+<?php get_template_part('navigation'); ?>
 
 <?php get_footer(); ?>

@@ -15,7 +15,7 @@ Currently working on version 5.0 - https://github.com/iwilsonjr/country, removin
 
 <li>CQ Roll Call's Taste of America (2008 - 2014) (tasteofamerica)<br />
 This was a contest started by CQ Roll Call, in conjunction with the annual Congressional baseball game.<br />
-Demo ‐ https://thewilsonproject.com/demos/tasteofamerica/app/
+Demo ‐ https://thewilsonproject.com/demos/tasteofamerica/app/<br />
 Worked as front-end developer for CDG/Innate
 </li>
 
@@ -26,7 +26,7 @@ Demo ‐ https://thewilsonproject.com/demos/codepen/
 </ul>
 
 
-<h3>Travel Insurance Work (as front-end developer)</h3>
+<h3>Travel Insurance Work (as front-end developer for CDG/Innate)</h3>
 <ul>
 <li>Australian Post (2015 - ) (aupost)<br />
 Liva (AU Post) ‐ https://auspost.poweredbycovermore.com/<br />

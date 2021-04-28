@@ -4,7 +4,9 @@
 <h3>Non Travel Insurance Work</h3>
 
 <ul>
-<li>Charles WP Theme (charles) ‐ code for current TWP site (https://thewilsonproject.com)</li>
+<li>Charles WP Theme (charles) ‐ code for current TWP site (https://thewilsonproject.com)
+For more recent changes/work in progress, go to the charles repository  
+</li>
 
 <li>country (country-ui) ‐ country selector for CDG/Innate (version 4 was latest version)<br />
 Used in Cover-More white-label sites such as Austrailan Post, Virgin Australia, Cover-More's Australian and New Zealand sites, and <a href="https://insurance.airnewzealand.com.au/">Air New Zealand's travel insurance site</a><br />

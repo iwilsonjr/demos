@@ -4,7 +4,7 @@
 <h3>Non Travel Insurance Work</h3>
 
 <ul>
-<li>Charles WP Theme (charles) ‐ code for current TWP site (https://thewilsonproject.com)
+<li>Charles WP Theme (charles) ‐ code for current TWP site (https://thewilsonproject.com)<br />
 For more recent changes/work in progress, go to the charles repository  
 </li>
 

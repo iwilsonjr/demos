@@ -29,10 +29,10 @@
         "gulp-plumber": "^1.2.1",
         "gulp-postcss": "^8.0.0",
         "gulp-rename": "^2.0.0",
-        "gulp-sass": "^4.1.0",
+        "gulp-sass": "^5.1.0",
         "gulp-sourcemaps": "^3.0.0",
         "gulp-uglify-es": "^2.0.0",
-        "node-sass": "^7.0.0",
+        "node-sass": "^7.0.3",
         "postcss-pxtorem": "^5.1.1",
         "uuid": "^8.3.2"
     },
